@@ -1,3 +1,87 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+/* ── Wide table rendering for content-dense tables (daily report etc.) ── */
+
+/* Allow tables to overflow the content area horizontally */
+.page .table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Give the table enough minimum width so long-text columns can breathe */
+.page .table-container table {
+  min-width: 1100px;
+}
+
+.page .table-container th,
+.page .table-container td {
+  white-space: normal;
+  word-break: break-word;
+  vertical-align: top;
+  padding: 8px 14px;
+  line-height: 1.65;
+}
+
+/* ── Calendar table (exactly 7 columns: Mon-Sun) — compact, no scroll ── */
+.page .table-container table:has(th:nth-child(7)):not(:has(th:nth-child(8))) {
+  min-width: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.page .table-container table:has(th:nth-child(7)):not(:has(th:nth-child(8))) th,
+.page .table-container table:has(th:nth-child(7)):not(:has(th:nth-child(8))) td {
+  min-width: 0;
+  text-align: center;
+}
+
+/* ── Company tracking table (8 columns) ── */
+/* Column 5 = 投资逻辑, Col 6 = Bull Case, Col 7 = Bear Case, Col 8 = 今日关键佐证 */
+.page .table-container th:nth-child(5),
+.page .table-container td:nth-child(5) {
+  min-width: 260px;
+}
+.page .table-container th:nth-child(6),
+.page .table-container td:nth-child(6),
+.page .table-container th:nth-child(7),
+.page .table-container td:nth-child(7) {
+  min-width: 220px;
+}
+.page .table-container th:nth-child(8),
+.page .table-container td:nth-child(8) {
+  min-width: 260px;
+}
+
+/* ── Market snapshot table (12 columns, identified by :has(12th header)) ── */
+/* Column 5 = 涨跌幅 — percentage values, narrow is fine */
+.page .table-container table:has(th:nth-child(12)) th:nth-child(5),
+.page .table-container table:has(th:nth-child(12)) td:nth-child(5) {
+  min-width: 100px;
+}
+/* Reset columns 6-8 for snapshot — compact data columns */
+.page .table-container table:has(th:nth-child(12)) th:nth-child(6),
+.page .table-container table:has(th:nth-child(12)) td:nth-child(6),
+.page .table-container table:has(th:nth-child(12)) th:nth-child(7),
+.page .table-container table:has(th:nth-child(12)) td:nth-child(7),
+.page .table-container table:has(th:nth-child(12)) th:nth-child(8),
+.page .table-container table:has(th:nth-child(12)) td:nth-child(8) {
+  min-width: 0;
+}
+
+/* ── Typography consistency: minimize visual font jumps ── */
+
+/* Inline code: 0.9em → 0.95em, closer to body text */
+code {
+  font-size: 0.95em;
+}
+
+/* Wiki internal links: inherit body font-size (remove .95rem reduction) */
+a.internal {
+  font-size: inherit;
+}
+
+/* KaTeX inline math: override default 1.21em → match body text */
+.katex {
+  font-size: 1em;
+}

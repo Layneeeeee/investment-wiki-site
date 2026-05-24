@@ -8,16 +8,22 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Investment Research Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "layneeeeee.github.io/investment-wiki-site",
+    ignorePatterns: [
+      "**/.DS_Store",
+      "**/README.md",
+      "**/concept-tracker*",
+      "**/news-tracker*",
+      "**/html/**",
+      "**/*.edtz",
+      "**/people/**",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -71,7 +77,10 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({
+        renderEngine: "katex",
+        katexOptions: { strict: "ignore" },
+      }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
