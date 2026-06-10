@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>index</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="index"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="index"/><meta name="twitter:description" content="Daily Reports Time-series aggregation of daily ingests."/><meta property="og:description" content="Daily Reports Time-series aggregation of daily ingests."/><meta property="og:image:alt" content="Daily Reports Time-series aggregation of daily ingests."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/index"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/index"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Daily Reports Time-series aggregation of daily ingests."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/index-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/index-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/index-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/daily/index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-23"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-23" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-3"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>daily</a></div></nav><h1 class="article-title">index</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-09T16:00:00.000Z">Jun 10, 2026</time><span>4 min read</span></p></div></div><div class="popover-hint"><article class><h1 id="daily-reports">Daily Reports<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daily-reports" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>Time-series aggregation of daily ingests. Each report tallies company/sector mentions, cross-references existing wiki pages, and tracks source accumulation.</p>
+</blockquote>
+<h2 id="calendar">Calendar<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#calendar" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2026-05">2026-05<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-05" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead><tbody><tr><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td><a href="../../wiki/daily/2026-05-20" class="internal alias" data-slug="wiki/daily/2026-05-20">20</a></td><td><a href="../../wiki/daily/2026-05-21" class="internal alias" data-slug="wiki/daily/2026-05-21">21</a></td><td><a href="../../wiki/daily/2026-05-22" class="internal alias" data-slug="wiki/daily/2026-05-22">22</a></td><td><a href="../../wiki/daily/2026-05-23" class="internal alias" data-slug="wiki/daily/2026-05-23">23</a></td><td><a href="../../wiki/daily/2026-05-24" class="internal alias" data-slug="wiki/daily/2026-05-24">24</a></td></tr><tr><td><a href="../../wiki/daily/2026-05-25" class="internal alias" data-slug="wiki/daily/2026-05-25">25</a></td><td><a href="../../wiki/daily/2026-05-26" class="internal alias" data-slug="wiki/daily/2026-05-26">26</a></td><td><a href="../../wiki/daily/2026-05-27" class="internal alias" data-slug="wiki/daily/2026-05-27">27</a></td><td><a href="../../wiki/daily/2026-05-28" class="internal alias" data-slug="wiki/daily/2026-05-28">28</a></td><td><a href="../../wiki/daily/2026-05-29" class="internal alias" data-slug="wiki/daily/2026-05-29">29</a></td><td><a href="../../2026-05-30" class="internal alias" data-slug="2026-05-30">30</a></td><td><a href="../../wiki/daily/2026-05-31" class="internal alias" data-slug="wiki/daily/2026-05-31">31</a></td></tr></tbody></table></div>
+<h3 id="2026-06">2026-06<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-06" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead><tbody><tr><td>1</td><td><a href="../../wiki/daily/2026-06-02" class="internal alias" data-slug="wiki/daily/2026-06-02">2</a></td><td><a href="../../wiki/daily/2026-06-03" class="internal alias" data-slug="wiki/daily/2026-06-03">3</a></td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td><a href="../../wiki/daily/2026-06-08" class="internal alias" data-slug="wiki/daily/2026-06-08">8</a></td><td><a href="../../wiki/daily/2026-06-09" class="internal alias" data-slug="wiki/daily/2026-06-09">9</a></td><td><a href="../../wiki/daily/2026-06-10" class="internal alias" data-slug="wiki/daily/2026-06-10">10</a></td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h2 id="最近日报">最近日报<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#最近日报" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>日期</th><th>Sources</th><th>公司覆盖</th><th>行业覆盖</th><th>新创建页面</th></tr></thead><tbody><tr><td><a href="../../wiki/daily/2026-05-20" class="internal" data-slug="wiki/daily/2026-05-20">2026-05-20</a></td><td>11</td><td><a href="../../wiki/companies/ssnlf" class="internal alias" data-slug="wiki/companies/ssnlf">SSNLF</a>, <a href="../../wiki/companies/cbrs" class="internal alias" data-slug="wiki/companies/cbrs">CBRS</a>, <a href="../../wiki/companies/crwv" class="internal alias" data-slug="wiki/companies/crwv">CRWV</a>, <a href="../../wiki/companies/iot" class="internal alias" data-slug="wiki/companies/iot">IOT</a>, <a href="../../wiki/companies/cohu" class="internal alias" data-slug="wiki/companies/cohu">COHU</a>, <a href="../../wiki/companies/nok" class="internal alias" data-slug="wiki/companies/nok">NOK</a>, <a href="../../wiki/companies/glw" class="internal alias" data-slug="wiki/companies/glw">GLW</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/viav" class="internal alias" data-slug="wiki/companies/viav">VIAV</a>, <a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a>, <a href="../../wiki/companies/qcom" class="internal alias" data-slug="wiki/companies/qcom">QCOM</a>, <a href="../../wiki/companies/aip" class="internal alias" data-slug="wiki/companies/aip">AIP</a>, <a href="../../wiki/companies/almu" class="internal alias" data-slug="wiki/companies/almu">ALMU</a>, <a href="../../wiki/companies/bzai" class="internal alias" data-slug="wiki/companies/bzai">BZAI</a>, <a href="../../wiki/companies/tsem" class="internal alias" data-slug="wiki/companies/tsem">TSEM</a>, <a href="../../wiki/companies/poet" class="internal alias" data-slug="wiki/companies/poet">POET</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/baba" class="internal alias" data-slug="wiki/companies/baba">BABA</a>, <a href="../../wiki/companies/asml" class="internal alias" data-slug="wiki/companies/asml">ASML</a>, <a href="../../wiki/companies/adi" class="internal alias" data-slug="wiki/companies/adi">ADI</a>, <a href="../../wiki/companies/meta" class="internal alias" data-slug="wiki/companies/meta">META</a>, <a href="../../wiki/companies/spacex" class="internal alias" data-slug="wiki/companies/spacex">SpaceX</a>, <a href="../../wiki/companies/anthropic" class="internal alias" data-slug="wiki/companies/anthropic">Anthropic</a></td><td>AI, SaaS</td><td><a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a>, <a href="../../wiki/companies/aip" class="internal alias" data-slug="wiki/companies/aip">AIP</a>, <a href="../../wiki/companies/almu" class="internal alias" data-slug="wiki/companies/almu">ALMU</a>, <a href="../../wiki/companies/bzai" class="internal alias" data-slug="wiki/companies/bzai">BZAI</a>, <a href="../../wiki/companies/cohu" class="internal alias" data-slug="wiki/companies/cohu">COHU</a>, <a href="../../wiki/companies/glw" class="internal alias" data-slug="wiki/companies/glw">GLW</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/nok" class="internal alias" data-slug="wiki/companies/nok">NOK</a>, <a href="../../wiki/companies/poet" class="internal alias" data-slug="wiki/companies/poet">POET</a>, <a href="../../wiki/companies/qcom" class="internal alias" data-slug="wiki/companies/qcom">QCOM</a>, <a href="../../wiki/companies/tsem" class="internal alias" data-slug="wiki/companies/tsem">TSEM</a>, <a href="../../wiki/companies/viav" class="internal alias" data-slug="wiki/companies/viav">VIAV</a>, <a href="../../wiki/companies/asml" class="internal alias" data-slug="wiki/companies/asml">ASML</a>, <a href="../../wiki/companies/adi" class="internal alias" data-slug="wiki/companies/adi">ADI</a></td></tr><tr><td><a href="../../wiki/daily/2026-05-21" class="internal" data-slug="wiki/daily/2026-05-21">2026-05-21</a></td><td>12</td><td><a href="../../wiki/companies/peng" class="internal alias" data-slug="wiki/companies/peng">PENG</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/exa" class="internal alias" data-slug="wiki/companies/exa">Exa</a>, <a href="../../wiki/companies/nok" class="internal alias" data-slug="wiki/companies/nok">NOK</a>, <a href="../../wiki/companies/spacex" class="internal alias" data-slug="wiki/companies/spacex">SPCX</a>, <a href="../../wiki/companies/qcom" class="internal alias" data-slug="wiki/companies/qcom">QCOM</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a></td><td>AI, Semiconductors, Space</td><td><a href="../../wiki/companies/peng" class="internal alias" data-slug="wiki/companies/peng">PENG</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/exa" class="internal alias" data-slug="wiki/companies/exa">Exa</a>, <a href="../../wiki/companies/diode" class="internal alias" data-slug="wiki/companies/diode">Diode</a>, <a href="../../gaetano" class="internal alias" data-slug="gaetano">Gaetano</a></td></tr><tr><td><a href="../../wiki/daily/2026-05-22" class="internal" data-slug="wiki/daily/2026-05-22">2026-05-22</a></td><td>9+news</td><td><a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/anthropic" class="internal alias" data-slug="wiki/companies/anthropic">Anthropic</a>, <a href="../../wiki/companies/openai" class="internal alias" data-slug="wiki/companies/openai">OpenAI</a>, <a href="../../wiki/companies/tsm" class="internal alias" data-slug="wiki/companies/tsm">TSM</a>, <a href="../../wiki/companies/spacex" class="internal alias" data-slug="wiki/companies/spacex">SpaceX</a>, <a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a></td><td>AI Infra, Semis-Memory</td><td>9 Gaetano AAOI pages + INSIGHT NEWS PRO 2026-05-22 早报+晚报</td></tr><tr><td><a href="../../wiki/daily/2026-05-24" class="internal" data-slug="wiki/daily/2026-05-24">2026-05-24</a></td><td>10</td><td><a href="../../wiki/companies/aip" class="internal alias" data-slug="wiki/companies/aip">AIP</a>, <a href="../../wiki/companies/aixa" class="internal alias" data-slug="wiki/companies/aixa">AIXA</a>, <a href="../../wiki/companies/almu" class="internal alias" data-slug="wiki/companies/almu">ALMU</a>, <a href="../../wiki/companies/anthropic" class="internal alias" data-slug="wiki/companies/anthropic">Anthropic</a>, <a href="../../wiki/companies/axti" class="internal alias" data-slug="wiki/companies/axti">AXTI</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/cohu" class="internal alias" data-slug="wiki/companies/cohu">COHU</a>, <a href="../../wiki/companies/lpk" class="internal alias" data-slug="wiki/companies/lpk">LPK</a>, <a href="../../wiki/companies/lwlg" class="internal alias" data-slug="wiki/companies/lwlg">LWLG</a>, <a href="../../wiki/companies/rib" class="internal alias" data-slug="wiki/companies/rib">RIB</a>, <a href="../../wiki/companies/veco" class="internal alias" data-slug="wiki/companies/veco">VECO</a></td><td>AI, SaaS, Blockchain/Fintech</td><td>LPK/AIXA/AXTI/VECO/RIB/LWLG 新公司 + photonics-value-chain 更新<br/>光子学瓶颈全链条 + AI 计算分歧 + SaaS 利润率辩论 + Tokenization $30B</td></tr><tr><td><a href="../../wiki/daily/2026-05-23" class="internal" data-slug="wiki/daily/2026-05-23">2026-05-23</a></td><td>11</td><td><a href="../../wiki/companies/aehr" class="internal alias" data-slug="wiki/companies/aehr">AEHR</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/gh" class="internal alias" data-slug="wiki/companies/gh">GH</a>, <a href="../../wiki/companies/futu" class="internal alias" data-slug="wiki/companies/futu">FUTU</a>, <a href="../../wiki/companies/geni" class="internal alias" data-slug="wiki/companies/geni">GENI</a></td><td>AI Infra, Semis &amp; Optics, Test/Proof Layer</td><td>AEHR 订单拐点 + Neocloud 框架 + COHR 光学平台 + AI 芯片架构 + Proof Layer + 非对称下注 (neocloud/ai-chip-architecture/proof-layer/asymmetric-bets/arr-fte/thermal-test)</td></tr><tr><td><a href="../../wiki/daily/2026-05-25" class="internal" data-slug="wiki/daily/2026-05-25">2026-05-25</a></td><td>7</td><td><a href="../../wiki/companies/amba" class="internal alias" data-slug="wiki/companies/amba">AMBA</a>, <a href="../../wiki/companies/arteche" class="internal alias" data-slug="wiki/companies/arteche">ART</a>, <a href="../../wiki/companies/bzai" class="internal alias" data-slug="wiki/companies/bzai">BZAI</a>, <a href="../../wiki/companies/rib" class="internal alias" data-slug="wiki/companies/rib">RIB</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/qcom" class="internal alias" data-slug="wiki/companies/qcom">QCOM</a>, <a href="../../wiki/companies/spacex" class="internal alias" data-slug="wiki/companies/spacex">SPCX</a></td><td>AI, Energy/Grid</td><td>AI 基础设施栈扩展至边缘推理(AMBA)和电力层(Arteche) + 模型路由层形成 + NVDA Q1 beat 与 QD 激光器量产双验证核心需求</td></tr><tr><td><a href="../../wiki/daily/2026-05-26" class="internal" data-slug="wiki/daily/2026-05-26">2026-05-26</a></td><td>11</td><td><a href="../../wiki/companies/cien" class="internal alias" data-slug="wiki/companies/cien">CIEN</a>, <a href="../../wiki/companies/nok" class="internal alias" data-slug="wiki/companies/nok">NOK</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/intc" class="internal alias" data-slug="wiki/companies/intc">INTC</a>, <a href="../../wiki/companies/amd" class="internal alias" data-slug="wiki/companies/amd">AMD</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/tsm" class="internal alias" data-slug="wiki/companies/tsm">TSM</a>, <a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a>, <a href="../../wiki/companies/aapl" class="internal alias" data-slug="wiki/companies/aapl">AAPL</a>, <a href="../../wiki/companies/futu" class="internal alias" data-slug="wiki/companies/futu">FUTU</a>, <a href="../../wiki/companies/hyperliquid" class="internal alias" data-slug="wiki/companies/hyperliquid">HYPE</a></td><td>Semiconductors-Memory</td><td><a href="../../新公司" class="internal alias" data-slug="新公司">[intc|INTC]</a>、<a href="../../新概念" class="internal alias" data-slug="新概念">[scale-across|scale-across]</a>、<a href="../../新宏观" class="internal alias" data-slug="新宏观">[fed-reform-warsh-agenda|fed-reform-warsh-agenda]</a>；光模块交叉验证+Intel追赶+Scale-Across+Herman Jin回调框架</td></tr><tr><td><a href="../../wiki/daily/2026-05-27" class="internal" data-slug="wiki/daily/2026-05-27">2026-05-27</a></td><td>20</td><td><a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/glw" class="internal alias" data-slug="wiki/companies/glw">GLW</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/fn" class="internal alias" data-slug="wiki/companies/fn">FN</a>, <a href="../../wiki/companies/viav" class="internal alias" data-slug="wiki/companies/viav">VIAV</a>, <a href="../../wiki/companies/hubn" class="internal alias" data-slug="wiki/companies/hubn">HUBN</a>, <a href="../../wiki/companies/silex" class="internal alias" data-slug="wiki/companies/silex">SILEX</a>, <a href="../../wiki/companies/jen" class="internal alias" data-slug="wiki/companies/jen">JEN</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/qcom" class="internal alias" data-slug="wiki/companies/qcom">QCOM</a>, <a href="../../wiki/companies/inod" class="internal alias" data-slug="wiki/companies/inod">INOD</a>, <a href="../../wiki/companies/task" class="internal alias" data-slug="wiki/companies/task">TASK</a>, <a href="../../wiki/companies/nbis" class="internal alias" data-slug="wiki/companies/nbis">NBIS</a>, <a href="../../wiki/companies/u" class="internal alias" data-slug="wiki/companies/u">U</a>, <a href="../../wiki/companies/pl" class="internal alias" data-slug="wiki/companies/pl">PL</a>, <a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a></td><td>Optics &amp; Photonics, AI Infra, Semi-Memory, Physical AI</td><td><a href="../../wiki/companies/jen" class="internal alias" data-slug="wiki/companies/jen">JEN</a>、<a href="../../wiki/companies/hubn" class="internal alias" data-slug="wiki/companies/hubn">HUBN</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[silex|SILEX]</a>、<a href="../../wiki/companies/inod" class="internal alias" data-slug="wiki/companies/inod">INOD</a>、<a href="../../wiki/companies/task" class="internal alias" data-slug="wiki/companies/task">TASK</a>、<a href="../../wiki/companies/nbis" class="internal alias" data-slug="wiki/companies/nbis">NBIS</a>、<a href="../../wiki/companies/u" class="internal alias" data-slug="wiki/companies/u">U</a>、<a href="../../wiki/companies/pl" class="internal alias" data-slug="wiki/companies/pl">PL</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[mrvl|MRVL]</a>、<a href="../../新概念" class="internal alias" data-slug="新概念">[customer-backed-capacity-model|customer-backed-capacity-model]</a>；光子学瓶颈6月验证+OCS新需求层+Physical AI Layer 1 mapping+SMTC DC加速翻倍</td></tr><tr><td><a href="../../wiki/daily/2026-05-28" class="internal" data-slug="wiki/daily/2026-05-28">2026-05-28</a></td><td>22</td><td><a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a>, <a href="../../wiki/companies/poet" class="internal alias" data-slug="wiki/companies/poet">POET</a>, <a href="../../wiki/companies/pstg" class="internal alias" data-slug="wiki/companies/pstg">PSTG</a>, <a href="../../wiki/companies/nok" class="internal alias" data-slug="wiki/companies/nok">NOK</a>, <a href="../../wiki/companies/snps" class="internal alias" data-slug="wiki/companies/snps">SNPS</a>, <a href="../../wiki/companies/hood" class="internal alias" data-slug="wiki/companies/hood">HOOD</a>, <a href="../../wiki/companies/mtsi" class="internal alias" data-slug="wiki/companies/mtsi">MTSI</a>, <a href="../../wiki/companies/lpk" class="internal alias" data-slug="wiki/companies/lpk">LPK</a>, <a href="../../wiki/companies/mersen" class="internal alias" data-slug="wiki/companies/mersen">MRN</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/hubn" class="internal alias" data-slug="wiki/companies/hubn">HUBN</a></td><td>Optics &amp; Photonics, AI Infra, EDA, Fintech</td><td><a href="../../wiki/companies/pstg" class="internal alias" data-slug="wiki/companies/pstg">PSTG</a>、<a href="../../wiki/companies/mtsi" class="internal alias" data-slug="wiki/companies/mtsi">MTSI</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[mersen|MRN]</a>；Marvell平台化验证+POET thesis 6月验证+Nokia系统层加速+电力二层瓶颈+PSTG增长质量分化+SNPS Elliott催化</td></tr><tr><td><a href="../../wiki/daily/2026-05-29" class="internal" data-slug="wiki/daily/2026-05-29">2026-05-29</a></td><td>12</td><td><a href="../../wiki/companies/snow" class="internal alias" data-slug="wiki/companies/snow">SNOW</a>, <a href="../../wiki/companies/cien" class="internal alias" data-slug="wiki/companies/cien">CIEN</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a>, <a href="../../wiki/companies/glw" class="internal alias" data-slug="wiki/companies/glw">GLW</a>, <a href="../../wiki/companies/tsm" class="internal alias" data-slug="wiki/companies/tsm">TSM</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a></td><td>Optics, SaaS, Semi, AI</td><td><a href="../../新人" class="internal alias" data-slug="新人">[michael-burry|Michael Burry]</a>、<a href="../../新分析" class="internal alias" data-slug="新分析">[scale-across-networking|Scale-Across]</a>；SNOW叙事弧线完整编录+Cortex Code验证+Scale-across框架确立+Tiezhu宏观+CPO中文转换</td></tr><tr><td><a href="../../wiki/daily/2026-05-31" class="internal" data-slug="wiki/daily/2026-05-31">2026-05-31</a></td><td>12</td><td><a href="../../wiki/companies/inod" class="internal alias" data-slug="wiki/companies/inod">INOD</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a>, <a href="../../wiki/companies/viav" class="internal alias" data-slug="wiki/companies/viav">VIAV</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/veco" class="internal alias" data-slug="wiki/companies/veco">VECO</a>, <a href="../../wiki/companies/tsem" class="internal alias" data-slug="wiki/companies/tsem">TSEM</a>, <a href="../../wiki/companies/soi" class="internal alias" data-slug="wiki/companies/soi">SOI</a></td><td>Photonics, AI Infra, Neocloud, Physical AI, Macro</td><td><a href="../../新公司" class="internal alias" data-slug="新公司">[soi|SOI]</a>、<a href="../../wiki/concepts/prediction-markets" class="internal alias" data-slug="wiki/concepts/prediction-markets">Prediction Markets</a>+<a href="../../新概念" class="internal alias" data-slug="新概念">[retail-flow-vulnerability|Retail Flow Vulnerability]</a>；光子学瓶颈三层深化+VECO设备层+SOI衬底层+Gaetano INOD首仓+GPU Second Life框架写入AI sector+散户脆弱性concept</td></tr><tr><td><a href="../../wiki/daily/2026-06-02" class="internal" data-slug="wiki/daily/2026-06-02">2026-06-02</a></td><td>7+news</td><td><a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a>, <a href="../../wiki/companies/crdo" class="internal alias" data-slug="wiki/companies/crdo">CRDO</a>, <a href="../../wiki/companies/mediatek" class="internal alias" data-slug="wiki/companies/mediatek">MTK</a>, <a href="../../wiki/companies/uber" class="internal alias" data-slug="wiki/companies/uber">UBER</a>, <a href="../../wiki/companies/hood" class="internal alias" data-slug="wiki/companies/hood">HOOD</a>, <a href="../../wiki/companies/crsp" class="internal alias" data-slug="wiki/companies/crsp">CRSP</a>, <a href="../../wiki/companies/anthropic" class="internal alias" data-slug="wiki/companies/anthropic">Anthropic</a>, <a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a></td><td>Space-Defense, Biotech-Multiomics, Physical AI, AI</td><td><a href="../../大幅更新" class="internal alias" data-slug="大幅更新">[mediatek|MTK]</a>；CRDO Q4 FY26 earnings + Gaetano估值框架、GOOGL $80B回购+Berkshire $10B、RTX Spark PC芯片+Windows Agent平台、a16z autononous sustainment bottleneck+Castelion低成本导弹范式</td></tr><tr><td><a href="../../wiki/daily/2026-06-03" class="internal" data-slug="wiki/daily/2026-06-03">2026-06-03</a></td><td>5</td><td><a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a>, <a href="../../wiki/companies/pltr" class="internal alias" data-slug="wiki/companies/pltr">PLTR</a>, <a href="../../wiki/companies/inod" class="internal alias" data-slug="wiki/companies/inod">INOD</a>, <a href="../../wiki/companies/bsy" class="internal alias" data-slug="wiki/companies/bsy">BSY</a>, <a href="../../wiki/companies/svco" class="internal alias" data-slug="wiki/companies/svco">SVCO</a>, <a href="../../wiki/companies/bbai" class="internal alias" data-slug="wiki/companies/bbai">BBAI</a></td><td>AI Infra Power, Optical Interconnect, Physical AI</td><td><a href="../../wiki/companies/bsy" class="internal alias" data-slug="wiki/companies/bsy">BSY</a>、<a href="../../wiki/companies/svco" class="internal alias" data-slug="wiki/companies/svco">SVCO</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[bbai|BBAI]</a>；Google $80B 股权融资+产能约束、FundaAI DeepCoherent Lite OCS 独立验证、Burry PLTR 空头论点、Physical AI Layer 2 仿真框架</td></tr><tr><td><a href="../../wiki/daily/2026-06-08" class="internal" data-slug="wiki/daily/2026-06-08">2026-06-08</a></td><td>25</td><td><a href="../../wiki/companies/avgo" class="internal alias" data-slug="wiki/companies/avgo">AVGO</a>, <a href="../../wiki/companies/cien" class="internal alias" data-slug="wiki/companies/cien">CIEN</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/bsy" class="internal alias" data-slug="wiki/companies/bsy">BSY</a>, <a href="../../wiki/companies/panw" class="internal alias" data-slug="wiki/companies/panw">PANW</a>, <a href="../../wiki/companies/crwd" class="internal alias" data-slug="wiki/companies/crwd">CRWD</a>, <a href="../../wiki/companies/veev" class="internal alias" data-slug="wiki/companies/veev">VEEV</a>, <a href="../../wiki/companies/mrvl" class="internal alias" data-slug="wiki/companies/mrvl">MRVL</a>, <a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a>, <a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a></td><td>AI, Optics/Photonics, Blockchain/Fintech, SaaS, Semi/Memory</td><td><a href="../../wiki/companies/avgo" class="internal alias" data-slug="wiki/companies/avgo">AVGO</a>、<a href="../../wiki/companies/crwd" class="internal alias" data-slug="wiki/companies/crwd">CRWD</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[veev|VEEV]</a>；NPO 桥接架构扩展光学时间线、Token Panic 叙事翻转、Google $80B WACC 优化、AI-native 安全价值链重塑、Ciena Scale-Across 系统层验证</td></tr><tr><td><a href="../../wiki/daily/2026-06-09" class="internal" data-slug="wiki/daily/2026-06-09">2026-06-09</a></td><td>9</td><td><a href="../../wiki/companies/unitree" class="internal alias" data-slug="wiki/companies/unitree">UNITREE</a>, <a href="../../wiki/companies/cien" class="internal alias" data-slug="wiki/companies/cien">CIEN</a>, <a href="../../wiki/companies/baba" class="internal alias" data-slug="wiki/companies/baba">BABA</a>, <a href="../../wiki/companies/aapl" class="internal alias" data-slug="wiki/companies/aapl">AAPL</a>, <a href="../../wiki/companies/bidu" class="internal alias" data-slug="wiki/companies/bidu">BIDU</a>, <a href="../../wiki/companies/ssnlf" class="internal alias" data-slug="wiki/companies/ssnlf">SSNLF</a>, <a href="../../wiki/companies/apld" class="internal alias" data-slug="wiki/companies/apld">APLD</a>, <a href="../../wiki/companies/googl" class="internal alias" data-slug="wiki/companies/googl">GOOGL</a>, <a href="../../wiki/companies/nvda" class="internal alias" data-slug="wiki/companies/nvda">NVDA</a></td><td>Physical AI, Space/Defense, AI, Biotech</td><td><a href="../../wiki/companies/unitree" class="internal alias" data-slug="wiki/companies/unitree">UNITREE</a>、<a href="../../wiki/companies/bidu" class="internal alias" data-slug="wiki/companies/bidu">BIDU</a>、<a href="../../新公司" class="internal alias" data-slug="新公司">[apld|APLD]</a>；Pentagon 1260H 清单扩张至 BABA/BIDU/BYD + China $295B AI 主权计划；Unitree 硬件跨越经济部署门槛；WWDC26 Apple 让渡 AI 基础层给 Google；Gaetano CIEN 系统层光学再定性</td></tr><tr><td><a href="../../wiki/daily/2026-06-10" class="internal" data-slug="wiki/daily/2026-06-10">2026-06-10</a></td><td>8</td><td><a href="../../wiki/companies/lite" class="internal alias" data-slug="wiki/companies/lite">LITE</a>, <a href="../../wiki/companies/tsm" class="internal alias" data-slug="wiki/companies/tsm">TSM</a>, <a href="../../wiki/companies/meta" class="internal alias" data-slug="wiki/companies/meta">META</a>, <a href="../../wiki/companies/asml" class="internal alias" data-slug="wiki/companies/asml">ASML</a>, <a href="../../wiki/companies/spacex" class="internal alias" data-slug="wiki/companies/spacex">SpaceX</a></td><td>Optical Interconnect &amp; Photonics</td><td>7 new source pages; CPO delay debate form-factor rotation framework; ai-debt-market-fatigue concept update</td></tr></tbody></table></div>
+<h2 id="关于日报">关于日报<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关于日报" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>日报由 LLM 在每日 ingest 完成后自动生成/更新。目的是提供<strong>每日维度的聚合视图</strong>：</p>
+<ul>
+<li>今天哪些公司被多次提及 → source accumulation 信号</li>
+<li>今天哪些行业有更新 → sector page 变更追踪</li>
+<li>公司和已有 wiki 页面的关联 → 交叉引用发现</li>
+</ul></article><div class="page-listing"><p>17 items under this folder.</p><div><ul class="section-ul"><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-06-09T16:00:00.000Z">Jun 10, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-10" class="internal">2026-06-10</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-06-08T16:00:00.000Z">Jun 09, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-09" class="internal">2026-06-09</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-06-07T16:00:00.000Z">Jun 08, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-08" class="internal">2026-06-08</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-06-02T16:00:00.000Z">Jun 03, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-03" class="internal">2026-06-03</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-06-01T16:00:00.000Z">Jun 02, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-02" class="internal">2026-06-02</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-31T16:00:00.000Z">Jun 01, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-06-01" class="internal">2026-06-01</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-06">2026-06</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-30T16:00:00.000Z">May 31, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-31" class="internal">2026-05-31</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li><li><a class="internal tag-link" href="../../tags/photonics">photonics</a></li><li><a class="internal tag-link" href="../../tags/ai-infrastructure">ai-infrastructure</a></li><li><a class="internal tag-link" href="../../tags/neocloud">neocloud</a></li><li><a class="internal tag-link" href="../../tags/physical-ai">physical-ai</a></li><li><a class="internal tag-link" href="../../tags/macro">macro</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-28T16:00:00.000Z">May 29, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-29" class="internal">2026-05-29</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li><li><a class="internal tag-link" href="../../tags/ai-infrastructure">ai-infrastructure</a></li><li><a class="internal tag-link" href="../../tags/photonics">photonics</a></li><li><a class="internal tag-link" href="../../tags/snowflake">snowflake</a></li><li><a class="internal tag-link" href="../../tags/semiconductors-memory">semiconductors-memory</a></li><li><a class="internal tag-link" href="../../tags/optical-interconnect">optical-interconnect</a></li><li><a class="internal tag-link" href="../../tags/macro">macro</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-27T16:00:00.000Z">May 28, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-28" class="internal">2026-05-28</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li><li><a class="internal tag-link" href="../../tags/optical-interconnect">optical-interconnect</a></li><li><a class="internal tag-link" href="../../tags/photonics">photonics</a></li><li><a class="internal tag-link" href="../../tags/ai-infrastructure">ai-infrastructure</a></li><li><a class="internal tag-link" href="../../tags/enterprise-storage">enterprise-storage</a></li><li><a class="internal tag-link" href="../../tags/eda">eda</a></li><li><a class="internal tag-link" href="../../tags/semis">semis</a></li><li><a class="internal tag-link" href="../../tags/ai-agents">ai-agents</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-26T16:00:00.000Z">May 27, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-27" class="internal">2026-05-27</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li><li><a class="internal tag-link" href="../../tags/Semiconductors">Semiconductors</a></li><li><a class="internal tag-link" href="../../tags/artificial-intelligence">artificial-intelligence</a></li><li><a class="internal tag-link" href="../../tags/physical-ai">physical-ai</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-25T16:00:00.000Z">May 26, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-26" class="internal">2026-05-26</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-24T16:00:00.000Z">May 25, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-25" class="internal">2026-05-25</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-23T16:00:00.000Z">May 24, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-24" class="internal">2026-05-24</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-22T16:00:00.000Z">May 23, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-23" class="internal">2026-05-23</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-21T16:00:00.000Z">May 22, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-22" class="internal">2026-05-22</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-20T16:00:00.000Z">May 21, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-21" class="internal">2026-05-21</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li><li class="section-li"><div class="section"><p class="meta"><time datetime="2026-05-19T16:00:00.000Z">May 20, 2026</time></p><div class="desc"><h3><a href="../../wiki/daily/2026-05-20" class="internal">2026-05-20</a></h3></div><ul class="tags"><li><a class="internal tag-link" href="../../tags/daily-report">daily-report</a></li><li><a class="internal tag-link" href="../../tags/2026-05">2026-05</a></li></ul></div></li></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

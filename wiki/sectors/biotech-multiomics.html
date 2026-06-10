@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>biotech-multiomics</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="biotech-multiomics"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="biotech-multiomics"/><meta name="twitter:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/biotech-multiomics"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/biotech-multiomics"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/biotech-multiomics-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/biotech-multiomics-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/biotech-multiomics-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/biotech-multiomics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-387"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-387" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>biotech multiomics</a></div></nav><h1 class="article-title">biotech-multiomics</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-08T16:00:00.000Z">Jun 09, 2026</time><span>20 min read</span></p><ul class="tags"><li><a href="../../tags/biotech" class="internal tag-link">biotech</a></li><li><a href="../../tags/multiomics" class="internal tag-link">multiomics</a></li><li><a href="../../tags/crispr" class="internal tag-link">crispr</a></li><li><a href="../../tags/gene-editing" class="internal tag-link">gene-editing</a></li><li><a href="../../tags/ai-drug-discovery" class="internal tag-link">ai-drug-discovery</a></li><li><a href="../../tags/genomics" class="internal tag-link">genomics</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本文件使用 <strong>section-level</strong> 来源标记。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>用户手动维护的判断总结。数据支撑在正文对应 section 中可查。</p>
+</blockquote>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>生物学、数据和 AI 的交汇。Multiomics 指对多个生物数据层（基因组学、表观基因组学、转录组学、蛋白质组学）的联合分析。该领域论文：AI + multiomics 形成增强飞轮，压缩药物开发时间线和成本，解锁以前被认为难以治疗的疾病的疗法。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI + multiomics 飞轮加速</strong>：AI 将药物开发上市时间压缩 40%（13→8 年），成本压缩 4 倍（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>0.7B）。监管机构对加速审批路径的开放性在扩大。</li>
+<li><strong>Multiomics 数据进入 AI 扩展时代</strong>：分子检测数据量预计到 2030 年增长 10 倍，超过前沿 LLM 训练数据（约 15T tokens）。基因组测序成本从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">年）向</span></span></span></span>10（2030 年）迈进。</li>
+<li><strong>体内基因编辑达到里程碑</strong>：Intellia lonvo-z 针对 HAE 的 Phase 3 阳性结果——发作减少 87%，62% 无发作，安全性良好。首个达到 Phase 3 的体内 CRISPR 疗法，为更广泛疾病（心血管 ARK $2.8T 机会）的一次性治疗铺平道路。单次 IV 输注 vs Casgevy 的 12 个月体外过程。</li>
+<li><strong>迷幻疗法接近首个经典迷幻药批准</strong>：Compass Pathways COMP360——两项 Phase 3 TRD 试验均为阳性，获 CNPV，FDA 滚动审评。AtaiBeckley BPL-003——Phase 2b 阳性，Phase 3 于 2026 年 Q2 启动，获 FDA 突破性疗法认定。</li>
+<li><strong>临床前/Phase 1 估值差距</strong>是 AI 驱动平台可能填补的潜在低效领域。</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>基因编辑（CRISPR Therapeutics Casgevy 先例；Intellia 体内突破，适用更广泛疾病）</li>
+<li>AI 驱动药物发现平台（提速 40%，成本降低 4 倍；领域差异化正在显现）</li>
+<li>迷幻疗法（2026 年 4 月行政令带来的监管利好；Compass 和 Atai 领先）</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>测序平台（成本商品化压力；<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>10 每基因组到 2030 年）</li>
+<li>AI 药物发现领域变得拥挤（平台差异化不明确）</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>（当前来源中未明确指出）</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>核心跟踪指标，每次 ingest 后检查是否需更新。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Cost per drug approval</td><td>Industry productivity</td><td>$2.4B avg currently</td><td>Industry avg</td></tr><tr><td>Time-to-market</td><td>Development cycle length</td><td>13 years avg</td><td>Industry avg</td></tr><tr><td>Sequencing cost per genome</td><td>Multiomics data accessibility</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">100</span><span class="mopen">(</span><span class="mord">2025</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span></span></span></span>10 (2030)</td><td>ARK 2026</td></tr><tr><td>Molecular test tokens generated</td><td>Data volume vs frontier AI</td><td>Exceeding 15T frontier LLM training tokens by 2030</td><td>ARK 2026</td></tr><tr><td>AI-enabled FDA device/diagnostic approval rate</td><td>AI-in-healthcare adoption inflection</td><td>Single digits pre-ChatGPT → ~30% by 2030</td><td>ARK 2026</td></tr><tr><td>AI drug dev cost savings</td><td>Drug development ROIC improvement</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>0.7B (4x reduction); 13yr→8yr (40% faster)</td><td>ARK 2026</td></tr><tr><td>Clinical trial success rate (Phase 1 → approval)</td><td>Platform effectiveness</td><td>Currently low; AI target for 43+% Ph1 failure reduction</td><td>ARK 2026</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>生物学、数据和 AI 的交汇。Multiomics 指对多个生物数据层——基因组学、表观基因组学、转录组学、蛋白质组学——的联合分析，以在系统层面理解疾病机制。该领域论文认为 AI + multiomics 形成增强飞轮：更多数据带来更好的预测，压缩药物开发时间和成本，从而促成更多试验，进而产生更多数据。这个飞轮解锁以前被认为难以治疗的疾病的疗法。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>阶段</th><th>时期</th><th>关键特征</th></tr></thead><tbody><tr><td>Human Genome Project</td><td>1990–2003</td><td>First human genome sequenced at ~$3B cost</td></tr><tr><td>Sequencing cost collapse</td><td>2003–2025</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>100 per genome; Illumina dominates sequencing platforms</td></tr><tr><td>CRISPR gene editing emerges</td><td>2012–2025</td><td>Casgevy becomes first approved CRISPR therapy (ex-vivo, $2.2M/dose); 5→64 patients in 2025</td></tr><tr><td>AI + multiomics convergence</td><td>2023–2026</td><td>AI models improving protein folding, drug-target interaction; in-silico trials emerging; Intellia in-vivo Phase 3 success</td></tr><tr><td>Psychedelic renaissance</td><td>2025–2026</td><td>Compass Pathways both Phase 3 trials positive; April 2026 Executive Order for CNPV acceleration</td></tr></tbody></table></div>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>数据生成层</strong>：测序（Illumina）、分子诊断（Exact Sciences）、临床试验数据</li>
+<li><strong>Multiomics 分析层</strong>：基因组学 → 表观基因组学 → 转录组学 → 蛋白质组学 → 整合系统生物学</li>
+<li><strong>AI 发现层</strong>：靶点识别、药物设计（Recursion、Absci）、临床结果预测、in-silico 试验</li>
+<li><strong>治疗层</strong>：基因编辑（CRISPR Therapeutics、Intellia）、mRNA（Moderna）、迷幻疗法（Compass、Atai）、抗体治疗（Absci）</li>
+<li><strong>递送与制造</strong>：体外（Casgevy）、体内（Intellia）、mRNA 平台、血液安全（Cerus）</li>
+</ol>
+<hr/>
+<h2 id="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>迷幻药监管催化剂</strong>：2026 年 4 月行政令指示 FDA 向获得突破性疗法认定的迷幻药物颁发 CNPV，将审评从约 10 个月压缩至 1-2 个月。</li>
+<li><strong>FDA 监管对加速审批路径的开放性</strong>：正在扩大，适用于 AI 使能的诊断和基因疗法。</li>
+<li><strong>基因编辑伦理辩论</strong>：关于体内修饰范围的社会讨论仍在进行。</li>
+<li><strong>定价/报销压力</strong>：Casgevy 以 $2.2M/剂实现 90% 报销的先例提供了模板，但可持续性尚不明确。</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Multiomics 数据成本下降</strong>：基因组测序 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>100，到 2030 年有望达到 $10。分子检测数据量到 2030 年增长 10 倍，超过前沿 LLM 训练数据（约 15T tokens）。</li>
+<li><strong>药物开发成本压力</strong>：行业平均每次批准 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">；通过</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">实现</span><span class="mord">40</span></span></span></span>0.7B 的目标。</li>
+<li><strong>医疗宏观利好</strong>：人口老龄化 = 可寻址市场增长。</li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>AI 用于生物预测</strong>：AI 模型改进蛋白质折叠、药物-靶点相互作用和临床结果预测。从”一药一靶”向系统生物学方法的转变。</p>
+</li>
+<li>
+<p><strong>In-silico 试验</strong>：AI 实现虚拟临床试验，减少湿实验室依赖并加速发现。</p>
+</li>
+<li>
+<p><strong>体内基因编辑突破</strong>：Intellia lonvo-z 针对 HAE 的 Phase 3 阳性结果——首个达到 Phase 3 的体内 CRISPR 疗法。发作减少 87%，62% 无发作，安全性良好。单次 IV 输注 vs Casgevy 的 12 个月体外过程。为更广泛疾病（心血管 ARK <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">2.8</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">机会）的一次性体内治疗铺平道路。</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord cjk_fallback">先例：</span><span class="mord">90</span></span></span></span>2.2M/剂。（ARK 2026 via <a href="../../2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler" class="internal alias" data-slug="2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler">2026-05-04—ark—disrupt-newsletter-robinhood-intellia-hyperscaler</a>）</p>
+</li>
+<li>
+<p><strong>心血管基因编辑数据强劲，三个机制并进</strong>：2026 年 5-6 月，三家公司报告了体内基因编辑降脂的临床/临床前数据，强化了基因编辑从罕见病扩展到常见病的逻辑：[KB]  <a href="../../2026-06-01--ark--disrupt-weekly-june-1" class="internal alias" data-slug="2026-06-01--ark--disrupt-weekly-june-1">2026-06-01—ark—disrupt-weekly-june-1</a></p>
+<ul>
+<li><strong>Lilly VERVE-102 (PCSK9 基因失活)</strong>：最高剂量单次输注实现 62% 平均 LDL 降低，持续达 18 个月，无治疗相关严重不良事件（Phase 1/2, NEJM 2026）</li>
+<li><strong>Editas EDIT-401 (LDL 受体扩增)</strong>：非人灵长类单次给药实现 ~90%+ 平均 LDL 和脂蛋白(a) 降低（临床前，2026）</li>
+<li><strong>CRISPR Therapeutics CTX-310 (ANGPTL3 基因失活)</strong>：最高剂量 49% LDL 降低 + 55% 甘油三酯降低（Phase 1, NEJM 2025, earlier data）</li>
+<li>三个不同机制（PCSK9、LDL-R 扩增、ANGPTL3）均展示临床意义的降脂效果，佐证体内基因编辑在心血管领域的平台潜力</li>
+</ul>
+</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>体内基因编辑—心血管疾病新数据</strong>：Lilly VERVE-102 (62% LDL reduction, Phase 1/2)、Editas EDIT-401 (~90%+ 临床前)、CRSP CTX-310 (49% LDL, Phase 1) 三个项目数据均支持基因编辑从罕见病向常见病扩张。ARK 估计美国 TAM ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">2.8</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">17</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">患者</span><span class="mord">×</span></span></span></span>165K/剂），对标 Lipitor >$225B 累计销售。<a href="../../2026-06-01--ark--disrupt-weekly-june-1" class="internal alias" data-slug="2026-06-01--ark--disrupt-weekly-june-1">2026-06-01—ark—disrupt-weekly-june-1</a></li>
+<li><strong>AI 药物开发压缩</strong>：AI 将上市时间压缩 40%（13→8 年），成本压缩 4 倍（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>0.7B）。</li>
+<li><strong>FDA AI 使能诊断拐点</strong>：从 ChatGPT 前的个位数到 2030 年约占批准的 30%。</li>
+<li><strong>迷幻疗法接近批准</strong>：Compass Pathways 有望最早于 2026 年夏季获得首个经典迷幻药批准。AtaiBeckley Phase 3 于 2026 年 Q2 启动。</li>
+<li><strong>AI 药物发现领域变得拥挤</strong>：Recursion、Absci 等公司竞争；平台差异化成为关键问题。</li>
+</ul>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>中国生物技术崛起——结构性竞争威胁</strong>：2024 年中国首次以 28/81 款创新药领先全球（美国 25、欧洲 18）。中国临床试验占比 23%（美国 13%），与 2014 年的 9% vs 22% 逆转。2025 年大型药企来自中国的许可交易从 2020 年的 2% 升至 39%，2026Q1 占交易量 50% 和预付现金的 75%。关键驱动因素：2015 年 IND 改革将审评从 2-3 年压缩至 60 个工作日；药品审批时间从 663 天（2017 年）降至 ~105 天（2024 年）；临床开发成本比美国低 50-80%。ARK 估算：中国每 $10B 药企 R&amp;D 产出 ~16 款创新药（美国 ~4 款）。BIOSECURE 法案 2025 年 12 月签署，特朗普加征专利药关税——可能推动中国生物技术转向许可模式。对美国生物技术的启示：FDA 改革压力上升，CRO/CDMO 需求结构性受益。详见 <a href="../../sources/2026-06-08--ark--disrupt-weekly-kalshi-robinhood-quantum-biotech" class="internal alias" data-slug="sources/2026-06-08--ark--disrupt-weekly-kalshi-robinhood-quantum-biotech">2026-06-08—ark—disrupt-weekly-kalshi-robinhood-quantum-biotech</a>。<a href="../../KB" class="internal" data-slug="KB">KB</a></p>
+</li>
+<li>
+<p><strong>与 AI 领域的最强融合</strong>：AI + multiomics 飞轮依赖于 ML 模型的改进——生物技术行业表现与 AI 进步内在关联。</p>
+</li>
+<li>
+<p><strong>临床前/Phase 1 估值差距</strong>：AI 驱动平台可能通过改进早期成功预测来填补的潜在低效领域。</p>
+</li>
+<li>
+<p><strong>AI 预测可能无法转化为体内结果</strong>：in-silico 收益未能在临床结果中实现的基本风险。</p>
+</li>
+<li>
+<p><strong>基因编辑的脱靶效应</strong>：体内 CRISPR 应用的剩余安全问题。</p>
+</li>
+<li>
+<p><strong>平台差异化不明确</strong>：随着 AI 药物发现领域涌入参与者，方法之间的差异仍不确定。</p>
+</li>
+<li>
+<p><strong>报销可持续性</strong>：$2.2M/剂的基因疗法（Casgevy 先例）——一次性治愈性治疗的支付方模型尚未完全验证。</p>
+</li>
+</ul>
+<hr/>
+<h2 id="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf--玩家动态按需更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>CRISPR Therapeutics (CRSP)</strong> — 基因编辑（Casgevy + CTX-310 心血管）。首个获批的 CRISPR 疗法。体外方法，12 个月过程，$2.2M/剂。2025 年从 5 名患者增至 64 名，90% 报销。CTX-310 (ANGPTL3 失活)：Phase 1 最高剂量 49% LDL 降低 + 55% 甘油三酯降低（NEJM 2025）。为体内心血管基因编辑的早期验证。参见 <a href="../../wiki/companies/crsp" class="internal" data-slug="wiki/companies/crsp">crsp</a>。</li>
+<li><strong>Intellia Therapeutics (NTLA)</strong> — 体内基因编辑 (CRISPR)。Lonvo-z Phase 3 HAE：发作减少 87%，62% 无发作，安全性良好。如获批将是领域内首个体内基因编辑——里程碑意义。为更广泛疾病（心血管 $2.8T 机会）铺平道路。</li>
+<li><strong>Eli Lilly (LLY)</strong> — 通过 VERVE-102 (PCSK9 失活) 进入体内基因编辑降脂领域。Phase 1/2：最高剂量 62% LDL 降低，持续 18 个月，无 SAE。Lilly 的规模、商业能力和注册经验使其成为该领域最强有力的竞争者之一。</li>
+<li><strong>Editas Medicine (EDIT)</strong> — EDIT-401 (LDL 受体扩增)：临床前 NHP 数据 ~90%+ LDL 和 Lp(a) 降低，采用不同于 PCSK9/ANGPTL3 的机制（上调而非失活）。仍处早期阶段，但如果临床验证成功，可能提供差异化优势。</li>
+<li><strong>Exact Sciences (EXAS)</strong> — 癌症诊断。在早期检测中的关键 multiomics 应用。</li>
+<li><strong>Illumina (ILMN)</strong> — 测序平台。关键 multiomics 基础设施提供商。面临测序成本 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>10 的商品化压力。</li>
+<li><strong>Recursion Pharmaceuticals (RXRX)</strong> — AI 驱动药物发现。在 AI 平台方法中竞争。</li>
+<li><strong>Moderna (MRNA)</strong> — mRNA 平台。通过可编程治疗可能与 multiomics 融合。</li>
+<li><strong>Absci Corp (ABSI)</strong> — AI 驱动抗体治疗。ABS-201 AGA 候选药物，催乳素受体靶点，季度注射。参见 <a href="../../wiki/companies/absi" class="internal" data-slug="wiki/companies/absi">absi</a>。</li>
+<li><strong>Cerus Corp (CERS)</strong> — 输血安全 (INTERCEPT)。血小板和 IFC 单位采纳加速；上调 2026 年指引。参见 <a href="../../wiki/companies/cers" class="internal" data-slug="wiki/companies/cers">cers</a>。</li>
+<li><strong>Compass Pathways (CMPS)</strong> — 迷幻 TRD 疗法（COMP360 裸盖菇素）。两项 Phase 3 试验均为阳性；FDA 滚动审评 + CNPV；有望最早于 2026 年夏季成为首个获批的经典迷幻药。J&amp;J Spravato（$1.9B 运行率）建立了诊所给药模式的商业模板。（ARK 2026, Wihlborg）</li>
+<li><strong>AtaiBeckley (ATAI)</strong> — 迷幻 TRD 疗法（BPL-003 鼻内 5-MeO-DMT）。Phase 2b 阳性；Phase 3 于 2026 年 Q2 启动；获 FDA 突破性疗法认定。</li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>平台数据飞轮</strong>：AI 药物发现平台随着更多数据而改进；具有临床验证的先发者获得 compounding 优势。</li>
+<li><strong>监管经验</strong>：新颖类别中的首批批准（Casgevy 体外 CRISPR，潜在的 Compass 迷幻药）创建监管路径知识。</li>
+<li><strong>IP 和专有数据</strong>：测序技术、基因编辑方法、治疗化合物。</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>FDA 批准时间线和新型疗法类别的监管不确定性。</li>
+<li>基因编辑伦理辩论和潜在公众反弹。</li>
+<li>药品定价监管和医疗预算约束。</li>
+<li>高价一次性治愈性基因疗法的报销不确定性。</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI 预测可能无法转化为体内结果；生物系统的基本 sim-to-real 差距。</li>
+<li>基因编辑的脱靶效应——体内应用的安全风险。</li>
+<li>临床试验失败率仍然很高（Phase 1→批准目前较低）。</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI 药物发现领域变得拥挤；平台差异化不明确。</li>
+<li>测序成本商品化压力影响 Illumina 和其他基础设施提供商。</li>
+<li>迷幻疗法市场：多个进入者（Compass、Atai）针对类似适应症。</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb--财报季更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Global pharmaceutical market</td><td>Total addressable market</td><td>~$1.5T+</td><td>Industry data, 2025</td></tr><tr><td>Gene therapy market</td><td>Gene editing opportunity</td><td>~$5B+ growing at high CAGR</td><td>Industry estimates, 2025</td></tr><tr><td>Sequencing market</td><td>Multiomics infrastructure</td><td>~$10B+</td><td>Industry data, 2025</td></tr><tr><td>Drug development cost per approval</td><td>Industry efficiency baseline</td><td>$2.4B avg</td><td>ARK 2026, p.30</td></tr><tr><td>Cardiovascular gene editing opportunity</td><td>In-vivo gene editing for CVD: $165K/patient × 17M patients not reaching guideline LDL</td><td>~$2.8T (US only)</td><td>ARK 2026 <a href="../../2026-06-01--ark--disrupt-weekly-june-1" class="internal alias" data-slug="2026-06-01--ark--disrupt-weekly-june-1">2026-06-01—ark—disrupt-weekly-june-1</a></td></tr><tr><td>Lipitor cumulative sales benchmark</td><td>Best-selling drug historical reference</td><td>>$225B over ~20 years</td><td>Pfizer, via ARK 2026</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定，仅重大变化更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Data Generation Layer
+├── Sequencing platforms (Illumina)
+├── Molecular diagnostics (Exact Sciences)
+└── Clinical trial data generation
+
+Multiomics Analysis Layer
+├── Genomics → Epigenomics → Transcriptomics → Proteomics
+└── Integrated systems biology analysis
+
+AI Discovery Layer
+├── Target identification &amp; drug design (Recursion, Absci)
+├── Clinical outcome prediction
+└── In-silico trials
+
+Therapeutics Layer
+├── Gene editing: ex-vivo (CRSP Casgevy), in-vivo (NTLA)
+├── mRNA platform (Moderna)
+├── Psychedelic therapies (Compass CMPS, Atai ATAI)
+└── Antibody therapeutics (Absci)
+
+Delivery &amp; Manufacturing
+├── Ex-vivo cell modification → reinfusion
+├── In-vivo delivery (LNP, viral vectors)
+└── Blood safety (Cerus INTERCEPT)
+</code></pre>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>数据生成</strong>：测序成本下降（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>10 到 2030 年），使生物数据量呈数量级增长。分子检测数据量预计到 2030 年超过前沿 LLM 训练数据。</li>
+<li><strong>Multiomics 分析</strong>：多个生物层的整合是关键解锁——单层分析不足以理解复杂疾病。</li>
+<li><strong>AI 发现</strong>：价值最高的层。AI 将上市时间压缩 40%，成本压缩 4 倍。随着领域涌入参与者，平台差异化变得关键。</li>
+<li><strong>治疗</strong>：基因编辑在治愈潜力方面领先（体内 > 体外的阶跃变化）。迷幻疗法作为心理健康突破。</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI + multiomics 飞轮驱动行业价值创造：</p>
+<pre><code>More data (cheaper sequencing)
+    → Better AI predictions (protein folding, drug-target interaction)
+        → Faster clinical trials (in-silico, accelerated approval)
+            → Cheaper drug development (40% cost reduction)
+                → More drugs approved → More real-world data
+                    → Better AI predictions ...
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>时间维度</th><th>投资主题</th><th>关键信号</th></tr></thead><tbody><tr><td>Near-term (2026–2028)</td><td>Psychedelic approvals &amp; in-vivo gene editing first approvals</td><td>COMP360 approval decision; Intellia regulatory filing; AI platform clinical validation</td></tr><tr><td>Medium-term (2028–2032)</td><td>AI platform differentiation; broader gene editing applications</td><td>Platform success rates diverging; cardio gene editing trials; sequencing cost trajectory</td></tr><tr><td>Long-term (2032+)</td><td>Systems biology as standard; curative therapies at scale</td><td>AI in-silico trials replacing Phase 1; multiomics integration maturity; cost structure of drug development</td></tr></tbody></table></div>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>子领域</th><th>标的</th><th>定位</th></tr></thead><tbody><tr><td>Gene editing (ex-vivo)</td><td><a href="../../wiki/companies/crsp" class="internal" data-slug="wiki/companies/crsp">crsp</a></td><td>Casgevy, first approved CRISPR therapy</td></tr><tr><td>Gene editing (in-vivo)</td><td>Intellia (NTLA)</td><td>Lonvo-z, Phase 3 positive for HAE; landmark in-vivo candidate</td></tr><tr><td>AI drug discovery</td><td>Recursion (RXRX), <a href="../../wiki/companies/absi" class="internal" data-slug="wiki/companies/absi">absi</a></td><td>Platform-based discovery</td></tr><tr><td>Psychedelic therapies</td><td>Compass Pathways (CMPS), Atai (ATAI)</td><td>TRD treatments; regulatory tailwind</td></tr><tr><td>Sequencing infrastructure</td><td>Illumina (ILMN)</td><td>Data generation backbone</td></tr><tr><td>Diagnostics</td><td>Exact Sciences (EXAS)</td><td>Cancer screening</td></tr><tr><td>Blood safety</td><td><a href="../../wiki/companies/cers" class="internal" data-slug="wiki/companies/cers">cers</a></td><td>INTERCEPT system</td></tr></tbody></table></div>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../wiki/companies/crsp" class="internal" data-slug="wiki/companies/crsp">crsp</a></li>
+<li><a href="../../wiki/companies/absi" class="internal" data-slug="wiki/companies/absi">absi</a></li>
+<li><a href="../../wiki/companies/cers" class="internal" data-slug="wiki/companies/cers">cers</a></li>
+</ul>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(none active yet)</li>
+</ul>
+<h3 id="people">People<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#people" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(none yet)</li>
+</ul>
+<h3 id="concepts">Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(none yet)</li>
+</ul>
+<h3 id="macro">Macro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(none yet)</li>
+</ul>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../2026-03-18--ark-biotech--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-biotech--big-ideas-2026">2026-03-18—ark-biotech—big-ideas-2026</a></li>
+<li><a href="../../2026-03-18--ark-macro--great-acceleration" class="internal alias" data-slug="2026-03-18--ark-macro--great-acceleration">2026-03-18—ark-macro—great-acceleration</a></li>
+<li><a href="../../2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers" class="internal alias" data-slug="2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers">2026-05-02—ark—stock-commentary-absi-xe-sofi-ter-aur-rblx-cers</a></li>
+<li><a href="../../2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai" class="internal alias" data-slug="2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai">2026-04-27—ark—disrupt-newsletter-psychedelics-tesla-openai</a></li>
+<li><a href="../../2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler" class="internal alias" data-slug="2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler">2026-05-04—ark—disrupt-newsletter-robinhood-intellia-hyperscaler</a></li>
+<li><a href="../../2026-06-01--ark--disrupt-weekly-june-1" class="internal alias" data-slug="2026-06-01--ark--disrupt-weekly-june-1">2026-06-01—ark—disrupt-weekly-june-1</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-182" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" data-for="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查" data-for="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf--玩家动态按需更新" data-for="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" data-for="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb--财报季更新" data-for="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新" data-for="7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定，仅重大变化更新</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-1"><a href="#people" data-for="people">People</a></li><li class="depth-1"><a href="#concepts" data-for="concepts">Concepts</a></li><li class="depth-1"><a href="#macro" data-for="macro">Macro</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/companies/gh" class="internal">gh</a></li><li><a href="../../wiki/concepts/technological-convergence" class="internal">technological-convergence</a></li><li><a href="../../wiki/daily/2026-06-02" class="internal">2026-06-02</a></li><li><a href="../../wiki/daily/2026-06-09" class="internal">2026-06-09</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

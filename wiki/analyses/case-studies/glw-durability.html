@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>glw-durability</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="glw-durability"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="glw-durability"/><meta name="twitter:description" content="Analysis: GLW — Durability Framework Breakdown 框架来源：durability-framework（Gaetano, Crux Capital） 案例来源：2026-05-17—gaetano—corning-durability（Part 1 &amp; 2） Executive Summary Corning（GLW）是 Durability Framework 的满分案例——6/6 通过全部维度评估。在 AI 基础设施建设中，Corning 占据光纤/光子学物理层的结构性瓶颈位置，其客户背书产能模式、制造规模和跨架构增长能力使其成为最适合穿越..."/><meta property="og:description" content="Analysis: GLW — Durability Framework Breakdown 框架来源：durability-framework（Gaetano, Crux Capital） 案例来源：2026-05-17—gaetano—corning-durability（Part 1 &amp; 2） Executive Summary Corning（GLW）是 Durability Framework 的满分案例——6/6 通过全部维度评估。在 AI 基础设施建设中，Corning 占据光纤/光子学物理层的结构性瓶颈位置，其客户背书产能模式、制造规模和跨架构增长能力使其成为最适合穿越..."/><meta property="og:image:alt" content="Analysis: GLW — Durability Framework Breakdown 框架来源：durability-framework（Gaetano, Crux Capital） 案例来源：2026-05-17—gaetano—corning-durability（Part 1 &amp; 2） Executive Summary Corning（GLW）是 Durability Framework 的满分案例——6/6 通过全部维度评估。在 AI 基础设施建设中，Corning 占据光纤/光子学物理层的结构性瓶颈位置，其客户背书产能模式、制造规模和跨架构增长能力使其成为最适合穿越..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/glw-durability"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/glw-durability"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Analysis: GLW — Durability Framework Breakdown 框架来源：durability-framework（Gaetano, Crux Capital） 案例来源：2026-05-17—gaetano—corning-durability（Part 1 &amp; 2） Executive Summary Corning（GLW）是 Durability Framework 的满分案例——6/6 通过全部维度评估。在 AI 基础设施建设中，Corning 占据光纤/光子学物理层的结构性瓶颈位置，其客户背书产能模式、制造规模和跨架构增长能力使其成为最适合穿越..."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/glw-durability-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/glw-durability-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/glw-durability-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/analyses/case-studies/glw-durability"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/">analyses</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/case-studies/">case studies</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>glw durability</a></div></nav><h1 class="article-title">glw-durability</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-25T16:00:00.000Z">May 26, 2026</time><span>15 min read</span></p><ul class="tags"><li><a href="../../../tags/glw" class="internal tag-link">glw</a></li><li><a href="../../../tags/corning" class="internal tag-link">corning</a></li><li><a href="../../../tags/durability" class="internal tag-link">durability</a></li><li><a href="../../../tags/framework" class="internal tag-link">framework</a></li><li><a href="../../../tags/breakdown" class="internal tag-link">breakdown</a></li><li><a href="../../../tags/ai-infrastructure" class="internal tag-link">ai-infrastructure</a></li><li><a href="../../../tags/optics" class="internal tag-link">optics</a></li><li><a href="../../../tags/fiber" class="internal tag-link">fiber</a></li><li><a href="../../../tags/photonics" class="internal tag-link">photonics</a></li></ul></div></div><article class="popover-hint"><h1 id="analysis-glw--durability-framework-breakdown">Analysis: GLW — Durability Framework Breakdown<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analysis-glw--durability-framework-breakdown" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>框架来源</strong>：<a href="../../../wiki/concepts/durability-framework" class="internal" data-slug="wiki/concepts/durability-framework">durability-framework</a>（Gaetano, Crux Capital）</p>
+<p><strong>案例来源</strong>：<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>（Part 1 &amp; 2）</p>
+</blockquote>
+<hr/>
+<h2 id="executive-summary">Executive Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#executive-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Corning（GLW）是 Durability Framework 的<strong>满分案例</strong>——6/6 通过全部维度评估。在 AI 基础设施建设中，Corning 占据光纤/光子学物理层的结构性瓶颈位置，其客户背书产能模式、制造规模和跨架构增长能力使其成为最适合穿越 AI 建设多个阶段的持久性核心持仓。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th style="text-align:center;">评分</th><th>一句话判断</th></tr></thead><tbody><tr><td>Q1: 真实瓶颈？</td><td style="text-align:center;">✅ 1/1</td><td>物理层基础设施——每个 AI 数据中心必须的光纤/连接器，不可跳过</td></tr><tr><td>Q2: 客户长期依赖？</td><td style="text-align:center;">✅ 1/1</td><td>3 个 hyperscaler 多年协议 + NVIDIA $500M 认股权证 + 数十亿预付款</td></tr><tr><td>Q3: 架构扩展增益？</td><td style="text-align:center;">✅ 1/1</td><td>每 GPU 光纤内容随架构升级增长：16→160 根光纤（10x）</td></tr><tr><td>Q4: 制造/技术深度？</td><td style="text-align:center;">✅ 1/1</td><td>170+ 年材料科学 + 全球最大光纤工厂 + 垂直整合</td></tr><tr><td>Q5: 跨周期投资能力？</td><td style="text-align:center;">✅ 1/1</td><td>客户出资扩产 + FCF 增长 > capex 增长</td></tr><tr><td>Q6: 多路径获胜？</td><td style="text-align:center;">✅ 1/1</td><td>Scale-out/scale-up/photonics/carrier/solar 多重增长路径</td></tr><tr><td><strong>总计</strong></td><td style="text-align:center;"><strong>6/6</strong></td><td><strong>极端持久性，适合核心持仓</strong></td></tr></tbody></table></div>
+<hr/>
+<h2 id="q1-does-the-company-sit-at-a-real-bottleneck">Q1: Does the company sit at a real bottleneck?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q1-does-the-company-sit-at-a-real-bottleneck" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 处于 AI 基础设施<strong>物理层</strong>——光纤、线缆、连接器，以及机箱内无源光子学。每个 AI 数据中心都需要 Corning 的产品，且没有任何替代方案可以绕过物理光连接。</p>
+<h3 id="关键证据">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>“It sits in the physical layer of AI infrastructure. It is tied to a bottleneck that gets harder as AI scales.”</li>
+<li>光纤/线缆制造需要大规模物理产线 + 数十年工艺积累——竞争者无法快速复制。</li>
+<li>全球最大的光纤工厂 + 在建全球最大电缆制造基地，均在 North Carolina（<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>）。</li>
+<li>业内最密集的机箱内线缆（领先竞争对手 20-30%），且预期超过双倍这一优势。</li>
+<li>AI 集群越大，光纤需求越刚性——这本身不是”可选”组件，而是基础设施必须。</li>
+<li><strong>物理空间约束</strong>：AI DC 光纤密度是传统 CPU 的 ~36x（STL），管道/线槽空间有限。Corning 的 Contour Flow 微型光缆（一半直径）、多芯光纤（4 芯/根）、高密度连接器等产品直接解决”有限空间内装入更多光纤”问题。美国需在 2029 年前新增 213M 光纤英里，现 160M→373M（<a href="../../../2026-04-09--gaetano--physical-constraint" class="internal alias" data-slug="2026-04-09--gaetano--physical-constraint">2026-04-09—gaetano—physical-constraint</a>）。</li>
+</ul>
+<h3 id="瓶颈自我强化机制">瓶颈自我强化机制<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#瓶颈自我强化机制" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p>AI scales → clusters get larger → more GPUs need more connections → more fiber, more cables, higher density → <strong>Corning’s bottleneck tightens</strong></p>
+</blockquote>
+<p>这与传统商品型光纤公司不同——Corning 的瓶颈来自密度、可靠性和系统层面的不可替代性，而非单纯的供需缺口。</p>
+<hr/>
+<h2 id="q2-do-the-largest-customers-need-it-for-years">Q2: Do the largest customers need it for years?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2-do-the-largest-customers-need-it-for-years" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足-1">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑-1">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 已签署 <strong>3 个大型 hyperscaler 多年协议</strong>（Meta + 2 家未具名），且这些协议包含风险共担机制。NVIDIA 进一步通过 $500M 认股权证投资 + 多亿预付款验证了客户关系的长期性。</p>
+<h3 id="关键证据-1">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Meta 协议（2026 年 1 月 27 日）是公司转折点——当日成交量创 2 年次高。</li>
+<li>随后又签署了 2 个”相似规模和期限”的 hyperscaler 协议。</li>
+<li>NVIDIA <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">认股权证（</span></span></span></span>180/股，最多 1500 万股）+ 预资助权证（300 万股）+ 多亿美元预付款用于美国制造扩张（<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>）。</li>
+<li>客户协议可包含：<strong>资助、保证收入、定价结构、加速份额协议</strong>和其他风险共担工具。</li>
+<li>客户公开信息披露由客户主导（“We’re going to let our customers lead in talking about that piece.“），表明这些是深度合作关系，而非纯交易关系。</li>
+</ul>
+<h3 id="客户长期依赖的机制">客户长期依赖的机制<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#客户长期依赖的机制" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>hyperscaler 需要多年 AI 建设 → 签署长期产能协议 → 出资/保证收入帮 Corning 扩产
+→ Corning 产能优先服务这些客户 → 客户切换成本极高（无替代产能）→ 关系自我强化
+</code></pre>
+<hr/>
+<h2 id="q3-does-the-business-gain-content-as-the-architecture-scales">Q3: Does the business gain content as the architecture scales?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q3-does-the-business-gain-content-as-the-architecture-scales" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足-2">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑-2">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 的增长不仅与 GPU 数量线性挂钩，更关键的是<strong>每 GPU 的光学内容随架构升级而增加</strong>。公司提出”光学内容 per GPU 增长 1.3-1.5x 到 2028”的框架，且 scale-up 带来额外 10x 光纤需求。</p>
+<h3 id="关键证据-2">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>“We calculate that the demand for optical content per GPU in our enterprise map will increase by 1.3 to 1.5 times by 2028.”</li>
+<li><strong>Scale-out 内容乘数</strong>：大型集群（>130,000 GPU）需从 2 层光网络升级到 3 层 → 大集群中 <strong>+50% 光内容</strong>（<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>）。</li>
+<li><strong>Scale-up 10x 光纤数</strong>：scale-out 需 16 根光纤/GPU，scale-up 光学化需额外 144 根/GPU → <strong>总计 160 根 = 10x</strong>。</li>
+<li><strong>带宽→车道</strong>：若带宽增长超过 SerDes 速度提升，系统需更多光纤”车道”而非更快”车速”→ Hopper→Blackwell 从 8 根光纤到 16 根光纤（100G SerDes 不变）。</li>
+</ul>
+<h3 id="内容乘数图表">内容乘数图表<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#内容乘数图表" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>GPU 数量增长 ──────────────────────────→  1x 光需求（线性）
+                    +
+集群架构复杂度（2 层→3 层）───────────→  +50% 光内容（结构性）
+                    +
+Scale-up 光学化 ──────────────────────→  +900% 光纤（10x）
+                    +
+光子学机箱内渗透 ───────────────────────  → 全新收入流
+                    ═══════════════════════
+                    Corning 增长 > GPU 增长
+</code></pre>
+<hr/>
+<h2 id="q4-does-the-company-have-manufacturing-or-technical-depth-that-competitors-struggle-to-copy">Q4: Does the company have manufacturing or technical depth that competitors struggle to copy?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q4-does-the-company-have-manufacturing-or-technical-depth-that-competitors-struggle-to-copy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足-3">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑-3">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 的核心护城河不在于某一项专利，而在于 <strong>170+ 年材料科学积累 + 全球最大制造规模 + 深度垂直整合</strong>的综合体。这不是竞争者通过买设备或挖几个人就能复制的。</p>
+<h3 id="关键证据-3">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>垂直整合：光纤→线缆→连接器→光子学，端到端控制。</li>
+<li>全球最大光纤工厂 + 在建全球最大电缆工厂（均在北卡罗来纳州）。</li>
+<li>业内最密集的机箱内线缆，领先 20-30%，且即将翻倍优势（“expects to more than double that lead with new fiber and ribbon innovations”）。</li>
+<li>“The better model is to invent products that lower the customer’s total cost, then share in that value.”——这意味着竞争不是价格战，而是系统级价值创造（<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>）。</li>
+<li>Corning 也在美国<strong>扩张光纤产能 >50% 和光连接器产能 10x</strong>——大规模制造的资本密集度和 know-how 本身就是壁垒。</li>
+</ul>
+<h3 id="壁垒结构">壁垒结构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#壁垒结构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>壁垒层</th><th>竞争者追平需要</th></tr></thead><tbody><tr><td>材料科学积累</td><td>数十年（根本无法快速追平）</td></tr><tr><td>制造规模（全球最大）</td><td>数十亿 capex + 数年建设</td></tr><tr><td>垂直整合</td><td>打通光纤→线缆→连接器→光子学全链条</td></tr><tr><td>客户认证（hyperscaler + NVIDIA）</td><td>多年测试 + 认证 + 联合开发</td></tr><tr><td>产品密度优势（20-30%）</td><td>难以量化的 R&amp;D 差距</td></tr></tbody></table></div>
+<hr/>
+<h2 id="q5-can-it-invest-through-the-cycle-while-still-protecting-cash-flow">Q5: Can it invest through the cycle while still protecting cash flow?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q5-can-it-invest-through-the-cycle-while-still-protecting-cash-flow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足-4">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑-4">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 的<strong>客户背书产能模式（customer-backed capacity model）</strong> 是其财务模式的核心创新。不是独自承担 capex 赌未来需求，而是让客户参与出资、保证收入、分担风险。CFO 明确表示运营现金流增长将超过资本支出增长。</p>
+<h3 id="关键证据-4">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>“These agreements share risk and reward. They can include funding, guaranteed revenue, pricing structures, and other mechanisms that help Corning expand capacity while protecting returns.”（<a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>）。</li>
+<li>“We expect operating cash flow growth to exceed that capital spending. We expect free cash flow to continue to grow even as our CapEx goes up.”</li>
+<li>Springboard 计划：2028 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">30</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">内部计划</span><span class="mord">/</span></span></span></span>27B 高置信度计划——差距仅 ~10%，说明管理层对执行有较高信心。</li>
+<li>ROIC 目标到高 teens——“With a mid-teens ROIC and a 19% sales CAGR, we will create a significant amount of value.”</li>
+<li>运营利润率目标 20%（当前已超过该水平，除去太阳能拖累）。</li>
+</ul>
+<h3 id="财务模式对比">财务模式对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#财务模式对比" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>Corning</th><th>传统光学模式</th></tr></thead><tbody><tr><td>产能扩张</td><td>客户出资/共担</td><td>自筹资金赌需求</td></tr><tr><td>收入可见性</td><td>多年协议 + 保证收入</td><td>季度订单驱动</td></tr><tr><td>Capex 风险</td><td>分担（客户风险共担）</td><td>全部自担</td></tr><tr><td>FCF 品质</td><td>增长 > capex</td><td>周期性强，波动大</td></tr><tr><td>客户关系</td><td>深度合作 + 联合路线图</td><td>交易型竞标</td></tr></tbody></table></div>
+<hr/>
+<h2 id="q6-does-it-have-multiple-ways-to-win-if-the-market-evolves-differently-than-expected">Q6: Does it have multiple ways to win if the market evolves differently than expected?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q6-does-it-have-multiple-ways-to-win-if-the-market-evolves-differently-than-expected" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="判断-明确满足-5">判断：✅ 明确满足<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#判断-明确满足-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h3 id="逻辑-5">逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逻辑-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Corning 的关键特征是<strong>它不押注单一技术路线或市场演进路径</strong>。无论是在几万个 GPU 还是百万级 GPU 的世界、无论光纤还是光子学、无论训练还是推理、无论铜线还是光学、无论 scale-out 还是 scale-up——Corning 都有参与方式。</p>
+<h3 id="关键证据-5">关键证据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键证据-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>场景 1: AI 建设大规模加速</strong> → Scale-out 光纤需求、光纤内容/GPU 增长、多重网络层 → ✅ 受益</p>
+<p><strong>场景 2: Scale-up 光学化加速</strong> → 每 GPU 光纤从 16→160（10x）、NVIDIA 路线图验证 → ✅ 最大受益</p>
+<p><strong>场景 3: CPO/光子学进化</strong> → Photonics MAP 2030 $10B 机会、NVDA 合作验证 → ✅ 新收入流</p>
+<p><strong>场景 4: Inference 驱动>训练</strong> → 更大节点、更大 GPU 域、多 rack 互连 → ✅ scale-up 需求增加</p>
+<p><strong>场景 5: 建设周期放缓/延迟</strong> → 客户协议保证收入 + 现有光纤维护需求 → ✅ 具一定防御性</p>
+<p><strong>场景 6: SerDes 进步减少光纤需求</strong> → 部分内容增长推迟，但 scale-up 光纤化仍在、光子学仍在 → ✅ 仍有其他路径</p>
+<p><strong>场景 7: 地缘政治导致供应链变化</strong> → 美国制造能力（10x 连接器、>50% 光纤）+ NVIDIA 美国产能投资 → ✅ 受益于”美国制造”趋势</p>
+<h3 id="多路径总结">多路径总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#多路径总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>当前收入 → 光纤/线缆/连接器（scale-out 数据中心依赖）
+         ├── Scale-up 光学化（每 GPU 10x 光纤）
+         ├── Photonics MAP（机箱内光子学，$10B 到 2030）
+         ├── Scale-across DCI（数据中心间光纤）
+         ├── 太阳能（>$3B Springboard 目标）
+         └── 传统业务（显示、汽车、生命科学）→ 仍产生 FCF
+</code></pre>
+<hr/>
+<h2 id="风险与框架限制">风险与框架限制<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#风险与框架限制" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>即使 6/6 评分，Durability Framework 的设计决定了它<strong>不覆盖所有风险维度</strong>。以下是需独立监控的领域：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>风险</th><th>严重程度</th><th>框架是否覆盖</th><th>说明</th></tr></thead><tbody><tr><td>Scale-up 采用慢</td><td>🟡 中</td><td>❌ （Q3 假设内容增加，但未假设时间线）</td><td>铜线方案可能持续比预期久</td></tr><tr><td>CPO 时间线推迟</td><td>🟡 中</td><td>❌</td><td>Photonics MAP $10B 机会有时限风险</td></tr><tr><td>400G SerDes 吸收带宽</td><td>🟢 低</td><td>❌</td><td>Q3 仍受益于其他路径，但 fiber 内容增长可能减速</td></tr><tr><td>Capex 执行风险</td><td>🟡 中</td><td>⚠️ Q5 部分覆盖</td><td>OCF > capex 需季度验证</td></tr><tr><td>估值/市场定价</td><td>🟡 中</td><td>❌</td><td>框架不回答”是否已经定价”</td></tr><tr><td>管理层继任</td><td>🟢 低</td><td>❌</td><td>Wendell Weeks 长期在位</td></tr></tbody></table></div>
+<hr/>
+<h2 id="结论">结论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#结论" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Corning 是 Durability Framework 评估的<strong>满分案例</strong>（6/6）。它的强度不在于某一项压倒性优势，而在于<strong>多维度一致性的积累</strong>——物理瓶颈 × 客户深度 × 内容乘数 × 制造壁垒 × 财务纪律 × 路径多样性。</p>
+<p>该框架的 6 个维度在 Corning 身上形成了一个<strong>自我强化的系统</strong>：</p>
+<pre><code>客户长期依赖（Q2）→ 为扩产出资（Q5）→ 强化制造壁垒（Q4）
+→ 强化瓶颈位置（Q1）→ 客户切换成本更高（Q2 增强）→ ...
+                                           ↑
+                           架构扩展（Q3）和多路径（Q6）提供额外增长层
+</code></pre>
+<p>这也是为什么 Gaetano 在原文中说：<em>“I want companies that can compound through multiple stages of the AI buildout… Corning fits that better today than it did before May 6.”</em></p>
+<blockquote>
+<p><strong>注意</strong>：Durability Framework 不回答估值问题。6/6 评分表示 GLW 适合作为<strong>核心持仓</strong>（即持有多年的”压舱石”），但进场价格、仓位大小和退出策略需由投资者独立判断。</p>
+</blockquote>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="concept">Concept<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concept" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../../wiki/concepts/durability-framework" class="internal" data-slug="wiki/concepts/durability-framework">durability-framework</a>（框架定义）</li>
+</ul>
+<h3 id="company">Company<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#company" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../../wiki/companies/glw" class="internal" data-slug="wiki/companies/glw">glw</a>（Corning 公司页面）</li>
+</ul>
+<h3 id="related-analyses">Related Analyses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-analyses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../../wiki/analyses/frameworks/photonics-value-chain" class="internal" data-slug="wiki/analyses/frameworks/photonics-value-chain">photonics-value-chain</a>（互补：价值链瓶颈层分析）</li>
+<li><a href="../../../wiki/analyses/frameworks/optics-proof-layer" class="internal" data-slug="wiki/analyses/frameworks/optics-proof-layer">optics-proof-layer</a>（互补：光学验证层分析）</li>
+</ul>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../../photonics-bottleneck-layers" class="internal" data-slug="photonics-bottleneck-layers">photonics-bottleneck-layers</a>（瓶颈层投资 thesis）</li>
+<li><a href="../../../wiki/analyses/frameworks/optics-proof-layer" class="internal" data-slug="wiki/analyses/frameworks/optics-proof-layer">optics-proof-layer</a>（验证层投资 thesis）</li>
+</ul>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../../2026-05-17--gaetano--corning-durability" class="internal alias" data-slug="2026-05-17--gaetano--corning-durability">2026-05-17—gaetano—corning-durability</a>（Part 1 &amp; 2）</li>
+<li><a href="../../../2026-04-09--gaetano--physical-constraint" class="internal alias" data-slug="2026-04-09--gaetano--physical-constraint">2026-04-09—gaetano—physical-constraint</a>（物理约束 + 产品路线图深度研究）</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-0" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#analysis-glw--durability-framework-breakdown" data-for="analysis-glw--durability-framework-breakdown">Analysis: GLW — Durability Framework Breakdown</a></li><li class="depth-1"><a href="#executive-summary" data-for="executive-summary">Executive Summary</a></li><li class="depth-1"><a href="#q1-does-the-company-sit-at-a-real-bottleneck" data-for="q1-does-the-company-sit-at-a-real-bottleneck">Q1: Does the company sit at a real bottleneck?</a></li><li class="depth-2"><a href="#判断-明确满足" data-for="判断-明确满足">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑" data-for="逻辑">逻辑</a></li><li class="depth-2"><a href="#关键证据" data-for="关键证据">关键证据</a></li><li class="depth-2"><a href="#瓶颈自我强化机制" data-for="瓶颈自我强化机制">瓶颈自我强化机制</a></li><li class="depth-1"><a href="#q2-do-the-largest-customers-need-it-for-years" data-for="q2-do-the-largest-customers-need-it-for-years">Q2: Do the largest customers need it for years?</a></li><li class="depth-2"><a href="#判断-明确满足-1" data-for="判断-明确满足-1">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑-1" data-for="逻辑-1">逻辑</a></li><li class="depth-2"><a href="#关键证据-1" data-for="关键证据-1">关键证据</a></li><li class="depth-2"><a href="#客户长期依赖的机制" data-for="客户长期依赖的机制">客户长期依赖的机制</a></li><li class="depth-1"><a href="#q3-does-the-business-gain-content-as-the-architecture-scales" data-for="q3-does-the-business-gain-content-as-the-architecture-scales">Q3: Does the business gain content as the architecture scales?</a></li><li class="depth-2"><a href="#判断-明确满足-2" data-for="判断-明确满足-2">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑-2" data-for="逻辑-2">逻辑</a></li><li class="depth-2"><a href="#关键证据-2" data-for="关键证据-2">关键证据</a></li><li class="depth-2"><a href="#内容乘数图表" data-for="内容乘数图表">内容乘数图表</a></li><li class="depth-1"><a href="#q4-does-the-company-have-manufacturing-or-technical-depth-that-competitors-struggle-to-copy" data-for="q4-does-the-company-have-manufacturing-or-technical-depth-that-competitors-struggle-to-copy">Q4: Does the company have manufacturing or technical depth that competitors struggle to copy?</a></li><li class="depth-2"><a href="#判断-明确满足-3" data-for="判断-明确满足-3">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑-3" data-for="逻辑-3">逻辑</a></li><li class="depth-2"><a href="#关键证据-3" data-for="关键证据-3">关键证据</a></li><li class="depth-2"><a href="#壁垒结构" data-for="壁垒结构">壁垒结构</a></li><li class="depth-1"><a href="#q5-can-it-invest-through-the-cycle-while-still-protecting-cash-flow" data-for="q5-can-it-invest-through-the-cycle-while-still-protecting-cash-flow">Q5: Can it invest through the cycle while still protecting cash flow?</a></li><li class="depth-2"><a href="#判断-明确满足-4" data-for="判断-明确满足-4">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑-4" data-for="逻辑-4">逻辑</a></li><li class="depth-2"><a href="#关键证据-4" data-for="关键证据-4">关键证据</a></li><li class="depth-2"><a href="#财务模式对比" data-for="财务模式对比">财务模式对比</a></li><li class="depth-1"><a href="#q6-does-it-have-multiple-ways-to-win-if-the-market-evolves-differently-than-expected" data-for="q6-does-it-have-multiple-ways-to-win-if-the-market-evolves-differently-than-expected">Q6: Does it have multiple ways to win if the market evolves differently than expected?</a></li><li class="depth-2"><a href="#判断-明确满足-5" data-for="判断-明确满足-5">判断：✅ 明确满足</a></li><li class="depth-2"><a href="#逻辑-5" data-for="逻辑-5">逻辑</a></li><li class="depth-2"><a href="#关键证据-5" data-for="关键证据-5">关键证据</a></li><li class="depth-2"><a href="#多路径总结" data-for="多路径总结">多路径总结</a></li><li class="depth-1"><a href="#风险与框架限制" data-for="风险与框架限制">风险与框架限制</a></li><li class="depth-1"><a href="#结论" data-for="结论">结论</a></li><li class="depth-1"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-2"><a href="#concept" data-for="concept">Concept</a></li><li class="depth-2"><a href="#company" data-for="company">Company</a></li><li class="depth-2"><a href="#related-analyses" data-for="related-analyses">Related Analyses</a></li><li class="depth-2"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-2"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../../wiki/companies/glw" class="internal">glw</a></li><li><a href="../../../wiki/concepts/durability-framework" class="internal">durability-framework</a></li><li><a href="../../../wiki/daily/2026-05-26" class="internal">2026-05-26</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript.js" type="module" data-persist="true"></script></html>

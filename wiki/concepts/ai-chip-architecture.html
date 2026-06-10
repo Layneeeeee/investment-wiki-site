@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>ai-chip-architecture</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="ai-chip-architecture"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="ai-chip-architecture"/><meta name="twitter:description" content="AI Chip Architecture（AI芯片架构） Definition AI Chip Architecture 是指针对 AI 工作负载（主要是矩阵乘法）进行优化的芯片设计方案。理解芯片架构的核心在于一个贯穿整个技术栈的统一主题：最大化 compute/communication 比率——即在每个时钟周期里，让更多晶体管做实际的计算，而不是在移动数据。 从最底层的逻辑门到最顶层的多芯片互连，这个比率决定了芯片的最终效率。不同架构（GPU、TPU、FPGA、ASIC）的本质差异在于它们对这个比率做了不同的权衡。 ┌────────────────────────────────────..."/><meta property="og:description" content="AI Chip Architecture（AI芯片架构） Definition AI Chip Architecture 是指针对 AI 工作负载（主要是矩阵乘法）进行优化的芯片设计方案。理解芯片架构的核心在于一个贯穿整个技术栈的统一主题：最大化 compute/communication 比率——即在每个时钟周期里，让更多晶体管做实际的计算，而不是在移动数据。 从最底层的逻辑门到最顶层的多芯片互连，这个比率决定了芯片的最终效率。不同架构（GPU、TPU、FPGA、ASIC）的本质差异在于它们对这个比率做了不同的权衡。 ┌────────────────────────────────────..."/><meta property="og:image:alt" content="AI Chip Architecture（AI芯片架构） Definition AI Chip Architecture 是指针对 AI 工作负载（主要是矩阵乘法）进行优化的芯片设计方案。理解芯片架构的核心在于一个贯穿整个技术栈的统一主题：最大化 compute/communication 比率——即在每个时钟周期里，让更多晶体管做实际的计算，而不是在移动数据。 从最底层的逻辑门到最顶层的多芯片互连，这个比率决定了芯片的最终效率。不同架构（GPU、TPU、FPGA、ASIC）的本质差异在于它们对这个比率做了不同的权衡。 ┌────────────────────────────────────..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-chip-architecture"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-chip-architecture"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="AI Chip Architecture（AI芯片架构） Definition AI Chip Architecture 是指针对 AI 工作负载（主要是矩阵乘法）进行优化的芯片设计方案。理解芯片架构的核心在于一个贯穿整个技术栈的统一主题：最大化 compute/communication 比率——即在每个时钟周期里，让更多晶体管做实际的计算，而不是在移动数据。 从最底层的逻辑门到最顶层的多芯片互连，这个比率决定了芯片的最终效率。不同架构（GPU、TPU、FPGA、ASIC）的本质差异在于它们对这个比率做了不同的权衡。 ┌────────────────────────────────────..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-chip-architecture-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-chip-architecture-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-chip-architecture-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/concepts/ai-chip-architecture"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-262"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-262" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/concepts/">concepts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>ai chip architecture</a></div></nav><h1 class="article-title">ai-chip-architecture</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-23T16:00:00.000Z">May 24, 2026</time><span>16 min read</span></p><ul class="tags"><li><a href="../../tags/chip-design" class="internal tag-link">chip-design</a></li><li><a href="../../tags/ai-hardware" class="internal tag-link">ai-hardware</a></li><li><a href="../../tags/semiconductor" class="internal tag-link">semiconductor</a></li><li><a href="../../tags/gpu" class="internal tag-link">gpu</a></li><li><a href="../../tags/tpu" class="internal tag-link">tpu</a></li><li><a href="../../tags/asic" class="internal tag-link">asic</a></li><li><a href="../../tags/fpga" class="internal tag-link">fpga</a></li><li><a href="../../tags/systolic-array" class="internal tag-link">systolic-array</a></li></ul></div></div><article class="popover-hint"><h1 id="ai-chip-architectureai芯片架构">AI Chip Architecture（AI芯片架构）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-chip-architectureai芯片架构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="definition">Definition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI Chip Architecture 是指针对 AI 工作负载（主要是矩阵乘法）进行优化的芯片设计方案。理解芯片架构的核心在于一个贯穿整个技术栈的统一主题：<strong>最大化 compute/communication 比率</strong>——即在每个时钟周期里，让更多晶体管做实际的计算，而不是在移动数据。</p>
+<p>从最底层的逻辑门到最顶层的多芯片互连，这个比率决定了芯片的最终效率。不同架构（GPU、TPU、FPGA、ASIC）的本质差异在于它们对这个比率做了不同的权衡。</p>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│                  AI Chip Architecture                │
+│                                                      │
+│  Compute/Communication Ratio ↑ = Better Efficiency   │
+│                                                      │
+│  Hierarchy:                                          │
+│    Logic Gates → MAC Unit → Systolic Array → Full Chip│
+│         ↑              ↑              ↑              │
+│    Quadratic       Mux cost      Batch size          │
+│    precision      dominates     amortizes            │
+│    scaling        (7/8 area)    overhead             │
+│                                                      │
+│  Across ALL levels: same problem, different scale     │
+└─────────────────────────────────────────────────────┘
+</code></pre>
+<h2 id="the-core-problem-data-movement-dominates">The Core Problem: Data Movement Dominates<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-core-problem-data-movement-dominates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>根据 Reiner Pope（MatX CEO，前 Google TPU 工程师），AI 芯片最根本的效率问题不是计算速度，而是<strong>数据搬运成本</strong>：</p>
+<ul>
+<li>一个典型 CUDA core 中，从寄存器文件读取数据的 <strong>mux 电路</strong>成本为 O(n×p)（n=寄存器深度，p=位宽）</li>
+<li>实际 <strong>multiply-accumulate（MAC）电路</strong>成本仅为 p×q（q=乘数位宽）</li>
+<li>在一个简单的 8 条目寄存器文件 + MAC 单元中：<strong>~7/8 的芯片面积花在数据移动上，仅 ~1/8 花在实际计算</strong></li>
+<li>这就是 Tensor Core（Volta 代起）和 systolic array 被引入的原因——将更大粒度的计算固化到硬件中，摊薄数据移动开销</li>
+</ul>
+<p>这个”隐藏的数据移动成本”是理解所有 AI 芯片架构差异的起点。</p>
+<h2 id="architecture-classification架构分类">Architecture Classification（架构分类）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#architecture-classification架构分类" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI 芯片架构的分类不是平面的——它在两条独立的轴线上做权衡。正确的方式是分两层看：</p>
+<p><strong>第一层 FPGA vs ASIC</strong>：要不要可编程性？→ 决定效率天花板</p>
+<p><strong>第二层 GPU 风格 vs TPU 风格</strong>（都在 ASIC 范畴内）：要灵活性还是极致密集矩阵效率？→ 决定架构实现</p>
+<pre><code>     Chip Design Decision
+            │
+    ┌───────┴───────┐
+    │               │
+  FPGA            ASIC
+(可编程)        (固定功能)
+                   │
+           ┌───────┴───────┐
+           │               │
+     GPU 风格          TPU 风格
+    (很多小单元)       (少量大单元)
+</code></pre>
+<hr/>
+<h3 id="第一层fpga-vs-asic可编程性">第一层：FPGA vs ASIC（可编程性）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第一层fpga-vs-asic可编程性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>最根本的分歧是：<strong>你愿意为可编程性牺牲多少效率？</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>FPGA</th><th>ASIC</th></tr></thead><tbody><tr><td><strong>可重编程</strong></td><td>✓ 现场可改，负载可频繁更新</td><td>✗ tape-out 后锁定</td></tr><tr><td><strong>效率</strong></td><td>比 ASIC 差 ~10x（面积×功耗）</td><td>最高</td></tr><tr><td><strong>首个成本</strong></td><td>~$10K（开发板）</td><td>~$30M+（tape-out）</td></tr><tr><td><strong>单芯片成本</strong></td><td>高</td><td>最低</td></tr><tr><td><strong>编程难度</strong></td><td>高（Verilog）</td><td>最高（Verilog，更复杂的设计规则）</td></tr><tr><td><strong>适用场景</strong></td><td>量小、负载频繁变更、需要确定性延迟</td><td>量大（>100K units）、负载确定</td></tr><tr><td><strong>典型用例</strong></td><td>Jane Street HFT，微软 Catapult AI 推理</td><td>NVIDIA GPU, Google TPU, 比特币矿机</td></tr></tbody></table></div>
+<h4 id="fpgafield-programmable-gate-array">FPGA（Field-Programmable Gate Array）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fpgafield-programmable-gate-array" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>内部结构</strong>：由三部分组成——寄存器（存储）、查找表 LUT（可编程门）、mux（可编程连线）。“Muxes all the way down”——每个 LUT 内部实际就是一个 16→1 的 mux（成本 ~32 个门），每个 LUT 的输入又从附近 8 个来源中通过 mux 选择。编程 FPGA = 配置每一个 mux 的控制位。</p>
+<p><strong>10x 效率惩罚的来源</strong>：一个 4-way AND 在 ASIC 中仅需 ~3 个门，在 FPGA 中需 ~32 个门（通过 LUT 实现）。这个差距是物理性的，不是迭代能解决的。</p>
+<p><strong>为什么 HFT 用 FPGA？</strong> 确定性延迟。CPU 的 cache 和分支预测器引入非确定性延迟，FPGA 的时钟周期是严格确定的。但 10x 惩罚意味着它不适合大规模 AI 训练。</p>
+<h4 id="asicapplication-specific-integrated-circuit">ASIC（Application-Specific Integrated Circuit）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#asicapplication-specific-integrated-circuit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>核心原理</strong>：将逻辑门直接布线在硅片上，没有多余的 mux 开销。首批 $30M+ 的 tape-out 成本换来了每颗芯片的最低制造成本和最高能效。</p>
+<p>在 AI ASIC 内部，存在两类截然不同的架构哲学——</p>
+<h3 id="第二层gpu-风格-vs-tpu-风格单元粒度">第二层：GPU 风格 vs TPU 风格（单元粒度）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第二层gpu-风格-vs-tpu-风格单元粒度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>这一层的核心问题是：<strong>你愿意为灵活性牺牲多少密集矩阵效率？</strong> 两者都是 ASIC，但给出了不同的答案。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>GPU 风格</th><th>TPU 风格</th></tr></thead><tbody><tr><td><strong>核心组织</strong></td><td>大量小单元平铺（~100+ SM）</td><td>少量大单元（~2-4 个 MXU）</td></tr><tr><td><strong>systolic array 规模</strong></td><td>小（Tensor Core ~4×4×4 或 ~8×8×8）</td><td>大（MXU ~128×128）</td></tr><tr><td><strong>数据路径带宽</strong></td><td>高 — 16+ 条并行路径</td><td>低 — 2-3 条周界路径</td></tr><tr><td><strong>内存管理</strong></td><td>Cache（硬件管理）</td><td>Scratchpad（软件管理）</td></tr><tr><td><strong>控制开销</strong></td><td>高 — 每个 SM 有自己的 warp scheduler + register file</td><td>低 — 大型阵列摊薄开销</td></tr><tr><td><strong>不规则负载</strong></td><td>优 — 适合 MoE、变长序列、稀疏计算</td><td>中-低 — 仅在密集大矩阵时高效</td></tr><tr><td><strong>矩阵乘效率</strong></td><td>高</td><td>最高</td></tr><tr><td><strong>编程生态</strong></td><td>成熟（CUDA，广泛第三方支持）</td><td>较窄（XLA/PJRT，需自研编译器栈）</td></tr><tr><td><strong>代表产品</strong></td><td>NVIDIA H100/B300，AMD MI 系列</td><td>Google TPU v7</td></tr></tbody></table></div>
+<h4 id="gpu-风格--nvidiaamd-架构">GPU 风格 — NVIDIA/AMD 架构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gpu-风格--nvidiaamd-架构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>特征</th></tr></thead><tbody><tr><td><strong>本质</strong></td><td>”一堆小 TPU 平铺在芯片上”（Reiner Pope 描述）</td></tr><tr><td><strong>核心单元</strong></td><td>SM（Streaming Multiprocessor），每个含 Tensor Core（小型 systolic array）+ warp scheduler + register file + vector unit</td></tr><tr><td><strong>优势</strong></td><td>灵活性高，覆盖范围广——从训练到推理，从密集矩阵到稀疏计算，从大模型到小模型</td></tr><tr><td><strong>劣势</strong></td><td>控制开销叠加——每个 SM 的 warp scheduler/寄存器文件在大规模矩阵乘时是无谓开销</td></tr></tbody></table></div>
+<p><strong>关键演进</strong>：Volta 前，GPU 使用通用 CUDA core（ALU + 寄存器文件，7/8 面积花在数据移动）。Volta 引入 Tensor Core（固定功能 systolic array），将 compute/communication 比率大幅提升。B300+ 开始承认 FP4:FP8 速度比 ~3x（理论值 4x），反映精度缩放效应。</p>
+<h4 id="tpu-风格--googlegroq-架构">TPU 风格 — Google/Groq 架构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tpu-风格--googlegroq-架构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>特征</th></tr></thead><tbody><tr><td><strong>本质</strong></td><td>为矩阵乘法极致优化的 ASIC——放弃灵活性换取效率</td></tr><tr><td><strong>核心单元</strong></td><td>MXU（Matrix Multiply Unit）——大型 systolic array（如 128×128）</td></tr><tr><td><strong>优势</strong></td><td>面积效率最高——大型阵列摊薄寄存器文件和控制开销；scratchpad 提供确定性延迟</td></tr><tr><td><strong>劣势</strong></td><td>灵活性受限——仅 2-3 条数据路径；小矩阵或稀疏工作负载效率大幅下降；编译器要求高</td></tr></tbody></table></div>
+<p><strong>Scratchpad vs Cache</strong>：TPU 使用 scratchpad（软件管理内存）而非 GPU 的 cache（硬件管理）。程序员需要明确指令”读/写 scratchpad”和”读/写 HBM”，而非让硬件决定是否 cache hit。这带来确定性延迟但需要更多编译器工作。Groq 也采用此方案。</p>
+<hr/>
+<h3 id="两层对比总结">两层对比总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#两层对比总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>第一层：FPGA vs ASIC</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>FPGA</th><th>ASIC</th></tr></thead><tbody><tr><td><strong>效率</strong></td><td>~10x 惩罚</td><td>✓ 最高</td></tr><tr><td><strong>可重编程</strong></td><td>✓</td><td>✗</td></tr><tr><td><strong>延迟确定性</strong></td><td>✓</td><td>✓</td></tr><tr><td><strong>首个成本</strong></td><td>~$10K</td><td>~$30M+</td></tr><tr><td><strong>适用场景</strong></td><td>频繁变更、量小</td><td>负载确定、量大</td></tr></tbody></table></div>
+<p><strong>第二层：GPU 风格 vs TPU 风格</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>GPU 风格</th><th>TPU 风格</th></tr></thead><tbody><tr><td><strong>密集矩阵乘效率</strong></td><td>✓ 高</td><td>✓✓ 最高</td></tr><tr><td><strong>不规则负载效率</strong></td><td>✓✓ 优</td><td>~ 中-低</td></tr><tr><td><strong>灵活性/覆盖范围</strong></td><td>✓✓ 广</td><td>✓ 窄</td></tr><tr><td><strong>编程生态</strong></td><td>✓✓ CUDA（成熟）</td><td>✓ XLA/PJRT（较窄）</td></tr><tr><td><strong>数据路径带宽</strong></td><td>✓✓ 高（16+ 路）</td><td>✓ 低（2-3 路）</td></tr><tr><td><strong>控制开销</strong></td><td>✗ 高</td><td>✓ 低</td></tr></tbody></table></div>
+<h2 id="key-architectural-trade-offs">Key Architectural Trade-offs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-architectural-trade-offs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-computecommunication-ratio--贯穿整个技术栈的统一主题">1. Compute/Communication Ratio — 贯穿整个技术栈的统一主题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-computecommunication-ratio--贯穿整个技术栈的统一主题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>从最底层到最上层，同样的原则反复出现：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层级</th><th>通信开销</th><th>计算收益</th><th>优化手段</th></tr></thead><tbody><tr><td>精度 (FP4 vs FP8)</td><td>位宽 × 位宽 → <strong>二次方</strong></td><td>低位宽 MAC 面积</td><td>低精度推理</td></tr><tr><td>MAC 单元</td><td>mux 成本 O(n×p)</td><td>MAC 成本 O(p×q)</td><td>Systolic array</td></tr><tr><td>Systolic array</td><td>寄存器文件带宽 O(x)</td><td>计算 O(x×y)</td><td>大型数组（如 128×128）</td></tr><tr><td>芯片间</td><td>网络带宽</td><td>总 FLOPS</td><td>大 batch size</td></tr><tr><td>集群</td><td>AllReduce 通信</td><td>训练吞吐</td><td>模型并行策略</td></tr></tbody></table></div>
+<h3 id="2-precision-scaling精度缩放效应">2. Precision Scaling（精度缩放效应）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-precision-scaling精度缩放效应" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p><strong>关键公式</strong>：一个 p 位 × q 位的乘法器需要 p×q 个 AND 门 + p×q 个 full adder。</p>
+</blockquote>
+<p>这意味着：位宽减半，计算硬件需求减少约 4x（二次方），而非 2x（线性）。这就是低精度推理拥有结构性优势的根本原因。</p>
+<p>NVIDIA 的历史实践（FP4:FP8 = 2x）实际上是保守的，因为：</p>
+<ul>
+<li>数据移动也有收益：两个 4 位数字可打包进一个 8 位存储 → 有效内存带宽翻倍</li>
+<li>B300+ 开始转向 3x 比率，向理论 4x 靠近</li>
+</ul>
+<h3 id="3-systolic-array脉动阵列">3. Systolic Array（脉动阵列）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-systolic-array脉动阵列" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Systolic array 是将 MAC 单元组织成网格，使数据在阵列中”脉动”流动，最大化计算/通信比率的架构模式：</p>
+<ul>
+<li><strong>工作原理</strong>：权重矩阵静态存储在阵列本地寄存器中；输入向量从一侧流入；结果从另一侧流出</li>
+<li><strong>优势</strong>：将 O(x×y) 的矩阵乘法通信压缩为 O(x) 的输入/输出带宽</li>
+<li><strong>加载策略</strong>：权重通过 daisy chain 慢速加载（一次加载，多次使用）</li>
+<li><strong>典型规模</strong>：Google TPU 早期为 128×128 阵列</li>
+<li><strong>GPU 实现</strong>：Tensor Core = 较小规模的 systolic array（如 4×4×4 或 8×8×8）</li>
+</ul>
+<h3 id="4-cache-vs-scratchpad缓存-vs-软件管理内存">4. Cache vs Scratchpad（缓存 vs 软件管理内存）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-cache-vs-scratchpad缓存-vs-软件管理内存" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>特性</th><th>Cache (CPU/GPU)</th><th>Scratchpad (TPU/Groq)</th></tr></thead><tbody><tr><td>管理方式</td><td>硬件自动管理</td><td>软件（编译器/程序员）明确管理</td></tr><tr><td>延迟</td><td>非确定（取决于 hit/miss）</td><td>确定</td></tr><tr><td>面积效率</td><td>低（控制逻辑复杂）</td><td>高（简单内存阵列）</td></tr><tr><td>编程难度</td><td>低（透明）</td><td>高（手动管理内存层次）</td></tr><tr><td>典型设备</td><td>CPU, GPU (CUDA)</td><td>TPU, Groq</td></tr></tbody></table></div>
+<h3 id="5-pipeline-registers-and-clock-cycles">5. Pipeline Registers and Clock Cycles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-pipeline-registers-and-clock-cycles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>时钟周期是芯片全局同步机制：每 ~1ns，所有电路暂停、同步、进入下一操作。</p>
+<ul>
+<li><strong>Pipeline register insertion</strong>：在长逻辑链中插入寄存器可将逻辑分块，允许更高时钟频率——但增加面积开销</li>
+<li><strong>权衡</strong>：极高时钟频率（如 5+ GHz）意味着大量面积变成 pipeline registers，实际 throughput 反而下降</li>
+<li><strong>Feedback loop 约束</strong>：最难的路径是有反馈回路的计算（如累加器），它设定了芯片的极限时钟频率</li>
+<li><strong>类比</strong>：如同 batch size——小 batch 低延迟低吞吐，大 batch 高延迟高吞吐</li>
+</ul>
+<h2 id="why-it-matters-for-investing">Why It Matters for Investing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-it-matters-for-investing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><strong>理解芯片公司的真正竞争优势</strong>：NVIDIA 的护城河不仅是制程节点（TSMC 也能为 AMD 做），更是 <strong>CUDA 生态 + Tensor Core 架构 + NVLink 互连</strong>的综合优势。架构决策（systolic array 规模、内存层次、数据路径带宽）直接决定推理/训练效率差异。</p>
+</li>
+<li>
+<p><strong>FP4 精度革命是结构性趋势</strong>：精度降低带来的 ~4x 面积优势是数学上的必然，不依赖工艺进步。这意味着 <strong>AI 推理 ASIC 将不断侵蚀 GPU 的推理份额</strong>——因为推理对灵活性需求低，可以极致优化精度。B300+ 的 3x FP4:FP8 比率证实这一趋势正在加速。</p>
+</li>
+<li>
+<p><strong>FPGA 永远无法成为 AI 训练主力</strong>：10x 效率差距是物理性的，不是迭代可解决的。但 FPGA 在延迟敏感、频繁变更的特定场景（HFT、网络加速）仍有不可替代的 niche。</p>
+</li>
+<li>
+<p><strong>自研 ASIC（TPU/Trainium/Maia）的合理性</strong>：Hyper scaler 自研芯片的核心逻辑——当矩阵乘法是压倒性工作负载时，放弃灵活性换取 2-3x 效率提升是数学上合理的选择。Google TPU 同等 Flops 训练成本仅为 GPU 的 20-30% 符合这一理论预测。</p>
+</li>
+<li>
+<p><strong>Split-table Systolic Array（MatX 的差异化）</strong>：如果真实世界推理工作负载既有大型密集矩阵（需大阵列）又有稀疏/不规则计算（需小阵列），可拆分阵列可以在不牺牲效率的前提下覆盖更多场景。这是 MatX 的核心架构论点。</p>
+</li>
+<li>
+<p><strong>数据移动瓶颈决定行业结构</strong>：7/8 面积花在数据移动 → HBM/内存层次创新（HBM4、near-memory compute、3D stacking）的收益可能大于 MAC 单元创新。这有利于内存厂商（<a href="../../wiki/companies/mu" class="internal" data-slug="wiki/companies/mu">mu</a>、<a href="../../wiki/companies/hymx" class="internal" data-slug="wiki/companies/hymx">hymx</a>）和先进封装（<a href="../../wiki/companies/tsm" class="internal" data-slug="wiki/companies/tsm">tsm</a> CoWoS）。</p>
+</li>
+</ol>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Sectors: <a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a>（§3.3 AI 芯片自研趋势、推理成本下降）</li>
+<li>Companies: <a href="../../wiki/companies/nvda" class="internal" data-slug="wiki/companies/nvda">nvda</a>（NVIDIA GPU 架构进化），<a href="../../wiki/companies/aehr" class="internal" data-slug="wiki/companies/aehr">aehr</a>（芯片测试——与架构无关的通用需求）</li>
+<li>Concepts: <a href="../../wiki/concepts/cowos" class="internal" data-slug="wiki/concepts/cowos">cowos</a>（先进封装——多 die 互连的基础），<a href="../../wiki/concepts/die" class="internal" data-slug="wiki/concepts/die">die</a>（半导体裸片），<a href="../../wiki/concepts/wrights-law" class="internal" data-slug="wiki/concepts/wrights-law">wrights-law</a>（学习曲线对芯片成本的影响），<a href="../../wiki/concepts/everything-is-computer-framework" class="internal" data-slug="wiki/concepts/everything-is-computer-framework">everything-is-computer-framework</a>（Compute/Communication 比率是更普适的主题）</li>
+<li>Theses: <a href="../../photonics-bottleneck-layers" class="internal" data-slug="photonics-bottleneck-layers">photonics-bottleneck-layers</a>（光学互连——芯片间通信瓶颈的物理层解决方案）</li>
+<li>Sources: <a href="../../2026-05-23--dwarkesh-patel--reiner-pope-chip-design" class="internal alias" data-slug="2026-05-23--dwarkesh-patel--reiner-pope-chip-design">2026-05-23—dwarkesh-patel—reiner-pope-chip-design</a></li>
+</ul>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Question</p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>Splittable systolic array 在真实推理负载中的收益 vs 控制复杂度——能否同时在大型密集矩阵和小型稀疏计算中都保持高效率？</li>
+<li>NVIDIA 的 “GPU = 一堆小 TPU” 架构是否会随着 CUDA 生态的优化（如更粗粒度的 Tensor Core、更大的 SM 内阵列）逐步收敛到 TPU 的设计方向？</li>
+<li>如果 ~7/8 面积花在数据移动，那么 HBM4 / near-memory compute / 3D stacking 哪一个方向能带来最大的 compute/communication 比率飞跃？</li>
+<li>确定性延迟（scratchpad 方案）在 AI 推理中是否真的重要？还是只有在 HFT 等极低延迟场景才有意义？</li>
+<li>精度二次方缩放意味着 FP2 推理理论上比 FP4 再快 ~4x——但模型精度能容忍多少？</li>
+</ul>
+</div>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-121" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ai-chip-architectureai芯片架构" data-for="ai-chip-architectureai芯片架构">AI Chip Architecture（AI芯片架构）</a></li><li class="depth-1"><a href="#definition" data-for="definition">Definition</a></li><li class="depth-1"><a href="#the-core-problem-data-movement-dominates" data-for="the-core-problem-data-movement-dominates">The Core Problem: Data Movement Dominates</a></li><li class="depth-1"><a href="#architecture-classification架构分类" data-for="architecture-classification架构分类">Architecture Classification（架构分类）</a></li><li class="depth-2"><a href="#第一层fpga-vs-asic可编程性" data-for="第一层fpga-vs-asic可编程性">第一层：FPGA vs ASIC（可编程性）</a></li><li class="depth-2"><a href="#第二层gpu-风格-vs-tpu-风格单元粒度" data-for="第二层gpu-风格-vs-tpu-风格单元粒度">第二层：GPU 风格 vs TPU 风格（单元粒度）</a></li><li class="depth-2"><a href="#两层对比总结" data-for="两层对比总结">两层对比总结</a></li><li class="depth-1"><a href="#key-architectural-trade-offs" data-for="key-architectural-trade-offs">Key Architectural Trade-offs</a></li><li class="depth-2"><a href="#1-computecommunication-ratio--贯穿整个技术栈的统一主题" data-for="1-computecommunication-ratio--贯穿整个技术栈的统一主题">1. Compute/Communication Ratio — 贯穿整个技术栈的统一主题</a></li><li class="depth-2"><a href="#2-precision-scaling精度缩放效应" data-for="2-precision-scaling精度缩放效应">2. Precision Scaling（精度缩放效应）</a></li><li class="depth-2"><a href="#3-systolic-array脉动阵列" data-for="3-systolic-array脉动阵列">3. Systolic Array（脉动阵列）</a></li><li class="depth-2"><a href="#4-cache-vs-scratchpad缓存-vs-软件管理内存" data-for="4-cache-vs-scratchpad缓存-vs-软件管理内存">4. Cache vs Scratchpad（缓存 vs 软件管理内存）</a></li><li class="depth-2"><a href="#5-pipeline-registers-and-clock-cycles" data-for="5-pipeline-registers-and-clock-cycles">5. Pipeline Registers and Clock Cycles</a></li><li class="depth-1"><a href="#why-it-matters-for-investing" data-for="why-it-matters-for-investing">Why It Matters for Investing</a></li><li class="depth-1"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/daily/2026-05-23" class="internal">2026-05-23</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

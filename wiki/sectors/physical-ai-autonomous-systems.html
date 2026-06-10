@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>physical-ai-autonomous-systems</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="physical-ai-autonomous-systems"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="physical-ai-autonomous-systems"/><meta name="twitter:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/physical-ai-autonomous-systems"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/physical-ai-autonomous-systems"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/physical-ai-autonomous-systems-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/physical-ai-autonomous-systems-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/physical-ai-autonomous-systems-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/physical-ai-autonomous-systems"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-395"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-395" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>physical ai autonomous systems</a></div></nav><h1 class="article-title">physical-ai-autonomous-systems</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-08T16:00:00.000Z">Jun 09, 2026</time><span>30 min read</span></p><ul class="tags"><li><a href="../../tags/autonomous-vehicles" class="internal tag-link">autonomous-vehicles</a></li><li><a href="../../tags/robotaxi" class="internal tag-link">robotaxi</a></li><li><a href="../../tags/humanoid-robots" class="internal tag-link">humanoid-robots</a></li><li><a href="../../tags/energy-storage" class="internal tag-link">energy-storage</a></li><li><a href="../../tags/robotics" class="internal tag-link">robotics</a></li><li><a href="../../tags/physical-ai" class="internal tag-link">physical-ai</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本文件使用 <strong>section-level</strong> 来源标记。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>用户手动维护的判断总结。数据支撑在正文对应 section 中可查。</p>
+</blockquote>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI、机器人和能源存储向物理世界自动化的融合。该领域涵盖自主出行（robotaxis、自动驾驶卡车）、具身 AI（人形机器人、仓储机器人）和分布式能源（太阳能、电池储能、核能）。Robotaxis 是首个大规模部署的领域；人形机器人是下一个前沿。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Robotaxis 是 physical world AI 的首次规模化部署</strong>，规模成本 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.25/</span><span class="mord cjk_fallback">英里</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">人类网约车</span></span></span></span>2.80——降幅达 91%。技术平台提供商预计捕获生态系统 EBIT 的 98%（2030 年约 $34T EV）。</li>
+<li>**人形机器人代表约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">26</span><span class="mord mathnormal" style="margin-right:0.13889em;">TT</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">（</span></span></span></span>13T 家庭 + $13T 制造），但复杂度约是 robotaxis 的 200,000 倍；时间表可能在 2030 年代。</li>
+<li><strong>Physical world AI 是下一个相变</strong>，超越语言/代码，将前沿 AI 扩展到物理现实。三个相互增强的领域：机器人技术使自主科学成为可能，自主科学产生结构化训练数据，新接口产生以自我为中心的数据。</li>
+<li><strong>价值链向软件迁移</strong>：随着学习策略成为标准，价值积累到模型、训练基础设施和数据飞轮——而非机械系统。</li>
+<li><strong>工厂护城河可能比软件护城河更持久</strong>：拥有生产能力的公司（Tesla、SpaceX）获得 compounding 的 Wright’s Law 优势。良率经济性高度杠杆化。</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>Robotaxis（自主出行作为首个规模化部署，已验证的单位经济轨迹）</li>
+<li>自动驾驶卡车（相较柴油节省 60% 成本，商业合同达到临界规模）</li>
+<li>核能 SMR（与太阳能+储能相比具有竞争力的 LCOE，低于燃气联合循环）</li>
+<li>Physical AI 基础设施（仿真引擎、机器人基础模型、训练基础设施）</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>人形机器人（技术准备度约是 robotaxis 的 200,000 倍复杂，时间表风险）</li>
+<li>传统网约车巨头（Uber/Lyft 在早期市场被 robotaxis 夺走份额）</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>（当前来源中未明确指出）</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>核心跟踪指标，每次 ingest 后检查是否需更新。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Robotaxi cost per mile at scale</td><td>Unit economics tipping point</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.25/</span><span class="mord mathnormal">mi</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal">b</span><span class="mord mathnormal">erc</span><span class="mord mathnormal">ab</span><span class="mord">2030</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>2.80 human ride-hail</td><td>ARK 2026</td></tr><tr><td>Robotaxi daily autonomous miles</td><td>Commercial deployment velocity</td><td>Waymo leading; ~400K daily miles across players</td><td>Industry data</td></tr><tr><td>Robotaxi ecosystem EV by 2030</td><td>TAM and value capture</td><td>~$34T: tech platforms 98%, automakers 1%, fleet ops 1%</td><td>ARK 2026</td></tr><tr><td>Autonomous delivery revenue by 2030</td><td>Logistics disruption TAM</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">480</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span></span></span></span>320B last-mile + $160B trucking)</td><td>ARK 2026</td></tr><tr><td>Robotics TAM</td><td>General-purpose automation</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">26</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mopen">(</span></span></span></span>13T household + $13T manufacturing)</td><td>Industry estimates</td></tr><tr><td>Humanoid vs robotaxi complexity gap</td><td>Technology readiness</td><td>~200,000x more complex; timeline likely 2030s</td><td>a16z Hsu 2026</td></tr><tr><td>Unitree 2025 humanoid shipments</td><td>Global #1 volume</td><td>5,500+ units (32.4% share)</td><td>Unitree IPO Prospectus [FC]</td></tr><tr><td>Unitree G1 unit economics</td><td>Cost/hr threshold</td><td>Below $30/hr human labor in tote-handling tasks</td><td>SemiAnalysis Feb 2026</td></tr><tr><td>China humanoid IPO valuation premium</td><td>Market pricing</td><td>Sector PE ~40x vs CSI300 <del>14x; Unitree ¥42B (</del>$6.2B)</td><td>Bloomberg June 2026</td></tr><tr><td>Autonomous truck cost per ton-mile</td><td>Freight disruption</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">0.03</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>0.07 human diesel (-60%)</td><td>Industry data</td></tr><tr><td>Global robot sales by type</td><td>Automation adoption phase</td><td>27M industrial (since 1961) vs ~2K humanoids (since 2020)</td><td>Industry data</td></tr><tr><td>Physical AI 10-step reliability</td><td>Production readiness</td><td>95% per-step → ~60% chain; RL post-training as primary fix</td><td>a16z Hsu 2026</td></tr><tr><td>Nuclear SMR LCOE vs alternatives</td><td>Energy competitiveness</td><td>Competitive with solar+storage; below gas combined cycle</td><td>Industry data</td></tr><tr><td>Battery cost $/kWh</td><td>Energy storage economics</td><td>Declining per Wright’s Law</td><td>Industry data</td></tr><tr><td>Stationary storage deployment need</td><td>Grid transition pace</td><td>19x increase needed by 2030</td><td>Industry estimates</td></tr><tr><td>Cumulative power investment needed</td><td>Infrastructure buildout</td><td>~$10T by 2030 (2x current run-rate)</td><td>Industry estimates</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI、机器人和能源存储向物理世界自动化的融合。该领域涵盖三个相互关联的领域：自主出行（robotaxis、自动驾驶卡车）、具身 AI（人形机器人、仓储机器人）和分布式能源（太阳能、电池储能、核能）。统一原则是”电子工业生产模式”——将智能手机蓝图（计算、电力、感知、连接、软件）应用于物理系统：电动车是带轮子的智能手机，机器人是会移动的智能手机。参见 <a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a>。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>阶段</th><th>时期</th><th>关键特征</th></tr></thead><tbody><tr><td>Industrial robotics era</td><td>1961–2020</td><td>27M industrial robots deployed; fixed, programmed automation</td></tr><tr><td>Autonomous mobility emerges</td><td>2020–2025</td><td>Waymo robotaxi operations scale; Tesla FSD development; autonomous trucking pilots</td></tr><tr><td>Physical AI convergence</td><td>2025–2026</td><td>Cybercab enters production; humanoid robots reach demo maturity; robotics foundation models diverge (VLAs, WAMs, native embodied); autonomous science labs emerge</td></tr><tr><td>Next frontier</td><td>2030s+</td><td>Humanoid robot scaling (if tech readiness achieved); distributed energy integration; full autonomy stack maturation</td></tr></tbody></table></div>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>该领域组织为三个层级：</p>
+<ol>
+<li><strong>基础设施层</strong>：计算（AI 训练、推理）、仿真引擎（逼真渲染、程序化生成）、能源（太阳能、电池储能、核能 SMR）、感知与连接（空间智能、以自我为中心的视频、神经接口）</li>
+<li><strong>平台层</strong>：自动驾驶栈（Tesla FSD、Waymo Driver）、机器人基础模型（VLAs、WAMs、native embodied）、仿真基础设施、训练与数据飞轮、Sim-to-real 桥接工具</li>
+<li><strong>应用层</strong>：Robotaxis、自动驾驶卡车、最后一英里配送、仓储机器人、人形机器人、自主科学（自驱动实验室）、分布式能源（电网储能、住宅太阳能+储能）</li>
+</ol>
+<hr/>
+<h2 id="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>核能监管历史</strong>：50 年因监管负担导致的成本停滞；行政令正在重启成本下降但许可不确定性持续存在。</li>
+<li><strong>风能监管打击</strong>：特朗普政府将陆上风能审查扩大到私人土地，通过 DoD 国家安全审查；自 2025 年 8 月以来 165 个项目（累计 30GW）被搁置，影响约 1,500 户家庭的电力供应。政策不确定性将资本推向化石燃料和国防电子。（Insight News Pro 2026-05-04 早报）</li>
+<li><strong>Robotaxi 安全风险</strong>：事故可能减缓采纳；自主后端物流操作是门控因素。</li>
+<li><strong>自动驾驶车辆审批</strong>：各州监管各自为政；推广节奏从早期预期有所放缓。</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>仿真作为数据成本曲线坍塌</strong>：物理世界数据比语言数据难收集数个数量级。现代仿真引擎 + 逼真渲染 + 程序化生成 + sim-to-real 桥接将瓶颈从真实数据收集转移到虚拟环境设计——用计算扩展，而非用人力。（Hsu 2026, a16z）参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>“Factory-is-the-Product”经济学</strong>：制造能力是硬件的核心护城河——拥有生产能力的公司（Tesla、SpaceX）获得 compounding 的 Wright’s Law 优势。良率经济性高度杠杆化：95% 每步 FPY → 10 步流程 60%。工厂护城河可能比软件护城河更持久。参见 <a href="../../2026-02-17--a16z--hsu-factory-economics" class="internal alias" data-slug="2026-02-17--a16z--hsu-factory-economics">2026-02-17—a16z—hsu-factory-economics</a>。</li>
+<li><strong>电子工业生产模式</strong>：智能手机蓝图（计算、电力、感知、连接、软件）是通用模板——电动车 = 带轮子的智能手机，机器人 = 会移动的智能手机。美国缺乏规模化模块供应商的”modular middle”。Tesla/SpaceX 是仅有的例外。参见 <a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a>。</li>
+<li><strong>成本曲线改善</strong>：太阳能/电池/核能成本按 Wright’s Law 下降。核能 SMR LCOE 与太阳能+储能竞争，低于燃气联合循环。固定式储能部署到 2030 年需增长 19 倍，累计电力投资到 2030 年约 $10T。</li>
+<li><strong>自动驾驶卡车单位经济学</strong>：自动驾驶电动卡车 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.03/</span><span class="mord cjk_fallback">吨英里</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>0.07 柴油（节省约 60%）。无人机/机器人最后一英里配送 &lt;<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>15（节省约 90%）。</li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Physical world AI 基础能力成熟</strong>：五项同步发展——学习到的物理动力学表征（VLAs、WAMs、native embodied 模型）、具身行动架构、仿真基础设施、扩展的感知流形、闭环编排——使 physical AI 进入自己的 scaling regime。参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>机器人基础模型分化</strong>：三个架构家族：(1) VLA——用动作解码器扩展预训练 VLM（π₀、Gemini Robotics）；(2) WAM——基于视频扩散 transformer（NVIDIA DreamZero，零样本泛化）；(3) native embodied 模型——从零开始在真实世界数据上训练（Generalist GEN-1：>500K 小时）。参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>RL 后训练解锁机器人扩展</strong>：Physical Intelligence 的 RECAP 解决了长任务时间线中的信用分配问题。π*₀.₆ 可折叠 50+ 种新颖衣物、组装盒子、自主制作浓缩咖啡。吞吐量比仅模仿基线高一倍以上——表明具身 AI 正经历 GPT-2→GPT-4 式的轨迹。参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>空间智能作为具身 AI 使能器</strong>：World Labs 的 Marble——首个从多模态 prompt 生成一致 3D 环境的 world model。RTFM 使用空间定位帧作为空间记忆。三能力框架（生成式、多模态、交互式）填补了限制当前具身 AI 的空间表征差距。参见 <a href="../../2025-11-10--feifei-li--spatial-intelligence-world-models" class="internal alias" data-slug="2025-11-10--feifei-li--spatial-intelligence-world-models">2025-11-10—feifei-li—spatial-intelligence-world-models</a>。</li>
+<li><strong>自主科学作为数据引擎</strong>：自驱动实验室（Periodic Labs、Medra）将 AI 推理与物理实验统一——每次实验产生结构化、因果性的训练数据。传统材料：商业化需数年；AI 加速：可能大幅缩短。参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>可靠性瓶颈</strong>：95% 每步成功率 → 10 步链条约 60%。RL 后训练 (RECAP) 是弥合这一差距的主要路径。（Hsu 2026, a16z）</li>
+<li><strong>QDD 执行器架构：从实验室到部署</strong>：Unitree 押注准直驱（QDD）执行器——比应变波减速器便宜约 80%、效率 95-98% vs 85-90%——但早期因过热严重受限（2kg 负载数秒即需 30 分钟冷却）。经过两年迭代（优化磁钢形状、增加铜填充、增加主动散热），G1 现可支撑 5kg 负载 10-15 分钟（2x 负载、5x 时长提升）。QDD 的架构简洁性使 Unitree 的迭代周期降至数周，而对手应变波方案需 3+ 月。多家中国对手正在转向 QDD，验证了这一路线。参见 <a href="../../sources/2026-02-05--unitree--china-global-robotics" class="internal alias" data-slug="sources/2026-02-05--unitree--china-global-robotics">2026-02-05—unitree—china-global-robotics</a>。</li>
+<li><strong>Physical AI 11 层投资栈框架（Gaetano）</strong>：从 training → simulation → perception → edge compute → software/planning → control → motion/actuation → power/energy → connectivity/fleet → integration → end markets 的完整供应链映射，强调 bottleneck layer 投资逻辑。Gaetano 将 Physical AI 定位为其第二覆盖主线（与 optics/photonics 并列），计划推出 Physical AI Mock ETF。参见 <a href="../../2026-05-23--gaetano--physical-ai-theme" class="internal alias" data-slug="2026-05-23--gaetano--physical-ai-theme">2026-05-23—gaetano—physical-ai-theme</a>。</li>
+<li><strong>Gaetano Layer 1 深度报告 — Training &amp; Model Development</strong>：Gaetano 发布 Physical AI 系列首篇 layer 深度报告，覆盖 Layer 1 五家公司。Layer 1 的三个子类：(1) picks-and-shovels 公司（INOD, TASK, NBIS/Toloka）提供数据/标注/eval 服务；(2) 物理世界数据拥有者（PL, BKSY, SPIR, REKR）；(3) 自主数据循环所有者（WRD, PONY, AUR, KDK, MBLY, PDYN）。核心区分：general AI 数据/评估收入 vs Physical AI 专属收入。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+<li><strong>INOD（Innodata）作为最纯 Layer 1 标的</strong>：横跨预训练/中训练/后训练/评估全生命周期，<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">90.1</span><span class="mord mathnormal">MQ</span><span class="mord">1</span><span class="mopen">(</span><span class="mord">+</span><span class="mord">54</span></span></span></span>51M Big Tech engagement, Physical AI 作为 future expansion layer。Gaetano 于 2026 年 5 月末将其作为 Physical AI model portfolio 首个建仓仓位，基座估值 $130-155（12 个月目标），Agent Observability Platform 是毛利率向上的催化。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>；<a href="../../sources/2026-05-30--gaetano--inod-physical-ai-portfolio" class="internal alias" data-slug="sources/2026-05-30--gaetano--inod-physical-ai-portfolio">2026-05-30—gaetano—inod-physical-ai-portfolio</a>。</li>
+<li><strong>TASK（TaskUs）AI Services AV/robotics 加速</strong>：AI Services $61.9M Q1 (+36.1% YoY, 连续 6 季度 >30%), AV/robotics 是增速最快子领域，2026 年 AV/robotics/Physical AI 收入将 triple。从数据标注演进到 live remote operations。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+<li><strong>NBIS “三合一”结构</strong>：Nebius AI Cloud（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">390</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">+</span><span class="mord">841</span></span></span></span>20-25B 2026 capex, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">9.3</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal">h</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span></span></span></span>27B 5yr contract, NVIDIA <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">i</span><span class="mord mathnormal">croso</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">t</span></span></span></span>17.4B。1X Technologies 机器人使用 Nebius Cloud。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+<li><strong>Unity 作为合成数据桥梁</strong>：Perception tools 为 CV/机器人生成带标签合成数据；Unity AI 加速世界创建；Vector 20 年交互数据可能成为 AI 行为数据集。Q1 Strategic Grow $279M (+49% YoY)。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+<li><strong>Planet Labs 作为物理世界数据层</strong>：“Wikipedia for real-world models”，Q4 $86.8M (+41% YoY)，首个全年 adj EBITDA 盈利 + FCF 正。NVIDIA 100x 加速数据处理，Google Suncatcher TPU-in-space R&amp;D。主权合同飞轮（€240M 德国、九位数瑞典）。参见 <a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Robotaxi 成本颠覆</strong>：规模成本 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.25/</span><span class="mord cjk_fallback">英里</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>2.80 人类网约车（降幅 91%）。技术平台提供商赢得生态系统 EBIT 的 98%（2030 年约 $34T EV）。</li>
+<li><strong>Tesla Cybercab 投入生产</strong>：达拉斯/休斯顿上线后付费里程几乎翻倍。推广范围约”十几个州”（比早期预期有所放缓）。HW3 车辆（约占车队 43%，约 4M 辆）确认不支持无监督 FSD——可能需要换购/升级路径。ARK：2,400 万辆 robotaxis（不到美国车队的 10%）可覆盖美国大部分城市里程。（ARK 2026, Keeney）</li>
+<li><strong>FedEx Freight CEO 称自动驾驶卡车已准备就绪</strong>：99.9% 测试里程无需人工干预，技术已达商用门槛，监管成主要障碍。联邦快递货运刚完成从 FedEx 分拆独立上市，年收入 $87 亿。表明 L4 自动驾驶卡车产业准备度接近临界点（WSJ 2026-06-01）</li>
+<li><strong>中国机器人公司排队 IPO</strong>：宇树科技获科创板上市批准；仅香港有至少 46 家机器人相关公司筹备 IPO（占申请人 10%+）；2025 年中国占全球人形机器人 85%、工业机器人 50%。巴克莱：“这是机器人的十年——而且它属于中国”。板块远期 PE ~40 倍 vs 沪深 300 ~14 倍，估值偏高需谨慎（Bloomberg 2026-06-01）</li>
+<li>**软银拟投资 Agile Robots <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">8</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：软银计划提供</span></span></span></span>3 亿+，德国工业机器人初创 Agile Robots 融资约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">8</span><span class="mord cjk_fallback">亿；</span><span class="mord">2025</span><span class="mord cjk_fallback">年全球机器人行业融资</span></span></span></span>276 亿（同比 3x+）。软银从 AI 投资者向直接参与者转型（Bloomberg 2026-06-02）</li>
+<li><strong>Waymo 动态</strong>：在旧金山抢夺 Uber/Lyft 份额——robotaxi 竞争加速。</li>
+<li><strong>Aurora 自动驾驶卡车</strong>：与 Hirschbach 签署 500 辆卡车的 MOU；Driver-as-a-Service 订阅模式。商业合同达到临界规模。</li>
+<li><strong>自主科学实验室兴起</strong>：Periodic Labs（材料科学）和 Medra（生命科学）作为新型自驱动实验室。</li>
+<li><strong>Gaetano Physical AI 覆盖启动</strong>：Crux Capital 的 Gaetano 正式将 Physical AI 作为第二覆盖主线（继 optics/photonics 之后），计划推出 Physical AI Mock ETF。信号意义：一个有 optics 超周期 track record 的独立研究者开始系统性覆盖该主题，可能预示资金轮动方向。参见 <a href="../../2026-05-23--gaetano--physical-ai-theme" class="internal alias" data-slug="2026-05-23--gaetano--physical-ai-theme">2026-05-23—gaetano—physical-ai-theme</a>。</li>
+<li><strong>Gaetano Layer 2 (Simulation) 深潜发布</strong>：覆盖 BSY (Bentley Systems, 基础设施数字孪生 $1.5B ARR)、SVCO (Silvaco, 半导体 TCAD/FTCO)、BBAI (BigBear.ai, 运营仿真/Shipyard AI)。Physical AI 堆栈第 2 层框架正式化。Layer 1 (Training) 公司已在前一期覆盖。(<a href="../../sources/2026-06-03--gaetano--physical-ai-layer2-simulation" class="internal alias" data-slug="sources/2026-06-03--gaetano--physical-ai-layer2-simulation">2026-06-03—gaetano—physical-ai-layer2-simulation</a>)</li>
+<li><strong>Unitree 人形机器人跨过部署经济性门槛</strong>：SemiAnalysis 测算，即使在 100% 遥控操作、保守利用率（50-67%）、2 年使用寿命假设下，Unitree G1 在简单物流任务（2-4kg 料箱搬运）上的每时成本已低于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">30</span><span class="mord cjk_fallback">人类劳动力阈值。</span><span class="mord mathnormal">G</span><span class="mord">1</span><span class="mord cjk_fallback">定价已从</span></span></span></span>27.3K 降至部分 deal &lt;<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord cjk_fallback">，</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">仅</span></span></span></span>8,976（62.9% 毛利率）。约 250 台已在 2025 年进入工业试点/部署。如果自主性（AI 脑）进步，经济学将只会继续改善。参见 <a href="../../sources/2026-02-05--unitree--china-global-robotics" class="internal alias" data-slug="sources/2026-02-05--unitree--china-global-robotics">2026-02-05—unitree—china-global-robotics</a>。</li>
+<li><strong>Unitree IPO 获批</strong>：2026 年 6 月 1 日仅用 73 天通过科创板上市审核（2026 年最快纪录），估值 ¥42B（~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">6.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">），融资</span><span class="mord amsrm" style="margin-right:0.025em;">¥</span><span class="mord">4.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mspace nobreak"> </span></span></span></span>620M）。2025 年收入 ¥1.699B（+335%），净利润 ¥278M，人形机器人出货 5,500+ 台（全球 #1）。美團 9.65% 为最大外部股东。Q1 2026 净利润同比 -52.6%（R&amp;D/销售费用增加），市场关注盈利能力。参见 <a href="../../sources/2026-02-05--unitree--china-global-robotics" class="internal alias" data-slug="sources/2026-02-05--unitree--china-global-robotics">2026-02-05—unitree—china-global-robotics</a>。</li>
+</ul>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>与 AI 和能源领域的强融合</strong>：计算扩展使机器人技术成为可能；电池储能同时使能电动车和电网。Tesla 是横跨所有三个方向的主要融合公司。</li>
+<li><strong>Physical world AI 作为下一个相变</strong>：将前沿 AI 从语言/代码扩展到物理现实。三个领域相互增强：机器人技术使自主科学成为可能，自主科学为 physical AI 产生结构化训练数据，新接口（AR、神经）为两者产生以自我为中心的数据。价值链正从机械系统迁移到模型、训练基础设施和数据飞轮。（Hsu 2026, a16z）</li>
+<li><strong>人形机器人时间表风险</strong>：技术准备度约是 robotaxis 的 200,000 倍复杂；计算扩展平台将延迟 Optimus 时间表。部署可能在 2030 年代。</li>
+<li><strong>Sim-to-real 差距可能持续存在</strong>：Physical AI 在规模化可靠性上尚未在受控环境之外得到验证。</li>
+<li><strong>风能监管不确定性</strong>：将资本推向化石燃料和国防电子而非可再生能源。</li>
+<li><strong>多家人形机器人初创公司竞争</strong>：赢家不明，可能碎片化。</li>
+</ul>
+<hr/>
+<h2 id="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf--玩家动态按需更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="市场集中度">市场集中度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Tesla 是唯一横跨所有三个方向（robotaxi、人形机器人、储能）的公司。Robotaxi 市场早期围绕 Waymo 和 Tesla 集中。人形机器人仍碎片化，有多家初创公司。美国缺乏规模化模块供应商的”modular middle”，Tesla/SpaceX 是例外。</p>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Tesla (TSLA)</strong> — Robotaxi + Optimus + 储能。唯一横跨所有三个方向的公司。Cybercab 投入生产；达拉斯/休斯顿上线后付费里程几乎翻倍。推广范围约”十几个州”。HW3 车辆（约 43% 车队，约 4M 辆）不支持无监督 FSD——可能需要换购/升级路径。ARK 估计 2,400 万辆 robotaxis（不到美国车队的 10%）可覆盖大部分美国城市里程。参见 <a href="../../wiki/companies/tsla" class="internal" data-slug="wiki/companies/tsla">tsla</a>。</li>
+<li><strong>Waymo (GOOGL)</strong> — Robotaxi 领导者。在旧金山抢夺 Uber/Lyft 份额；robotaxi 竞争加速。</li>
+<li><strong>Uber (UBER)</strong> — 网约车巨头。在早期市场被 robotaxis 夺走份额。</li>
+<li><strong>Lyft (LYFT)</strong> — 网约车巨头。在早期市场被 robotaxis 夺走份额。</li>
+<li><strong>Aurora Innovation (AUR)</strong> — 自动驾驶卡车。与 Hirschbach 签署 500 辆卡车的 MOU；Driver-as-a-Service 订阅模式。商业合同达到临界规模。参见 <a href="../../wiki/companies/aur" class="internal" data-slug="wiki/companies/aur">aur</a>。</li>
+<li><strong>Figure AI (private)</strong> — 人形机器人开发。Helix 架构（双系统 VLM + 视觉运动策略）。</li>
+<li><strong>Unitree (private → soon SSE STAR)</strong> — 中国最领先的人形机器人公司，遵循 DJI/BYD 式硬件飞轮策略：自研核心 QDD 执行器（BoM 核心）+ 研究者市场起步 + 逐代解锁更大市场。2025 年收入 ¥1.699B（+335%），人形机器人出货 5,500+ 台全球 #1，62.9% 毛利率。G1 起步 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord">27.3</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord cjk_fallback">（部分</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span></span></span></span>20K），BoM 仅 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">976</span><span class="mord cjk_fallback">。</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">PO</span><span class="mord cjk_fallback">估值</span><span class="mord amsrm" style="margin-right:0.025em;">¥</span><span class="mord">42</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mspace nobreak"> </span></span></span></span>6.2B），美團领投。核心弱点：73.6% 收入来自研究者/教育客户，AI 自主能力存疑，Q1 2026 利润 -52.6% YoY。参见 <a href="../../wiki/companies/unitree" class="internal" data-slug="wiki/companies/unitree">unitree</a>。</li>
+<li><strong>Physical Intelligence (private)</strong> — 机器人基础模型（π₀ VLA + RECAP RL 后训练，π*₀.₆）。50+ 种衣物折叠、制作浓缩咖啡、数小时自主操作。</li>
+<li><strong>Generalist (private)</strong> — Native embodied 基础模型。GEN-1：从零开始在 >500K 小时真实世界交互上训练，通过低成本可穿戴设备；谐波推理方法。</li>
+<li><strong>World Labs (private)</strong> — 空间智能 / world models。李飞飞创立；Marble——首个从多模态输入生成一致 3D 环境的 world model；RTFM 实时生成式帧模型带空间记忆。填补具身 AI 的 3D 表征差距。</li>
+<li><strong>Periodic Labs (private)</strong> — 自主材料科学。用于材料发现的自驱动实验室，AI 加速研发周期压缩。</li>
+<li><strong>Medra (private)</strong> — 自主生命科学。用于生命科学的自驱动实验室，统一科学推理 + 物理测试。</li>
+<li><strong>X-energy (XE)</strong> — 核能 SMR（小型模块化反应堆）。Xe-100 球床反应堆；TRISO-X 燃料；>$1B IPO。参见 <a href="../../wiki/companies/xe" class="internal" data-slug="wiki/companies/xe">xe</a>。</li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>工厂护城河可能比软件护城河更持久</strong>：拥有生产能力的公司（Tesla、SpaceX）获得 compounding 的 Wright’s Law 优势。良率经济性高度杠杆化：95% 每步 FPY → 10 步流程 60%。参见 <a href="../../2026-02-17--a16z--hsu-factory-economics" class="internal alias" data-slug="2026-02-17--a16z--hsu-factory-economics">2026-02-17—a16z—hsu-factory-economics</a>。</li>
+<li><strong>仿真基础设施作为护城河</strong>：数据成本曲线坍塌有利于控制仿真引擎和虚拟环境设计的公司。</li>
+<li><strong>数据飞轮</strong>：每次部署失败都会揭示仿真差距并产生训练信号——为规模化部署带来 compounding 优势。（Hsu 2026, a16z）</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>自动驾驶车辆审批：各州监管各自为政；推广节奏从早期预期有所放缓。</li>
+<li>核电站许可：50 年因监管负担导致的成本停滞；尽管有行政令，许可不确定性仍持续存在。</li>
+<li>风能监管打击：自 2025 年 8 月以来 165 个项目（累计 30GW）通过 DoD 国家安全审查被搁置，影响约 1,500 户。政策不确定性将资本推向化石燃料和国防电子。（Insight News Pro 2026-05-04 早报）</li>
+<li>能源成本和电池原材料供应链。</li>
+<li>宏观：到 2030 年累计电力投资约 $10T，为当前运行率的两倍。</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI 计算扩展平台将延迟 Optimus 和人形机器人时间表。</li>
+<li>Physical AI 规模化可靠性未经证实：95% 每步 → 10 步链 60%。</li>
+<li>Sim-to-real 差距可能在受控环境之外持续存在。</li>
+<li>储能密度和成本的电池技术限制。</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>多家人形机器人初创公司竞争；赢家不明。</li>
+<li>机器人价值链从机械系统向软件迁移——没有软件护城河的现有企业面临风险。</li>
+<li>传统网约车巨头（Uber/Lyft）被 robotaxis 夺走份额。</li>
+<li>人形机器人时间表风险：技术准备度远落后于 robotaxis。</li>
+<li><strong>中国机器人关税风险</strong>：美国目前对中国 EV 征收 100% 关税；如果类似关税扩展至人形机器人，Unitree 和其他中国机器人公司将失去全球最大单一市场。西方竞争对手（Tesla Optimus、Figure）可能在本地市场获得政策保护优势。</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb--财报季更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Global auto market</td><td>Total addressable market</td><td>~$2T+</td><td>Industry data, 2025</td></tr><tr><td>Ride-hail market (Uber/Lyft)</td><td>Combined revenue baseline</td><td>~$40B+</td><td>Public filings, 2025</td></tr><tr><td>Energy storage market</td><td>Growth driven by EV + grid demand</td><td>Growing</td><td>—</td></tr><tr><td>Humanoid robotics TAM</td><td>General-purpose automation</td><td>Potentially massive but early</td><td>—</td></tr><tr><td>Robotaxi ecosystem EV by 2030</td><td>Total addressable value</td><td>~$34T: tech platforms 98%</td><td>ARK 2026</td></tr><tr><td>Autonomous delivery revenue by 2030</td><td>Logistics disruption</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">480</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span></span></span></span>320B last-mile + $160B trucking)</td><td>ARK 2026</td></tr><tr><td>Stationary storage deployment need</td><td>Grid transition</td><td>19x increase needed by 2030</td><td>Industry estimates</td></tr><tr><td>Cumulative power investment needed</td><td>Infrastructure buildout</td><td>~$10T by 2030 (2x current run-rate)</td><td>Industry estimates</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定，仅重大变化更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Infrastructure Layer
+├── Compute (AI training clusters, inference hardware)
+├── Simulation engines (photorealistic rendering, procedural generation)
+├── Energy (solar generation, battery storage, nuclear SMR)
+└── Sensing &amp; connectivity (spatial intelligence, egocentric video, neural interfaces)
+
+Platform Layer
+├── Autonomous driving stacks (Tesla FSD, Waymo Driver)
+├── Robotics foundation models (VLAs, WAMs, native embodied models)
+├── Training infrastructure &amp; data flywheels
+└── Sim-to-real bridging frameworks
+
+Application Layer
+├── Autonomous mobility (robotaxis, autonomous trucking, last-mile delivery)
+├── Embodied AI (humanoid robots, warehouse robotics)
+├── Autonomous science (self-driving labs for materials &amp; life sciences)
+└── Distributed energy (grid storage, residential solar+storage, nuclear SMR)
+</code></pre>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>计算与仿真</strong>：物理世界数据瓶颈正从真实收集转向虚拟设计；仿真引擎作为关键基础设施。参见 <a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>。</li>
+<li><strong>能源</strong>：核能 SMR LCOE 与太阳能+储能竞争；电池成本按 Wright’s Law 下降。固定式储能到 2030 年需增长 19 倍。</li>
+<li><strong>自主平台</strong>：机器人基础模型分化（三个架构家族）表明实验阶段，收敛前。RL 后训练 (RECAP) 解锁扩展。</li>
+<li><strong>模块供应缺口</strong>：美国缺乏规模化模块供应商的”modular middle”——Tesla/SpaceX 是唯一的例外。参见 <a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a>。</li>
+<li><strong>应用</strong>：Robotaxis 最先规模化；自动驾驶卡车达到商业临界规模；人形机器人/自主科学为更长期的赌注。</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>时间维度</th><th>投资主题</th><th>关键信号</th></tr></thead><tbody><tr><td>Near-term (2026–2028)</td><td>Robotaxi deployment scaling</td><td>Daily autonomous miles, cost per mile trajectory, regulatory approvals</td></tr><tr><td>Medium-term (2028–2032)</td><td>Autonomous trucking &amp; delivery</td><td>Commercial contract volume, unit economics, regulatory framework</td></tr><tr><td>Long-term (2032+)</td><td>Humanoid robots &amp; autonomous science</td><td>Foundation model capabilities, reliability metrics, manufacturing scaling</td></tr></tbody></table></div>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>子领域</th><th>标的</th><th>定位</th></tr></thead><tbody><tr><td>Robotaxi</td><td><a href="../../wiki/companies/tsla" class="internal" data-slug="wiki/companies/tsla">tsla</a>, Waymo (GOOGL)</td><td>Tesla (Cybercab), Waymo (current market leader)</td></tr><tr><td>Autonomous trucking</td><td><a href="../../wiki/companies/aur" class="internal" data-slug="wiki/companies/aur">aur</a></td><td>Aurora Innovation; Driver-as-a-Service model</td></tr><tr><td>Humanoid robots</td><td><a href="../../wiki/companies/unitree" class="internal alias" data-slug="wiki/companies/unitree">Unitree</a> (即将上市), Figure AI, Physical Intelligence, Generalist</td><td>Unitree: 中国硬件冠军，¥1.7B rev, 62.9% GM, 5,500+ 台出货; Figure: Helix AI; PI: π₀ VLA</td></tr><tr><td>Spatial AI</td><td>World Labs</td><td>Fei-Fei Li founded; world models for embodied AI</td></tr><tr><td>Autonomous science</td><td>Periodic Labs, Medra</td><td>Self-driving lab infrastructure</td></tr><tr><td>Nuclear SMR</td><td><a href="../../wiki/companies/xe" class="internal" data-slug="wiki/companies/xe">xe</a></td><td>Xe-100 pebble-bed reactor; >$1B IPO</td></tr><tr><td>AI 数据工程 / Model Eval (Layer 1)</td><td><a href="../../wiki/companies/inod" class="internal" data-slug="wiki/companies/inod">inod</a></td><td>Innodata: pre/mid/post-training + eval; Physical AI expansion option</td></tr><tr><td>AI Services / AV 运营 (Layer 1)</td><td><a href="../../wiki/companies/task" class="internal" data-slug="wiki/companies/task">task</a></td><td>TaskUs: AV/robotics data/annotation/remote ops; AI Services +36% Q1</td></tr><tr><td>AI Cloud + Eval + Autonomy</td><td><a href="../../wiki/companies/nbis" class="internal" data-slug="wiki/companies/nbis">nbis</a></td><td>Nebius “三合一”: AI Cloud ($390M Q1) + Toloka (eval) + Avride (AV)</td></tr><tr><td>Synthetic Data / Sim (Layer 1-2)</td><td><a href="../../wiki/companies/u" class="internal" data-slug="wiki/companies/u">u</a></td><td>Unity: Perception synthetic data, Unity AI world creation</td></tr><tr><td>Physical-World Data (Layer 1)</td><td><a href="../../wiki/companies/pl" class="internal" data-slug="wiki/companies/pl">pl</a></td><td>Planet Labs: Earth obs as AI foundation dataset</td></tr><tr><td>Grid / Substation Infrastructure</td><td><a href="../../wiki/companies/arteche" class="internal" data-slug="wiki/companies/arteche">arteche</a></td><td>西班牙家族控变电站设备商；AI 大型负载驱动 Utility Capex</td></tr><tr><td>Ride-hail incumbents</td><td>Uber, Lyft</td><td>At risk from robotaxi disruption</td></tr></tbody></table></div>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../wiki/companies/tsla" class="internal" data-slug="wiki/companies/tsla">tsla</a></li>
+<li><a href="../../wiki/companies/aur" class="internal" data-slug="wiki/companies/aur">aur</a></li>
+<li><a href="../../wiki/companies/xe" class="internal" data-slug="wiki/companies/xe">xe</a></li>
+<li><a href="../../wiki/companies/inod" class="internal" data-slug="wiki/companies/inod">inod</a></li>
+<li><a href="../../wiki/companies/task" class="internal" data-slug="wiki/companies/task">task</a></li>
+<li><a href="../../wiki/companies/nbis" class="internal" data-slug="wiki/companies/nbis">nbis</a></li>
+<li><a href="../../wiki/companies/u" class="internal" data-slug="wiki/companies/u">u</a></li>
+<li><a href="../../wiki/companies/pl" class="internal" data-slug="wiki/companies/pl">pl</a></li>
+</ul>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../02-Work/Investment/_investment-wiki/wiki/concepts/physical-ai" class="internal" data-slug="02-Work/Investment/_investment-wiki/wiki/concepts/physical-ai">physical-ai</a></li>
+<li><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></li>
+</ul>
+<h3 id="people">People<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#people" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../oliver-hsu" class="internal" data-slug="oliver-hsu">oliver-hsu</a></li>
+<li><a href="../../gaetano" class="internal" data-slug="gaetano">gaetano</a></li>
+</ul>
+<h3 id="macro">Macro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(none yet)</li>
+</ul>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../2026-03-18--ark-autonomous--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-autonomous--big-ideas-2026">2026-03-18—ark-autonomous—big-ideas-2026</a></li>
+<li><a href="../../2026-03-18--ark-energy--distributed-energy" class="internal alias" data-slug="2026-03-18--ark-energy--distributed-energy">2026-03-18—ark-energy—distributed-energy</a></li>
+<li><a href="../../2026-03-18--ark-macro--great-acceleration" class="internal alias" data-slug="2026-03-18--ark-macro--great-acceleration">2026-03-18—ark-macro—great-acceleration</a></li>
+<li><a href="../../2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers" class="internal alias" data-slug="2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers">2026-05-02—ark—stock-commentary-absi-xe-sofi-ter-aur-rblx-cers</a></li>
+<li><a href="../../2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai" class="internal alias" data-slug="2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai">2026-04-27—ark—disrupt-newsletter-psychedelics-tesla-openai</a></li>
+<li><a href="../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a></li>
+<li><a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a></li>
+<li><a href="../../2025-11-10--feifei-li--spatial-intelligence-world-models" class="internal alias" data-slug="2025-11-10--feifei-li--spatial-intelligence-world-models">2025-11-10—feifei-li—spatial-intelligence-world-models</a></li>
+<li><a href="../../2026-02-17--a16z--hsu-factory-economics" class="internal alias" data-slug="2026-02-17--a16z--hsu-factory-economics">2026-02-17—a16z—hsu-factory-economics</a></li>
+<li><a href="../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-186" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" data-for="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查" data-for="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf--玩家动态按需更新" data-for="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新</a></li><li class="depth-1"><a href="#市场集中度" data-for="市场集中度">市场集中度</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" data-for="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb--财报季更新" data-for="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新" data-for="7-产业链与投资逻辑-frame--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定，仅重大变化更新</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-1"><a href="#people" data-for="people">People</a></li><li class="depth-1"><a href="#macro" data-for="macro">Macro</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal">ai-stack-modular-middle</a></li><li><a href="../../wiki/analyses/frameworks/physical-ai-stack" class="internal">physical-ai-stack</a></li><li><a href="../../wiki/analyses/trackers/physical-ai" class="internal">physical-ai</a></li><li><a href="../../wiki/companies/arteche" class="internal">arteche</a></li><li><a href="../../wiki/companies/bbai" class="internal">bbai</a></li><li><a href="../../wiki/companies/bsy" class="internal">bsy</a></li><li><a href="../../wiki/companies/byd" class="internal">byd</a></li><li><a href="../../wiki/companies/inod" class="internal">inod</a></li><li><a href="../../wiki/companies/oklo" class="internal">oklo</a></li><li><a href="../../wiki/companies/svco" class="internal">svco</a></li><li><a href="../../wiki/companies/task" class="internal">task</a></li><li><a href="../../wiki/companies/u" class="internal">u</a></li><li><a href="../../wiki/companies/unitree" class="internal">unitree</a></li><li><a href="../../wiki/concepts/everything-is-computer-framework" class="internal">everything-is-computer-framework</a></li><li><a href="../../wiki/concepts/physical-ai" class="internal">physical-ai</a></li><li><a href="../../wiki/concepts/technological-convergence" class="internal">technological-convergence</a></li><li><a href="../../wiki/concepts/wrights-law" class="internal">wrights-law</a></li><li><a href="../../wiki/daily/2026-05-25" class="internal">2026-05-25</a></li><li><a href="../../wiki/daily/2026-05-27" class="internal">2026-05-27</a></li><li><a href="../../wiki/daily/2026-05-31" class="internal">2026-05-31</a></li><li><a href="../../wiki/daily/2026-06-02" class="internal">2026-06-02</a></li><li><a href="../../wiki/daily/2026-06-03" class="internal">2026-06-03</a></li><li><a href="../../wiki/daily/2026-06-09" class="internal">2026-06-09</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

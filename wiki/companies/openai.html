@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>openai</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="openai"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="openai"/><meta name="twitter:description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="og:description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="og:image:alt" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/openai"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/openai"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/openai-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/openai-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/openai-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/companies/openai"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-176"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-176" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/companies/">companies</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>openai</a></div></nav><h1 class="article-title">openai</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-08T16:00:00.000Z">Jun 09, 2026</time><span>26 min read</span></p><ul class="tags"><li><a href="../../tags/openai" class="internal tag-link">openai</a></li><li><a href="../../tags/foundation-models" class="internal tag-link">foundation-models</a></li><li><a href="../../tags/chatgpt" class="internal tag-link">chatgpt</a></li><li><a href="../../tags/codex" class="internal tag-link">codex</a></li><li><a href="../../tags/ai-agents" class="internal tag-link">ai-agents</a></li><li><a href="../../tags/private" class="internal tag-link">private</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯至 source page</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，使用前需验证</td></tr></tbody></table></div>
+<hr/>
+<h2 id="0-基础信息-curated">0. 基础信息 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-基础信息-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>条目</th><th>内容</th></tr></thead><tbody><tr><td><strong>公司名称</strong></td><td>OpenAI Global LLC</td></tr><tr><td><strong>成立时间</strong></td><td>2015（非营利）→ 2019（capped-profit）→ 推进中：转为营利性公司</td></tr><tr><td><strong>总部</strong></td><td>San Francisco, CA</td></tr><tr><td><strong>行业</strong></td><td>基础模型 / AI Agent 平台 / Consumer AI</td></tr><tr><td><strong>企业阶段</strong></td><td>Pre-IPO（估值 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">300</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">resses</span><span class="mord mathnormal">t</span><span class="mord">.</span><span class="mord cjk_fallback">；</span></span></span></span>852B 曾被报道为 IPO target）</td></tr><tr><td><strong>创始人 / CEO</strong></td><td>Sam Altman（CEO），Ilya Sutskever 等原联合创始人已离开</td></tr><tr><td><strong>组织形式</strong></td><td>capped-profit（非营利母公司控制 → 正在司法推进转为营利性）</td></tr><tr><td><strong>本轮 / 最新融资</strong></td><td>2025-2026 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">122</span><span class="mord mathnormal" style="margin-right:0.01968em;">Bpl</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">（超额认购）；</span></span></span></span>300B 估值</td></tr><tr><td><strong>关键投资者</strong></td><td>Microsoft（已退出独家云合作但仍为投资者），Thrive Capital，软银，Tiger Global</td></tr><tr><td><strong>关键合作伙伴</strong></td><td>Microsoft（Azure → 已扩大至 AWS）、Stripe（ACP 协议）、Pentagon（分类 AI 应用）、<strong>Amazon (AWS)</strong>（$500亿投资，2026年4月入驻Bedrock）</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>OpenAI 是全球领先的基础模型公司，正在将前沿模型能力转化为 AI Agent 平台，定位为”AI 时代的操作系统”——面临三重核心张力：<em>模型差异化 vs 蒸馏商品化、营收增长 vs 盈利未验证、IPO 雄心 vs 法律与治理风险。</em></p>
+<blockquote class="callout quote" data-callout="quote">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>多方观点 <em>(可选)</em></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>看多论点 1</li>
+<li>看多论点 2</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout quote" data-callout="quote">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>空方观点 <em>(可选)</em></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>看空论点 1</li>
+<li>看空论点 2</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="关键指标速览">关键指标速览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键指标速览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead><tbody><tr><td>估值（最新轮）</td><td>~$300B</td><td>2025/2026</td><td>Press reports</td></tr><tr><td>ARR</td><td>~$20B</td><td>2026</td><td>ARK 2026, p.36</td></tr><tr><td>ARR CAGR</td><td>~250%</td><td>—</td><td>ARK 2026, p.36</td></tr><tr><td>GPT-5.5 AI Index</td><td>60%（第一名）</td><td>2026</td><td>Artificial Analysis (via ARK 2026)</td></tr><tr><td>Codex 活跃用户</td><td>4M（~20x 自 Jan 2026）</td><td>May 2026</td><td>ARK 2026 (Downing)</td></tr><tr><td>模型 API 定价</td><td>$11.30/M tokens</td><td>2026</td><td>ARK 2026</td></tr><tr><td>员工数</td><td>~4,000+ [EST]</td><td>2026</td><td>Press reports</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-投资逻辑-kb--inf">2. 投资逻辑 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-投资逻辑-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="21-公司定位核心叙事--ai-平台是当代最大的价值创造机会">2.1 公司定位：核心叙事 — AI 平台是当代最大的价值创造机会<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-公司定位核心叙事--ai-平台是当代最大的价值创造机会" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>基础模型层正在成为 AI 时代的”新操作系统”</strong>：类比 1990s 的 Windows/Intel（Wintel）、2010s 的 iOS/Android——控制模型层意味着控制整个技术栈的价值分配。OpenAI 是目前最接近拥有这个位置的玩家。</li>
+<li><strong>推理成本崩溃创造需求弹性</strong>：过去一年推理成本降 >99%，OpenRouter token 需求增 25x（Dec 2024→Dec 2025）。（ARK 2026, p.20）</li>
+<li><strong>AI Native 收入正在兑现</strong>：OpenAI ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">（</span><span class="mord">250</span></span></span></span>9B（850%），Cursor $1B（3 年）——这是历史上最快的 SaaS 收入增长曲线。（ARK 2026, p.36）</li>
+<li><strong>Agent 化迁移是大规模变现路径</strong>：从 Chatbot 到 Agent 的范式转换中，拥有模型 + 产品 + 开发者生态的 OpenAI 处于获取最大价值的位置。</li>
+</ul>
+<h3 id="22-投资框架多层论据--openai-的差异化优势">2.2 投资框架：多层论据 — OpenAI 的差异化优势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-投资框架多层论据--openai-的差异化优势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>前沿模型领先（但非垄断）</strong>：GPT-5.5 在 AI Index 以 60% 领先，定价双倍竞品均价。但目前差距并非不可逾越——Anthropic Mythos 在私人测试中性能相近。</li>
+<li><strong>开发者生态正在形成</strong>：Codex 4M 用户 → 这可能形成一个类似 iOS/Android 的开发者锁定效应。OpenAI+Stripe ACP 协议正在竞争成为”AI 的 HTTP”。</li>
+<li><strong>Consumer AI 品牌垄断</strong>：ChatGPT 是迄今为止最大的 AI 消费者品牌——品牌认知度 + 用户习惯是结构性优势。</li>
+<li><strong>双重路线：Consumer OS + Enterprise 平台</strong>：同时拥有 ChatGPT（C 端）和 API/Codex（B 端），这是 Anthropic（偏 B 端）和 Google（偏广告模式）都不具备的全面性。</li>
+</ul>
+<h3 id="23-为什么现在关注关键催化窗口--拐点信号密集出现">2.3 为什么现在关注：关键催化窗口 — 拐点信号密集出现<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-为什么现在关注关键催化窗口--拐点信号密集出现" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>IPO 窗口正在打开</strong>：S&amp;P 提议上市等待期 12→6 月 + GAAP 盈利豁免；Nasdaq “Fast Entry” 已生效（前 40 大 → 15 个交易日纳入指数）。（ARK 2026; Insight News Pro 2026-05-04）</li>
+<li><strong>产品矩阵正在从”单一模型”变为”Agent 平台”</strong>：GPT-5.5 + Workspace agents + Codex + ChatGPT Images 2.0——同步发布说明平台化战略在加速。（ARK 2026）</li>
+<li><strong>企业采用从实验→生产</strong>：Codex 4M 用户（20x 自 Jan 2026），Workspace agents 企业部署——生产级采用而非 PoC。（ARK 2026）</li>
+<li><strong>竞争格局正在固化</strong>：Anthropic 安全优先策略限制发布速度，Google 整体利润率稀释，DeepSeek 等开源虽进步但未缩小差距——窗口期可能正在关闭。</li>
+</ul>
+<h3 id="24-核心矛盾市场分歧点">2.4 核心矛盾：市场分歧点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#24-核心矛盾市场分歧点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>描述</em></p>
+<hr/>
+<h2 id="3-团队与治理-kb--inf">3. 团队与治理 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-团队与治理-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>来源：<a href="../../2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai" class="internal alias" data-slug="2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai">2026-04-27—ark—disrupt-newsletter-psychedelics-tesla-openai</a>, <a href="../../2026-04-23--lenny-rachitsky--cat-wu-anthropic-product-velocity" class="internal alias" data-slug="2026-04-23--lenny-rachitsky--cat-wu-anthropic-product-velocity">2026-04-23—lenny-rachitsky—cat-wu-anthropic-product-velocity</a>（竞品对照）, press reports</p>
+</blockquote>
+<h3 id="31-核心管理层">3.1 核心管理层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-核心管理层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>人物</th><th>职位</th><th>背景</th><th>备注</th></tr></thead><tbody><tr><td><strong>Sam Altman</strong></td><td>CEO</td><td>前 YC 总裁（2014-2019），OpenAI 创始人</td><td>正在联邦民事审判中（Musk 索赔 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">180</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">）；持有个人股权价值</span><span class="mspace nobreak"> </span></span></span></span>30B（庭审披露）；是 OpenAI 最大的资产和最大的风险</td></tr><tr><td><strong>Greg Brockman</strong></td><td>President / 联合创始人</td><td>前 Stripe CTO</td><td>长期负责战略和技术方向</td></tr><tr><td><strong>Mark Chen</strong></td><td>SVP Research</td><td>前微软</td><td>推动 GPT-5.5 和 o-series 研发</td></tr></tbody></table></div>
+<h3 id="32-董事会与治理">3.2 董事会与治理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-董事会与治理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>治理观察要点：创始人/CEO 二元性、内部人交易、董事会经验缺口等。</em></p>
+<h3 id="33-关键人风险">3.3 关键人风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-关键人风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>公司对核心人物的依赖程度、继任风险。</em></p>
+<h3 id="治理风险-curated">治理风险 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#治理风险-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>OpenAI 经历了异常多的核心人才流失：Ilya Sutskever（联合创始人/首席科学家，2024 年离开）、Mira Murati（CTO，2024）、Andrej Karpathy（2024，已加入 Anthropic）等。</li>
+<li>Anthropic 对比：11 个 founding team 仅剩 3 人仍在（Sam Altman、Greg Brockman、Wojciech Zaremba），而 Anthropic 7 位联合创始人全部在位且同股同权，人才留存率 80% vs OpenAI 67%（2021-2023 年数据）。</li>
+<li>组织文化差异：Anthropic 的”low ego, high trust”文化 vs OpenAI 的”researcher-driven 文化”——内部存在 Researcher > Research Engineer > Software Engineer 的”鄙视链”，产品常被 research 压一头。Anthropic 产品与模型团队咬合更紧密。</li>
+<li>非营利→营利性重组正在法院推进：Altman 庭审中披露个人股权 ~$30B，引发治理担忧。</li>
+<li>核心团队稳定性是评估 OpenAI 长期竞争力的关键变量——需要持续关注。</li>
+<li>Meta 挖人事件中 OpenAI 走了几十人 vs Anthropic 只走 2 人（均为 Meta 老员工）。</li>
+</ul>
+<hr/>
+<h2 id="4-产品与技术-kb">4. 产品与技术 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-产品与技术-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="41-产品矩阵">4.1 产品矩阵<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#41-产品矩阵" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>产品线</th><th>定位</th><th>关键数据</th><th>变现模式</th></tr></thead><tbody><tr><td><strong>GPT-5.5</strong></td><td>前沿基础模型（文本+推理）</td><td>AI Index 60%（第一），$11.30/M tokens</td><td>API 按 token 计费</td></tr><tr><td><strong>ChatGPT</strong></td><td>Consumer AI 助手</td><td>最快破亿用户应用</td><td>订阅 $20/月（Plus），企业版更高</td></tr><tr><td><strong>Codex</strong></td><td>AI 编程 Agent 平台</td><td>4M 活跃用户（20x 自 Jan 2026）</td><td>订阅 / API</td></tr><tr><td><strong>Workspace Agents</strong></td><td>云端共享 Agent（企业）</td><td>新发布（2026）</td><td>企业订阅</td></tr><tr><td><strong>ChatGPT Images 2.0</strong></td><td>AI 图像生成</td><td>新发布（2026）</td><td>内置于 ChatGPT</td></tr><tr><td><strong>GPT-Rosalind</strong></td><td>生命科学 Agent（preview）</td><td>50+ 工具插件</td><td>尚未独立变现</td></tr><tr><td><strong>o-series</strong></td><td>推理模型（o1/o3）</td><td>用于复杂推理任务</td><td>API</td></tr></tbody></table></div>
+<h3 id="42-垂直整合--技术栈">4.2 垂直整合 / 技术栈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#42-垂直整合--技术栈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>模型层</strong>：GPT-5.5 是当前公开最强模型（60% AI Index），但领先 margin 正在缩小——Anthropic Mythos（未发布）性能相近，开源模型（DeepSeek v4, Kimi K2.6）快速追赶。</li>
+<li><strong>推理成本优势</strong>：GPT-5.5 使用 ~1/3 更少 tokens 完成 benchmark（对比 Opus 4.7）——token 效率是差异化维度。</li>
+<li><strong>Agent 协议</strong>：OpenAI+Stripe 的 ACP（Agent Commerce Protocol）正在与 Anthropic MCP、Google A2A 竞争——协议标准化将创造网络效应。</li>
+<li><strong>自研芯片传闻</strong>：OpenAI 被传正在开发自研 AI 芯片——若成功，可降低推理成本 30-50% [EST]，并减少对 Nvidia 依赖。</li>
+</ul>
+<h3 id="43-内部工具建设-kb">4.3 内部工具建设 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#43-内部工具建设-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Stripe 的 Protodash 案例展示了 AI 内部工具建设成本的崩溃：1 人设计经理，~18 个月，Claude Code 开发——OpenAI 将类似工具应用于自己的产品开发流程。（<a href="../../2026-05-04--how-i-ai--owen-williams-stripe-protodash" class="internal alias" data-slug="2026-05-04--how-i-ai--owen-williams-stripe-protodash">2026-05-04—how-i-ai—owen-williams-stripe-protodash</a>）</li>
+</ul>
+<h3 id="44-核心壁垒--护城河">4.4 核心壁垒 / 护城河<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#44-核心壁垒--护城河" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>技术壁垒、专利、规模效应、网络效应、监管准入等。</em></p>
+<h3 id="45-下一代发展方向">4.5 下一代发展方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#45-下一代发展方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>新产品线、下一代技术、扩张路径。</em></p>
+<hr/>
+<h2 id="5-市场空间-kb">5. 市场空间 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-市场空间-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>参考 <a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a> §6 市场规模</p>
+</blockquote>
+<h3 id="51-tam--份额潜力">5.1 TAM / 份额潜力<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#51-tam--份额潜力" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>可服务市场 + 公司份额框架。</em></p>
+<h3 id="tam-分层">TAM 分层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam-分层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>市场</th><th>规模（2030E）</th><th>CAGR</th><th>来源</th></tr></thead><tbody><tr><td><strong>TAM</strong></td><td>全球软件支出</td><td>$3.4-7T（取决于采用速度）</td><td>19-56%</td><td>ARK 2026, p.37</td></tr><tr><td><strong>SAM</strong></td><td>AI 促成电商</td><td>>$8T（2030，AI Agent 购买）</td><td>—</td><td>ARK 2026, p.29</td></tr><tr><td><strong>SAM</strong></td><td>AI 搜索广告</td><td>~$300B+</td><td>—</td><td>ARK 2026, p.30</td></tr><tr><td><strong>SOM</strong></td><td>AI-Native 企业</td><td>OpenAI ~$20B ARR（250% CAGR）</td><td>—</td><td>ARK 2026, p.36</td></tr></tbody></table></div>
+<h3 id="openai-可寻址">OpenAI 可寻址<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openai-可寻址" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>OpenAI 目前定位覆盖模型层（API）+ 应用层（ChatGPT + Codex）+ 协议层（ACP）。</li>
+<li>若成功转化为 AI Agent 平台，可同时捕获模型层 + 协议层 + 应用层的价值。</li>
+<li><strong>上行情景</strong>（乐观）：AI Consumer OS 定位成立 → 类比 Google/Apple 在移动时代的价值捕获 → $1T+ 市值潜力。</li>
+<li><strong>基准情景</strong>：模型层为主 + Codex 为重要收入 → $300-500B。</li>
+<li><strong>下行情景</strong>：模型商品化 + 平台未建立 → 利润率压缩 → $100-200B。</li>
+</ul>
+<h3 id="52-情景分析">5.2 情景分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#52-情景分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>情景</th><th>目标价</th><th>收入假设</th><th>估值倍数</th><th>利润率假设</th><th>关键假设</th></tr></thead><tbody><tr><td>上行</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>基准</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>下行</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>极端下行</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<hr/>
+<h2 id="6-业务进展与财务数据-kb">6. 业务进展与财务数据 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-业务进展与财务数据-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>关键说明：OpenAI 是未上市公司，所有财务数据来自 press estimates 和 ARK 研究。标注 [EST] 的为估计值。</p>
+</blockquote>
+<h3 id="61-收入增长">6.1 收入增长<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#61-收入增长" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead><tbody><tr><td>ARR（年化收入）</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mclose">)</span><span class="mord">/</span><span class="mspace nobreak"> </span></span></span></span>30B (Elad Gil est.)</td><td>2026</td><td>ARK 2026, p.36; Elad Gil/Tim Ferriss Show 2026</td></tr><tr><td>ARR CAGR</td><td>~250% (per ARK)</td><td>—</td><td>ARK 2026, p.36</td></tr><tr><td>上一轮估值</td><td>~$300B</td><td>2025/2026</td><td>Press</td></tr><tr><td>EV / Revenue（隐含）</td><td>~15x</td><td>—</td><td>Implied</td></tr></tbody></table></div>
+<h3 id="62-产品采用指标">6.2 产品采用指标<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#62-产品采用指标" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>变化</th><th>来源</th></tr></thead><tbody><tr><td>Codex 活跃用户</td><td>4M</td><td>~20x 自 Jan 2026（~0.2M）</td><td>ARK 2026 (Downing)</td></tr><tr><td>ChatGPT 用户</td><td>最快破亿（2022）</td><td>—</td><td>Public</td></tr><tr><td>API 定价</td><td>$11.30/M tokens</td><td>2x 前代</td><td>ARK 2026</td></tr></tbody></table></div>
+<h3 id="63-盈利评估-kb--inf">6.3 盈利评估 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#63-盈利评估-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>盈利未验证</strong>：OpenAI ARR 估计存在差异——ARK 给出 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，</span><span class="mord mathnormal" style="margin-right:0.01968em;">El</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord mathnormal">G</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord cjk_fallback">给出</span><span class="mspace nobreak"> </span></span></span></span>30B（可能为 run rate vs ARR 的差异）。两种口径下 compute capex 都极高。训练 GPT-5.5 级别模型需 $1B+，推理成本虽在下降但仍占收入中大部分。(<a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>)</li>
+<li><strong>定价能力测试中</strong>：GPT-5.5 以 2x 前代定价推出——如果市场接受（需求未收缩），说明差异化可转化为定价权；如果出现用量转移到竞品，说明商品化压力真实。</li>
+<li><strong>烧钱速度</strong>：参考行业结构，训练 + 推理算力成本占收入 60-80% [EST]。人力 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord cjk_fallback">（</span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000</span><span class="mord cjk_fallback">员工</span><span class="mord">×</span><span class="mspace nobreak"> </span></span></span></span>500K avg cost）[EST]。</li>
+<li><strong>IPO 财务状况压力</strong>：timeline 显示”misses revenue/user targets, IPO cash flow pressure”（2026-04-28）——暗示内部指标未达预期。</li>
+</ul>
+<h3 id="64-募资历史">6.4 募资历史<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#64-募资历史" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>轮次</th><th>金额</th><th>估值</th><th>时间</th></tr></thead><tbody><tr><td>最新 placement</td><td>$122B</td><td>~$300B+</td><td>2025/2026</td></tr><tr><td>Microsoft 总投资</td><td>~$13B+</td><td>—</td><td>2019-2023</td></tr><tr><td>后续融资</td><td>超额认购</td><td>—</td><td>—</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-竞争分析-kb--inf">7. 竞争分析 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-竞争分析-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-竞争格局概览">7.1 竞争格局概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-竞争格局概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>竞品</th><th>定位</th><th>优势</th><th>劣势</th></tr></thead><tbody><tr><td><strong>Anthropic</strong></td><td>企业安全 AI</td><td>Mythos 模型性能接近 GPT-5.5；安全差异化；$9B ARR（850% CAGR）</td><td>安全优先限制发布速度；零日囤积治理争议</td></tr><tr><td><strong>Google（DeepMind）</strong></td><td>全栈 AI</td><td>拥有最强 AI 基础设施（TPU v7）+ 最大数据优势；Gemini + YouTube 等分发渠道</td><td>整体利润率被搜索稀释；内部协调成本高</td></tr><tr><td><strong>Meta / Llama</strong></td><td>开源模型</td><td>免费 + 开源社区；$135B 2026 CapEx</td><td>无直接模型收入；开源策略的商业回报不确定</td></tr><tr><td><strong>Microsoft</strong></td><td>云 + 应用 Copilot</td><td>Azure 云优势 + 企业分销；OpenAI 生态权仍在</td><td>与 OpenAI 关系复杂化（AWS 合作后）；Copilot ROI 未验证</td></tr><tr><td><strong>DeepSeek</strong></td><td>开源 MoE</td><td>v4（1.6T params, MIT, 1M context）；成本极低</td><td>中国监管风险；无全球企业通道</td></tr><tr><td><strong>Kimi / Moonshot</strong></td><td>开源 Agentic</td><td>K2.6（1T, 384 experts）AI Index #1 开源</td><td>类似 DeepSeek 的约束</td></tr></tbody></table></div>
+<h3 id="72-openai-的竞争优势-curated">7.2 OpenAI 的竞争优势 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-openai-的竞争优势-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>品牌 + 用户规模</strong>：ChatGPT 是 AI 领域最具价值的 consumer brand——这是非对称优势。</li>
+<li><strong>双重路线（C 端 + B 端）</strong>：同时拥有 consumer（ChatGPT）和 developer（API/Codex）——这是 Anthropic（缺 C 端）和 Google（缺单一 AI 品牌）不具备的。</li>
+<li><strong>先发开发者生态</strong>：Codex 4M 用户正在形成潜在的平台锁定——类比 iOS 早期。</li>
+<li><strong>协议层参与</strong>：ACP（OpenAI+Stripe）如果标准化成功，将创造网络效应和切换成本。</li>
+</ol>
+<h3 id="73-竞争劣势-curated">7.3 竞争劣势 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-竞争劣势-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>盈利未验证 vs 巨额 CapEx</strong>：模型训练成本持续上升，但模型层定价权可能被蒸馏侵蚀——盈利路径不清晰。</li>
+<li><strong>治理不确定性</strong>：Altman 审判 + 营利性重组 + 核心人才流失——这些是 Anthropic/Google 没有的问题。</li>
+<li><strong>独家云合作解除</strong>：Microsoft 独家性放松 → AWS $500 亿投资 + Bedrock 部署 → 多云策略提升 OpenAI 的 Bargaining Power。短期利好（更多 GPU compute），长期合作关系风险——但模型公司话语权不可逆地增强（<a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a>）</li>
+</ol>
+<hr/>
+<h2 id="8-风险提示与应对-kb--inf">8. 风险提示与应对 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-风险提示与应对-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>严重程度</strong>：🔴 高 · 🟡 中 · 🟢 低  |  <strong>时间窗口</strong>：⌛ 短期（≤6个月）· ⏳ 中期（6-18个月）· 🕰️ 长期（>18个月）</p>
+<p>每个风险用矩阵表格呈现，取代段落式描述。</p>
+</blockquote>
+<h3 id="81-模型商品化风险">8.1 模型商品化风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#81-模型商品化风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>来源</strong>：蒸馏成本仅 ~$25M，开源模型快速缩小差距。（<a href="../../2026-04-15--dwarkesh-patel--what-i-learned-april-2025" class="internal alias" data-slug="2026-04-15--dwarkesh-patel--what-i-learned-april-2025">2026-04-15—dwarkesh-patel—what-i-learned-april-2025</a>）</li>
+<li><strong>影响</strong>：若前台模型差距消失 → API 定价权归零 → revenue 受损。</li>
+<li><strong>化解观察点</strong>：GPT-5.5 定价 $11.30/M tokens → 观察需求弹性和 API 收入增长趋势。若持续增长，说明差异化有效。</li>
+</ul>
+<h3 id="82-治理与法律风险">8.2 治理与法律风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#82-治理与法律风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>风险</th><th>描述</th><th>影响</th><th>应对观察</th></tr></thead><tbody><tr><td>Altman 联邦民事审判</td><td>Musk 索赔 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">180</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，</span></span></span></span>852B IPO 估值受质疑</td><td>延迟 IPO 或削弱估值</td><td>2026-05 开庭，关注结果</td></tr><tr><td>营利性重组合法性</td><td>法院质疑非营利→营利转型</td><td>治理结构不稳定性</td><td>庭审进展</td></tr><tr><td>零日囤积</td><td>Anthropic Mythos 发现数千个漏洞引发治理讨论</td><td>监管压力可能波及 OpenAI</td><td>白宫 AI 审查行政令动态</td></tr><tr><td>核心人才流失</td><td>Sutskever, Murati, Karpathy 等人离开</td><td>长期研发能力风险</td><td>关注后续人才流动方向</td></tr></tbody></table></div>
+<h3 id="83-竞争风险">8.3 竞争风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#83-竞争风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Anthropic 差异化</strong>：Mythos 能力接近 GPT-5.5 + 安全优先定位可能在企业市场获得溢价。</li>
+<li><strong>开源追赶</strong>：DeepSeek v4, Kimi K2.6, Llama 系列 → 模型层商品化压力持续。</li>
+<li><strong>Hyperscaler 内化</strong>：Microsoft/Google 可能内化模型能力到自有产品（Copilot/Gemini）——减少外部 API 使用。</li>
+</ul>
+<h3 id="84-财务风险">8.4 财务风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#84-财务风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>盈利未验证</strong>：ARR $20B 与 compute capex 的关系不透明——APO（AI 生产化运营）成本可能吃掉大部分毛利率。</li>
+<li><strong>IPO 窗口风险</strong>：若法律问题延迟 IPO 到 2027+，宏观环境（利率、地缘政治）可能关闭窗口。</li>
+<li><strong>估值的合理性</strong>：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">300</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">/</span></span></span></span>20B ARR = 15x，但对于未盈利的高 capex 公司，这个倍数需要极高的增长持续性支撑。</li>
+</ul>
+<h3 id="85-技术风险">8.5 技术风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#85-技术风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>模型能力饱和</strong>：Scaling Law 遇到因果断裂等问题——如果模型能力提升放缓，CapEx 叙事受影响。（<a href="../../2026-04-15--dwarkesh-patel--what-i-learned-april-2025" class="internal alias" data-slug="2026-04-15--dwarkesh-patel--what-i-learned-april-2025">2026-04-15—dwarkesh-patel—what-i-learned-april-2025</a>）</li>
+<li><strong>Agent 能力天花板</strong>：上下文记忆墙（~200K tokens）是 Agent 扩展的结构性约束。（<a href="../../2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms" class="internal alias" data-slug="2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms">2026-04-29—dwarkesh-patel—reiner-pope-math-behind-llms</a>）</li>
+</ul>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业板块">行业板块<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业板块" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a></p>
+<h3 id="竞争对手">竞争对手<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争对手" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/meta" class="internal" data-slug="wiki/companies/meta">meta</a>, <a href="../../wiki/companies/assembly-ai" class="internal" data-slug="wiki/companies/assembly-ai">assembly-ai</a></p>
+<h3 id="人物">人物<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#人物" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../dwarkesh-patel" class="internal" data-slug="dwarkesh-patel">dwarkesh-patel</a>, <a href="../../max-schoening" class="internal" data-slug="max-schoening">max-schoening</a>, <a href="../../reiner-pope" class="internal" data-slug="reiner-pope">reiner-pope</a>, <a href="../../elad-gil" class="internal" data-slug="elad-gil">elad-gil</a></p>
+<h3 id="概念">概念<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#概念" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/concepts/model-distillation" class="internal" data-slug="wiki/concepts/model-distillation">model-distillation</a>, <a href="../../wiki/concepts/ai-agent-operating-system" class="internal" data-slug="wiki/concepts/ai-agent-operating-system">ai-agent-operating-system</a>, <a href="../../wiki/concepts/everything-is-computer-framework" class="internal" data-slug="wiki/concepts/everything-is-computer-framework">everything-is-computer-framework</a></p>
+<h3 id="相关逻辑theses">相关逻辑（Theses）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关逻辑theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></p>
+<h3 id="分析--比较">分析 / 比较<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分析--比较" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></p>
+<h3 id="关键来源">关键来源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键来源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../2026-03-18--ark-ai--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-ai--big-ideas-2026">2026-03-18—ark-ai—big-ideas-2026</a>, <a href="../../2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai" class="internal alias" data-slug="2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai">2026-04-27—ark—disrupt-newsletter-psychedelics-tesla-openai</a>, <a href="../../2026-04-15--dwarkesh-patel--what-i-learned-april-2025" class="internal alias" data-slug="2026-04-15--dwarkesh-patel--what-i-learned-april-2025">2026-04-15—dwarkesh-patel—what-i-learned-april-2025</a>, <a href="../../2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms" class="internal alias" data-slug="2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms">2026-04-29—dwarkesh-patel—reiner-pope-math-behind-llms</a>, <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>, <a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a></p>
+<blockquote>
+<p>注：未使用的分类可删掉，保留相关的即可。</p>
+</blockquote>
+<hr/>
+<h2 id="时间线">时间线<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#时间线" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>按季度分组的大事记（最新在前）。</em></p>
+<h3 id="信号图例">信号图例<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#信号图例" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>📈 <code>YYYY-MM-DD</code> — 正面事件（财报超预期、增长、催化剂）
+⚠️ <code>YYYY-MM-DD</code> — 风险事件（监管、竞争、供应链）
+🔄 <code>YYYY-MM-DD</code> — 战略事件（收购、领导层变更、重组）
+❓ <code>YYYY-MM-DD</code> — 不确定事件（影响不明、关注中）</p>
+<h3 id="q2-2026">Q2 2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>🔄 <code>2026-06-09</code> — 秘密提交美国 IPO 申请（估值 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">8520</span><span class="mord cjk_fallback">亿），与</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord cjk_fallback">同步推进公开上市；巨型</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">PO</span><span class="mord cjk_fallback">集群（</span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord">/</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord">/</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">合计</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span></span></span></span>3T）或触发被动基金千亿美元再平衡（Bloomberg <a href="../../sources/2026-06-09--insight-news--早报+晚报" class="internal alias" data-slug="sources/2026-06-09--insight-news--早报+晚报">2026-06-09—insight-news—早报+晚报</a>）</p>
+</li>
+<li>
+<p>🔄 <code>2026-06-07</code> — FT 报道 OpenAI 计划对 ChatGPT 进行迄今最大改革，转型为”超级应用”：整合 Codex 编码工具 + AI 代理 + 第三方服务（Canva/Booking.com）；重新设计界面引导用户使用新功能；企业客户占营收 ~40%，目标年底升至 50%；周活用户 >9 亿、订阅超 5,000 万；为上市前提升营收质量（Reuters/FT <a href="../../sources/2026-06-08--insight-news--早报+晚报" class="internal alias" data-slug="sources/2026-06-08--insight-news--早报+晚报">2026-06-08—insight-news—早报+晚报</a>)</p>
+</li>
+<li>
+<p>📈 <code>2026-06-02</code> — ChatGPT reaches 1 billion monthly active users (Sensor Tower), fastest app ever to reach milestone; strengthens competitive position vs Anthropic; expands monetization optionality (advertising/subscription) (Reuters)</p>
+</li>
+<li>
+<p>📈 <code>2026-05-29</code> — 向日本三大银行（三菱UFJ、三井住友、瑞穗）提供 GPT-5.5 访问权限用于网络攻击防御；日本财务大臣证实并称此为”增强日本金融机构防御能力的一大进步”；日本政府成立公私合作工作组应对 Anthropic Mythos 对金融系统的网络安全风险</p>
+</li>
+<li>
+<p>📈 <code>2026-05-22</code> — 纳斯达克为吸引巨型 IPO 特别放宽规则：SpaceX 上市仅 15 天即可按三倍权重纳入纳斯达克 100；SpaceX、OpenAI、Anthropic 集中上市或触发被动基金千亿美元再平衡，从 Mag 7 撤出（INSIGHT NEWS PRO 2026-05-22 早报）</p>
+</li>
+<li>
+<p>📈 <code>2026-05-21</code> — 准备最快本周秘密提交 IPO 申请；目标估值 >1 万亿美元，最早 9 月上市；Goldman Sachs 和 Morgan Stanley 为主承销商；赶在 SpaceX 750 亿美元融资之前确保投资者分配（INSIGHT NEWS PRO 2026-05-21）</p>
+</li>
+<li>
+<p>📈 <code>2026-05-19</code> — Musk 诉讼被加州陪审团在 2 小时审议后驳回；1340 亿美元索赔被拒；Musk 计划上诉；IPO 路径清除，估值约 1 万亿美元（INSIGHT NEWS PRO 2026-05-19）</p>
+</li>
+<li>
+<p>📈 <code>2026-05-19</code> — Musk 诉讼败诉：奥克兰陪审团 2 小时内驳回 1340 亿美元索赔；通往约 1 万亿美元 IPO 的法律路径清除；Musk 计划上诉；反垄断和商业机密索赔仍有可能（INSIGHT NEWS PRO 2026-05-19 早报）</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-18</code> — OpenAI 庭审揭示 Brockman 持有 300 亿美元股权，引发治理担忧；FT 报道估值 8520 亿美元（INSIGHT NEWS PRO 2026-05-18）</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-18</code> — IPO 命运与奥克兰 Musk 陪审团裁决绑定；估值 8520 亿美元；Brockman 持有 300 亿美元股份；IPO 前治理与合规风险上升（INSIGHT NEWS PRO 2026-05-18 晚报）</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-12</code> — Altman 在 OpenAI v. Musk 案中作证；法庭审理创始承诺 vs 营利性转型；3800 万美元捐赠争议；治理可信度受考验</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-12</code> — 收购 Tomoro，与 PE 公司成立 OpenAI Deployment 合资企业；40+ 机构投资者承诺超过 400 亿美元；约 150 名部署工程师加速企业 AI 落地</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-12</code> — Altman 面临 GOP 调查：众议院监督委员会 + 6 个州总检察长要求 SEC 调查 IPO 前个人投资/利益冲突；Musk 诉讼增加治理审查</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-11</code> — 加州庭审揭露联合创始人长期权力/金钱冲突；Musk 索赔 1500 亿美元、曾捐 3800 万美元；若法院支持非营利认定将终止超 1 万亿美元 IPO 路径；微软 27% 持股（2000 亿美元+）面临合作审查</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-11</code> — 员工股份变现已募 66 亿美元（600+ 在职/前员工），每位最高可售 3000 万美元；约 75 人全额套现，推高旧金山高端租金；二级基金/要约收购受益，传统科技公司（Meta/Google）招聘留人成本被动上升</p>
+</li>
+<li>
+<p>📈 <code>2026-05-08</code> — OpenAI ARR 估计约 4500 亿美元（4 月）→年底约 1 万亿美元（据硅谷坐标播客）；API 需求环比增长 50%</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-08</code> — Amazon 5000 亿美元投资；OpenAI 在 AWS Bedrock API 上首次亮相（多云战略加速，增强模型公司相对云提供商的议价能力）</p>
+</li>
+<li>
+<p>📈 <code>2026-05-07</code> — Pentagon 合作开发分类 AI 应用；华为 AI 芯片销售激增，侵蚀 Nvidia 中国份额</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-06</code> — Brockman：OpenAI 计划 2026 年计算支出 500 亿美元；计算成本从 2017 年的 3000 万美元飙升至 500 亿美元，表明基础设施大规模扩张和训练成本爆炸</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-06</code> — Musk 在 OpenAI 庭审中作证，指控营利性转型存在欺骗；寻求 1500 亿美元赔偿和管理层撤换；治理风险增加 IPO 时间表不确定性</p>
+</li>
+<li>
+<p>🔄 <code>2026-05-05</code> — 内部讨论剥离机器人和消费硬件（io 收购，55 名员工）以独立融资；因整合顾虑被否决；转向”超级应用”战略，为 IPO 准备而削减 Sora 和边缘项目</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-05</code> — 总裁在法庭上为营利性重组辩护；披露个人股权持有最多约 300 亿美元；庭审审查重组合法性和 IPO 前管理层可信度</p>
+</li>
+<li>
+<p>⚠️ <code>2026-05-04</code> — Sam Altman 联邦民事审判开始；Musk 诉讼索赔高达 1800 亿美元；收入目标未达成且竞争对手（Anthropic）夺取份额，8520 亿美元 IPO 估值受质疑</p>
+</li>
+<li>
+<p>⚠️ <code>2026-04-28</code> — Microsoft 独家性放松，扩展至 AWS；未达收入/用户目标，IPO 现金流压力</p>
+</li>
+<li>
+<p>📈 <code>2026-04-17</code> — 推出 GPT-Rosalind 用于生命科学研究（通过 ChatGPT/Codex/API 预览，50+ 工具插件）</p>
+</li>
+<li>
+<p>🔄 <code>2026-04-14</code> — 8520 亿美元估值在从消费者转向企业的过程中受质疑；1220 亿美元 placement 超额认购</p>
+</li>
+</ul>
+<h3 id="我的持仓追踪">我的持仓追踪<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#我的持仓追踪" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Tracked in <a href="../../wiki/theses/..." class="internal alias" data-slug="wiki/theses/...">…</a></em></p>
+<hr/>
+<blockquote>
+<p><strong>使用说明</strong>：新增季度分组时，插入 <code>### QN YYYY</code> 空标题即可。超过 30 条时将早期记录归档至 timeline-archive 页面。</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-80" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#0-基础信息-curated" data-for="0-基础信息-curated">0. 基础信息 [CURATED]</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#关键指标速览" data-for="关键指标速览">关键指标速览</a></li><li class="depth-0"><a href="#2-投资逻辑-kb--inf" data-for="2-投资逻辑-kb--inf">2. 投资逻辑 [KB + INF]</a></li><li class="depth-1"><a href="#21-公司定位核心叙事--ai-平台是当代最大的价值创造机会" data-for="21-公司定位核心叙事--ai-平台是当代最大的价值创造机会">2.1 公司定位：核心叙事 — AI 平台是当代最大的价值创造机会</a></li><li class="depth-1"><a href="#22-投资框架多层论据--openai-的差异化优势" data-for="22-投资框架多层论据--openai-的差异化优势">2.2 投资框架：多层论据 — OpenAI 的差异化优势</a></li><li class="depth-1"><a href="#23-为什么现在关注关键催化窗口--拐点信号密集出现" data-for="23-为什么现在关注关键催化窗口--拐点信号密集出现">2.3 为什么现在关注：关键催化窗口 — 拐点信号密集出现</a></li><li class="depth-1"><a href="#24-核心矛盾市场分歧点" data-for="24-核心矛盾市场分歧点">2.4 核心矛盾：市场分歧点</a></li><li class="depth-0"><a href="#3-团队与治理-kb--inf" data-for="3-团队与治理-kb--inf">3. 团队与治理 [KB + INF]</a></li><li class="depth-1"><a href="#31-核心管理层" data-for="31-核心管理层">3.1 核心管理层</a></li><li class="depth-1"><a href="#32-董事会与治理" data-for="32-董事会与治理">3.2 董事会与治理</a></li><li class="depth-1"><a href="#33-关键人风险" data-for="33-关键人风险">3.3 关键人风险</a></li><li class="depth-1"><a href="#治理风险-curated" data-for="治理风险-curated">治理风险 [CURATED]</a></li><li class="depth-0"><a href="#4-产品与技术-kb" data-for="4-产品与技术-kb">4. 产品与技术 [KB]</a></li><li class="depth-1"><a href="#41-产品矩阵" data-for="41-产品矩阵">4.1 产品矩阵</a></li><li class="depth-1"><a href="#42-垂直整合--技术栈" data-for="42-垂直整合--技术栈">4.2 垂直整合 / 技术栈</a></li><li class="depth-1"><a href="#43-内部工具建设-kb" data-for="43-内部工具建设-kb">4.3 内部工具建设 [KB]</a></li><li class="depth-1"><a href="#44-核心壁垒--护城河" data-for="44-核心壁垒--护城河">4.4 核心壁垒 / 护城河</a></li><li class="depth-1"><a href="#45-下一代发展方向" data-for="45-下一代发展方向">4.5 下一代发展方向</a></li><li class="depth-0"><a href="#5-市场空间-kb" data-for="5-市场空间-kb">5. 市场空间 [KB]</a></li><li class="depth-1"><a href="#51-tam--份额潜力" data-for="51-tam--份额潜力">5.1 TAM / 份额潜力</a></li><li class="depth-1"><a href="#tam-分层" data-for="tam-分层">TAM 分层</a></li><li class="depth-1"><a href="#openai-可寻址" data-for="openai-可寻址">OpenAI 可寻址</a></li><li class="depth-1"><a href="#52-情景分析" data-for="52-情景分析">5.2 情景分析</a></li><li class="depth-0"><a href="#6-业务进展与财务数据-kb" data-for="6-业务进展与财务数据-kb">6. 业务进展与财务数据 [KB]</a></li><li class="depth-1"><a href="#61-收入增长" data-for="61-收入增长">6.1 收入增长</a></li><li class="depth-1"><a href="#62-产品采用指标" data-for="62-产品采用指标">6.2 产品采用指标</a></li><li class="depth-1"><a href="#63-盈利评估-kb--inf" data-for="63-盈利评估-kb--inf">6.3 盈利评估 [KB + INF]</a></li><li class="depth-1"><a href="#64-募资历史" data-for="64-募资历史">6.4 募资历史</a></li><li class="depth-0"><a href="#7-竞争分析-kb--inf" data-for="7-竞争分析-kb--inf">7. 竞争分析 [KB + INF]</a></li><li class="depth-1"><a href="#71-竞争格局概览" data-for="71-竞争格局概览">7.1 竞争格局概览</a></li><li class="depth-1"><a href="#72-openai-的竞争优势-curated" data-for="72-openai-的竞争优势-curated">7.2 OpenAI 的竞争优势 [CURATED]</a></li><li class="depth-1"><a href="#73-竞争劣势-curated" data-for="73-竞争劣势-curated">7.3 竞争劣势 [CURATED]</a></li><li class="depth-0"><a href="#8-风险提示与应对-kb--inf" data-for="8-风险提示与应对-kb--inf">8. 风险提示与应对 [KB + INF]</a></li><li class="depth-1"><a href="#81-模型商品化风险" data-for="81-模型商品化风险">8.1 模型商品化风险</a></li><li class="depth-1"><a href="#82-治理与法律风险" data-for="82-治理与法律风险">8.2 治理与法律风险</a></li><li class="depth-1"><a href="#83-竞争风险" data-for="83-竞争风险">8.3 竞争风险</a></li><li class="depth-1"><a href="#84-财务风险" data-for="84-财务风险">8.4 财务风险</a></li><li class="depth-1"><a href="#85-技术风险" data-for="85-技术风险">8.5 技术风险</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#行业板块" data-for="行业板块">行业板块</a></li><li class="depth-1"><a href="#竞争对手" data-for="竞争对手">竞争对手</a></li><li class="depth-1"><a href="#人物" data-for="人物">人物</a></li><li class="depth-1"><a href="#概念" data-for="概念">概念</a></li><li class="depth-1"><a href="#相关逻辑theses" data-for="相关逻辑theses">相关逻辑（Theses）</a></li><li class="depth-1"><a href="#分析--比较" data-for="分析--比较">分析 / 比较</a></li><li class="depth-1"><a href="#关键来源" data-for="关键来源">关键来源</a></li><li class="depth-0"><a href="#时间线" data-for="时间线">时间线</a></li><li class="depth-1"><a href="#信号图例" data-for="信号图例">信号图例</a></li><li class="depth-1"><a href="#q2-2026" data-for="q2-2026">Q2 2026</a></li><li class="depth-1"><a href="#我的持仓追踪" data-for="我的持仓追踪">我的持仓追踪</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/analyses/frameworks/ai-buildout-stack" class="internal">ai-buildout-stack</a></li><li><a href="../../wiki/companies/amzn" class="internal">amzn</a></li><li><a href="../../wiki/companies/anthropic" class="internal">anthropic</a></li><li><a href="../../wiki/companies/googl" class="internal">googl</a></li><li><a href="../../wiki/companies/msft" class="internal">msft</a></li><li><a href="../../wiki/concepts/model-routing" class="internal">model-routing</a></li><li><a href="../../wiki/daily/" class="internal">index</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

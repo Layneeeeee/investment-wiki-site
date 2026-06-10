@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>2026-05-23</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="2026-05-23"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-05-23"/><meta name="twitter:description" content="Daily Report — 2026-05-23 📌 本日处理 11 篇来源（AEHR batch 5 篇 + Inbox batch 6 篇），覆盖：AEHR 订单拐点 + Proof Layer 测试框架、Neocloud 资产类别、COHR 光学平台深潜、AI 芯片架构体系化、Sohn 2026 共识、ARK 周报标的。 Today’s Key Takeaways 💡 Neocloud 全新 AI 基础设施资产类别 — Jamin Ball 提出 $7.5Tn 建设（150GW）或创造 $13.5Tn EV。IPP（独立发电厂）类比框架：AI 算力正从 hyperscaler 自建..."/><meta property="og:description" content="Daily Report — 2026-05-23 📌 本日处理 11 篇来源（AEHR batch 5 篇 + Inbox batch 6 篇），覆盖：AEHR 订单拐点 + Proof Layer 测试框架、Neocloud 资产类别、COHR 光学平台深潜、AI 芯片架构体系化、Sohn 2026 共识、ARK 周报标的。 Today’s Key Takeaways 💡 Neocloud 全新 AI 基础设施资产类别 — Jamin Ball 提出 $7.5Tn 建设（150GW）或创造 $13.5Tn EV。IPP（独立发电厂）类比框架：AI 算力正从 hyperscaler 自建..."/><meta property="og:image:alt" content="Daily Report — 2026-05-23 📌 本日处理 11 篇来源（AEHR batch 5 篇 + Inbox batch 6 篇），覆盖：AEHR 订单拐点 + Proof Layer 测试框架、Neocloud 资产类别、COHR 光学平台深潜、AI 芯片架构体系化、Sohn 2026 共识、ARK 周报标的。 Today’s Key Takeaways 💡 Neocloud 全新 AI 基础设施资产类别 — Jamin Ball 提出 $7.5Tn 建设（150GW）或创造 $13.5Tn EV。IPP（独立发电厂）类比框架：AI 算力正从 hyperscaler 自建..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-23"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-23"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Daily Report — 2026-05-23 📌 本日处理 11 篇来源（AEHR batch 5 篇 + Inbox batch 6 篇），覆盖：AEHR 订单拐点 + Proof Layer 测试框架、Neocloud 资产类别、COHR 光学平台深潜、AI 芯片架构体系化、Sohn 2026 共识、ARK 周报标的。 Today’s Key Takeaways 💡 Neocloud 全新 AI 基础设施资产类别 — Jamin Ball 提出 $7.5Tn 建设（150GW）或创造 $13.5Tn EV。IPP（独立发电厂）类比框架：AI 算力正从 hyperscaler 自建..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-23-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-23-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-23-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/daily/2026-05-23"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-348"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-348" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/daily/">daily</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026 05 23</a></div></nav><h1 class="article-title">2026-05-23</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-22T16:00:00.000Z">May 23, 2026</time><span>11 min read</span></p><ul class="tags"><li><a href="../../tags/daily-report" class="internal tag-link">daily-report</a></li><li><a href="../../tags/2026-05" class="internal tag-link">2026-05</a></li></ul></div></div><article class="popover-hint"><h1 id="daily-report--2026-05-23">Daily Report — 2026-05-23<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daily-report--2026-05-23" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>📌 <strong>本日处理 11 篇来源</strong>（AEHR batch 5 篇 + Inbox batch 6 篇），覆盖：AEHR 订单拐点 + Proof Layer 测试框架、Neocloud 资产类别、COHR 光学平台深潜、AI 芯片架构体系化、Sohn 2026 共识、ARK 周报标的。</p>
+</blockquote>
+<h2 id="todays-key-takeaways">Today’s Key Takeaways<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todays-key-takeaways" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p><strong>💡 Neocloud 全新 AI 基础设施资产类别</strong> — Jamin Ball 提出 $7.5Tn 建设（150GW）或创造 $13.5Tn EV。IPP（独立发电厂）类比框架：AI 算力正从 hyperscaler 自建外溢至 merchant market。SpaceX/Anthropic $15b/年交易验证极端规模需求。已创建 <a href="../../wiki/concepts/neocloud" class="internal" data-slug="wiki/concepts/neocloud">neocloud</a>。<code>CRWV</code> <code>AI_Infra</code></p>
+</li>
+<li>
+<p><strong>💡 COHR 最广泛的光学平台加入覆盖</strong> — Gaetano 深潜 Coherent：6-inch InP >4x devices 且成本&lt;一半、NVIDIA $2B 股权投资+CPO 供应协议、OCS SAM $2B→$4B。$419 base / $568 bull 提供估值参考。<code>COHR</code> <code>GLW</code> <code>LITE</code></p>
+</li>
+<li>
+<p><strong>📡 AEHR 订单拐点 + Proof Layer 测试生态</strong> — $41M 记录订单推动 H2 bookings 至 $92M+，碾压 $60-80M 指引。FOX-XP 晶圆级 burn-in 在 CoWoS 前捕获坏 die。Proof Layer 4 公司框架（FORM→AEHR→VIAVI→Keysight）揭示被忽视的 AI 投资维度。已创建 <a href="../../wiki/concepts/proof-layer" class="internal" data-slug="wiki/concepts/proof-layer">proof-layer</a>。<code>AEHR</code> <code>VIAVI</code> <code>FORM</code></p>
+</li>
+<li>
+<p><strong>💡 AI 芯片架构框架 + 市场信号</strong> — Reiner Pope 芯片架构体系化（compute/communication ratio 核心瓶颈）。Sohn 2026 确认 AI 共识在 infra 不在软件（Token Jevons：Google token 7x YoY）。ARK 异动：GH +17%（FDA）、FUTU -27%（监管）、GENI +22%（无催化剂）。<code>NVDA</code> <code>GH</code> <code>FUTU</code></p>
+</li>
+</ul>
+<hr/>
+<h2 id="今日来源汇总">今日来源汇总<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#今日来源汇总" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>来源</th><th>类型</th><th>摘要</th></tr></thead><tbody><tr><td>1</td><td><a href="../../2026-04-01--gaetano--testing-proof-layer-optics" class="internal alias" data-slug="2026-04-01--gaetano--testing-proof-layer-optics">2026-04-01—gaetano—testing-proof-layer-optics</a></td><td>research-note</td><td>Proof Layer 框架引入：光学测试 3 层任务（proving/stabilizing/validating），AEHR 覆盖前两层，VIAVI 覆盖第三层，CPO 使验证层价值提升</td></tr><tr><td>2</td><td><a href="../../2026-04-07--aehr--continued-upside" class="internal alias" data-slug="2026-04-07--aehr--continued-upside">2026-04-07—aehr—continued-upside</a></td><td>research-note</td><td>AEHR 财报前预览：H2 bookings $60-80M 指引，Sonoma 爬坡时间点关键未知，$1.3B 市值”为故事买单”</td></tr><tr><td>3</td><td><a href="../../2026-04-08--aehr--earnings-dive" class="internal alias" data-slug="2026-04-08--aehr--earnings-dive">2026-04-08—aehr—earnings-dive</a></td><td>earnings</td><td>AEHR Q3 FY2026：$10.3M 收入（-44% YoY）vs $37.2M 订单（3.5x book-to-bill），$50.9M backlog 创纪录，Sonoma 2,000W 里程碑，HBM burn-in TAM</td></tr><tr><td>4</td><td><a href="../../2026-04-08--gaetano--proof-layer-in-optics" class="internal alias" data-slug="2026-04-08--gaetano--proof-layer-in-optics">2026-04-08—gaetano—proof-layer-in-optics</a></td><td>research-note</td><td>Proof Layer 扩展：4 公司框架（FORM→AEHR→VIAVI→Keysight），CPO 使价值向两个方向转移</td></tr><tr><td>5</td><td><a href="../../2026-04-16--aehr--new-order" class="internal alias" data-slug="2026-04-16--aehr--new-order">2026-04-16—aehr—new-order</a></td><td>research-note</td><td>AEHR $41M 记录订单，H2 bookings $92M+（vs $60-80M 指引），FOX-XP 晶圆级 burn-in economics，3 增长支柱</td></tr><tr><td>6</td><td><a href="../../2026-05-23--ruben-dominguez--asymmetric-bets-unfair-upside" class="internal alias" data-slug="2026-05-23--ruben-dominguez--asymmetric-bets-unfair-upside">2026-05-23—ruben-dominguez—asymmetric-bets-unfair-upside</a></td><td>newsletter</td><td>非对称下注框架：3 种形式 + 8 问题检查表，VC 回报幂律分布的结构性根源</td></tr><tr><td>7</td><td><a href="../../2026-05-22--gaetano--coherent-durability" class="internal alias" data-slug="2026-05-22--gaetano--coherent-durability">2026-05-22—gaetano—coherent-durability</a></td><td>research-note</td><td>COHR 综合深潜：6-inch InP >4x devices、NVIDIA $2B 股权投资、4层框架（pluggables→CPO→OCS→Multi-Rail/thermal）、$419 base / $568 bull</td></tr><tr><td>8</td><td><a href="../../2026-05-23--ark--stock-commentary-geni-gh-futu" class="internal alias" data-slug="2026-05-23--ark--stock-commentary-geni-gh-futu">2026-05-23—ark—stock-commentary-geni-gh-futu</a></td><td>research-note</td><td>ARK 周报：GH +17%（G360 FDA 批准）、FUTU -27%（中国证监会 $271M 罚款）、GENI +22%（无催化剂）</td></tr><tr><td>9</td><td><a href="../../2026-05-22--a16z-moses--charts-of-the-week-sohn" class="internal alias" data-slug="2026-05-22--a16z-moses--charts-of-the-week-sohn">2026-05-22—a16z-moses—charts-of-the-week-sohn</a></td><td>newsletter</td><td>Sohn ‘25→‘26 复盘、Token Jevons（Google 7x YoY）、AI solopreneurship/ARR-FTE 上升、CS 入学下降</td></tr><tr><td>10</td><td><a href="../../2026-05-23--dwarkesh-patel--reiner-pope-chip-design" class="internal alias" data-slug="2026-05-23--dwarkesh-patel--reiner-pope-chip-design">2026-05-23—dwarkesh-patel—reiner-pope-chip-design</a></td><td>interview</td><td>从逻辑门到 systolic array 的完整芯片架构课程，compute/communication ratio（~7/8 面积用于数据搬运），FPGA vs ASIC 10x 成本差异</td></tr><tr><td>11</td><td><a href="../../2026-05-22--jamin-ball--neocloud-boom" class="internal alias" data-slug="2026-05-22--jamin-ball--neocloud-boom">2026-05-22—jamin-ball—neocloud-boom</a></td><td>research-note</td><td>Neocloud boom thesis：150GW × $90b/GW = $13.5Tn EV，SpaceX/Anthropic $15b/年验证，IPP 类比，CoreWeave/Nebius/IREN 估值对标</td></tr></tbody></table></div>
+<hr/>
+<h2 id="公司标的追踪">公司标的追踪<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#公司标的追踪" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="今日更新要点">今日更新要点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#今日更新要点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">标的</th><th>公司名称</th><th style="text-align:center;">提及次数</th><th>今日来源</th><th>投资逻辑</th><th>Bull Case</th><th>Bear Case</th><th>今日关键佐证</th></tr></thead><tbody><tr><td style="text-align:center;"><code>AEHR</code></td><td>Aehr Test Systems</td><td style="text-align:center;">5/11</td><td>Gaetano batch</td><td>晶圆级 burn-in 测试设备龙头，AI ASIC 和硅光子学的结构性受益者。FOX-XP 在 CoWoS 封装前捕获坏 die，节省成本远超设备价格。Sonoma 2,000W 热管理 moat。</td><td>订单拐点确认（$92M+ H2 bookings）；3 增长支柱（同客户下一代 ASIC + ASE/ISE Labs + HBM $数十亿 TAM）；ATM 完成稀释移除；晶圆级 burn-in 是 AI 芯片良率的关键瓶颈</td><td>收入仍在下滑（-44% YoY）；客户集中度高（lead hyperscaler 主导）；$1.3B 市值”为故事买单”；wafer-level benchmark 延迟表明学习曲线仍在</td><td>📈 $41M 记录订单 + $92M+ H2 bookings 碾压指引（<a href="../../2026-04-16--aehr--new-order" class="internal alias" data-slug="2026-04-16--aehr--new-order">2026-04-16—aehr—new-order</a>）<br/>📈 $50.9M backlog 创纪录（<a href="../../2026-04-08--aehr--earnings-dive" class="internal alias" data-slug="2026-04-08--aehr--earnings-dive">2026-04-08—aehr—earnings-dive</a>）<br/>📈 Sonoma 2,000W/device — 行业 2x（<a href="../../2026-04-08--aehr--earnings-dive" class="internal alias" data-slug="2026-04-08--aehr--earnings-dive">2026-04-08—aehr—earnings-dive</a>）<br/>⚠️ Q3 收入 $10.3M（-44% YoY），收入滞后于订单</td></tr><tr><td style="text-align:center;"><code>COHR</code></td><td>Coherent</td><td style="text-align:center;">1/11</td><td>Gaetano</td><td>最广泛的光学制造平台，覆盖 AI scale-out（800G/1.6T）、scale-up（CPO）、OCS、DCI、thermal/SiC。6-inch InP 是核心差异化：>4x devices vs 3-inch 且成本&lt;一半。NVIDIA $2B 股权投资是关键验证。</td><td>6-inch InP 结构性成本优势；NVIDIA $2B 股权+CPO 协议验证；OCS SAM 翻倍至 $4B；FY27 增长 > FY26；CPO/thermal 2027 期权</td><td>混合 GM 39.6% 低于专注光学标的（LITE）；多产品线执行复杂；6-inch InP yield 爬坡不及预期</td><td>📈 6-inch InP 已开始出货首批组件，良率优于 3-inch 产线<br/>📈 NVIDIA $2B 股权投资 + 多年 CPO 供应协议<br/>📈 OCS SAM $2B→$4B，>10 客户参与<br/>⚠️ 混合 GM 39.6% vs LITE ~50%+</td></tr><tr><td style="text-align:center;"><code>GH</code></td><td>Guardant Health</td><td style="text-align:center;">1/11</td><td>ARK</td><td>精准肿瘤学液体活检龙头。G360 获 FDA 批准为最大液体活检 panel（100x 扩增），ADLT 身份可提升报销率。</td><td>FDA 批准 + 100x panel 扩大；ADLT 身份提升 ASP；肿瘤早筛市场增长</td><td>竞争加剧（FMI、Grail）；医保报销不确定性；营收增长尚未验证</td><td>📈 G360 FDA 批准用于晚期实体瘤液体 CDx（<a href="../../2026-05-23--ark--stock-commentary-geni-gh-futu" class="internal alias" data-slug="2026-05-23--ark--stock-commentary-geni-gh-futu">2026-05-23—ark—stock-commentary-geni-gh-futu</a>）</td></tr><tr><td style="text-align:center;"><code>FUTU</code></td><td>富途控股</td><td style="text-align:center;">1/11</td><td>ARK</td><td>中国跨境券商，千万级用户。中国证监会提议 $271M 罚款 —— 无证经营指控。</td><td>华人全球投资唯一通道；用户增长强劲</td><td>中国监管风险 —— $271M 罚款可能是更大监管风暴开始；-27% 单日跌幅</td><td>⚠️ 中国证监会提议 $271M 罚款，指控无证经营（<a href="../../2026-05-23--ark--stock-commentary-geni-gh-futu" class="internal alias" data-slug="2026-05-23--ark--stock-commentary-geni-gh-futu">2026-05-23—ark—stock-commentary-geni-gh-futu</a>）</td></tr><tr><td style="text-align:center;"><code>GENI</code></td><td>Genius Sports</td><td style="text-align:center;">1/11</td><td>ARK</td><td>体育数据 + AI 分析平台。22% 单日涨幅无公司特定消息，可能为板块轮动或空头挤压。</td><td>体育博彩合法化趋势；AI 数据变现</td><td>22% 涨幅无基本面催化剂；竞争激烈</td><td>➡️ +22% 无公司特定消息（<a href="../../2026-05-23--ark--stock-commentary-geni-gh-futu" class="internal alias" data-slug="2026-05-23--ark--stock-commentary-geni-gh-futu">2026-05-23—ark—stock-commentary-geni-gh-futu</a>）</td></tr></tbody></table></div>
+<hr/>
+<h2 id="行业覆盖">行业覆盖<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业覆盖" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="artificial-intelligence"><a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#artificial-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>更新位置</strong>: §3.3 技术进展、§3.4 短期动态</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li><strong>§3.3 Neocloud 建设规模框架</strong> — Jamin Ball 框架加入：150GW × $50b/GW = $7.5Tn 投资总规模，类比 1880 年代美国铁路（GDP 6%）。IPP 类比提供投资框架。<a href="../../wiki/concepts/neocloud" class="internal" data-slug="wiki/concepts/neocloud">neocloud</a> 已创建。</li>
+<li><strong>§3.3 Token Jevons 悖论</strong> — Google 3.2 千兆 token/月（7x YoY），token 消耗增速 2x GPU 租赁增速。推理经济爆发确认（来源：<a href="../../2026-05-22--a16z-moses--charts-of-the-week-sohn" class="internal alias" data-slug="2026-05-22--a16z-moses--charts-of-the-week-sohn">2026-05-22—a16z-moses—charts-of-the-week-sohn</a>）</li>
+<li><strong>§3.3 AI 芯片架构框架</strong> — Reiner Pope 芯片架构体系化：compute/communication ratio 核心瓶颈。<a href="../../wiki/concepts/ai-chip-architecture" class="internal" data-slug="wiki/concepts/ai-chip-architecture">ai-chip-architecture</a> 已创建。</li>
+<li><strong>§3.3 晶圆级 burn-in 作为 AI 芯片良率瓶颈</strong> — AEHR 的 FOX-XP 在 CoWoS 前捕获坏 die，节省成本远超设备价格。随着 AI ASIC 复杂度提升，burn-in 经济价值持续上升。</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>今日来源合力强化了一个核心叙事：AI 基础设施投资正在从”买 GPU”扩展到整个支撑生态 —— neocloud（算力商品化）、光学互联（COHR 6-inch InP）、芯片架构创新（Reiner Pope 框架）、测试验证（Proof Layer/AEHR）。Sohn 2026 共识确认专业投资者集中在 infra/电力/半导层，而非 AI 软件。</p>
+</blockquote>
+<h3 id="semiconductors--optics">Semiconductors &amp; Optics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semiconductors--optics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>覆盖范围</strong>: COHR（光学平台）、AI 芯片架构</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li><strong>COHR 光学平台加入 wiki</strong> — Gaetano 深潜：6-inch InP >4x devices 且成本&lt;一半，NVIDIA $2B 股权投资是关键验证。4 层产品框架覆盖 AI 互联全部场景。</li>
+<li><strong>AI 芯片架构框架</strong> — Reiner Pope 提供系统化分类：FPGA vs ASIC（10x 成本差异），GPU vs TPU（多小 SM vs 大矩阵单元架构分化）。</li>
+</ul>
+<h3 id="proof-layer--测试验证生态">Proof Layer / 测试验证生态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#proof-layer--测试验证生态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>覆盖范围</strong>: AEHR、FORM、VIAVI、Keysight — 光学/半导体测试 4 公司框架</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li><strong>Proof Layer 框架建立</strong> — 3 个测试任务（proving the device → stabilizing/screening → validating the system），对应 4 公司框架。<a href="../../wiki/concepts/proof-layer" class="internal" data-slug="wiki/concepts/proof-layer">proof-layer</a> 已创建。</li>
+<li><strong>AEHR 订单拐点确认</strong> — $92M+ H2 bookings 碾压 $60-80M 指引，3 增长支柱清晰。</li>
+<li><strong>CPO 对测试层的结构性影响</strong> — 光学越靠近封装，验证层价值越大。</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>Proof Layer 框架揭示被忽视的 AI 基础设施投资维度 —— 测试层。与 GPU/光模块等”前端”组件不同，测试设备受益于 AI 芯片复杂度和产量的双重增长。AEHR 是当前最高纯度的纯 play，但客户集中度和收入滞后性是主要风险。</p>
+</blockquote>
+<hr/>
+<h2 id="行情快照">行情快照<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行情快照" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>数据来源：Sina Finance API (<code>gb_</code> 接口) | 按总市值倒序排列</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Ticker</th><th>公司名称</th><th>市场</th><th>收盘价</th><th>涨跌幅</th><th>开盘</th><th>日内区间</th><th>总市值</th><th>PE</th><th>总股本</th><th>备注</th><th>获取时间</th></tr></thead><tbody><tr><td><code>NVDA</code></td><td>NVIDIA</td><td>NASDAQ</td><td>$219.51</td><td><span style="color:var(--color-red);">-1.90%</span></td><td>$220.90</td><td>$214.80~$221.01</td><td>$5.22T</td><td>32.77</td><td>24.22B</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>GOOGL</code></td><td>Alphabet</td><td>NASDAQ</td><td>$387.66</td><td><span style="color:var(--color-red);">-1.21%</span></td><td>$387.35</td><td>$381.77~$388.74</td><td>$4.64T</td><td>28.90</td><td>12.12B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>AAPL</code></td><td>Apple</td><td>NASDAQ</td><td>$304.99</td><td><span style="color:var(--color-green);">+1.26%</span></td><td>$306.12</td><td>$305.84~$311.40</td><td>$4.54T</td><td>38.94</td><td>14.69B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>MSFT</code></td><td>Microsoft</td><td>NASDAQ</td><td>$419.09</td><td><span style="color:var(--color-red);">-0.12%</span></td><td>$419.54</td><td>$416.33~$424.40</td><td>$3.11T</td><td>24.84</td><td>7.43B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>AMZN</code></td><td>Amazon</td><td>NASDAQ</td><td>$268.46</td><td><span style="color:var(--color-red);">-0.80%</span></td><td>$268.65</td><td>$266.24~$269.79</td><td>$2.86T</td><td>31.37</td><td>10.76B</td><td></td><td>May 22 08:01PM EDT</td></tr><tr><td><code>TSM</code></td><td>TSMC</td><td>NYSE</td><td>$407.15</td><td><span style="color:var(--color-red);">-0.65%</span></td><td>$409.43</td><td>$402.86~$410.67</td><td>$2.10T</td><td>33.63</td><td>5.19B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>TSLA</code></td><td>Tesla</td><td>NASDAQ</td><td>$417.85</td><td><span style="color:var(--color-green);">+1.95%</span></td><td>$422.67</td><td>$420.51~$431.51</td><td>$1.60T</td><td>355.01</td><td>3.76B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>META</code></td><td>Meta</td><td>NASDAQ</td><td>$607.38</td><td><span style="color:var(--color-green);">+0.47%</span></td><td>$607.88</td><td>$606.95~$614.81</td><td>$1.55T</td><td>21.84</td><td>2.54B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>SNPS</code></td><td>Synopsys</td><td>NASDAQ</td><td>$503.98</td><td><span style="color:var(--color-green);">+4.12%</span></td><td>$510.00</td><td>$508.51~$534.11</td><td>$100.5B</td><td>80.36</td><td>191.6M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>CDNS</code></td><td>Cadence</td><td>NASDAQ</td><td>$358.46</td><td><span style="color:var(--color-green);">+4.22%</span></td><td>$361.88</td><td>$361.54~$381.55</td><td>$103.0B</td><td>86.48</td><td>275.8M</td><td></td><td>May 22 07:58PM EDT</td></tr><tr><td><code>QCOM</code></td><td>Qualcomm</td><td>NASDAQ</td><td>$213.41</td><td><span style="color:var(--color-green);">+11.60%</span></td><td>$214.43</td><td>$214.17~$243.00</td><td>$251.0B</td><td>25.69</td><td>1.05B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>AMD</code></td><td>AMD</td><td>NASDAQ</td><td>$449.59</td><td><span style="color:var(--color-green);">+3.99%</span></td><td>$469.84</td><td>$461.71~$481.41</td><td>$762.3B</td><td>151.79</td><td>1.63B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>TXN</code></td><td>Texas Instr.</td><td>NASDAQ</td><td>$298.39</td><td><span style="color:var(--color-green);">+3.63%</span></td><td>$305.40</td><td>$303.00~$315.57</td><td>$281.4B</td><td>52.59</td><td>910.1M</td><td></td><td>May 22 07:57PM EDT</td></tr><tr><td><code>LITE</code></td><td>Lumentum</td><td>NASDAQ</td><td>$964.50</td><td><span style="color:var(--color-red);">-1.82%</span></td><td>$965.15</td><td>$934.85~$971.05</td><td>$73.7B</td><td>152.23</td><td>77.8M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>GLW</code></td><td>Corning</td><td>NYSE</td><td>$191.89</td><td><span style="color:var(--color-green);">+1.13%</span></td><td>$194.35</td><td>$189.34~$194.98</td><td>$167.0B</td><td>104.33</td><td>860.6M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>TSEM</code></td><td>Tower Semi</td><td>NASDAQ</td><td>$279.01</td><td><span style="color:var(--color-green);">+1.58%</span></td><td>$287.66</td><td>$279.01~$288.19</td><td>$32.0B</td><td>130.01</td><td>112.8M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>SMTC</code></td><td>Semtech</td><td>NASDAQ</td><td>$146.53</td><td><span style="color:var(--color-green);">+7.00%</span></td><td>$155.00</td><td>$151.15~$164.48</td><td>$14.6B</td><td>—</td><td>93.1M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>AAOI</code></td><td>Applied Opto.</td><td>NASDAQ</td><td>$176.81</td><td><span style="color:var(--color-green);">+2.65%</span></td><td>$176.24</td><td>$166.66~$182.46</td><td>$14.6B</td><td>—</td><td>80.2M</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>TER</code></td><td>Teradyne</td><td>NASDAQ</td><td>$353.44</td><td><span style="color:var(--color-green);">+1.41%</span></td><td>$355.00</td><td>$352.41~$360.34</td><td>$56.1B</td><td>65.89</td><td>156.5M</td><td></td><td>May 22 08:01PM EDT</td></tr><tr><td><code>VIAV</code></td><td>Viavi</td><td>NASDAQ</td><td>$48.98</td><td><span style="color:var(--color-green);">+1.08%</span></td><td>$49.77</td><td>$48.27~$50.46</td><td>$12.1B</td><td>—</td><td>245.0M</td><td></td><td>May 22 07:58PM EDT</td></tr><tr><td><code>NOK</code></td><td>Nokia</td><td>NYSE</td><td>$14.18</td><td><span style="color:var(--color-green);">+9.10%</span></td><td>$14.70</td><td>$14.57~$15.78</td><td>$86.5B</td><td>96.69</td><td>5.59B</td><td></td><td>May 22 07:59PM EDT</td></tr><tr><td><code>DDOG</code></td><td>Datadog</td><td>NASDAQ</td><td>$218.04</td><td><span style="color:var(--color-green);">+1.96%</span></td><td>$220.95</td><td>$218.72~$224.77</td><td>$79.1B</td><td>570.05</td><td>356.0M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>SHOP</code></td><td>Shopify</td><td>NYSE</td><td>$104.86</td><td><span style="color:var(--color-red);">-1.77%</span></td><td>$105.81</td><td>$102.98~$107.85</td><td>$133.7B</td><td>100.98</td><td>1.30B</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>CRWV</code></td><td>CoreWeave</td><td>NASDAQ</td><td>$107.58</td><td><span style="color:var(--color-red);">-1.94%</span></td><td>$109.32</td><td>$104.88~$109.85</td><td>$57.6B</td><td>—</td><td>545.6M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>BABA</code></td><td>Alibaba</td><td>NYSE</td><td>$131.47</td><td><span style="color:var(--color-red);">-1.12%</span></td><td>$126.92</td><td>$126.92~$130.75</td><td>$311.9B</td><td>20.28</td><td>2.40B</td><td></td><td>May 22 04:03PM EDT</td></tr><tr><td><code>RKLB</code></td><td>Rocket Lab</td><td>NASDAQ</td><td>$125.45</td><td><span style="color:var(--color-green);">+8.22%</span></td><td>$131.41</td><td>$131.31~$139.76</td><td>$78.6B</td><td>—</td><td>578.9M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>CBRS</code></td><td>Cerebras</td><td>NASDAQ</td><td>$281.86</td><td><span style="color:var(--color-red);">-8.90%</span></td><td>$285.00</td><td>$250.27~$285.00</td><td>$55.3B</td><td>233.44</td><td>215.2M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>OKLO</code></td><td>Oklo</td><td>NYSE</td><td>$65.09</td><td><span style="color:var(--color-green);">+1.21%</span></td><td>$66.82</td><td>$65.13~$69.72</td><td>$11.5B</td><td>—</td><td>174.0M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>HOOD</code></td><td>Robinhood</td><td>NASDAQ</td><td>$75.92</td><td><span style="color:var(--color-red);">-3.00%</span></td><td>$76.32</td><td>$73.26~$77.11</td><td>$66.3B</td><td>34.74</td><td>900.5M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>SOFI</code></td><td>SoFi</td><td>NASDAQ</td><td>$15.65</td><td><span style="color:var(--color-red);">-0.19%</span></td><td>$15.70</td><td>$15.36~$15.93</td><td>$20.0B</td><td>32.54</td><td>1.28B</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>COHU</code></td><td>Cohu</td><td>NASDAQ</td><td>$45.65</td><td><span style="color:var(--color-green);">+1.93%</span></td><td>$45.98</td><td>$44.99~$47.13</td><td>$2.2B</td><td>—</td><td>47.2M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>PENG</code></td><td>Penguin Sol.</td><td>NASDAQ</td><td>$48.81</td><td><span style="color:var(--color-green);">+9.01%</span></td><td>$48.93</td><td>$48.93~$54.28</td><td>$2.7B</td><td>—</td><td>50.7M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>AIP</code></td><td>Arteris</td><td>NASDAQ</td><td>$35.90</td><td><span style="color:var(--color-green);">+1.06%</span></td><td>$36.40</td><td>$35.48~$36.94</td><td>$1.7B</td><td>—</td><td>46.2M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>CRSP</code></td><td>CRISPR Tx.</td><td>NASDAQ</td><td>$49.90</td><td><span style="color:var(--color-green);">+0.92%</span></td><td>$49.92</td><td>$49.92~$51.11</td><td>$4.9B</td><td>—</td><td>96.4M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>ABSI</code></td><td>Absci</td><td>NASDAQ</td><td>$5.09</td><td><span style="color:var(--color-green);">+0.20%</span></td><td>$5.11</td><td>$5.04~$5.21</td><td>$795.1M</td><td>—</td><td>155.9M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>RBLX</code></td><td>Roblox</td><td>NYSE</td><td>$46.14</td><td><span style="color:var(--color-green);">+4.38%</span></td><td>$46.36</td><td>$46.36~$48.37</td><td>$34.5B</td><td>—</td><td>716.0M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>WDAY</code></td><td>Workday</td><td>NASDAQ</td><td>$121.85</td><td><span style="color:var(--color-green);">+5.16%</span></td><td>$128.74</td><td>$125.16~$133.71</td><td>$32.0B</td><td>49.10</td><td>249.7M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>IOT</code></td><td>Samsara</td><td>NYSE</td><td>$30.15</td><td><span style="color:var(--color-green);">+3.32%</span></td><td>$30.45</td><td>$30.45~$31.63</td><td>$18.2B</td><td>—</td><td>582.7M</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>UBER</code></td><td>Uber</td><td>NYSE</td><td>$73.61</td><td><span style="color:var(--color-red);">-2.43%</span></td><td>$73.85</td><td>$71.32~$74.97</td><td>$146.2B</td><td>17.52</td><td>2.04B</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>AUR</code></td><td>Aurora</td><td>NYSE</td><td>$7.17</td><td><span style="color:var(--color-red);">-1.39%</span></td><td>$7.26</td><td>$7.03~$7.46</td><td>$13.9B</td><td>—</td><td>1.96B</td><td></td><td>May 22 04:00PM EDT</td></tr><tr><td><code>CERS</code></td><td>Cerus</td><td>NASDAQ</td><td>$2.74</td><td><span style="color:var(--color-red);">-1.09%</span></td><td>$2.74</td><td>$2.69~$2.81</td><td>$543.0M</td><td>—</td><td>200.4M</td><td></td><td>May 22 04:00PM EDT</td></tr></tbody></table></div>
+<blockquote>
+<p><strong>注</strong>: QCOM +11.60%（财报后持续重估）、CBRS -8.90%（可能受 neocloud 竞争叙事影响）、NOK +9.10%、RKLB +8.22%、PENG +9.01%、WDAY +5.16%。光学/Semi 标的普遍走强。</p>
+</blockquote>
+<hr/>
+<h2 id="备注">备注<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#备注" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>新概念页面</strong>: <a href="../../wiki/concepts/neocloud" class="internal" data-slug="wiki/concepts/neocloud">neocloud</a>、<a href="../../wiki/concepts/ai-chip-architecture" class="internal" data-slug="wiki/concepts/ai-chip-architecture">ai-chip-architecture</a>、<a href="../../wiki/concepts/proof-layer" class="internal" data-slug="wiki/concepts/proof-layer">proof-layer</a>、<a href="../../wiki/concepts/asymmetric-bets" class="internal" data-slug="wiki/concepts/asymmetric-bets">asymmetric-bets</a>、<a href="../../wiki/concepts/thermal-test" class="internal" data-slug="wiki/concepts/thermal-test">thermal-test</a>（AEHR batch）、<a href="../../wiki/concepts/arr-fte" class="internal" data-slug="wiki/concepts/arr-fte">arr-fte</a></li>
+<li><strong>新公司页面</strong>: <a href="../../wiki/companies/aehr" class="internal" data-slug="wiki/companies/aehr">aehr</a>、<a href="../../wiki/companies/cohr" class="internal" data-slug="wiki/companies/cohr">cohr</a>、<a href="../../wiki/companies/gh" class="internal" data-slug="wiki/companies/gh">gh</a></li>
+<li><strong>AEHR 核心信号</strong>: 订单拐点确认但收入 lagging，需等待 Q4 财报确认收入转化。</li>
+<li><strong>COHR</strong>: 最广泛光学平台，6-inch InP 结构性优势 + NVIDIA 验证。$419 base / $568 bull 目标价提供参考框架。</li>
+<li><strong>Sohn 2026 关键信号</strong>: Token Jevons 悖论（消耗增速 > 算力增速）支持 AI infra 长期需求；CS 入学下降暗示人才供应拐点。</li>
+<li><strong>下周关注</strong>: AEHR Q4 订单/收入转化；COHR 6-inch InP 爬坡验证；GH G360 商业化节奏。</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-164" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#daily-report--2026-05-23" data-for="daily-report--2026-05-23">Daily Report — 2026-05-23</a></li><li class="depth-1"><a href="#todays-key-takeaways" data-for="todays-key-takeaways">Today’s Key Takeaways</a></li><li class="depth-1"><a href="#今日来源汇总" data-for="今日来源汇总">今日来源汇总</a></li><li class="depth-1"><a href="#公司标的追踪" data-for="公司标的追踪">公司标的追踪</a></li><li class="depth-2"><a href="#今日更新要点" data-for="今日更新要点">今日更新要点</a></li><li class="depth-1"><a href="#行业覆盖" data-for="行业覆盖">行业覆盖</a></li><li class="depth-2"><a href="#artificial-intelligence" data-for="artificial-intelligence">artificial-intelligence</a></li><li class="depth-2"><a href="#semiconductors--optics" data-for="semiconductors--optics">Semiconductors &amp; Optics</a></li><li class="depth-2"><a href="#proof-layer--测试验证生态" data-for="proof-layer--测试验证生态">Proof Layer / 测试验证生态</a></li><li class="depth-1"><a href="#行情快照" data-for="行情快照">行情快照</a></li><li class="depth-1"><a href="#备注" data-for="备注">备注</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/daily/" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

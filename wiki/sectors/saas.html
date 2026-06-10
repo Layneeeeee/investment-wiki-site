@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>saas</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="saas"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="saas"/><meta name="twitter:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/saas"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/saas"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/saas-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/saas-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/saas-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/saas"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-398"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-398" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>saas</a></div></nav><h1 class="article-title">saas</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-02T16:00:00.000Z">Jun 03, 2026</time><span>50 min read</span></p><ul class="tags"><li><a href="../../tags/saas" class="internal tag-link">saas</a></li><li><a href="../../tags/software" class="internal tag-link">software</a></li><li><a href="../../tags/cloud" class="internal tag-link">cloud</a></li><li><a href="../../tags/fintech" class="internal tag-link">fintech</a></li><li><a href="../../tags/enterprise-software" class="internal tag-link">enterprise-software</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SaaS 领域涵盖跨所有业务职能的云交付企业软件。2026 年 CFO 技术指南（Mostly Metrics，覆盖 7 个收入群组的 1,364 名财务领导者）提供了需求侧的全面视图，展现了财务团队按类别和收入区间实际使用的工具。关键主题：类别融合、AI-native 挑战者以及电子表格在结账管理和 FP&amp;A 中的持续主导地位。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI-native 颠覆周期加速</strong>：企业 SaaS 面临结构性颠覆，AI-native 挑战者（Rillet/Campfire 在 ERP 领域、Numeric/Numos AI 在结账领域、Taxwire 在销售税领域）在每个类别中涌现。Workday 模式（<a href="../../wiki/companies/wday" class="internal" data-slug="wiki/companies/wday">wday</a>）——基于预 AI 架构构建的遗留 SaaS 无法在不重新开始的情况下变为 AI-native——可复制到任何架构先于 AI 时代的领域。[KB + INF]</li>
+<li><strong>Per-seat → consumption 是结构性转变，而非趋势</strong>：Microsoft 领导定价转型，重新定义 SaaS 指标（ARR 变得更加混乱，NRR 更加波动，bookings 更加不均匀）和薪酬结构。Agent 经济使 consumption 成为原生定价模式：“Agent 不买座位。它完成任务。它使用 tokens。它调用工具。“（Ball 2026 per <a href="../../2026-05-01--jamin-ball--death-of-per-seat-pricing" class="internal alias" data-slug="2026-05-01--jamin-ball--death-of-per-seat-pricing">2026-05-01—jamin-ball—death-of-per-seat-pricing</a>）[KB]</li>
+<li><strong>UI 护城河正在消退——可防御性转移到新层</strong>：在 agent 时代，agents 通过 API 和 MCP 绕过 UI，使肌肉记忆和人工工作流作为护城河的作用中性化。剩下的是：专有数据 exhaust、闭合行动循环、真实世界执行、多方网络效应以及 agent 间交互的信任架构。“可防御的数据不是你导入的数据，而是你的产品独特地使其存在的数据。“（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>类别融合创造平台赢家</strong>：收入栈（计费+收入确认+税收）和支出管理（卡+费用+AP+采购）都在整合为平台型产品。Ramp 的多类别主导地位和 NetSuite 的 ERP 覆盖范围说明了这一模式。[KB]</li>
+<li><strong>电子表格的韧性被低估</strong>：AI 插件扩展而非取代电子表格的主导地位——75%+ 的 &lt;<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">公司和</span><span class="mord">45</span></span></span></span>50-100M 公司的 FP&amp;A 仍在使用电子表格。“晚起的鸟儿获得插件”的动态奖励现有数据平台。[KB]</li>
+<li><strong>SaaS 估值倍数正常化而非压缩</strong>：在增长调整基础上，软件倍数已回到过去十年的平均水平，尽管盈利增长高于趋势。私募 SaaS 可能面临来自软件债务抛售的进一步估值重置（Medallia 案例）。（a16z 2026 per <a href="../../2026-05-01--a16z--charts-v-shaped-recovery" class="internal alias" data-slug="2026-05-01--a16z--charts-v-shaped-recovery">2026-05-01—a16z—charts-v-shaped-recovery</a>）[KB]</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>具有数据护城河的 AI-native 平台（Vendr 的 Ruth AI 基于 $15B 验证的 SaaS 支出训练——“每个竞争对手都能复制界面。没人能复制数据库。”）[KB]</li>
+<li>与 agent 经济一致的 consumption-native SaaS 模型 [KB + INF]</li>
+<li>受益于类别融合的平台（收入栈整合、像 Ramp 这样的支出管理平台）[KB]</li>
+<li>具有现实世界执行要素的垂直 SaaS——现场服务、物流、物理运营——其中”最后一英里”无法完全自动化，且数据 exhaust 是专有的（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li>用于 agent 间交互的身份/权限/信任层——数据之外的结构性可防御性（Amble 2026）[KB]</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>基于预 AI 架构构建的遗留 SaaS（Workday 模式）——面临结构性劣势，AI-native 挑战者正在涌现。广泛适用于企业 SaaS 类别。[KB + INF]</li>
+<li>拥有大型安装基座的 per-seat 现有企业——定价转型产生收入中断风险；销售薪酬结构需要根本性重新设计 [KB]</li>
+<li>主要护城河为 UI/人工作流肌肉记忆的现有企业——agents 绕过浏览器，使这一可防御性层中性化。产品越依赖”UI 驱动粘性”，脆弱性越大。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>高杠杆的 PE 支持的 SaaS：软件债务抛售（约 90 美分兑一美元），软件约占不良贷款的 35%。Medallia (Thoma Bravo) 案例：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">6.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">收购</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>5.1B 股权减记。（a16z 2026）[KB]</li>
+<li>功能臃肿的套件，没有清晰的”微小核心”——添加功能是死亡螺旋；艰难的工作是回归核心超能力。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>EV / NTM Revenue (Median)</td><td>整体 SaaS 估值水位</td><td>3.3x</td><td>Clouded Judgement + Mostly Metrics / Koyfin 2026</td></tr><tr><td>EV / NTM Revenue (Top 10 Median)</td><td>头部公司估值溢价</td><td>14.7x</td><td>Clouded Judgement + Mostly Metrics / Koyfin 2026</td></tr><tr><td>Rule of 40 (Top 10)</td><td>增长 + 利润率综合指标</td><td>50%</td><td>Clouded Judgement + Mostly Metrics / Koyfin 2026</td></tr><tr><td>CAC Payback (Top 10)</td><td>客户获客成本回收周期</td><td>24 months</td><td>Clouded Judgement + Mostly Metrics / Koyfin 2026</td></tr><tr><td>Revenue per Employee (Top 10)</td><td>人均效率</td><td>$595k</td><td>Clouded Judgement + Mostly Metrics / Koyfin 2026</td></tr></tbody></table></div>
+<blockquote>
+<p>Per <a href="../../2026-04-27--cj-gustafson--sbc-dilution-private-companies" class="internal alias" data-slug="2026-04-27--cj-gustafson--sbc-dilution-private-companies">2026-04-27—cj-gustafson—sbc-dilution-private-companies</a> + <a href="../../2026-05-11--cj-gustafson--the-thing-about-more-tokens" class="internal alias" data-slug="2026-05-11--cj-gustafson--the-thing-about-more-tokens">2026-05-11—cj-gustafson—the-thing-about-more-tokens</a> (Mostly Metrics / Clouded Judgement, citing Koyfin)</p>
+</blockquote>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb">2. 行业概述与界定 [FRAME + KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>SaaS（软件即服务）指云交付的企业软件，涵盖所有业务职能——ERP、CRM、HCM、支出管理、结账管理、FP&amp;A、期权表、采购、税务等。核心模式是基于订阅的访问（per-seat 或 consumption），而非永久许可。总可寻址市场巨大且碎片化，子类别处于不同成熟阶段。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>本地部署时代</strong>：软件作为永久许可销售，附带维护费。高转换成本，升级周期慢。</li>
+<li><strong>云/SaaS 时代（2000 年代-2010 年代）</strong>：Salesforce 率先推出 per-seat 订阅模式。NetSuite、Workday 等建立了云原生架构。跨所有业务职能的类别扩张。</li>
+<li><strong>当前/转型时代（2020 年代-）</strong>：AI-native 挑战者在每个类别涌现。Microsoft 领导的 per-seat → consumption 定价转变。类别融合，平台吸收相邻功能（收入栈、支出管理）。尽管有专业工具，电子表格仍然韧性。Agent 经济预示着原生的 consumption 模式。</li>
+</ul>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>┌─────────────────────────────────────────────────┐
+│  Application Layer                               │
+│  ERP · HCM · CRM · FP&amp;A · Close · Spend         │
+│  Procurement · Cap Table · Tax · Billing        │
+├─────────────────────────────────────────────────┤
+│  Platform / Middleware Layer                     │
+│  Workflow Automation · Low-Code · AI Agents     │
+│  Integration (iPaaS) · Data Platforms           │
+├─────────────────────────────────────────────────┤
+│  Infrastructure Layer (Cloud / Compute)         │
+│  AWS · Azure · GCP · Cloud Storage · Network    │
+├─────────────────────────────────────────────────┤
+│  Services Layer                                  │
+│  Implementation · Consulting · Managed Services │
+└─────────────────────────────────────────────────┘
+</code></pre>
+<hr/>
+<h2 id="3-驱动力与趋势-kb">3. 驱动力与趋势 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>目前没有主要的直接监管悬置</strong>对 SaaS 领域产生广泛影响。监管关注集中在 AI 安全和平台反垄断——可能对大型平台 SaaS 玩家相关。[FRAME]</li>
+<li><strong>SBC 披露规范</strong>：对股票补偿稀释实践的审查日益严格。成熟 SaaS 应保持年稀释率 &lt;低个位数；世界级 &lt;1%（Costco 0.3%）。快速增长的 SaaS 从激进的股权使用中获得更高回报。（Mostly Metrics 2026 per <a href="../../2026-04-27--cj-gustafson--sbc-dilution-private-companies" class="internal alias" data-slug="2026-04-27--cj-gustafson--sbc-dilution-private-companies">2026-04-27—cj-gustafson—sbc-dilution-private-companies</a>）[KB]</li>
+<li><strong>税务合规复杂性</strong>：销售税自动化正经历 AI-native 颠覆（Taxwire 一年内跃升至 $5-25M 公司的 17% 采用率），表明监管复杂性为 SaaS 创造机会而非负担。[KB]</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>SaaS 估值倍数均值回归</strong>：在增长调整基础上，软件倍数已回到过去十年的平均水平，尽管盈利增长高于趋势。（a16z 2026 per <a href="../../2026-05-01--a16z--charts-v-shaped-recovery" class="internal alias" data-slug="2026-05-01--a16z--charts-v-shaped-recovery">2026-05-01—a16z—charts-v-shaped-recovery</a>）[KB]</li>
+<li><strong>软件债务抛售</strong>：软件贷款的平均出价已降至约 90 美分兑一美元；软件现在约占不良贷款的 35%。贷款在履约但价格下跌——Medallia (Thoma Bravo) 案例：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">6.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">收购</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>5.1B 股权减记，钥匙交给债权人。（a16z 2026）[KB]</li>
+<li><strong>半导体→软件周期</strong>：AI 周期遵循后 GFC 移动模式——半导体先领跑（约 5 年），然后软件获得最大收益。AI 周期：应用层扩展速度前所未有，但大部分是私募。软件可能是 AI 的最大受益者，只是延迟了。（a16z 2026）[KB + INF]</li>
+<li><strong>SaaS 倍数在所有群组中小幅上升（5 月 8 日当周）</strong>：Top 5 中位数从 18.4x→21.1x，High Growth 从 10.7x→12.6x，Mid Growth 5.0x→5.2x，Low Growth 2.4x→2.5x。增长溢价在扩大——高增长现在的交易倍数是低增长的约 5 倍（前一周约 4.5 倍）。CAC 回收期 36 个月高于历史基准（约 18-24 个月）——值得关注客户获取成本是否在结构性上升。（Ball 2026 per <a href="../../2026-05-08--jamin-ball--clouded-judgement-machines-out-eat-humans" class="internal alias" data-slug="2026-05-08--jamin-ball--clouded-judgement-machines-out-eat-humans">2026-05-08—jamin-ball—clouded-judgement-machines-out-eat-humans</a>）[KB]</li>
+<li><strong>Solopreneur 崛起重塑 ARR/FTE 指标</strong>：Stripe Economics 数据显示 Q1 所有类别创始人数量增长，“非 AI 单创始人”增长最快。AI 工具降低创业门槛的同时也降低雇佣回报——ARR/FTE 成为衡量运营杠杆的新关键指标。Top 1% 公司占销售额份额从 1960 年的 ~60% 升至 ~80%，但 AI solopreneur 浪潮可能开始从大公司夺回部分利润池。（a16z Moses 2026 per <a href="../../2026-05-22--a16z-moses--charts-of-the-week-sohn" class="internal alias" data-slug="2026-05-22--a16z-moses--charts-of-the-week-sohn">2026-05-22—a16z-moses—charts-of-the-week-sohn</a>）[KB]</li>
+<li><strong>采购的蓝海</strong>：只有 36% 的公司使用专用采购工具——类别创造的空间巨大。[KB]</li>
+<li><strong>电子表格的韧性</strong>：75%+ 的 &lt;<span class="katex-error" title="ParseError: KaTeX parse error: Expected 'EOF', got '&amp;' at position 10: 5M 公司的 FP&amp;̲A 使用电子表格，" style="color:#cc0000;">5M 公司的 FP&amp;A 使用电子表格，</span>50-100M 公司中占 45%。AI 插件可能扩展而非取代这一主导地位。（Mostly Metrics 2026）[KB]</li>
+<li><strong>基于资产的定价作为差异化模式</strong>：Samsara（<a href="../../wiki/companies/iot" class="internal" data-slug="wiki/companies/iot">iot</a>）按物理资产（车辆/设备）而非按座位定价——98% 经常性收入，top-10 EV/收入倍数与纯软件公司一样持续。向非可自由支配的运营预算（客户收入的 80%）销售创造了与 IT/seat-based SaaS 结构性不同的需求特征。（Phillips 2026 per <a href="../../2026-05-06--dominic-phillips-samsara--scaling-1b-revenue" class="internal alias" data-slug="2026-05-06--dominic-phillips-samsara--scaling-1b-revenue">2026-05-06—dominic-phillips-samsara—scaling-1b-revenue</a>）[KB]</li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI-native 工具在每个类别涌现</strong>：Vendr 的 Ruth AI agent 基于 $15B 验证的 SaaS 支出训练——“每个竞争对手都能复制界面。没人能复制数据库。“[KB]</li>
+<li><strong>AI 强化电子表格</strong>：Claude 的动态插件实现在表格内进行建模 rigor——“晚起的鸟儿获得插件。“电子表格在 FP&amp;A 中仍占主导。[KB]</li>
+<li><strong>基于 agent 的采购</strong>：BRM CEO 预测大部分软件谈判将由 agents 处理。[KB]</li>
+<li><strong>“前 10% 免费”对 SaaS 产品</strong>：AI 将原型成本降至接近零——任何产品的第一个版本现在基本上都是免费的。但最后 10% 的精炼、可靠性和规模仍然是 90% 的工作。这为 AI-native 挑战者创造了快速演示的楔子，但护城河仍在艰难的最后里程中。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+<li><strong>HCM 下一个被颠覆</strong>：a16z 宣布 HCM 是最后一个没有严肃 AI-native 挑战者的大型企业类别——Workday 的 2005 年架构在结构上无法变为 AI-native。冲击 SAP 的同一波平台重建（通过 Tessera）现在瞄准 HCM，一个 >$40B 的全球市场。参见 <a href="../../wiki/companies/wday" class="internal" data-slug="wiki/companies/wday">wday</a> 和 <a href="../../2026-04-28--joe-schmidt-iv--workdays-last-workday" class="internal alias" data-slug="2026-04-28--joe-schmidt-iv--workdays-last-workday">2026-04-28—joe-schmidt-iv—workdays-last-workday</a>。[KB]</li>
+<li><strong>无头转型——UI 护城河消退</strong>：Salesforce 推出无头产品，押注其价值在于数据层而非 UI。随着 agents（通过 MCP 和 computer-using agents）绕过浏览器直接读写 API，记录系统的传统可防御性减弱。可防御层向下（数据模型、权限、工作流逻辑、合规）和向上（专有数据生成、现实世界执行、网络效应）转移。三种买家路径浮现：现有企业 + agents、DIY 记录系统、或 AI-native 替代。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Token 支出 ROI 清算将至</strong>：大多数 SaaS 公司目前拥有无限的 AI token 预算，但 ROI 对话预计在 6-12 个月内到来。Token 支出成为虚荣指标（像代码行数）的危险。能够展示清晰 token ROI 的平台将受益；那些在无差别的 AI 功能上烧钱的将面临审查。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+<li><strong>Tokenmaxxing：消费 ≠ 创新</strong>：吹嘘 AI token 消耗的公司混淆了活动与产出——Big Short 式的”吹嘘而非忏悔”动态。高用量用户仍然是 AI 之前表现最好的前 10%。Token 消耗告诉你有人很忙，而非他们在构建有价值的东西。（Gustafson 2026 per <a href="../../2026-05-11--cj-gustafson--the-thing-about-more-tokens" class="internal alias" data-slug="2026-05-11--cj-gustafson--the-thing-about-more-tokens">2026-05-11—cj-gustafson—the-thing-about-more-tokens</a>）[KB]</li>
+<li><strong>Tokens 作为新的福利负担（约为现金薪酬的 20%）</strong>：Rillet Recon 上对 250 名财务领导者的调查 → 共识：tokens 将达到每位员工现金薪酬的约 20%，相当于福利负担。不是工资替代——是人均结构性成本。R&amp;D 已经达到 a16z 上限估计的 25-50%。需要按职能划分的比率和按员工标记。（Gustafson 2026 per <a href="../../2026-05-11--cj-gustafson--the-thing-about-more-tokens" class="internal alias" data-slug="2026-05-11--cj-gustafson--the-thing-about-more-tokens">2026-05-11—cj-gustafson—the-thing-about-more-tokens</a>）[KB]</li>
+<li><strong>AI 支出的”O 词”（优化）即将到来</strong>：Snowflake Q4 FY2022 模式——CFO 提到”改善效率降低了信用消耗”→ 股票抛售——正在 AI 领域重演。Uber CTO 到 4 月就烧光了 2026 年 token 预算。还没有人反对 AI 预算，因为没人知道如何做。留意第一家收益电话中提及”优化”的 AI 公司——那标志着拐点，大约在 6 个月后。（Gustafson 2026 per <a href="../../2026-05-11--cj-gustafson--the-thing-about-more-tokens" class="internal alias" data-slug="2026-05-11--cj-gustafson--the-thing-about-more-tokens">2026-05-11—cj-gustafson—the-thing-about-more-tokens</a>）[KB]</li>
+<li><strong>软件作为 AI 受益者（延迟）</strong>：AI 的应用层扩展速度前所未有，但大部分仍是私募。如果后 GFC 移动模式成立，软件（而非基础设施）将是 AI 的最大受益者，只是时间延迟。（a16z 2026）[KB + INF]</li>
+<li><strong>AI 可观测性作为新的 SaaS 类别兴起</strong>：Datadog Q1 2026 营收增长从 29%→32% YoY 加速，由 AI 公司采用 LLM 可观测性和 GPU 性能监控驱动。早期指标表明 AI 基础设施建设正在创造下游软件需求。（<a href="../../2026-05-09--ark--weekly-stock-commentary" class="internal alias" data-slug="2026-05-09--ark--weekly-stock-commentary">2026-05-09—ark—weekly-stock-commentary</a>）[KB]</li>
+<li><strong>Agentic commerce 上线</strong>：Shopify Q1 2026 AI 驱动搜索流量 +8x，AI 订单 +13x YoY。Agentic commerce 正在推动真实的 GMV 增长。然而，高 20 多倍的指引导致 -15% 的抛售，尽管营收 beat 34%——显示 AI 时代 SaaS 的估值门槛惩罚性高。（<a href="../../2026-05-09--ark--weekly-stock-commentary" class="internal alias" data-slug="2026-05-09--ark--weekly-stock-commentary">2026-05-09—ark—weekly-stock-commentary</a>）[KB]</li>
+<li><strong>软件股反弹 42%——从”AI 颠覆”到”AI 受益者”的逻辑切换</strong>：iShares 软件 ETF 从 4 月低点飙升近 42%，市场从担忧 AI 摧毁软件转向押注能整合 AI + 推行 consumption 定价的公司。Datadog 年内近翻番（单日涨 31% 上调目标），PANW +61%（平台化 + AI 威胁驱动），Snowflake + MongoDB 强劲财报提振情绪。安全提供商、云监控、AI 数据库为明确赢家。传统 per-seat 订阅模式面临定价转型压力，个股选择成为关键。（Reuters 2026-06-03）[KB]</li>
+<li><strong>Frank 三類倖存軟體——AI 時代軟體大分化</strong>：Frank (@qinbafrank) 提出 AI 時代軟體不會被全部顛覆，而是高度分化——通用型工具（agent 或大模型能直接完成的公共任務）最危險；三類反而受益：(1) <strong>垂直領域深層軟體</strong>——有專有 know-how 和私有資料，大模型訓練不到、拿不到。MongoDB 等數據庫因 AI 需要向量數據庫支援而成長；(2) <strong>軟硬一體化公司</strong>——Cloudflare 在全球 100+ 城市有 CDN 機房——AI 再厲害也不能替代物理基礎設施。Agent 越多對 CDN 需求越大；(3) <strong>深耕製造/化工/製藥的產業軟體</strong>——參數調試和經驗是每家企業自己調出來的、不外傳，大模型拿不到。安全類 SaaS 也受益於 Agent 擴大的攻擊面。結論：通用的危險，垂直且深、有專有資料和物理基礎設施的反而被加強且不可繞過。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+</ul>
+<h4 id="per-seat--consumption-转型">Per-seat → Consumption 转型<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#per-seat--consumption-转型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>SaaS 行业基础的 per-seat 许可模式正经历向 consumption 定价的结构性转变，由 Microsoft 领导——拥有最大 seat 订阅安装基座的公司（Office、Windows、Teams、Dynamics）。Per <a href="../../2026-05-01--jamin-ball--death-of-per-seat-pricing" class="internal alias" data-slug="2026-05-01--jamin-ball--death-of-per-seat-pricing">2026-05-01—jamin-ball—death-of-per-seat-pricing</a> (Ball 2026)：</p>
+<p><strong>Microsoft 的关键陈述（2026 年 4 月财报）</strong></p>
+<ul>
+<li><strong>Satya Nadella</strong>：“我们任何 per-user 业务的基本转型——无论是生产力、编码还是安全——都将变成 per-user 和 usage 业务。”</li>
+<li><strong>Amy Hood</strong>：将该模式框架化为”许可业务加上 consumption 业务，其应用范围比人们想象的要广泛得多。”</li>
+<li><strong>Satya 的框架</strong>：“seat-based 定价只是对一定 consumption 的 entitlement……有一些基础使用权利被打包或纳入 seats 中。”</li>
+</ul>
+<p><strong>转型真实的证据</strong></p>
+<ul>
+<li><strong>GitHub Copilot</strong>：2026 年 6 月 1 日起转向 usage-based 模型 [KB]</li>
+<li><strong>Dynamics 365</strong>：约 60% 的客户服务客户已在购买 usage-based 信用；Copilot credit-consumption 报价环比增长约 2 倍 [KB]</li>
+<li><strong>Booking 拖累</strong>：D365 bookings 增长受到续约疲软的影响，因”客户在传统 per-seat 和新兴 seats-plus-consumption 模式之间平衡支出”（Amy Hood）[KB]</li>
+</ul>
+<p><strong>对 SaaS 指标的影响</strong></p>
+<ul>
+<li>当 consumption 层被添加到 seat 订阅时，ARR 变得更加混乱</li>
+<li>NRR 变得更加波动（consumption 起起伏伏）</li>
+<li>Bookings 变得更加不均匀</li>
+<li>Rule of 40 和公开市场收入倍数更难比较</li>
+<li>销售配额和薪酬计划需要重组</li>
+</ul>
+<h4 id="saas-ai-毛利率陷阱砖块与零售的致命错误gavin-baker-框架">SaaS AI 毛利率陷阱——“砖块与零售”的致命错误（Gavin Baker 框架）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#saas-ai-毛利率陷阱砖块与零售的致命错误gavin-baker-框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Gavin Baker（Atreides Management）提出：大多数传统 SaaS 公司正在犯与实体零售商在电商时代完全相同的错误。</p>
+<ul>
+<li><strong>核心论点</strong>：传统 SaaS 享有 70-90% 的毛利率，AI-native 产品天然运行在 ~40% 毛利率（每次回答都需要重新计算）。SaaS 公司拒绝接受 40% 的 AI 毛利率正在毁灭自己的未来。“这是一个生死攸关的决定——除了 Microsoft，几乎所有公司都在失败。” (<a href="../../2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai" class="internal alias" data-slug="2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai">2025-12-09—patrick-oshaughnessy—gavin-baker-gpus-tpus-economics-of-ai</a>)</li>
+<li><strong>历史类比</strong>：实体零售商看 Amazon 亏钱，结论”电商是低毛利生意” → 不投资 → 被颠覆。SaaS 公司看 AI 的 40% GM，结论”AI 会拖垮我们的毛利率” → 不做 → 同样命运。</li>
+<li><strong>为什么 SaaS 公司有优势</strong>：他们有现金牛业务、现有客户数据、分销渠道。AI 初创公司烧 VC 的钱但要达到相同效果。SaaS 公司可以短时间亏损运行 AI 产品（利用现有基础设施摊薄），而 AI 初创不能。</li>
+<li><strong>Microsoft 的证明</strong>：GitHub Copilot 通过 GitHub 分发渠道（acquire 成本 ≈0），即便低 GM 也成了巨大业务。Copilot 的 consumption 定价是模板，而非例外。</li>
+<li><strong>Baker 的行动号召</strong>：“所有你要做的就是宣布——这是我的 AI 收入，这是我的 AI 毛利率，它很低因为它是真正的 AI。这是我的 VC 竞争对手，他们正在烧钱。我其实可以把 GM 降到 0 一段时间——因为我有一个业务在支撑。”</li>
+<li><strong>可以执行的 SaaS 公司</strong>：Salesforce、ServiceNow、HubSpot、GitLab、Atlassian——都有 AI 功能和数据资产。</li>
+<li><strong>风险</strong>：投资者可能在 AI 收入能见度改善前先惩罚毛利率压缩。需要能看透这个时间差的长期资本基础。</li>
+</ul>
+<h4 id="saas-反论dan-shipper代理商增加-saas-用户而非减少">SaaS 反论——Dan Shipper：代理商增加 SaaS 用户，而非减少<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#saas-反论dan-shipper代理商增加-saas-用户而非减少" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Dan Shipper（Every CEO）提出了一个直接与 Gavin Baker GM 陷阱叙事相反的论点。Baker 认为 SaaS 公司必须接受 40% 的 AI 毛利率或死亡，Shipper 认为代理商实际上会<em>拯救</em> SaaS 的利润率。</p>
+<ul>
+<li><strong>核心论点</strong>：当用户采用 Codex/Claude Co-work 作为其主要工作界面时，他们仍然使用 SaaS 工具——但通过代理商的浏览器访问它们。这意味着用户自带 AI 和 tokens，节省了 SaaS 公司构建和推理 AI 功能的成本。代理商增加了 SaaS 用户数量，而非减少了它。(<a href="../../2026-05-24--lenny-rachitsky--dan-shipper-ai-paradox" class="internal alias" data-slug="2026-05-24--lenny-rachitsky--dan-shipper-ai-paradox">2026-05-24—lenny-rachitsky—dan-shipper-ai-paradox</a>)</li>
+<li><strong>“我此刻会买 SaaS 股票</strong>：SaaS 末日是愚蠢的。SaaS 股票将在未来几年大幅上涨。” Every 是最 AI 前卫的公司之一，其 SaaS 支出同比<em>上升</em>。</li>
+<li><strong>BYO-tokens 拯救利润率</strong>：当用户通过 Codex 等工具使用 Proof（Every 的标记编辑器）时——“我不为 tokens 付费，因为他们把自己的 AI 带到 Proof。这改变了你的利润率——我不必再为 tokens 付费了。” SaaS 公司不需要将 AI 构建到他们的产品中；他们只需构建人和代理商可以同时协作使用的软件。</li>
+<li><strong>对 SaaS 产品的影响</strong>：产品需要为人类和代理商同时设计——审批工作流、日志、回滚、速率限制。代理商可以进行数千个并发请求，基础设施必须处理这一点。</li>
+<li><strong>两个推理：此论点 vs Baker 的 GM 陷阱</strong>
+<ul>
+<li>Baker：SaaS 公司必须构建 AI 并接受 40% 的 GM，否则被 AI-native 颠覆</li>
+<li>Shipper：SaaS 公司不需要构建 AI——用户会自己带来。SaaS 产品只需为人类+代理商协作而设计</li>
+<li><strong>调和</strong>：两者可能都对不同类别成立。数据密集型 SaaS（CRM、HCM）可能需要 Baker 的路径——构建 AI 或死亡。工具型 SaaS（文档、分析）可能遵循 Shipper 的路径——保持核心并让用户自带 AI。</li>
+</ul>
+</li>
+</ul>
+<p><strong>Agent 经济论文</strong></p>
+<ul>
+<li>“Agent 不买座位。它完成任务。它使用 tokens。它调用工具。”</li>
+<li>Consumption-based 定价（按结果、按任务、按 token）是 agent 经济的原生模式</li>
+<li>按人类用户定价的创始人是在为一个缩小的世界寻求解决方案（Ball 2026）</li>
+</ul>
+<p><strong>现实世界类比：Disney 的定价架构</strong></p>
+<p>CJ Gustafson 的迪士尼世界案例研究（<a href="../../2026-04-28--cj-gustafson--disney-pricing-packaging" class="internal alias" data-slug="2026-04-28--cj-gustafson--disney-pricing-packaging">2026-04-28—cj-gustafson—disney-pricing-packaging</a>）说明了 per-seat→consumption 转型：</p>
+<ul>
+<li><strong>Seat 作为 loss leader</strong>：3 天票价比 2 天便宜，因为边际日驱动酒店/餐饮。SaaS：打折基础 seat 以最大化 consumption 收入。（Gustafson 2026）</li>
+<li><strong>消除摩擦驱动 consumption</strong>：MagicBand ($42) 作为手腕上的 Apple Pay。“Consumption-based 模式的好坏取决于消费的便利程度。”</li>
+<li><strong>动态定价</strong>：Lightning Lane $150-300 视需求而定。SaaS：承诺 vs 按需层级，预留 vs 即时计算。</li>
+<li><strong>内含成本的免费层</strong>：“3 岁以下儿童免费用餐”——成本已包含在付费定价中。“免费只有在付费方为当下全部价值定价时才有效。”</li>
+<li><strong>追加销售时机</strong>：在 ride 出口处的礼品店（3.2 倍加价）。“错误是在合同周期而非客户的最佳时机进行追加销售。”</li>
+<li><strong>按完整 LTV 进行细分定价</strong>：佛罗里达居民享受 30-40% 折扣（无需酒店/航班）。根据完整关系价值定价。</li>
+<li><strong>生态锁定作为定价权</strong>：迪士尼应用作为一切的单一接口——没有第三方替代方案，没有价格比较。</li>
+</ul>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Disney as SaaS Pricing Laboratory </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>seat→consumption, friction→spend, 和 ecosystem→lock-in 的动态为评估 SaaS 定价策略提供了有用的心智模型。参见完整案例研究：<a href="../../2026-04-28--cj-gustafson--disney-pricing-packaging" class="internal alias" data-slug="2026-04-28--cj-gustafson--disney-pricing-packaging">2026-04-28—cj-gustafson—disney-pricing-packaging</a>。</p>
+</div>
+</blockquote>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>SaaS “末日”辩论</strong>：Notion 的 Max Schoening 认为 SaaS 不会消失——“as a service”层（维护、安全、专业思考）是真正的价值。工具将变得更加通用（回归 90 年代通用工具如 FileMaker Pro），但专业 SaaS 在安全、合规和深度工作流方面持续存在。具有数据上下文的连接平台（Notion、Slack）作为 AI agents 的自然家园可能具有结构性优势。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+<li><strong>Workday/遗留系统脆弱性模式</strong>：Workday 论文（<a href="../../2026-04-28--joe-schmidt-iv--workdays-last-workday" class="internal alias" data-slug="2026-04-28--joe-schmidt-iv--workdays-last-workday">2026-04-28—joe-schmidt-iv—workdays-last-workday</a>）揭示了一个可复制的模式——基于预 AI 架构构建的遗留 SaaS 无法在不重新开始的情况下变为 AI-native，但对于拥有安装基座的上市公司来说，重新开始是不可能的。这广泛适用于企业 SaaS 类别。[KB + INF]</li>
+<li><strong>“微小核心” vs 功能臃肿</strong>：伟大的 SaaS 产品有一个超能力功能（Dropbox：同步、GitHub：PR、Figma：实时协作、Notion：blocks）。添加功能是死亡螺旋——艰难的工作是回归核心。投资者应青睐具有清晰”微小核心”的平台，而非功能臃肿的套件。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+</ul>
+<hr/>
+<h2 id="4-竞争格局-kb--inf">4. 竞争格局 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="市场集中度">市场集中度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>类别层面碎片化</strong>：大多数企业软件类别仍然碎片化，但有显著例外（NetSuite 在中端市场 ERP，Carta 在期权表）。[KB]</li>
+<li><strong>类别融合趋势</strong>：收入栈（计费+收入确认+税收）和支出管理（卡+费用+AP+采购）都在整合为平台型产品。[KB]</li>
+<li><strong>HCM 集中度面临风险</strong>：>$40B 的全球市场，Workday 占主导但容易受到 AI-native 颠覆——尚未有严肃的 AI-native 挑战者宣布。[KB]</li>
+<li><strong>采购高度碎片化</strong>：仅 36% 采纳率——蓝海 TAM，多家竞争对手（Coupa、Vendr、Zip、Ramp、Tropic）。[KB]</li>
+<li><strong>FP&amp;A 最碎片化</strong>：受访者提交了 56 种不同工具。Adaptive Planning 在 >$100M 公司领先（25%+）。[KB]</li>
+</ul>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Microsoft</strong>——领导 Office、Windows、Teams、Dynamics 的 per-seat→consumption 转型。最大的 seat 订阅安装基座。GitHub Copilot 于 2026 年 6 月转向 usage-based 模型。D365 约 60% 的客户服务客户已在使用 usage-based 信用。（Per <a href="../../2026-05-01--jamin-ball--death-of-per-seat-pricing" class="internal alias" data-slug="2026-05-01--jamin-ball--death-of-per-seat-pricing">2026-05-01—jamin-ball—death-of-per-seat-pricing</a>）[KB]</li>
+<li><strong>NetSuite (Oracle)</strong>——中端市场 ERP 的主导者。在 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">公司占据</span><span class="mord">50</span></span></span></span>100-500M 延伸到 65%+。从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">到</span></span></span></span>500M+ 收入均可行。[KB]</li>
+<li><strong>Ramp</strong>——支出管理中的多类别主导地位。在 &lt;$100M 公司的企业卡、费用和 AP 中占据 >1/3 市场份额。已进入采购领域。[KB]</li>
+<li><strong>Carta</strong>——在 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">收入以下的公司中占</span><span class="mord">70</span></span></span></span>500M 后与 Carta 持平（32%）。[KB]</li>
+<li><strong>QuickBooks (Intuit)</strong>——在 &lt;$10M 公司中主导 ERP（50%+）。[KB]</li>
+<li><strong>Workday</strong> (<a href="../../wiki/companies/wday" class="internal" data-slug="wiki/companies/wday">wday</a>)——HCM 的遗留现有企业。2005 年架构在结构上无法变为 AI-native。AI-native 平台重建的下一个目标。（Per <a href="../../2026-04-28--joe-schmidt-iv--workdays-last-workday" class="internal alias" data-slug="2026-04-28--joe-schmidt-iv--workdays-last-workday">2026-04-28—joe-schmidt-iv—workdays-last-workday</a>）[KB]</li>
+<li><strong>Adaptive Planning (Workday)</strong>——在 >$100M 公司的 FP&amp;A 中领先（25%+）。[KB]</li>
+<li><strong>FloQast</strong>——在结账管理领域颠覆了 BlackLine。[KB]</li>
+<li><strong>Vendr</strong>——具有数据护城河的采购。Ruth AI agent 基于 $15B 验证的 SaaS 支出训练。“每个竞争对手都能复制界面。没人能复制数据库。“[KB]</li>
+<li><strong>Avalara</strong>——整体销售税 #1。[KB]</li>
+<li><strong>Cleverbridge</strong>——在 $500M+ 的计费领域增长 +5%。[KB]</li>
+<li><strong>Rillet / Campfire</strong>——AI-native 中端市场 ERP 挑战者。在 &lt;$100M 公司中占据低到中个位数份额。“首个合法的 AI-native 中端市场 ERP 挑战者。“[KB]</li>
+<li><strong>Numeric / Numos AI</strong>——AI-native 结账管理挑战者。Numeric 在 $50-100M 公司增长 +5%。[KB]</li>
+<li><strong>Taxwire</strong>——AI-native 销售税。一年内跃升至 $5-25M 公司的 17%。[KB]</li>
+<li><strong>Pigment</strong>——在 FP&amp;A 中赢得企业份额。[KB]</li>
+<li><strong>Samsara</strong> (<a href="../../wiki/companies/iot" class="internal" data-slug="wiki/companies/iot">iot</a>)——面向物理运营的 IoT + SaaS。基于资产的定价模型（按车辆/设备）。98% 经常性收入，$1.6B ARR，30% 增长。向非可自由支配的运营预算销售。Top-10 EV/收入倍数持续约 3 年。（Per <a href="../../2026-05-06--dominic-phillips-samsara--scaling-1b-revenue" class="internal alias" data-slug="2026-05-06--dominic-phillips-samsara--scaling-1b-revenue">2026-05-06—dominic-phillips-samsara—scaling-1b-revenue</a>）[KB]</li>
+</ul>
+<h3 id="细分赛道格局">细分赛道格局<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#细分赛道格局" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>ERP / 核心财务</strong></p>
+<ul>
+<li><strong>&lt; $10M</strong>：QuickBooks 主导（50%+）</li>
+<li>**<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.05764em;">tS</span><span class="mord mathnormal">u</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">在</span></span></span></span>50-100M 占据 50%+</li>
+<li>**<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.05764em;">tS</span><span class="mord mathnormal">u</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">延伸到</span><span class="mord">65</span></span></span></span>5M-$500M+ 均可行）</li>
+<li><strong>AI-native 挑战者</strong>：Rillet 和 Campfire（在 &lt;$100M 公司中占低到中个位数份额）</li>
+</ul>
+<p><strong>收入栈（计费、收入确认、销售税、发票）</strong></p>
+<ul>
+<li><strong>融合趋势</strong>：计费 + 收入确认 + 催收 + 税务 → 单一平台（Tabs、Sequence、Cleverbridge 领先）</li>
+<li><strong>销售税</strong>：Avalara 整体 #1；Taxwire 一年内跃升至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">25</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">公司的</span><span class="mord">17</span></span></span></span>25-100M 公司占约 10%；AI-native 挑战者（Taxwire、Sphere、Numeral）增长中</li>
+<li><strong>收入确认</strong>：RightRev 在 $500M+ 公司增长份额</li>
+<li><strong>计费</strong>：Cleverbridge 在 $500M+ 增长 +5%</li>
+</ul>
+<p><strong>结账管理</strong></p>
+<ul>
+<li>从检查表 → 会计栈的编排层演进</li>
+<li>Agents 标记错误率漂移、预测性计提，人工审查例外</li>
+<li><strong>竞争</strong>：FloQast 颠覆 BlackLine；Numeric（在 $50-100M 增长 +5%）、Maximor、Numos AI 挑战中</li>
+</ul>
+<p><strong>支出管理（AP、费用、采购、卡、差旅）</strong></p>
+<ul>
+<li><strong>Ramp 多类别主导地位</strong>：在 &lt;$100M 公司的企业卡、费用和 AP 中占据 >1/3 市场份额。也进入了采购领域。</li>
+<li><strong>采购</strong>：仅 36% 采纳率。Coupa、Vendr、Zip、Ramp、Tropic 领先。蓝海 TAM。</li>
+<li><strong>Vendr 的数据护城河</strong>：Ruth AI agent；$15B 验证的 SaaS 支出训练数据。“每个竞争对手都能复制界面。没人能复制数据库。”</li>
+<li><strong>金融科技转型</strong>：Capital One 收购 Brex；Brex 作为 top-10 银行的技术层（Fifth Third 交易）。Airwallex 美国扩张。</li>
+<li><strong>基于 agent 的谈判</strong>：BRM CEO 预测大部分软件谈判将由 agents 处理。</li>
+</ul>
+<p><strong>FP&amp;A</strong></p>
+<ul>
+<li><strong>电子表格主导地位</strong>：75%+ &lt;<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">，</span><span class="mord">45</span></span></span></span>50-100M</li>
+<li><strong>AI 强化电子表格</strong>：Claude 的动态插件实现在表格内进行建模 rigor。“晚起的鸟儿获得插件。”</li>
+<li><strong>最碎片化的类别</strong>：56 种不同工具。Adaptive Planning 在 >$100M 领先（25%+）。Pigment 赢得企业份额。Aleph、Planful、Abacum 在中端市场占 5-8%。</li>
+</ul>
+<p><strong>期权表</strong></p>
+<ul>
+<li><strong>Carta 主导地位</strong>：在 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">收入以下占</span><span class="mord">70</span></span></span></span>500M 后与 Carta 持平（32%）。Slice 和 Fidelity Private Shares 正在兴起。</li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>数据护城河</strong>：Vendr 的 $15B 验证的 SaaS 支出训练数据——“每个竞争对手都能复制界面。没人能复制数据库。“[KB]</li>
+<li><strong>专有数据 exhaust 护城河（agent 时代）</strong>：可防御的数据不是你导入的数据——而是你的产品独特地使其存在的数据：观察到的行为、响应率、时间模式、流程结果、基准、异常模式、agent 性能轨迹。“数据的围墙花园”——要么是专有的、受监管的，要么是持续更新的。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>行动循环可防御性</strong>：闭合循环（行动→捕获→反馈→改进）的产品更具可防御性，因为它们位于执行内部，而非仅观察。它们产生独特的数据，随着使用而改进，并且不打破工作流就难以移除。示例：批准支出、触发工资单、对账发票。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>现实世界执行护城河</strong>：与无法完全自动化的物理运营（现场服务、物流、履约、支付）绑定的软件创造了超越纯 SaaS 的可防御性。这些公司派遣人员、移动货物、完成服务——而不仅仅是存储记录。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>多方网络效应</strong>：在 agent 时代，嵌入多方工作流（买家/卖家、雇主/员工、付款方/提供方）的系统获得可防御性，因为每个额外参与者使网络更有用——通过共享工作流协调、基准测试/情报和信任标准化。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>agent 间交互的信任架构</strong>：成为 agent 间交互的身份和权限层的记录系统具有”真正难以取代”的结构性角色——不是因为它持有的数据，而是因为它强制执行的信任架构。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>类别融合 / 平台锁定</strong>：整合多个功能的 SaaS 平台（收入栈、支出管理）通过集成深度创造转换成本。[KB]</li>
+</ul>
+<h3 id="公开市场板块重分类take-rate-platforms-的独立">公开市场板块重分类——Take-Rate Platforms 的独立<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#公开市场板块重分类take-rate-platforms-的独立" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>CJ Gustafson（Mostly Metrics）在 2026年5月对公开科技公司进行了重大板块重分类：8→9 个指数，138 家公司重新划分。核心洞见对 SaaS 投资者至关重要：</p>
+<p><strong>Take-Rate Platforms 从 Vertical SaaS 中独立（新设第7板块，19家公司）</strong></p>
+<ul>
+<li>Toast、Shopify、Olo 等交易抽成模式的公司在旧框架中被归入 Vertical SaaS，但它们按交易量（take-rate）而非座位许可赚钱，<strong>扭曲了 Vertical SaaS 的中位数指标</strong>。</li>
+<li>新的 Take-Rate 板块：Uber、Airbnb、Shopify、MercadoLibre、DoorDash、eBay、Toast、Lyft 等 — 统一特征是 marketplace/transaction economics。</li>
+<li>干净的 Vertical SaaS（16家）：Palantir、Autodesk、Veeva、Samsara、ServiceTitan、Procore 等——纯 seat-based。</li>
+</ul>
+<p><strong>其他关键调整</strong></p>
+<ul>
+<li><strong>Data &amp; AI Infrastructure 独立</strong>（13家）：Snowflake、CoreWeave、Cerebras、MongoDB、Elastic 等——软件原生、GPU/现代数据栈。HPE、NetApp、Cisco 等传统硬件名全部剔除。</li>
+<li><strong>FinTech 一分为二</strong>：Payments &amp; Money Movement（11家：Adyen、PayPal、Block、Shift4 等——utility margins）与 Consumer Fintech, Lending &amp; Crypto（16家：Coinbase、Robinhood、SoFi、Affirm 等——CAC-driven）反映完全不同的单位经济学。</li>
+<li><strong>Dev Tools &amp; Observability 合并</strong>（10家）：Datadog、Atlassian、GitLab、Figma 等——卖给同一个工程预算买家。</li>
+</ul>
+<p><strong>方法论不变</strong>：CAC Payback、Revenue per Employee、Rule of 40 的计算公式未改。板块重分类旨在让 operator 能找到真正可比的 comp set。（<a href="../../2026-05-18--cj-gustafson--sector-refresh" class="internal alias" data-slug="2026-05-18--cj-gustafson--sector-refresh">2026-05-18—cj-gustafson—sector-refresh</a>）[KB]</p>
+<ul>
+<li><strong>生态锁定作为定价权</strong>：迪士尼类比——一切的单一接口，没有第三方替代方案，没有价格比较。具有数据上下文的连接平台（Notion、Slack）作为 AI agents 的自然家园可能具有结构性优势。（Schoening 2026）[KB]</li>
+<li><strong>“微小核心”产品理念</strong>：伟大的 SaaS 产品有一个难以复制的超能力功能。最好的护城河是在一件事上做到最好，而非做最多事。（Schoening 2026）[KB]</li>
+<li><strong>最后里程护城河</strong>：AI 降低原型成本，但最后 10% 的精炼、可靠性和规模仍然是 90% 的工作。“前 10% 免费”并未消除艰难的最后里程。[KB]</li>
+<li><strong>专业化工作流深度</strong>：安全、合规和深度领域工作流仍然是最可防御的 SaaS 类别。[KB]</li>
+<li><strong>买家技术能力作为结构性护城河</strong>：制造业、建筑后台、工业工作流、会计——买家运营复杂但技术服务水平低的类别。他们自己 DIY 记录系统 + agents 的可能性仍然很低，为 AI-native 解决方案创造机会。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf">5. 风险监控 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>软件债务抛售作为领先指标</strong>：软件贷款的平均出价约 90 美分兑一美元；软件约占不良贷款的 35%。Medallia (Thoma Bravo) 案例显示 PE 支持的收购风险。可能预示更广泛的私募 SaaS 估值重置。（a16z 2026 per <a href="../../2026-05-01--a16z--charts-v-shaped-recovery" class="internal alias" data-slug="2026-05-01--a16z--charts-v-shaped-recovery">2026-05-01—a16z—charts-v-shaped-recovery</a>）[KB]</li>
+<li><strong>Token 支出 ROI 清算</strong>：预计在 6-12 个月内。大多数 SaaS 公司目前拥有无限的 AI token 预算。Token 支出成为虚荣指标（像代码行数）的危险。无法展示清晰 token ROI 的平台面临审查。（Schoening 2026 via <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>）[KB]</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>UI 护城河侵蚀风险</strong>：在 agent 时代，UI 不再是护城河。Agents 通过 API 和 MCP 绕过浏览器，使人类肌肉记忆、管理节奏和培训创造的粘性中性化。其可防御性主要依赖”UI 驱动粘性”的软件面临结构性侵蚀。三种买家路径（现有企业+agents、DIY、AI-native 替代）威胁现有企业的收入模式。（Amble 2026 per <a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a>）[KB]</li>
+<li><strong>Per-seat→consumption 颠覆风险</strong>：拥有大型 seat 安装基座的遗留 SaaS 在转型期间面临收入中断。销售薪酬结构需要根本性重新设计。ARR 变得更加混乱，NRR 更加波动，bookings 更加不均匀。Agent 经济加速了这一转变——consumption 是 agents 的原生定价模式。（Ball 2026）[KB]</li>
+<li><strong>现有企业脆弱性模式</strong>：Workday 论文（<a href="../../2026-04-28--joe-schmidt-iv--workdays-last-workday" class="internal alias" data-slug="2026-04-28--joe-schmidt-iv--workdays-last-workday">2026-04-28—joe-schmidt-iv—workdays-last-workday</a>）揭示了一个可复制的模式——基于预 AI 架构构建的遗留 SaaS 无法在不重新开始的情况下变为 AI-native，但对于拥有安装基座的上市公司来说，重新开始是不可能的。这广泛适用于企业 SaaS 类别。[KB + INF]</li>
+<li><strong>SaaS “末日”论文（辩论中）</strong>：Notion 的 Max Schoening 认为 SaaS 不会消失，但 AI 将 SaaS 功能吸收到通用工具中的风险是一个结构性长期威胁。专业 SaaS 在安全、合规和深度工作流方面持续存在。（Schoening 2026）[KB]</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>SBC 稀释管理</strong>：成熟 SaaS 应保持年稀释率 &lt;低个位数；世界级 &lt;1%（Costco 0.3%）。快速增长的 SaaS 从激进的股权使用中获得更高回报，但随着增长放缓面临审查。（Mostly Metrics 2026, per Alex Clayton）[KB]</li>
+<li><strong>类别融合竞争压力</strong>：收入栈和支出管理领域的玩家面临来自扩展中的现有平台和针对利基市场的初创公司的竞争。赢家整合，但许多将无法生存。[KB + INF]</li>
+<li><strong>AI-native 定价压力</strong>：Consumption 模型引入基础收入波动。随着定价模式分化，Rule of 40 和公开市场收入倍数更难比较。[KB]</li>
+<li><strong>私募 SaaS 估值重置风险</strong>：软件债务抛售和 PE 收购困境信号潜在的更广泛私募 SaaS 市场修正。[KB]</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb">6. 市场规模 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>估计值</th><th>来源</th><th>时间</th></tr></thead><tbody><tr><td>Finance software TAM</td><td>Large and fragmented</td><td>—</td><td>—</td></tr><tr><td>Procurement software adoption</td><td>Only 36% use dedicated tool</td><td>Mostly Metrics 2026</td><td>2026</td></tr><tr><td>HCM global TAM</td><td>>$40B</td><td>a16z</td><td>2026</td></tr></tbody></table></div>
+<h3 id="历史验证数据">历史/验证数据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#历史验证数据" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>SaaS Valuation Benchmarks (Clouded Judgement Weekly)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Bucket</th><th>EV / NTM Revenue</th><th>Source</th></tr></thead><tbody><tr><td>Overall Median</td><td>3.2x</td><td>Clouded Judgement / Koyfin 2026</td></tr><tr><td>Top 5 Median</td><td>21.1x</td><td>Clouded Judgement / Koyfin 2026</td></tr><tr><td>High Growth (>22% NTM)</td><td>12.6x</td><td>Clouded Judgement / Koyfin 2026</td></tr><tr><td>Mid Growth (15-22% NTM)</td><td>5.2x</td><td>Clouded Judgement / Koyfin 2026</td></tr><tr><td>Low Growth (&lt;15% NTM)</td><td>2.5x</td><td>Clouded Judgement / Koyfin 2026</td></tr></tbody></table></div>
+<p><strong>Operating Metrics (Public SaaS Medians)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>NTM Revenue Growth</td><td>13%</td></tr><tr><td>LTM Revenue Growth</td><td>15%</td></tr><tr><td>Gross Margin</td><td>76%</td></tr><tr><td>Operating Margin</td><td>1%</td></tr><tr><td>FCF Margin</td><td>20%</td></tr><tr><td>Net Revenue Retention</td><td>110%</td></tr><tr><td>CAC Payback</td><td>36 months</td></tr><tr><td>S&amp;M % Revenue</td><td>35%</td></tr><tr><td>R&amp;D % Revenue</td><td>23%</td></tr><tr><td>G&amp;A % Revenue</td><td>14%</td></tr></tbody></table></div>
+<blockquote>
+<p>Per <a href="../../2026-05-01--jamin-ball--death-of-per-seat-pricing" class="internal alias" data-slug="2026-05-01--jamin-ball--death-of-per-seat-pricing">2026-05-01—jamin-ball—death-of-per-seat-pricing</a> + <a href="../../2026-05-08--jamin-ball--clouded-judgement-machines-out-eat-humans" class="internal alias" data-slug="2026-05-08--jamin-ball--clouded-judgement-machines-out-eat-humans">2026-05-08—jamin-ball—clouded-judgement-machines-out-eat-humans</a> (Ball 2026, citing Koyfin / Bloomberg / Pitchbook)</p>
+</blockquote>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf">7. 产业链与投资逻辑 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Cloud Infrastructure (AWS · Azure · GCP)
+       ↓
+Platform / Middleware (Databases · AI/ML · Workflow)
+       ↓
+┌───────────────────────────────────────────────────┐
+│            Application Layer (SaaS)                │
+│  ┌──────────┐ ┌──────────┐ ┌─────────────────┐   │
+│  │  ERP     │ │  HCM     │ │  CRM / Revenue  │   │
+│  └──────────┘ └──────────┘ └─────────────────┘   │
+│  ┌──────────┐ ┌──────────┐ ┌─────────────────┐   │
+│  │  Spend   │ │  Close   │ │  FP&amp;A · Cap     │   │
+│  │  Mgmt    │ │  Mgmt    │ │  Table · Tax    │   │
+│  └──────────┘ └──────────┘ └─────────────────┘   │
+└───────────────────────────────────────────────────┘
+       ↓
+Implementation / Consulting / Managed Services
+       ↓
+End Customers (Finance Teams · Ops · IT · HR)
+</code></pre>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>云基础设施</strong> (AWS, Azure, GCP)：商品化，资本密集型。受益于 SaaS 增长但转换成本低。不在本行业页面范围内。[FRAME]</li>
+<li><strong>应用层 (SaaS)</strong>：广泛的类别，成熟度各异。NetSuite/Dynamics 主导 ERP，Workday 在 HCM 中领先（面临风险），Ramp 整合支出管理，FP&amp;A 仍然碎片化。收入栈在融合。[KB]</li>
+<li><strong>服务层</strong>：实施、咨询、托管服务。利润率较低，劳动密集型。此处不可独立投资。[FRAME]</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>财务成熟度重要</strong>：SaaS 公司在扩展过程中经历不同阶段。Series B 是典型的现金→权责发生制转型触发点——投资者要求以权责发生制为基础的结账以获得清晰的可比性。（Mostly Metrics 2026 via <a href="../../2026-04-30--gustafson--cash-to-accrual-accounting" class="internal alias" data-slug="2026-04-30--gustafson--cash-to-accrual-accounting">2026-04-30—gustafson—cash-to-accrual-accounting</a>）[KB]
+<ul>
+<li>Seed/Series A：现金制可接受；更简单，需要的 rigor 较少</li>
+<li>Series B 拐点：机构投资者期望完整的权责发生制；需要 AR/AP rigor、调整分录、复杂的会计系统</li>
+<li>Series B 后：经审计的财务报表、细分指标、正式规划流程</li>
+</ul>
+</li>
+</ul>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Rule of 40 最佳实践 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>当业务线具有不同的利润率特征时，呈现混合 Rule of 40 会破坏决策有用性。应按业务单元呈现细分指标。（Mostly Metrics 2026, Q2）</p>
+</div>
+</blockquote>
+<ul>
+<li><strong>定价模式转型作为关键过滤器</strong>：Per-seat → consumption 转变创造赢家和输家。具有 consumption-native 业务模式的公司更适合 agent 经济。Per-seat 现有企业面临 2-3 年转型风险。[KB + INF]</li>
+<li><strong>AI-native vs 遗留架构</strong>：Workday 模式——基于预 AI 架构构建的遗留 SaaS 无法在不重新开始的情况下变为 AI-native。筛选投资组合中的架构年龄。2020 年后成立的公司可能是 AI-native；2015 年前的 SaaS 可能是遗留系统。[KB + INF]</li>
+<li><strong>数据护城河作为竞争优势</strong>：积累专有交易/使用数据的平台（Vendr 的 $15B SaaS 支出）创造可防御的地位。AI 可能商品化界面但不会商品化数据。[KB]</li>
+<li><strong>“微小核心”作为筛选启发</strong>：青睐具有一个清晰超能力的公司而非套件。功能臃肿是死亡螺旋；回归核心是艰难/正确的工作。（Schoening 2026）[KB]</li>
+<li><strong>Yellow Brick Road vs Rest of Oz 框架（Schmidt 2026）</strong>：AI 应用层并非同质化机会。Yellow Brick Road（横向、低步骤数、模型能力驱动型应用如代码生成、写作、图像创作）将被 labs 主导。Rest of Oz（复杂垂直工作流、多步骤、多参与者、遗留系统、法规要求）是初创公司可建立持久业务的地方——因为价值来自 scaffolding 而非原始模型能力。四个防御机制：数据/学习飞轮、跨供应商模型路由、跨层级成本优化、治理/监管吸收。三种评估测试：tools-and-steps 测试、system vs tool 测试、hedge fund/P&amp;L 测试。（<a href="../../2026-04-03--a16z--avoiding-death-yellow-brick-road" class="internal alias" data-slug="2026-04-03--a16z--avoiding-death-yellow-brick-road">2026-04-03—a16z—avoiding-death-yellow-brick-road</a>）[KB + INF]</li>
+</ul>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../wiki/companies/wday" class="internal" data-slug="wiki/companies/wday">wday</a> — Workday：面临 AI-native 颠覆的遗留 HCM 现有企业。更广泛的遗留→AI-native 转型论文的风向标。</li>
+<li><a href="../../cj-gustafson" class="internal" data-slug="cj-gustafson">cj-gustafson</a> — SBC 稀释、迪士尼定价类比、现金到权责发生制会计的关键来源</li>
+<li><a href="../../alex-clayton" class="internal" data-slug="alex-clayton">alex-clayton</a> — SBC 稀释基准</li>
+<li><a href="../../ryan-mcentush" class="internal" data-slug="ryan-mcentush">ryan-mcentush</a> — SaaS 估值基准（Clouded Judgement）</li>
+<li><a href="../../jamin-ball" class="internal" data-slug="jamin-ball">jamin-ball</a> — Per-seat→consumption 论文、agent 经济影响</li>
+<li><a href="../../joe-schmidt-iv" class="internal" data-slug="joe-schmidt-iv">joe-schmidt-iv</a> — Workday 脆弱性论文</li>
+<li><a href="../../max-schoening" class="internal" data-slug="max-schoening">max-schoening</a> — SaaS 末日辩论、“微小核心”理念、AI 原型成本洞见</li>
+<li><a href="../../wiki/concepts/sbc-dilution" class="internal" data-slug="wiki/concepts/sbc-dilution">sbc-dilution</a> — 股票补偿稀释作为风险因素</li>
+<li><a href="../../wiki/concepts/malleable-software" class="internal" data-slug="wiki/concepts/malleable-software">malleable-software</a> — 软件变得更加通用/工具化（Schoening 论文）</li>
+</ul>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../wiki/companies/ddog" class="internal" data-slug="wiki/companies/ddog">ddog</a> (AI observability), <a href="../../wiki/companies/shop" class="internal" data-slug="wiki/companies/shop">shop</a> (agentic commerce)</li>
+</ul>
+<h3 id="people">People<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#people" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../cj-gustafson" class="internal" data-slug="cj-gustafson">cj-gustafson</a>, <a href="../../alex-clayton" class="internal" data-slug="alex-clayton">alex-clayton</a>, <a href="../../ryan-mcentush" class="internal" data-slug="ryan-mcentush">ryan-mcentush</a>, <a href="../../jamin-ball" class="internal" data-slug="jamin-ball">jamin-ball</a>, <a href="../../joe-schmidt-iv" class="internal" data-slug="joe-schmidt-iv">joe-schmidt-iv</a>, <a href="../../max-schoening" class="internal" data-slug="max-schoening">max-schoening</a>, <a href="../../seema-amble" class="internal" data-slug="seema-amble">seema-amble</a></li>
+</ul>
+<h3 id="concepts">Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../wiki/concepts/sbc-dilution" class="internal" data-slug="wiki/concepts/sbc-dilution">sbc-dilution</a>, <a href="../../wiki/concepts/malleable-software" class="internal" data-slug="wiki/concepts/malleable-software">malleable-software</a>, <a href="../../wiki/concepts/cac-payback" class="internal" data-slug="wiki/concepts/cac-payback">cac-payback</a></li>
+</ul>
+<h3 id="sources">Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../2026-04-27--cj-gustafson--sbc-dilution-private-companies" class="internal alias" data-slug="2026-04-27--cj-gustafson--sbc-dilution-private-companies">2026-04-27—cj-gustafson—sbc-dilution-private-companies</a></li>
+<li><a href="../../2026-04-28--mostly-metrics--cfo-tech-guide-2026" class="internal alias" data-slug="2026-04-28--mostly-metrics--cfo-tech-guide-2026">2026-04-28—mostly-metrics—cfo-tech-guide-2026</a></li>
+<li><a href="../../2026-04-30--gustafson--cash-to-accrual-accounting" class="internal alias" data-slug="2026-04-30--gustafson--cash-to-accrual-accounting">2026-04-30—gustafson—cash-to-accrual-accounting</a></li>
+<li><a href="../../2026-05-01--a16z--charts-v-shaped-recovery" class="internal alias" data-slug="2026-05-01--a16z--charts-v-shaped-recovery">2026-05-01—a16z—charts-v-shaped-recovery</a></li>
+<li><a href="../../2026-05-01--jamin-ball--death-of-per-seat-pricing" class="internal alias" data-slug="2026-05-01--jamin-ball--death-of-per-seat-pricing">2026-05-01—jamin-ball—death-of-per-seat-pricing</a></li>
+<li><a href="../../2026-04-28--cj-gustafson--disney-pricing-packaging" class="internal alias" data-slug="2026-04-28--cj-gustafson--disney-pricing-packaging">2026-04-28—cj-gustafson—disney-pricing-packaging</a></li>
+<li><a href="../../2026-05-11--cj-gustafson--the-thing-about-more-tokens" class="internal alias" data-slug="2026-05-11--cj-gustafson--the-thing-about-more-tokens">2026-05-11—cj-gustafson—the-thing-about-more-tokens</a></li>
+<li><a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a></li>
+<li><a href="../../2026-04-03--seema-amble--software-losing-its-head" class="internal alias" data-slug="2026-04-03--seema-amble--software-losing-its-head">2026-04-03—seema-amble—software-losing-its-head</a></li>
+<li><a href="../../2026-05-26--a16z-dacosta--ai-compliance" class="internal alias" data-slug="2026-05-26--a16z-dacosta--ai-compliance">2026-05-26—a16z-dacosta—ai-compliance</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-187" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb" data-for="2-行业概述与界定-frame--kb">2. 行业概述与界定 [FRAME + KB]</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb" data-for="3-驱动力与趋势-kb">3. 驱动力与趋势 [KB]</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf" data-for="4-竞争格局-kb--inf">4. 竞争格局 [KB + INF]</a></li><li class="depth-1"><a href="#市场集中度" data-for="市场集中度">市场集中度</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#细分赛道格局" data-for="细分赛道格局">细分赛道格局</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-1"><a href="#公开市场板块重分类take-rate-platforms-的独立" data-for="公开市场板块重分类take-rate-platforms-的独立">公开市场板块重分类——Take-Rate Platforms 的独立</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf" data-for="5-风险监控-kb--inf">5. 风险监控 [KB + INF]</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb" data-for="6-市场规模-kb">6. 市场规模 [KB]</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-1"><a href="#历史验证数据" data-for="历史验证数据">历史/验证数据</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf" data-for="7-产业链与投资逻辑-frame--inf">7. 产业链与投资逻辑 [FRAME + INF]</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#people" data-for="people">People</a></li><li class="depth-1"><a href="#concepts" data-for="concepts">Concepts</a></li><li class="depth-1"><a href="#sources" data-for="sources">Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/companies/ddog" class="internal">ddog</a></li><li><a href="../../wiki/companies/msft" class="internal">msft</a></li><li><a href="../../wiki/companies/panw" class="internal">panw</a></li><li><a href="../../wiki/companies/shop" class="internal">shop</a></li><li><a href="../../wiki/companies/veev" class="internal">veev</a></li><li><a href="../../wiki/concepts/ai-corporate-restructuring" class="internal">ai-corporate-restructuring</a></li><li><a href="../../wiki/concepts/arr-fte" class="internal">arr-fte</a></li><li><a href="../../wiki/concepts/cac-payback" class="internal">cac-payback</a></li><li><a href="../../wiki/concepts/malleable-software" class="internal">malleable-software</a></li><li><a href="../../wiki/concepts/sbc-dilution" class="internal">sbc-dilution</a></li><li><a href="../../wiki/daily/2026-05-20" class="internal">2026-05-20</a></li><li><a href="../../wiki/daily/2026-05-24" class="internal">2026-05-24</a></li><li><a href="../../wiki/daily/2026-05-29" class="internal">2026-05-29</a></li><li><a href="../../wiki/daily/2026-06-08" class="internal">2026-06-08</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li><a href="../../wiki/sectors/cybersecurity" class="internal">cybersecurity</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

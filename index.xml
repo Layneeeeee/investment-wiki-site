@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Investment Research Wiki</title>
+      <link>https://layneeeeee.github.io/investment-wiki-site</link>
+      <description>Last 10 notes on Investment Research Wiki</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>vertical-integration-aaoi-lite-cohr</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/vertical-integration-aaoi-lite-cohr</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/case-studies/vertical-integration-aaoi-lite-cohr</guid>
+    <description><![CDATA[ 垂直整合对比：AAOI vs LITE vs COHR 基于 Gaetano 分析 2026-03-27—gaetano—vertical-integration-aaoi-lite-cohr 三家 AI 光学公司在垂直整合上走了完全不同的路线。模型的选择决定了其供应链控制力、成本结构、margin 潜力和可扩展性的差异。 对比总览 维度AAOILITE (Lumentum)COHR (Coherent)整合策略收发器内部最深光学核心最专注光学栈最广泛激光器自研 MBE/MOCVD (Sugar Land)4座 InP 晶圆厂，内部外延4座 InP 晶圆厂 (含6-inch)光引擎自有 lig... ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>ai-buildout-stack</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack</guid>
+    <description><![CDATA[ Analysis: AI Buildout 12-Layer Stack Framework 核心框架：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。 来源：2026-06-08—ren—ai-buildout-twelve-floors (Ren, Substack) 状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。 完整堆栈 Layer 1: Application ← AI 应用层... ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>optics-proof-layer</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/optics-proof-layer</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/optics-proof-layer</guid>
+    <description><![CDATA[ Analysis: Optics Proof Layer — When “Does It Work?” Becomes the Bottleneck 核心框架：光通信行业的规模化瓶颈正从”能否造出来”转向”能否确保每件都一致地工作”。测试/验证层（Proof Layer）在 CPO 和 1.6T 推动下，从研发工具的 commodity 角色升级为制造流程中的结构性价值捕获点。 来源：2026-04-01—gaetano—testing-proof-layer-optics · 2026-04-08—gaetano—proof-layer-in-optics (Gaetano, Crux Ca... ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>optical-supply-chain</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/trackers/optical-supply-chain</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/trackers/optical-supply-chain</guid>
+    <description><![CDATA[ Optical Supply Chain Tracker 定位：光学供应链的”指挥中心”——将光子学价值链上所有跟踪标的汇聚为统一视图，记录每层产能状态、技术演进阶段和跨层传导信号。 关联框架：photonics-value-chain（价值链分析）、photonics-bottleneck-layers（投资 thesis） 1. ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>amd</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/amd</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/amd</guid>
+    <description><![CDATA[ 数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0. ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>lite</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/lite</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/lite</guid>
+    <description><![CDATA[ 数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0. ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>nvda</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/nvda</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/companies/nvda</guid>
+    <description><![CDATA[ 数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0. ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>ai-debt-market-fatigue</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-debt-market-fatigue</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/concepts/ai-debt-market-fatigue</guid>
+    <description><![CDATA[ AI 基础设施债务市场疲劳 (AI Infrastructure Debt Market Fatigue) Definition 超大规模云商/neocloud 对数据中心建设债务的需求与债务市场吸收能力之间日益紧张的关系——银行越来越多地通过合成风险转移（SRTs）和证券化转移数据中心贷款风险，而大型交易的分销时间显著延长。 Why It Matters AI 数据中心建设需要前所未有的资本——仅 Meta 就为一个项目（El Paso）融资 130 亿，另加 250 亿债券。如果债务市场容量进一步收紧，可能减缓 AI 基础设施扩张的步伐，直接影响 GPU/Nvidia 需求和整个 AI 供... ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>2026-06-10</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-06-10</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-06-10</guid>
+    <description><![CDATA[ Daily Report — 2026-06-10 Today’s Key Takeaways 从当日全部 source 中提炼对投资决策最重要的信号。 🚀 资本事件 — SpaceX IPO 4 倍超额认购验证 AI 超级大盘新股的资本引力，为 Anthropic/OpenAI 上市设定定价坐标：$2500B 需求 vs $750B 供给，定价 $135/股，6/12 以 SPCX 代码交易。4x oversubscribed 意味着即使在光学板块抛售同期，AI 超级大盘新股的吸引力仍然极强。对 Anthropic ($965B) 和 OpenAI ($852B) 的 IPO 定价权力是正... ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://layneeeeee.github.io/investment-wiki-site/wiki/daily/</link>
+    <guid>https://layneeeeee.github.io/investment-wiki-site/wiki/daily/</guid>
+    <description><![CDATA[ Daily Reports Time-series aggregation of daily ingests. ]]></description>
+    <pubDate>Tue, 09 Jun 2026 16:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

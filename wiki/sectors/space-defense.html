@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>space-defense</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="space-defense"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="space-defense"/><meta name="twitter:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/space-defense"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/space-defense"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/space-defense-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/space-defense-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/space-defense-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/space-defense"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-404"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-404" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>space defense</a></div></nav><h1 class="article-title">space-defense</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-08T16:00:00.000Z">Jun 09, 2026</time><span>28 min read</span></p><ul class="tags"><li><a href="../../tags/space" class="internal tag-link">space</a></li><li><a href="../../tags/defense" class="internal tag-link">defense</a></li><li><a href="../../tags/reusable-rockets" class="internal tag-link">reusable-rockets</a></li><li><a href="../../tags/satellite" class="internal tag-link">satellite</a></li><li><a href="../../tags/starlink" class="internal tag-link">starlink</a></li><li><a href="../../tags/orbital-economy" class="internal tag-link">orbital-economy</a></li><li><a href="../../tags/dow" class="internal tag-link">dow</a></li><li><a href="../../tags/procurement" class="internal tag-link">procurement</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>航天领域正从政府主导的探索向商业工业规模转型，由可重复使用火箭技术驱动；同时国防子领域以双用技术和以 DoW（国防部）每年数千亿美元支出的复杂采购生态为特征。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>SpaceX 主导轨道经济</strong>，拥有约 66% 的在轨卫星，自 2008 年以来发射成本降低约 95%。Starship 目标 &lt;$100/kg，使轨道数据中心等新用例成为可能。</li>
+<li><strong>国防技术与 AI 融合</strong>——自主系统、战斗管理、软件定义平台。DoW 采购系统虽官僚，但为成功的公司创造持久的竞争优势（高转换成本、多年合约）。</li>
+<li><strong>软件原生国防承包商赢得主承包商协议正在加速</strong>（Palantir 成为 Army TITAN 合同首个软件主承包商；Anduril 部署 300+ 监控塔）。</li>
+<li><strong>商业航天经济在转变</strong>——卫星宽带颠覆地面连接；轨道数据中心作为 AI 计算溢出出口出现，在 Starship 规模发射成本下，天基计算可能便宜 25%。</li>
+<li><strong>指数规则变更加速 SpaceX 上市路径</strong>——可能成为史上最大 IPO（约 $2T 估值），S&amp;P 和 Nasdaq 竞相避免重蹈 Tesla 被排除的覆辙。</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>成功导航 DoW 采购的国防技术创新者（Palantir、Anduril、Shield AI、Skydio）</li>
+<li>发射服务和航天基础设施（SpaceX、Rocket Lab）</li>
+<li>卫星宽带（Starlink、AST SpaceMobile D2D）</li>
+<li><strong>自主系统保障基础设施</strong>（新兴主题）：自主港口/基地、可集装箱化后勤模块、遥测预测性维护、竞争性物流软件——a16z 认为保障瓶颈是自主化投入的最大结构性缺口 <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a></li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>适应缓慢的传统国防主承包商（软件原生范式转型）</li>
+<li>卫星宽带竞争对手面临 Starlink 规模优势和 Amazon/Globalstar D2D 竞争</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>无可重复使用技术的纯发射业务</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Launch cost $/kg</td><td>Space access affordability</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">700/</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord">9</span><span class="mclose">)</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span></span></span></span>250/kg (Starship) → $80/kg (Elon Musk scenario)</td><td>Industry data; SemiAnalysis</td></tr><tr><td>Space DC LCOC vs terrestrial (2026)</td><td>AI infra cost comparison</td><td>4.4x premium (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10.91</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>2.49/hr/GPU for B300); parity ~2040 (base), ~2034 (Elon Musk)</td><td>SemiAnalysis TCO Model <a href="../../sources/2026-02-05--semianalysis--space-datacenter-tco" class="internal alias" data-slug="sources/2026-02-05--semianalysis--space-datacenter-tco">2026-02-05—semianalysis—space-datacenter-tco</a></td></tr><tr><td>Launch cost as % of space DC TCO</td><td>Cost structure insight</td><td>~40% (2026) → ~10% (2039); even -85% only moves total program cost by 8%</td><td>SemiAnalysis TCO Model</td></tr><tr><td>Satellite bandwidth cost decline</td><td>Comms disruption velocity</td><td>~44% per doubling of orbital Gbps</td><td>ARK 2026</td></tr><tr><td>Satellite connectivity revenue oppty</td><td>Addressable market</td><td>>$160B/yr by 2035 (~15% of global comms revenue)</td><td>Industry estimates</td></tr><tr><td>US mobile land coverage</td><td>Connectivity ubiquity</td><td>~86% (2025) → 100% (2030, T-Mobile/Starlink)</td><td>T-Mobile/Starlink</td></tr><tr><td>Space-based AI compute cost vs terrestrial</td><td>AI infra disruption</td><td>25% cheaper at Starship-scale launch costs [EST]</td><td>Industry estimates</td></tr><tr><td>Defense RDT&amp;E budget flow</td><td>Startup entry point health</td><td>BA 3/4/7 most relevant for startups</td><td>McEntush 2026</td></tr><tr><td>SBIR Phase III conversion rate</td><td>Startup-to-scale success</td><td>Low (Valley of Death)</td><td>McEntush 2026</td></tr><tr><td>DIU contract velocity</td><td>Commercial tech adoption pace</td><td>Increasing via OT pathways</td><td>Industry observation</td></tr><tr><td>Starship flight cadence</td><td>Reusability progress</td><td>In development</td><td>SpaceX</td></tr><tr><td>Autonomous sustainment as % of lifecycle cost</td><td>Sustainment burden for unmanned systems</td><td>~70% (GAO); ~50% of systems overrunning cost estimates</td><td>GAO-24-107378 <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>航天与国防领域涵盖两个相互关联的领域：(1) 太空探索、卫星运营和从政府主导向商业工业规模转型的商业航天服务；(2) 国防技术、采购和工业基础——包括跨越发射、卫星通信、监视、自主系统和国防数据分析的双用技术。DoW 是全球最大的客户之一，每年通过严格的 PPBE（规划、编程、预算、执行）预算周期支出数千亿美元。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2008 年前</strong>：政府主导的太空探索；发射成本对商业规模而言过于高昂。传统国防主承包商（Northrop Grumman、L3Harris）主导采购。</li>
+<li><strong>2008–2015 年</strong>：Falcon 9 开发；可重复使用火箭技术开始颠覆发射经济性。SpaceX 赢得 NASA 合同。商业航天生态兴起。</li>
+<li><strong>2015–2025 年</strong>：商业航天时代加速——Starlink 部署，卫星宽带兴起。国防技术初创生态形成（Palantir、Anduril、Shield AI、Skydio）。DoW 采购改革开始（2025–2026 年）。</li>
+<li><strong>2025–2026 年</strong>：Starship 开发；SpaceX 上市前估值目标约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">。国防航天融合，五角大楼招募非传统制造商。富士康进入卫星制造。</span><span class="mord mathnormal">A</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">zo</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">以</span></span></span></span>11.6B 收购 Globalstar 获取 D2D 频谱。</li>
+</ul>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>该领域涵盖四个相互关联的层：</p>
+<ol>
+<li><strong>发射基础设施</strong>——通过可重复使用（SpaceX、Rocket Lab）和一次性火箭进入轨道。进入壁垒最高；SpaceX 的可重复使用优势在短期内几乎不可撼动。</li>
+<li><strong>卫星制造与运营</strong>——卫星建造、星座部署、地面段基础设施。传统电子制造扩展到航天领域（富士康 PEARL 卫星）。</li>
+<li><strong>天基服务</strong>——宽带（Starlink）、D2D 连接（AST SpaceMobile、Globalstar）、轨道数据中心（新兴）、地球观测。</li>
+<li><strong>国防与政府</strong>——DoW 采购生态、国防主承包商（Kratos、L3Harris、Northrop Grumman）、自主系统（Anduril、Shield AI、Skydio）、国防数据分析（Palantir）。</li>
+</ol>
+<hr/>
+<h2 id="3-驱动力与趋势-kb--每次-ingest-检查">3. 驱动力与趋势 [KB] ← 每次 ingest 检查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb--每次-ingest-检查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>国防采购系统</strong> — DoW 采购生态虽复杂，但为成功导航其中的公司创造持久的竞争优势。</p>
+<ul>
+<li><strong>PPBE 周期</strong>：规划、编程、预算、执行——严格的多年预算编制。FYDP 是滚动 5 年预算。</li>
+<li><strong>资金颜色</strong>：RDT&amp;E（初创公司切入点）→ 采购（规模化）→ O&amp;M（维护）。BA 7（运营系统改进）是最大的 RDT&amp;E 预算活动。</li>
+<li><strong>SBIR/STTR</strong>：Phase I (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">50–225</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">ha</span><span class="mord mathnormal">se</span><span class="mord mathnormal" style="margin-right:0.07847em;">II</span><span class="mopen">(</span></span></span></span>750K–$1.5M)、Phase III（独家来源）。SBIR = “狩猎许可证”。2026 年重新授权限制申请数量以遏制”SBIR 工厂”。</li>
+<li><strong>其他路径</strong>：OTs/OTAs（FAR 豁免，DIU 使用）、CRADAs（实物价值，无直接资金）、与主承包商分包。</li>
+<li><strong>STRATFI/TACFI</strong>：空军特定桥接资金（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3–15</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">/</span></span></span></span>375K–$1.7M）。陆军/海军无对应机制。</li>
+<li><strong>合规先决条件</strong>：FedRAMP（云）、CMMC（网络安全）、ITAR（出口管制）。</li>
+</ul>
+<p><strong>驱动因素</strong>：DoW 采购改革（2025–2026 年）；私人资本流入国防技术；AI 使能系统；无人机/自主系统 proliferation。</p>
+<p><strong>逆风</strong>：持续决议（每个预算周期，2–6 个月）；R&amp;D 到采购之间的死亡谷；SBIR 工厂监管收紧。</p>
+<p><strong>创新路径</strong>：软件原生主承包商（Palantir、Anduril）；DIU 作为商业技术桥梁；OT/OTA FAR 豁免灵活性。</p>
+<p><strong>案例研究</strong>：</p>
+<ul>
+<li><strong>Anduril</strong>：CBP 边境监控 → 扩展到 DoW，部署 300+ 监控塔。</li>
+<li><strong>Palantir</strong>：通过 OT 路径成为 Army TITAN 合同首个软件主承包商。</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>发射成本曲线</strong>：Falcon 9 约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000/</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord cjk_fallback">（自</span><span class="mord">2008</span><span class="mord cjk_fallback">年</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">95</span></span></span></span>100/kg，使轨道数据中心成为可能，天基计算成本可降低 25%。</li>
+<li><strong>卫星宽带颠覆</strong>：带宽成本每累计翻倍 Gbps 下降约 44%。T-Mobile/Starlink D2D 于 2025 年 10 月上线。美国移动覆盖 86%（2025 年）→ 100%（2030 年）。卫星连接收入机会到 2035 年 >$160B/年（约占全球通信收入的 15%）。</li>
+<li><strong>Scale AI 获 5 亿美元国防部合同</strong>：Meta 持股 49% 的 Scale AI 赢得多年期 DoD 合同，用于军事数据筛选与决策辅助。军方 AI 采购从试点进入规模部署阶段，国防 AI 数据治理与机密云厂商受益。（INSIGHT NEWS PRO 2026-05-07 早报）</li>
+<li><strong>轨道数据中心</strong>：AI 计算溢出用例——AI 芯片需求可能使火箭需求增加 60 倍。热管理尚未验证。</li>
+<li><strong>SemiAnalysis 发布轨道数据中心 TCO 模型</strong>：详细的一手原理成本分析显示，2026 年 B300 集群天基计算 LCOC <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">10.91/</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.13889em;">GP</span><span class="mord mathnormal" style="margin-right:0.03588em;">Uv</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">地面</span></span></span></span>2.49/hr/GPU（约 4.4x 溢价）。基本情景下天地成本持平于约 2040 年（早期 2030s 差距缩至仅 30%）；Elon Musk 情景（地面容量严重受限、发射成本骤降）下 2034 年接近持平。反直觉发现：发射成本仅占总 TCO 约 10%，即使降低 85% 也只改善总成本 6%。真正瓶颈是辐射散热器、太阳能板、卫星母线和空间 DC 5 年使用寿命 vs 地面 15 年。SpaceX S-1 披露目标每年发射 100GW 算力到太空。参见 <a href="../../sources/2026-02-05--semianalysis--space-datacenter-tco" class="internal alias" data-slug="sources/2026-02-05--semianalysis--space-datacenter-tco">2026-02-05—semianalysis—space-datacenter-tco</a>。</li>
+<li><strong>竞争动态</strong>：Amazon 以 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">11.6</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">收购</span><span class="mord mathnormal" style="margin-right:0.01968em;">Gl</span><span class="mord mathnormal">o</span><span class="mord mathnormal">ba</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord cjk_fallback">（</span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord">4</span><span class="mord cjk_fallback">月）</span><span class="mord">——</span><span class="mord cjk_fallback">频谱</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord cjk_fallback">策略挑战</span><span class="mord mathnormal">St</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.03148em;">ink</span><span class="mord cjk_fallback">领先地位，</span><span class="mord">31</span></span></span></span>2T，目标融资 $75B——可能成为史上最大 IPO，有望纳入 Nasdaq-100。（Insight News Pro 2026-04-15, 2026-04-17）</li>
+<li><strong>Rocket Lab 创纪录季度</strong>：RKLB Q1 2026 创纪录 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">200</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">营收，</span></span></span></span>2.2B 积压订单；入选太空军 Space Based Interceptor 计划（与 Raytheon 合作）；Anduril HASTE 多发射高超音速测试合同。表明第二来源发射 + 航天系统玩家可以与 SpaceX 共存。（<a href="../../2026-05-09--ark--weekly-stock-commentary" class="internal alias" data-slug="2026-05-09--ark--weekly-stock-commentary">2026-05-09—ark—weekly-stock-commentary</a>）[KB]</li>
+<li><strong>国防航天融合</strong>：五角大楼招募 GM、Ford、GE、Oshkosh 进行军事生产转换，在 $1.5T 国防预算请求下。（Insight News Pro 2026-04-16）</li>
+<li><strong>国防 VC 创历史新高 $19.8B（Q1 2026）</strong>：262 deals，战场反馈环直接塑造私募资本配置。军工创业公司从”供应商”转变为”嵌入式国防基础设施”。<a href="../../2024-08-27--vc-corner--weekly-pulse-claude-altman-karpathy" class="internal alias" data-slug="2024-08-27--vc-corner--weekly-pulse-claude-altman-karpathy">2024-08-27—vc-corner—weekly-pulse-claude-altman-karpathy</a></li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>国防工业基础</strong></p>
+<ul>
+<li><strong>“Everything is computer”论文</strong>：智能手机蓝图（计算、电力、感知、连接、软件）是所有现代技术的通用模板。参见 <a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a> 和 <a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a>。</li>
+<li><strong>创新流逆转</strong>：国防平台现在由在消费工厂中完善的模块构建——无人机、频谱战、电源管理、加固计算全部基于消费电子工艺构建。（McEntush 2026, a16z）</li>
+<li><strong>航天护城河缩小</strong>：平台正迅速变为电力和软件定义——航空电子、电源、电机控制器、自主性现在与机身同样重要。一切可以电气化的都将被电气化。（McEntush 2026, a16z）</li>
+<li><strong>美国”缺失的中间层”</strong>：美国缺乏连接生态的模块化电子公司——初创公司在寻找国内供应商进行原型制造和规模化时遇到困难。（McEntush 2026, a16z）</li>
+<li><strong>Tesla/SpaceX 作为例外</strong>：美国仅有的电子工业生产例子——像制造智能手机一样制造汽车和航天器。SpaceX 运营美国最大的 PCB 工厂。这不是可复制的国家战略。（McEntush 2026, a16z）</li>
+<li><strong>重建美国模块化中间层</strong>：不是垂直整合，而是一个生态——架构师定义系统，上游公司规模化提供低成本组件，软件将分布式制造缝合在一起。（McEntush 2026, a16z）</li>
+<li><strong>轨道数据中心 TCO 框架</strong>：SemiAnalysis 发布首个第一性原理轨道数据中心 TCO 模型。核心发现：(1) 空间成本约 4.4x 地面（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10.91</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span></span></span></span>2.49/hr/GPU B300），差距主要由高昂的空间数据中心资本成本驱动（17x 地面水平）加上 5 年 vs 15 年的折损寿命；(2) 反直觉：发射成本即使下降 85% 也只降低总成本 8%——IT 资本成本占 TCO 的 75-80%；(3) 天地 LCOC 持平时序：基本情境 2040 年，Elon Musk 情境 2034 年；(4) 地面供电瓶颈的 4 层框架（电网→转化容量→BTM→工业产能）+ 芯片生产的第 5 层统一约束。模型揭示轨道计算在经济上可能性是 2030s 叙事，而非 2020s。参见 <a href="../../sources/2026-02-05--semianalysis--space-datacenter-tco" class="internal alias" data-slug="sources/2026-02-05--semianalysis--space-datacenter-tco">2026-02-05—semianalysis—space-datacenter-tco</a>。</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>指数规则变更加速 SpaceX 入场</strong>：S&amp;P 提议将上市时间从 12 个月缩短至 6 个月，并为大型股豁免 GAAP 盈利要求；Nasdaq “快速入场”规则（15 个交易日至 Nasdaq-100）；FTSE Russell 提议 5 天等待期。均在竞相避免重蹈 Tesla 被排除的覆辙（被动投资者错过了 130% 涨幅）。SpaceX 预计为首次测试；S&amp;P 评论期于 5 月 28 日结束，变更最早于 6 月 8 日生效。（ARK 2026 via <a href="../../2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler" class="internal alias" data-slug="2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler">2026-05-04—ark—disrupt-newsletter-robinhood-intellia-hyperscaler</a>）</li>
+<li><strong>富士康进入卫星制造</strong>：富士康通过 SpaceX Falcon 9 发射 2 颗 PEARL 卫星，用于 5 年在轨通信和空间科学有效载荷验证。表明传统电子制造扩展到航天技术——卫星制造和有效载荷集成成为合同制造商的新增长方向。（Insight News Pro 2026-05-04 早报）</li>
+<li><strong>国防航天融合</strong>：五角大楼在 $1.5T 国防预算请求下招募非传统制造商（GM、Ford、GE、Oshkosh）进行军事生产转换。Starship 开发风险；发射许可延迟；太空碎片 proliferation。（Insight News Pro 2026-04-16）</li>
+<li><strong>Blue Origin 新格伦火箭爆炸：发射产能瓶颈加深</strong> — 新格伦在 Cape Canaveral 试射中爆炸，严重损坏仅有的轨道发射台 36 号，下次飞行预计推迟 ≥1 年。时机关键：NASA 刚授予 Blue Origin 价值 $468M 的月球地形车合同（2028 年交付月球南极区域）。Amazon Leo 已将发射可用性列为增长瓶颈。短期进一步依赖 SpaceX Starship；长期看多发射提供商多元化需求（Rocket Lab、Stoke Space）。<a href="../../2026-06-01--ark--disrupt-weekly-june-1" class="internal alias" data-slug="2026-06-01--ark--disrupt-weekly-june-1">2026-06-01—ark—disrupt-weekly-june-1</a> [KB]</li>
+<li>**Radionor Communications 启动出售，估值 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">30</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">45</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：挪威战术无线电制造商，相控阵抗干扰技术，乌克兰战场实战验证。净利润率</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">70</span></span></span></span>3-4 亿。欧洲重整军备浪潮核心资产，竞购方包括防务巨头与 PE。（INSIGHT NEWS PRO 2026-06-01 早报）</li>
+<li>**国防风投创纪录——Q1 2026 达 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">19.8</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">c</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">oo</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback">数据显示</span><span class="mord mathnormal">Q</span><span class="mord">12026</span><span class="mord cjk_fallback">国防科技风投共</span><span class="mord">262</span><span class="mord cjk_fallback">笔交易、总额</span></span></span></span>19.8B，创历史新高。战场反馈环直接塑造私人资本配置——初创不再仅是供应商，而是嵌入国防基础设施。(<a href="../../sources/2026-05-26--vc-corner--weekly-pulse-mythos-altman-karpathy" class="internal alias" data-slug="sources/2026-05-26--vc-corner--weekly-pulse-mythos-altman-karpathy">2026-05-26—vc-corner—weekly-pulse-mythos-altman-karpathy</a>) [KB]</li>
+<li><strong>Castelion 高超音速导弹：SpaceX 式迭代制造进入国防</strong>：前 SpaceX/JHU APL 工程师 Bryon Hargis 创立 Castelion 开发可规模化量产的低成本高超音速导弹 Blackbeard（F-18 舰载，约 1 年内首飞集成）。核心论点：美国传统航空航天”昂贵、缓慢、精致”的制造方式在与中国的迭代制造竞赛中失败——Falcon 9 证明迭代=更便宜+更强。Anduril 使国防硬件对风投”可投资化”。<a href="../../2026-06-02--generalist--castelion-hypersonic" class="internal alias" data-slug="2026-06-02--generalist--castelion-hypersonic">2026-06-02—generalist—castelion-hypersonic</a> [KB]</li>
+<li><strong>自主系统保障瓶颈浮现</strong>：a16z 指出五角大楼以 Replicator/DAWG 项目推进自主蜂群规模化（FY27 请求 $54B，240x 同比增长），但保障基础设施缺失。GAO 警告保障占全生命周期成本约 70%，近半数系统成本超预期。MQ-9 “无人机”实际需 180+ 人维持。Boeing 未竞标 XLUUV 后续保障合同——主承包商在保障项目不清晰时理性放弃。a16z 呼吁国会建立自主保障基础设施（自主港口、集装箱化基地、机器人装卸、能源数据网络）作为一级项目。[KB] <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a></li>
+</ul>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>国防技术与 AI 的融合（自主系统、战斗管理）。DoW 采购系统虽官僚，但为成功导航其中的公司创造持久的竞争优势（高转换成本、多年合约）。软件原生国防承包商赢得主承包商协议的趋势正在加速。</p>
+<p><strong>自主系统保障瓶颈</strong>：a16z 指出自主蜂群的瓶颈不在平台而在保障基础设施。无人系统脱离人后只是将瓶颈从驾驶员转移到后勤。自主保障架构（港口/集装箱基地/机器人装卸/能源数据网络）可能需要 5-10 年的基础设施建设，且国会/DoD 尚无明确的责任归属。如果该瓶颈未解决，“我们最终将获得一套令人印象深刻的自主演示能力，却没什么能经受住实战反复部署。” <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a> [KB]</p>
+<hr/>
+<h2 id="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf--玩家动态按需更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="市场集中度">市场集中度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>发射服务</strong>：高度集中——SpaceX 以可重复使用技术主导（约 66% 在轨卫星）。Rocket Lab 在小型发射利基市场竞争。</li>
+<li><strong>国防承包</strong>：集中在传统主承包商（L3Harris、Northrop Grumman），软件原生颠覆者（Palantir、Anduril）正在兴起并赢得主承包商协议。</li>
+<li><strong>卫星宽带</strong>：Starlink 早期领先；Amazon/Globalstar 在 $11.6B 收购后成为新兴挑战者（31% 溢价反映频谱稀缺性）。</li>
+</ul>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>SpaceX</strong> (private)</p>
+<ul>
+<li>角色：主导性发射服务 + Starlink 卫星宽带</li>
+<li>定位：约 66% 在轨卫星；发射成本约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000/</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord cjk_fallback">；</span><span class="mord mathnormal">St</span><span class="mord mathnormal">a</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">hi</span><span class="mord mathnormal">p</span><span class="mord cjk_fallback">目标</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span></span></span></span>100/kg</li>
+<li>关键指标：Starlink 收入运行率约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">10</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">估计；上市前估值约</span></span></span></span>2T</li>
+<li>风险：Starship 开发未经验证；发射许可延迟；监管审查</li>
+</ul>
+<p><strong>Rocket Lab</strong> (RKLB)</p>
+<ul>
+<li>角色：小型发射 + 航天系统</li>
+<li>风险：来自 SpaceX 拼车发射的竞争；小型发射市场商品化</li>
+</ul>
+<p><strong>AST SpaceMobile</strong> (ASTS)</p>
+<ul>
+<li>角色：卫星直连手机</li>
+<li>风险：与 Starlink D2D 和 Amazon/Globalstar 的频谱竞争；技术风险；资金需求</li>
+</ul>
+<p><strong>Kratos Defense</strong> (KTOS)</p>
+<ul>
+<li>角色：国防技术</li>
+<li>风险：国防预算周期；来自软件原生玩家的竞争</li>
+</ul>
+<p><strong>L3Harris</strong> (LHX)</p>
+<ul>
+<li>角色：国防 + 航天</li>
+<li>风险：传统主承包商在平台变为软件定义时的适应风险</li>
+</ul>
+<p><strong>Northrop Grumman</strong> (NOC)</p>
+<ul>
+<li>角色：国防主承包商</li>
+<li>风险：传统主承包商适应风险；国防预算周期</li>
+</ul>
+<p><strong>Palantir</strong> (PLTR)</p>
+<ul>
+<li>角色：国防数据分析 / AI——通过 OT 路径成为 Army TITAN 合同首个软件主承包商</li>
+<li>定位：引领国防软件转型；OT 路径先驱</li>
+<li>风险：对 DoW 采购的依赖；来自 Anduril 和传统主承包商的竞争</li>
+</ul>
+<p><strong>Anduril</strong> (private)</p>
+<ul>
+<li>角色：自主国防系统</li>
+<li>定位：CBP 边境监控 → 扩展到 DoW；部署 300+ 监控塔</li>
+<li>风险：规模化挑战；来自 Palantir 和传统主承包商的竞争</li>
+</ul>
+<p><strong>Shield AI</strong> (private)</p>
+<ul>
+<li>角色：自主无人机系统</li>
+<li>定位：DIU OT 原型制造</li>
+<li>风险：原型制造与采购之间的死亡谷</li>
+</ul>
+<p><strong>Skydio</strong> (private)</p>
+<ul>
+<li>角色：自主无人机</li>
+<li>定位：DIU OT 原型制造</li>
+<li>风险：原型制造与采购之间的死亡谷</li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DoW 采购复杂性</strong>：导航 PPBE、SBIR/STTR、合规（FedRAMP、CMMC、ITAR）为现有企业创造高转换成本</li>
+<li><strong>多年合约</strong>：一旦成为主承包商，难以被取代</li>
+<li><strong>发射成本优势</strong>：SpaceX 的可重复使用性创造了相较 2008 年前替代方案的约 95% 成本优势，通过持续的 Starship 开发维持</li>
+<li><strong>频谱稀缺性</strong>：Globalstar 收购的 31% 溢价反映轨道频谱价值（Insight News Pro 2026）</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf--新风险出现时更新">5. 风险监控 [KB + INF] ← 新风险出现时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf--新风险出现时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>发射许可延迟；频谱分配不确定性</li>
+<li>ITAR 出口管制限制国际合作</li>
+<li>太空碎片监管收紧</li>
+<li>2026 年重新授权的 SBIR 上限</li>
+<li>国防预算周期；持续决议对新项目启动的影响</li>
+<li>影响国防开支优先级的地缘政治变化</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Starship 完全可重复使用性未经验证——轨道数据中心经济性的关键催化剂</li>
+<li>轨道数据中心热管理仍未验证</li>
+<li>中国航天计划加速，构成竞争威胁</li>
+<li><strong>自主系统保障基础设施缺口</strong>：无人系统规模化部署受限于保障节点/港口/基地/遥测基础设施缺失；GAO 已警告规划未计入这些成本；历史先例（Navy optimal manning）显示自动化失败后反而需要更多人员 <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a></li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>SpaceX 主导地位可能限制发射市场竞争</li>
+<li>传统主承包商（L3Harris、Northrop Grumman）适应软件定义范式缓慢</li>
+<li>Amazon/Globalstar D2D 在卫星直连手机领域挑战 Starlink</li>
+<li>非可重复使用提供商的发射商品化风险</li>
+<li>太空碎片 proliferation 威胁轨道运营</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb--财报季更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>估计值</th><th>来源</th><th>As of</th></tr></thead><tbody><tr><td>Global space economy</td><td>~$500B</td><td>Industry data</td><td>2025</td></tr><tr><td>Launch services market</td><td>~$10B+</td><td>Bryce analysis</td><td>2025</td></tr><tr><td>Starlink revenue (run-rate)</td><td>~$10B+ est. [EST]</td><td>Industry estimates</td><td>2025</td></tr><tr><td>DoW annual spend</td><td>Hundreds of billions</td><td>McEntush 2026</td><td>2026</td></tr><tr><td>Defense space budgets</td><td>Growing</td><td>Budget data</td><td>2025</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf--框架稳定">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf--框架稳定" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Upstream — Launch &amp; Components</strong></p>
+<ul>
+<li>Launch vehicle manufacturing &amp; operations</li>
+<li>Satellite component manufacturing</li>
+<li>Ground station infrastructure</li>
+</ul>
+<p><strong>Midstream — Satellite &amp; Platform</strong></p>
+<ul>
+<li>Satellite manufacturing &amp; integration (SpaceX, Rocket Lab, Foxconn)</li>
+<li>Constellation deployment &amp; management</li>
+<li>Defense platform integration</li>
+</ul>
+<p><strong>Downstream — Services &amp; Applications</strong></p>
+<ul>
+<li>Broadband connectivity (Starlink)</li>
+<li>Direct-to-device (AST SpaceMobile, Globalstar)</li>
+<li>Earth observation</li>
+<li>Defense analytics &amp; autonomy (Palantir, Anduril)</li>
+<li>Orbital data centers (emerging)</li>
+</ul>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>发射</strong>仍然是进入壁垒最高的环节；SpaceX 的可重复使用优势在短期内几乎不可撼动。只有 Rocket Lab 在小型发射利基市场有意义的竞争。</li>
+<li><strong>国防主承包商</strong>是利润率最高、最持久的收入流，但需要最多的监管导航。软件原生主承包商（Palantir、Anduril）正在颠覆传统模式。</li>
+<li><strong>卫星宽带</strong>是最大的近期收入机会（到 2035 年 >$160B/年），但面临 Starlink、Amazon/Globalstar 和 AST SpaceMobile 之间的竞争激烈。</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>关键框架考量：</p>
+<ul>
+<li><strong>可重复使用经济性</strong>：每公斤发射成本是结构性驱动因素——随着成本下降，可寻址市场非线性扩张。Starship 目标 &lt;$100/kg 将具有变革性。</li>
+<li><strong>航天领域的 Wright’s Law</strong>：卫星带宽成本每累计翻倍 Gbps 下降约 44%，表明连接成本持续通缩压力，扩大可寻址市场。</li>
+<li><strong>国防采购作为护城河</strong>：成功导航 DoW 生态的公司受益于高转换成本和多年收入可见性。软件原生国防承包的先发者（Palantir、Anduril）正在建立持久地位。</li>
+<li><strong>融合论文</strong>：“everything is computer”框架表明国防平台将越来越像消费电子——有利于软件原生玩家而非传统主承包商。缺失的中间层问题为国内电子制造创造了机会。</li>
+</ul>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Category</th><th>Companies</th><th>Notes</th></tr></thead><tbody><tr><td>Launch Services</td><td>SpaceX (private), Rocket Lab (RKLB)</td><td>SpaceX dominant; Starship key catalyst for next growth phase</td></tr><tr><td>Satellite Broadband</td><td>SpaceX/Starlink (private), AST SpaceMobile (ASTS), Globalstar (via Amazon)</td><td>D2D race brewing; spectrum scarcity as competitive moat</td></tr><tr><td>Defense Software</td><td>Palantir (PLTR), Anduril (private)</td><td>Software primes disrupting traditional model; OT pathway pioneers</td></tr><tr><td>Defense Hardware</td><td>Kratos (KTOS), L3Harris (LHX), Northrop Grumman (NOC)</td><td>Traditional primes facing adapt-or-disrupt risk</td></tr><tr><td>Autonomous Systems</td><td>Shield AI (private), Skydio (private)</td><td>DIU OT pathway; early stage, Valley of Death risk</td></tr><tr><td>Satellite Manufacturing</td><td>Foxconn (HNHPF)</td><td>Emerging growth vector from traditional electronics manufacturing</td></tr></tbody></table></div>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/pltr" class="internal" data-slug="wiki/companies/pltr">pltr</a>, <a href="../../wiki/companies/anduril" class="internal" data-slug="wiki/companies/anduril">anduril</a></p>
+<h3 id="people">People<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#people" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../ryan-mcentush" class="internal" data-slug="ryan-mcentush">ryan-mcentush</a></p>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></p>
+<h3 id="macro">Macro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>(none yet)</p>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../2026-03-18--ark-space--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-space--big-ideas-2026">2026-03-18—ark-space—big-ideas-2026</a>, <a href="../../2026-03-18--ark-macro--great-acceleration" class="internal alias" data-slug="2026-03-18--ark-macro--great-acceleration">2026-03-18—ark-macro—great-acceleration</a>, <a href="../../2026-03-18--ark-energy--distributed-energy" class="internal alias" data-slug="2026-03-18--ark-energy--distributed-energy">2026-03-18—ark-energy—distributed-energy</a>, <a href="../../2026-04-23--mcentush--dow-contracting-startups" class="internal alias" data-slug="2026-04-23--mcentush--dow-contracting-startups">2026-04-23—mcentush—dow-contracting-startups</a>, <a href="../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a>, <a href="../../2024-08-27--vc-corner--weekly-pulse-claude-altman-karpathy" class="internal alias" data-slug="2024-08-27--vc-corner--weekly-pulse-claude-altman-karpathy">2024-08-27—vc-corner—weekly-pulse-claude-altman-karpathy</a>, <a href="../../2026-04-03--a16z--keeping-drone-swarm-alive" class="internal alias" data-slug="2026-04-03--a16z--keeping-drone-swarm-alive">2026-04-03—a16z—keeping-drone-swarm-alive</a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-190" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" data-for="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb--每次-ingest-检查" data-for="3-驱动力与趋势-kb--每次-ingest-检查">3. 驱动力与趋势 [KB] ← 每次 ingest 检查</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf--玩家动态按需更新" data-for="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新</a></li><li class="depth-1"><a href="#市场集中度" data-for="市场集中度">市场集中度</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf--新风险出现时更新" data-for="5-风险监控-kb--inf--新风险出现时更新">5. 风险监控 [KB + INF] ← 新风险出现时更新</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb--财报季更新" data-for="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf--框架稳定" data-for="7-产业链与投资逻辑-frame--inf--框架稳定">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#people" data-for="people">People</a></li><li class="depth-1"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-1"><a href="#macro" data-for="macro">Macro</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/companies/anduril" class="internal">anduril</a></li><li><a href="../../wiki/companies/pl" class="internal">pl</a></li><li><a href="../../wiki/companies/pltr" class="internal">pltr</a></li><li><a href="../../wiki/companies/rklb" class="internal">rklb</a></li><li><a href="../../wiki/companies/spacex" class="internal">spacex</a></li><li><a href="../../wiki/concepts/defense-procurement" class="internal">defense-procurement</a></li><li><a href="../../wiki/concepts/everything-is-computer-framework" class="internal">everything-is-computer-framework</a></li><li><a href="../../wiki/concepts/technological-convergence" class="internal">technological-convergence</a></li><li><a href="../../wiki/concepts/wrights-law" class="internal">wrights-law</a></li><li><a href="../../wiki/daily/2026-05-21" class="internal">2026-05-21</a></li><li><a href="../../wiki/daily/2026-06-01" class="internal">2026-06-01</a></li><li><a href="../../wiki/daily/2026-06-02" class="internal">2026-06-02</a></li><li><a href="../../wiki/daily/2026-06-09" class="internal">2026-06-09</a></li><li><a href="../../wiki/macro/hormuz-oil-shock-2026" class="internal">hormuz-oil-shock-2026</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

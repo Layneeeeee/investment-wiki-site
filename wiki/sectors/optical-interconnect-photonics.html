@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>optical-interconnect-photonics</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="optical-interconnect-photonics"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="optical-interconnect-photonics"/><meta name="twitter:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/optical-interconnect-photonics"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/optical-interconnect-photonics"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 本文件使用 section-level 来源标记。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/optical-interconnect-photonics-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/optical-interconnect-photonics-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/optical-interconnect-photonics-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/optical-interconnect-photonics"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-393"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-393" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>optical interconnect photonics</a></div></nav><h1 class="article-title">optical-interconnect-photonics</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-09T16:00:00.000Z">Jun 10, 2026</time><span>28 min read</span></p><ul class="tags"><li><a href="../../tags/photonics" class="internal tag-link">photonics</a></li><li><a href="../../tags/optical-interconnect" class="internal tag-link">optical-interconnect</a></li><li><a href="../../tags/silicon-photonics" class="internal tag-link">silicon-photonics</a></li><li><a href="../../tags/dsp" class="internal tag-link">dsp</a></li><li><a href="../../tags/coherent-optics" class="internal tag-link">coherent-optics</a></li><li><a href="../../tags/ai-infrastructure" class="internal tag-link">ai-infrastructure</a></li><li><a href="../../tags/npo" class="internal tag-link">npo</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本文件使用 <strong>section-level</strong> 来源标记。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p>光学互联是 AI 基础设施中最被低估的瓶颈层——AI 集群规模每 18 个月翻倍，但光器件物理供给（InP/EML wafer capacity）受限于半导体制造周期，形成结构性缺口。2026 年 H2 是验证窗口。</p>
+</blockquote>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>光学互联正在经历从组件竞争到平台竞争的跃迁</strong>：Marvell 的完整栈拼图（Inphi DSP→Celestial AI photonic fabric→XConn scale-up→Polariton plasmonics→NVIDIA $2B equity）代表了这个行业最清晰的平台化方向。不再只是每个组件各自为战——赢家是能提供”数据移动”完整解决方案的公司。</li>
+<li><strong>光子学瓶颈的刘易斯拐点正在逼近</strong>：InP/EML gap >30% 且持续收紧，客户 equity 锁定、PO 前置、“有钱也买不到”正在从叙事变成现实。MTSI DC >60% growth 和 LPO 量产是最新信号。</li>
+<li><strong>三层一致性确认方向</strong>：组件层（MTSI DC >60%）、互联层（MRVL 全栈 + NVIDIA 验证）、封装层（POET active PO）。跨层次的同时加速是信心信号而非噪音。</li>
+<li><strong>行业正处于认知建立阶段</strong>：类似于 2025 年中的 AI 电力瓶颈叙事——数据点快速积累但多数投资者尚未建立框架。最快的认知建立路径是追踪 InP 供给紧度和 cross-layer consistency。</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>MRVL — AI 数据移动平台构建者，NVIDIA <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">战略验证，</span><span class="mord mathnormal" style="margin-right:0.13889em;">XP</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal">a</span><span class="mord mathnormal">tt</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span>0.6B→$14.6B</li>
+<li>POET — 光学封装层的纯表达，active PO 验证供应商地位，Q2 Starlight 出货催化</li>
+<li>MTSI — Layer 4 模拟芯片，LPO founding member，DC >60% growth</li>
+<li>CIEN — 系统层光学，连续 beat 确认需求加速</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>LITE/COHR — 已有充分估值，需看到 1.6T 周期持续超预期</li>
+<li>GLW — 光纤光缆周期性，AI 增量有限</li>
+<li>AAOI — 光模块制造，商品化压力大</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>低市值无差异化光学元件公司（缺乏平台/生态护城河）</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>InP/EML supply gap</td><td>光器件关键基板紧度</td><td>>30% 缺口</td><td>Gaetano series</td></tr><tr><td>MRVL XPU attach TAM</td><td>AI 互联可寻址市场</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.6</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>14.6B (90% CAGR)</td><td><a href="../../2026-04-20--gaetano--google-marvell-ai-chips" class="internal alias" data-slug="2026-04-20--gaetano--google-marvell-ai-chips">2026-04-20—gaetano—google-marvell-ai-chips</a></td></tr><tr><td>MTSI DC revenue growth</td><td>1.6T 周期加速信号</td><td>>60% guide</td><td><a href="../../2026-05-08--gaetano--mtsi-earnings-breakdown" class="internal alias" data-slug="2026-05-08--gaetano--mtsi-earnings-breakdown">2026-05-08—gaetano—mtsi-earnings-breakdown</a></td></tr><tr><td>POET Starlight 出货</td><td>光子封装量产验证</td><td>Q2 2026 窗口</td><td><a href="../../2026-04-22--gaetano--poet-cfo-interview-massive-update" class="internal alias" data-slug="2026-04-22--gaetano--poet-cfo-interview-massive-update">2026-04-22—gaetano—poet-cfo-interview-massive-update</a></td></tr><tr><td>HUBN OCS 收入占比</td><td>OCS 在 hyperscaler 的 adoption</td><td>隐藏资产（Polatis/Cube Optics）</td><td><a href="../../2026-04-20--gaetano--hubn-worth-tracking" class="internal alias" data-slug="2026-04-20--gaetano--hubn-worth-tracking">2026-04-20—gaetano—hubn-worth-tracking</a></td></tr><tr><td>LPO/CPO 量产节点</td><td>降低功耗/延迟的关键技术</td><td>LPO founding member 量产开始</td><td>Gaetano / MTSI</td></tr><tr><td>1.6T 光模块出货量</td><td>下一代周期启动信号</td><td>H2 2026 爬坡</td><td>Industry consensus</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb">2. 行业概述与界定 [FRAME + KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>光学互联与光子学涵盖 AI 数据中心内部和之间的<strong>数据移动基础设施</strong>——从芯片级的光学 I/O（chiplet interconnect）到机架级的 scale-up/scale-out 光纤互联到数据中心间的 DCI。核心物理组件包括 DSP（数字信号处理器）、TIA/激光驱动器（模拟芯片）、EML/VCSEL/SiPh（光发射器）、APD/PIN（光探测器）、光纤/光缆（传输介质）以及光学封装。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2023–2024 — 传统可插拔时代（800G 部署期）</strong>：AI 集群从 1K→100K GPU，铜缆带宽成为瓶颈。800G 光模块批量部署，DSP（MRVL Inphi）首次获得战略重要性。可插拔架构是唯一选项——模块热插拔、生态成熟、运维灵活。光学引擎在交换芯片前方最远处（PCB 穿越→前面板），电信号路径最长，依赖模块内 DSP 做信号修复。</li>
+<li><strong>2024–2025 — 1.6T 标准 + LPO 路线分化</strong>：1.6T 光模块标准确定，但 200G/lane 下电信号衰减逼近物理极限。LPO（线性可插拔光学）出现——去掉模块内 DSP，将信号处理推回主机端。LPO vs CPO 路线之争开始。Marvell 通过 Inphi 整合 coherent DSP。Broadcom 推出 Bailly 1.6T switch。</li>
+<li><strong>2025–2026 H1 — NPO 桥梁浮现</strong>：Marvell 完成 Celestial AI→XConn→Polariton 收购栈。NVIDIA $2B 战略入股 Marvell。InP/EML gap 从叙事变为可量化供给瓶颈。NPO 被定位为”通往 CPO 的桥梁”——光学引擎移至靠近 ASIC 但封装外，在 CPO 成熟前先实现光学近芯片化。</li>
+<li><strong>2026 H2–2027 — NPO 量产 + LPO 渗透持续</strong>：Rubin Ultra/NVL576 可能将每 GPU 光学引擎从 ~2.25 提升至 ~4.0，NPO 受益供应链（MRVL/AVGO/SMTC/CRDO/COHR/CIEN/LITE/GLW）进入收入爬坡期。LPO 在 hyperscaler 短距离互联持续渗透。传统可插拔仍占出货量主力但增速放缓。</li>
+<li><strong>2027–2030 — CPO 逐步进入主流</strong>：CPO 工程复杂度（热管理、良率、可维修性）逐步解决。外部激光源（ELS）方案成熟。CPO 在高端 AI 集群率先部署，但可插拔和 NPO 在中低端市场持续共存。<a href="../../sources/2026-04-05--gaetano--education-lpo-npo-cpo" class="internal alias" data-slug="sources/2026-04-05--gaetano--education-lpo-npo-cpo">2026-04-05—gaetano—education-lpo-npo-cpo</a> [KB]</li>
+</ul>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Layer 1 — 光组件与材料</strong>：InP 衬底（AXTI）、EML/VCSEL 芯片、SiPh 引擎、光纤预制棒（GLW）</li>
+<li><strong>Layer 2 — 光模块制造</strong>：OSA 封装、光模块组装（AAOI、FN）、收发器</li>
+<li><strong>Layer 3 — 模拟前端</strong>：TIA、激光驱动器、探测器（MTSI、VIAV）</li>
+<li><strong>Layer 4 — DSP 与互联芯片</strong>：相干/非相干 DSP（MRVL、LITE）、retimer、Gearbox（CRDO）</li>
+<li><strong>Layer 5 — 光学交换与互联</strong>：OCS（HUBN Polatis）、WDM/滤波（HUBN Cube Optics）、Photonic Fabric（Celestial AI）</li>
+<li><strong>Layer 6 — 光学封装与集成</strong>：光中介层/光学 interposer（POET）、CPO、硅光集成</li>
+<li><strong>Layer 7 — 系统与网络</strong>：光传输/路由（CIEN、NOK）、DCI 系统、光层管理软件</li>
+</ol>
+<hr/>
+<h2 id="3-驱动力与趋势-kb">3. 驱动力与趋势 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>美国对华光模块出口限制（特定速率以上），影响 AAOI 等中国光模块厂商。但高速率光互联（>800G）的核心供应链仍由非中国厂商主导。</li>
+<li>CHIPS Act 推动美国本土光芯片制造能力建设，AXTI 等 InP 衬底公司受益。</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI 集群规模增长直接拉动光学互联需求</strong>：每增加一个 GPU 节点，需要相应数量的光学互联端口。100K→500K→1M GPU 集群的扩展意味着光学互联需求 5-10x 增长。</li>
+<li><strong>系统层需求加速</strong>：Nokia AI/Cloud +49% YoY, €1B 订单表明受益范围正从光模块/交换机向上扩展到系统层。CIEN 连续 beat 是一致性信号。（<a href="../../2026-04-23--gaetano--nokia-earnings-must-read" class="internal alias" data-slug="2026-04-23--gaetano--nokia-earnings-must-read">2026-04-23—gaetano—nokia-earnings-must-read</a>）</li>
+<li><strong>NVIDIA $2B 战略入股 Marvell</strong>：验证了 Marvell 在 AI 数据移动中的战略地位，也代表着超大规模客户通过股权方式锁定光学互联供应链的趋势。（<a href="../../2026-03-31--gaetano--marvell-nvda-poet" class="internal alias" data-slug="2026-03-31--gaetano--marvell-nvda-poet">2026-03-31—gaetano—marvell-nvda-poet</a>）</li>
+<li><strong>XPU attach TAM 扩张</strong>：Marvell XPU 互联 TAM 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.6</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>14.6B（90% CAGR），反映 AI 芯片间互联的价值量正在超过芯片本身的一部分。（<a href="../../2026-04-20--gaetano--google-marvell-ai-chips" class="internal alias" data-slug="2026-04-20--gaetano--google-marvell-ai-chips">2026-04-20—gaetano—google-marvell-ai-chips</a>）</li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>Marvell 全栈拼图完成</strong> — Inphi (DSP) → Celestial AI (photonic fabric, scale-up interconnect) → XConn (scale-up network) → Polariton (plasmonics modulation, 3.2T+) → NVIDIA $2B equity。Marvell 从 DSP 供应商跃迁为 AI 数据移动平台构建者，其 2.4T coherent-lite (Electra/Libra) 计划 H2 2026 送样。</p>
+</li>
+<li>
+<p><strong>Coherent Lite 的 OCS 驱动场景被重新定义</strong> — FundaAI 指出，Coherent Lite 最重要的用例并非 DCI/LR（2-20km），而是与 OCS（光电路交换）配对用于 Google TPU/AI 集群。OCS 每个节点引入 1.5-3dB 插入损耗，在 2.4T/3.2T 代际传统 IMDD 光模块已无链路余量。Coherent Lite 通过简化相干检测方案恢复 OCS 消耗的链路预算，使 OCS 架构能够持续扩展。2028 年 Coherent Lite 可能带来 $15-20B 增量行业价值。(<a href="../../sources/2026-06-03--fundaai--deepcoherent-lite" class="internal alias" data-slug="sources/2026-06-03--fundaai--deepcoherent-lite">2026-06-03—fundaai—deepcoherent-lite</a>) [KB]</p>
+</li>
+<li>
+<p><strong>POET 光学 interposer 平台</strong> — 基于光中介层的集成方案，实现晶圆级无源对准。CFO 确认 Marvell/Celestial active PO，Q2 Starlight 出货在即。Blazar InP 效率：wafer-level 方案增加有效 InP 供给，缓解 InP 瓶颈。（<a href="../../2026-04-22--gaetano--poet-cfo-interview-massive-update" class="internal alias" data-slug="2026-04-22--gaetano--poet-cfo-interview-massive-update">2026-04-22—gaetano—poet-cfo-interview-massive-update</a>）</p>
+</li>
+<li>
+<p><strong>LPO（线性可插拔光学）量产</strong> — 去掉 DSP 以降低功耗/延迟。MTSI 作为 LPO founding member 参与标准制定。LPO 量产开始是 1.6T 周期的关键基础建设。</p>
+</li>
+<li>
+<p><strong>架构演进 — Pluggable → LPO → NPO → CPO</strong>（<a href="../../sources/2026-04-05--gaetano--education-lpo-npo-cpo" class="internal alias" data-slug="sources/2026-04-05--gaetano--education-lpo-npo-cpo">2026-04-05—gaetano—education-lpo-npo-cpo</a>）：核心差异在于光学引擎与计算芯片的距离——距离越近信号完整性越好、功耗越低，但制造/测试/维修难度越高。对投资者而言，关键问题不是”哪种架构最好”，而是<strong>架构变化时供应链价值如何迁移</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>架构</th><th>电信号路径</th><th>可维修性</th><th>量产状态</th><th>价值中心</th><th>主要受益</th></tr></thead><tbody><tr><td>Traditional Pluggable</td><td>最长（ASIC→PCB→前面板）</td><td>优（现场更换）</td><td>现在（出货主力）</td><td>模块生态（DSP + 模块组装）</td><td>MRVL(DSP), FN/AAOI(组装)</td></tr><tr><td>LPO</td><td>长（去掉 DSP 路径简化）</td><td>优（现场更换）</td><td>2025-2026 渗透中</td><td>主机端 SerDes/信号完整性</td><td>SMTC, MTSI</td></tr><tr><td>NPO</td><td>短（ASIC→board 近距）</td><td>中（需要更多维修）</td><td>2026-2028 桥梁期</td><td>硅光 PIC + 激光器 + 封装 + 测试</td><td>CRDO, LITE, COHR, POET, VIAV</td></tr><tr><td>CPO</td><td>最短（芯片封装内）</td><td>难（返厂维修）</td><td>2028-2030 主流化</td><td>系统集成 + ELS + 硅光</td><td>CIEN, LITE(ELS), GLW(光纤)</td></tr></tbody></table></div>
+</li>
+<li>
+<p><strong>NPO（Near Packaged Optics）— 光学近芯片化的桥梁架构</strong>：NPO 将光学引擎移至靠近 ASIC/GPU 的位置但保持在封装外部，缩短电路径以解决 200G/224G 信令的电信号衰减问题。相比前面板可插拔更先进（更高密度、更低功耗），相比 CPO 更可实施（可维修、多供应商、避免封装重新设计）。Gaetano 将其定位为通往 CPO 的”桥梁”——先于全 CPO 成熟前的首个商业化大规模光学近芯片方案。Rubin Ultra/NVL576 可能从 ~2.25 增至 ~4.0 光学引擎/GPU 是近期关注焦点。受益方涵盖 MRVL（NPO 栈含驱动/TIA/硅光/SerDes）、AVGO（3.2T VCSEL NPO 方案已展示）、SMTC（TIA/驱动/HieFo 激光器）、CRDO（DustPhotonics 硅光 PIC）、MXL（Washington 200G TIA）、COHR（VCSEL arrays）、MTSI（光探测器/驱动）、CIEN（Vesta 200 6.4T 引擎 + Open CPX）、LITE（UHP 激光/ELS）、GLW（MMC 连接器/GlassBridge）。(<a href="../../sources/2026-06-08--gaetano--npo-optics-revenue-driver" class="internal alias" data-slug="sources/2026-06-08--gaetano--npo-optics-revenue-driver">2026-06-08—gaetano—npo-optics-revenue-driver</a>) [KB]</p>
+</li>
+<li>
+<p><strong>Polariton 等离子体调制器</strong> — 3.2T+ per wavelength，突破传统 EML 的调制速率上限。Marvell 通过收购获得，代表下一代技术路线。</p>
+</li>
+<li>
+<p><strong>Celestial AI Photonic Fabric</strong> — 16Tbps/chiplet，50m reach，scale-up/UAlink 互补。<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>1B ARR 目标路径。在 chiplet 级别实现光学互联，绕过传统 SerDes 瓶颈。（<a href="../../2026-04-10--gaetano--marvell-celestial-ai" class="internal alias" data-slug="2026-04-10--gaetano--marvell-celestial-ai">2026-04-10—gaetano—marvell-celestial-ai</a>）</p>
+</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>1.6T 周期加速</strong>：MTSI DC guide >60% YoY，证实 1.6T 升级周期在启动。MTSI EPS <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4.40</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>5.00 反映运营杠杆。（<a href="../../2026-05-08--gaetano--mtsi-earnings-breakdown" class="internal alias" data-slug="2026-05-08--gaetano--mtsi-earnings-breakdown">2026-05-08—gaetano—mtsi-earnings-breakdown</a>）</li>
+<li><strong>OCS 生态关注度提升</strong>：HUBN 隐藏资产（Polatis OCS + Cube Optics WDM）在 hyperscaler 中的 adoption 开始被市场认知。（<a href="../../2026-04-20--gaetano--hubn-worth-tracking" class="internal alias" data-slug="2026-04-20--gaetano--hubn-worth-tracking">2026-04-20—gaetano—hubn-worth-tracking</a>）</li>
+<li><strong>光子学瓶颈框架形成</strong>：从 InP 衬底到光模块到互联芯片，完整的瓶颈链框架已建立。跨层次的一致加速是当前最强信心信号。</li>
+<li><strong>MACOM 加入 Layer 4 跟踪</strong>：MTSI 覆盖为 Layer 4（模拟前端）增加了独立的公司级验证。核心矛盾：excellent business 但 valuation 已充分重定价。</li>
+<li><strong>POET 6 月验证窗口</strong>：Q2 Starlight 出货 + PFIC 投票（6/26）是 POET thesis 的关键验证节点。</li>
+<li><strong>战术 vs 结构性的光学标的区分</strong>：Analytical Edge 在 W23 中将 HIMX 和 SMTC 归类为”战术性而非结构性”上涨后移除，替换为 AMS-OSRAM（激光与传感层纯表达，兼涉 AI 光学传感与车载 LiDAR）。这一区分框架值得跟踪——区分哪些光学标的有结构性供需缺口支撑、哪些仅是周期/动量驱动。<a href="../../sources/2026-06-01--analytical-edge--week23-rebalancing" class="internal alias" data-slug="sources/2026-06-01--analytical-edge--week23-rebalancing">2026-06-01—analytical-edge—week23-rebalancing</a></li>
+<li><strong>光学板块极端 velocity 被量化验证</strong>：Analytical Edge 两周期实盘表现显示，光学是框架中”velocity 最高的板块——可以在某一周领涨，下一周拖累”。LPTH +47% → flat（两周内），SMTC ±14%/周。这一速度本身是结构性特征，在仓位管理上需要对应纪律。<a href="../../sources/2026-06-01--analytical-edge--weekly-performance" class="internal alias" data-slug="sources/2026-06-01--analytical-edge--weekly-performance">2026-06-01—analytical-edge—weekly-performance</a></li>
+<li><strong>CPO 量產時間線——2027 H1 前雲廠商不敢大規模部署</strong>：Frank (@qinbafrank) 引用 Bernstein 5 月報告指出，至少到 2026-2027H1，雲廠商不會大規模部署 CPO。原因：(1) NVDA CPO 光交換機才剛發布；(2) 可插拔光模組壞了直接換，CPO 將光晶片焊在 GPU 旁邊——故障需返廠更換整板，可靠性要求極高。2026 年核心仍是 1.6T/3.2T 光模組、LPO、NPO 及相關測試和材料。光模組技術（成熟量產）vs CPO（新興驗證中）需嚴格區分。最核心觀察指標：雲廠商何時開始大規模採購 CPO 交換機做機櫃間互連。市場規模：光模組+CPO 全球約 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace nobreak"> </span></span></span></span>90-100B（2029E）。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+<li><strong>2026-06-09/10 SemiAnalysis CPO 报告引发板块抛售——良率数学与形态因子轮动</strong>：SemiAnalysis 付费报告（<a href="../../sources/2026-06-09--semianalysis--cpo-800v-delay-report" class="internal alias" data-slug="sources/2026-06-09--semianalysis--cpo-800v-delay-report">2026-06-09—semianalysis—cpo-800v-delay-report</a>）提出两大延迟论点：(1) CPO 大批量量产推迟至 2028-2029——核心论据 95% 单引擎良率 × 32 引擎 = <del>19% 系统良率，ASIC 共封装返修不可行性被市场低估；(2) NVIDIA 800VDC 电源架构推迟至 2028（±400VDC 仍按计划 H2 2026 爬坡）。次日光学板块集体抛售：AAOI -17%、COHR -11</del>15%、LITE -8~12%、MRVL -13%、POET -12%、GLW -7%。NVIDIA SVP Gilad Shainer 于 Computex 公开反驳称 Spectrum-X CPO 交换机按计划 H2 2026 量产。Morgan Stanley 部分同意 CPO 延迟（2027 出货 ~6-7M vs 共识 20-30M），但不同意 800V 判断。Gaetano 提出**“CPO 延迟 ≠ 光学需求减少，而是形态因子轮动”**——CPO 右移但 NPO 被拉前、可插拔和铜缆延长。核心结论：不应一刀切卖出，应区分——(1) 铜缆延长受益者（CRDO, Volex, Astera, MXL）；(2) 可插拔延长受益者（AAOI, FN）；(3) 跨形态最优（SMTC）；(4) 宽光学领导者（LITE, COHR）结构性利好但有 premium compression 风险；(5) 架构无关（GLW）；(6) 上游 InP 持续受益（VECO, AIXA, AXTI）；(7) 纯 CPO 期权有时间线风险。(<a href="../../sources/2026-06-09--semianalysis--cpo-800v-delay-report" class="internal alias" data-slug="sources/2026-06-09--semianalysis--cpo-800v-delay-report">2026-06-09—semianalysis—cpo-800v-delay-report</a>, <a href="../../sources/2026-06-10--gaetano--cpo-scares-form-factor-rotation" class="internal alias" data-slug="sources/2026-06-10--gaetano--cpo-scares-form-factor-rotation">2026-06-10—gaetano—cpo-scares-form-factor-rotation</a>) [KB]</li>
+<li><strong>FUNDA 确认 CPO 量產按计划推进</strong>：FUNDA 于 2026-06-10 发布 commentary，从供应链路徑确认 CPO 进度——Jensen Computex 明确 CPO 按计划爬坡；CoreWeave/Lambda/Oracle/1 CSP 正按计划向量产推进；当前重点是产能准备、良率爬坡、客户认证和系统集成，而非项目取消或重大推迟。NPO 加速是更重要的结构性发展——Rubin scale-up 网络带宽翻倍是独立于 CPO 时间线的强光学 tailwind。(<a href="../../sources/2026-06-10--funda--cpo-concerns-overblown" class="internal alias" data-slug="sources/2026-06-10--funda--cpo-concerns-overblown">2026-06-10—funda—cpo-concerns-overblown</a>) [KB]</li>
+<li><strong>緊缺邏輯→升級邏輯→遠期邏輯——光互連處於”升級邏輯”階段</strong>：Frank 框架將 AI 資金輪動分為三個邏輯——(1) <strong>緊缺邏輯</strong>：GPU→HBM→DRAM→NAND 層層擠壓（已大規模 Price In）；(2) <strong>升級邏輯</strong>（當前光互連所在）：光電轉換效率瓶頸驅動從傳統光模組→LPO→NPO→CPO 的升級路徑，含配電網路從 48V→800V HVDC 及先進封裝（玻璃基板、3D 堆疊）。NVDA 正推動整個產業鏈升級。(3) <strong>遠期邏輯</strong>：邊緣計算、Physical AI、機器人等應用層——更遠，需特斯拉 Optimus 等大規模量產。三個邏輯的切換節奏決定了資金在哪個子賽道停留。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+</ul>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>潜在未覆盖领域：光模块制造层（Fabrinet FN 已覆盖，还有哪些？）、光纤连接器/无源组件层、光学测试设备层。如果瓶颈深化，这些更小众的领域可能接力成为新的关注点。</p>
+<hr/>
+<h2 id="4-竞争格局-kb--inf">4. 竞争格局 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="市场集中度">市场集中度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DSP 市场</strong>：寡头——MRVL >60%（Inphi coherent + PAM4），LITE ~25%（via 收购），Broadcom 集成于 switch ASIC。DSP 是光学互联中护城河最深的环节（算法+工艺+客户验证）。</li>
+<li><strong>光模块制造</strong>：分散——中国厂商（AAOI，中际旭创等）主导量产，Fabrinet（FN）主导高端/定制模块。</li>
+<li><strong>模拟前端（TIA/驱动）</strong>：MTSI 是 LPO 时代的关键独立供应商，VIAV 有部分覆盖。</li>
+<li><strong>OCS/光交换</strong>：HUBN（Polatis）在 hyperscaler OCS 有隐蔽先发优势，但竞争格局尚不清晰。</li>
+<li><strong>光学封装</strong>：POET 在 optical interposer 方向处于独立生态位。无直接可比公司（LWLG 是聚合物 modulator，不同方向）。</li>
+</ul>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>定位</th><th>关键资产</th><th>竞争护城河</th><th>战略方向</th></tr></thead><tbody><tr><td><strong>Marvell (MRVL)</strong></td><td>AI 数据移动平台</td><td>Inphi coherent DSP, Celestial AI, XConn, Polariton</td><td>完整互联栈；NVIDIA 战略验证；Google 100% 供应链</td><td>平台化——覆盖 DSP→fabric→scale-up→调制</td></tr><tr><td><strong>POET (POET)</strong></td><td>光学封装平台</td><td>Optical interposer, 晶圆级无源对准, 500-at-a-time 制造</td><td>独家封装方案；Marvell/Celestial 供应商地位</td><td>从封装到光引擎集成</td></tr><tr><td><strong>MACOM (MTSI)</strong></td><td>模拟前端 + CW Laser</td><td>LPO founding member, DC >60%, GaN DoD Trusted</td><td>国防寡头(GaN)；AI 数据中心 I&amp;D 43%/DC 30%/Telco 27%</td><td>DC 驱动增长；CW laser 为 FY2028 做准备</td></tr><tr><td><strong>Lumentum (LITE)</strong></td><td>光通信组件 + 3D 传感</td><td>收购后的宽产品线</td><td>通信级光组件+消费电子双市场</td><td>多元化</td></tr><tr><td><strong>Coherent (COHR)</strong></td><td>光通信 + 激光</td><td>宽产品线</td><td>材料科学+制造规模</td><td>规模驱动</td></tr><tr><td><strong>HUBN</strong></td><td>OCS 光学交换</td><td>Polatis (2016), Cube Optics WDM</td><td>hyperscaler 隐蔽 OCS 供应</td><td>等待 OCS adoption 爆发</td></tr><tr><td><strong>Ciena (CIEN)</strong></td><td>系统层光传输</td><td>WaveLogic coherent</td><td>系统级光网络</td><td>AI DCI 需求</td></tr><tr><td><strong>Nokia (NOK)</strong></td><td>系统层光传输+IP 网络</td><td>InP 光器件+PON OOB 管理</td><td>端到端网络设备</td><td>AI/Cloud 驱动（+49%）</td></tr><tr><td><strong>Fabrinet (FN)</strong></td><td>光模块代工</td><td>高端封装能力</td><td>制造执行力</td><td>高端光模块制造</td></tr></tbody></table></div>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>DSP 算法+工艺</strong>：coherent DSP 需要 7nm/5nm 设计 + 数十万小时算法积累。MRVL 的 Inphi 团队有超过 20 年 coherent DSP 经验。</li>
+<li><strong>客户认证</strong>：hypercsaler 的光学互联认证周期 12-18 个月，一旦认证难以替换（需要重新验证全栈兼容性）。</li>
+<li><strong>供应锁定</strong>：POET 的光学 interposer 嵌入客户设计中后，切换需要重新设计整条光路。</li>
+<li><strong>Foundry 认证</strong>：光芯片制造需要专用 foundry 产线，产能扩展周期 12-18 个月。</li>
+<li><strong>NVIDIA 生态绑定</strong>：NVLink Fusion 与 Marvell 的绑定使 Marvell 获得 NVIDIA GPU 生态的排他性地位。</li>
+</ol>
+<h3 id="gaetano-mock-etf--行业置信度加权框架">Gaetano Mock ETF — 行业置信度加权框架<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gaetano-mock-etf--行业置信度加权框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Gaetano（Crux Capital）维护两版模拟光学基础设施 ETF，权重直接反映他对各标的的执行力/可见度/风险判断。核心原则：“随执行力证明逐步加仓”。<a href="../../sources/2026-06-01--gaetano--mock-photonics-etf" class="internal alias" data-slug="sources/2026-06-01--gaetano--mock-photonics-etf">2026-06-01—gaetano—mock-photonics-etf</a></p>
+<p><strong>US-only 版前 5 权重</strong>：COHR 10%、LITE 10%、CIEN 9%、AAOI 7%、GLW 7%——偏好有规模、收入可见性的成熟企业。</p>
+<p><strong>投机型小票权重</strong>：POET 1%、LWLG 1%——承认上行潜力但明确控制仓位规模。</p>
+<p><strong>欧洲版新增覆盖</strong>：SIVE (Sivers Semi)、SMOP (Smart Optics)、AIXA (AIXTRON)、IQE、LPK (LPKF Laser)、Riber——拓展研究范围至欧洲光子学供应链（外延片、沉积设备、激光制造）。</p>
+<hr/>
+<h2 id="5-风险监控-kb--inf">5. 风险监控 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>美国对华光模块出口管制可能升级，影响 AAOI 等中国厂商。</li>
+<li>AI CapEx 如果放缓（宏观经济下行或 ROI 低于预期），光学互联作为 AI 集群的关键组件会直接受损。</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>LPO 消解 DSP 价值</strong>：LPO 去掉 DSP 后，MRVL 的核心价值主张可能被削弱。但 MRVL 已向更高价值层迁移（fabric/system），DSP 风险可控。</li>
+<li><strong>CPO 跳过可插拔光学</strong>：如果 CPO 在 2027+ 成为主流，目前的可插拔光模块供应链需要重构。POET 的 interposer 方案在 CPO 中仍有价值。</li>
+<li><strong>硅光方案成熟</strong>：如果 SiPh 能达到 EML/InP 同等性能，现有 InP 供应链的价值会转移。</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Broadcom 竞争</strong>：Broadcom 在 switch ASIC 中集成 DSP 的路线可能侵蚀 MRVL 的可寻址市场。但 MRVL 已向更高价值（fabric/system）迁移。</li>
+<li><strong>1.6T 周期预期过度</strong>：如果 1.6T 爬坡慢于预期，整个板块的估值将面临修正。</li>
+<li><strong>中国厂商价格竞争</strong>：光模块制造的商品化趋势压低行业利润率。</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb">6. 市场规模 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>估计值</th><th>来源</th><th>As of</th></tr></thead><tbody><tr><td>XPU attach TAM（MRVL）</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.6</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>14.6B (90% CAGR)</td><td>Gaetano/FundaAI</td><td>FY26→FY28</td></tr><tr><td>MRVL AI revenue</td><td>~$5B (FY27 implied)</td><td>FundaAI</td><td>FY27</td></tr><tr><td>MTSI DC revenue</td><td>>60% YoY growth</td><td><a href="../../2026-05-08--gaetano--mtsi-earnings-breakdown" class="internal alias" data-slug="2026-05-08--gaetano--mtsi-earnings-breakdown">2026-05-08—gaetano—mtsi-earnings-breakdown</a></td><td>Q2</td></tr><tr><td>POET unit target</td><td>30K+ units, Q2/Q3 production</td><td><a href="../../2026-04-01--gaetano--poet-earnings-analysis" class="internal alias" data-slug="2026-04-01--gaetano--poet-earnings-analysis">2026-04-01—gaetano—poet-earnings-analysis</a></td><td>FY26</td></tr><tr><td>Optical transceiver market</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord">2025</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>40B+ (2028E)</td><td>Industry consensus</td><td>2025</td></tr><tr><td>CIEN revenue</td><td>Beat 连续确认系统层需求</td><td><a href="../../2026-04-23--gaetano--nokia-earnings-must-read" class="internal alias" data-slug="2026-04-23--gaetano--nokia-earnings-must-read">2026-04-23—gaetano—nokia-earnings-must-read</a></td><td>Q2 2026</td></tr><tr><td>Nokia AI/Cloud</td><td>+49% YoY, €1B orders</td><td><a href="../../2026-04-23--gaetano--nokia-earnings-must-read" class="internal alias" data-slug="2026-04-23--gaetano--nokia-earnings-must-read">2026-04-23—gaetano—nokia-earnings-must-read</a></td><td>Q1 2026</td></tr><tr><td>HUBN sales/EBIT</td><td>CHF 864.1M / 10.5% EBIT</td><td><a href="../../2026-04-20--gaetano--hubn-worth-tracking" class="internal alias" data-slug="2026-04-20--gaetano--hubn-worth-tracking">2026-04-20—gaetano—hubn-worth-tracking</a></td><td>FY25</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf">7. 产业链与投资逻辑 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>基板/材料层</strong>（InP 衬底 → AXTI、光纤预制棒 → GLW）
+→ <strong>光芯片层</strong>（EML/VCSEL/SiPh/调制器 → LITE, COHR, POET）
+→ <strong>模拟前端</strong>（TIA/激光驱动/探测器 → MTSI, VIAV）
+→ <strong>DSP/互联芯片</strong>（coherent/PAM4 DSP → MRVL, CRDO）
+→ <strong>光模块制造</strong>（OSA 封装/模块组装 → AAOI, FN）
+→ <strong>光学交换/互联</strong>（OCS → HUBN, Photonic Fabric → Celestial AI）
+→ <strong>系统/网络</strong>（光传输/路由 → CIEN, NOK）</p>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DSP（Layer 4）</strong>：价值量最高，护城河最深。MRVL 的完整栈战略是差异化关键。</li>
+<li><strong>模拟前端（Layer 3）</strong>：LPO 趋势下 MTSI 的独立地位加强。但 valuation 已重定价。</li>
+<li><strong>光学封装（Layer 6）</strong>：POET 在独立生态位，最优纯表达。验证节点在 H2 2026。</li>
+<li><strong>系统层（Layer 7）</strong>：需求正在加速，CIEN 和 NOK 的数据点一致性最强。</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>核心框架：跨层次一致性追踪</strong></p>
+<p>光子学瓶颈投资的关键是追踪<strong>三个层次</strong>是否同时加速：</p>
+<ol>
+<li><strong>组件层</strong>：MTSI DC revenue、InP gap 变化、EML pricing</li>
+<li><strong>互联层</strong>：MRVL 的战略合作、NVIDIA 投入程度、1.6T 爬坡</li>
+<li><strong>封装/系统层</strong>：POET 出货、CIEN/NOK 订单</li>
+</ol>
+<p>当三层同时加速 → <strong>结构性短缺确认阶段</strong> → 最 aggressive 的信号
+当仅一层加速 → 可能是周期性/一次性因素</p>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>公司</th><th>投资逻辑</th><th>风险</th><th>关键验证点</th></tr></thead><tbody><tr><td>L4 DSP → L7 平台</td><td>MRVL</td><td>AI 数据移动平台，NVIDIA 验证</td><td>Broadcom 竞争；Google 集中度</td><td>XPU attach TAM 实现</td></tr><tr><td>L6 封装</td><td>POET</td><td>光学封装纯表达，active PO</td><td>”Conversion gap”；小市值波动</td><td>Q2 出货；6/26 PFIC</td></tr><tr><td>L3 模拟</td><td>MTSI</td><td>LPO founding member, DC >60%</td><td>估值已重定价</td><td>1.6T 持续增长</td></tr><tr><td>L5 OCS</td><td>HUBN</td><td>隐藏 OCS 资产</td><td>产品化不确定性</td><td>OCS adoption 信号</td></tr><tr><td>L7 系统</td><td>CIEN</td><td>系统层 AI 需求</td><td>电信周期性</td><td>订单增长持续</td></tr><tr><td>L7 系统</td><td>NOK</td><td>系统层 + InP 护城河</td><td>传统电信下行</td><td>AI/cloud 占比</td></tr></tbody></table></div>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/mrvl" class="internal" data-slug="wiki/companies/mrvl">mrvl</a>, <a href="../../wiki/companies/poet" class="internal" data-slug="wiki/companies/poet">poet</a>, <a href="../../wiki/companies/mtsi" class="internal" data-slug="wiki/companies/mtsi">mtsi</a>, <a href="../../wiki/companies/hubn" class="internal" data-slug="wiki/companies/hubn">hubn</a>, <a href="../../wiki/companies/cien" class="internal" data-slug="wiki/companies/cien">cien</a>, <a href="../../wiki/companies/nok" class="internal" data-slug="wiki/companies/nok">nok</a>, <a href="../../wiki/companies/lite" class="internal" data-slug="wiki/companies/lite">lite</a>, <a href="../../wiki/companies/cohr" class="internal" data-slug="wiki/companies/cohr">cohr</a>, <a href="../../wiki/companies/glw" class="internal" data-slug="wiki/companies/glw">glw</a>, <a href="../../wiki/companies/aaoi" class="internal" data-slug="wiki/companies/aaoi">aaoi</a>, <a href="../../wiki/companies/fn" class="internal" data-slug="wiki/companies/fn">fn</a>, <a href="../../wiki/companies/axri" class="internal" data-slug="wiki/companies/axri">axri</a></p>
+<h3 id="concepts">Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/concepts/photonics-bottleneck-layers" class="internal" data-slug="wiki/concepts/photonics-bottleneck-layers">photonics-bottleneck-layers</a>, <a href="../../wiki/concepts/lpo-co-packaged-optics" class="internal" data-slug="wiki/concepts/lpo-co-packaged-optics">lpo-co-packaged-optics</a>, <a href="../../wiki/concepts/coherent-dsp-economics" class="internal" data-slug="wiki/concepts/coherent-dsp-economics">coherent-dsp-economics</a></p>
+<h3 id="related-sectors">Related Sectors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-sectors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/sectors/semiconductors-eda" class="internal" data-slug="wiki/sectors/semiconductors-eda">semiconductors-eda</a>（芯片设计工具与光学互联在 AI 芯片生态中互补）</p>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../photonics-bottleneck-layers" class="internal" data-slug="photonics-bottleneck-layers">photonics-bottleneck-layers</a></p>
+<h3 id="analyses">Analyses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analyses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/analyses/trackers/optical-supply-chain" class="internal" data-slug="wiki/analyses/trackers/optical-supply-chain">optical-supply-chain</a></p>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../2026-03-31--gaetano--marvell-nvda-poet" class="internal alias" data-slug="2026-03-31--gaetano--marvell-nvda-poet">2026-03-31—gaetano—marvell-nvda-poet</a>, <a href="../../2026-04-10--gaetano--marvell-celestial-ai" class="internal alias" data-slug="2026-04-10--gaetano--marvell-celestial-ai">2026-04-10—gaetano—marvell-celestial-ai</a>, <a href="../../2026-04-20--gaetano--google-marvell-ai-chips" class="internal alias" data-slug="2026-04-20--gaetano--google-marvell-ai-chips">2026-04-20—gaetano—google-marvell-ai-chips</a>, <a href="../../2026-04-20--gaetano--hubn-worth-tracking" class="internal alias" data-slug="2026-04-20--gaetano--hubn-worth-tracking">2026-04-20—gaetano—hubn-worth-tracking</a>, <a href="../../2026-04-22--gaetano--poet-cfo-interview-massive-update" class="internal alias" data-slug="2026-04-22--gaetano--poet-cfo-interview-massive-update">2026-04-22—gaetano—poet-cfo-interview-massive-update</a>, <a href="../../2026-04-24--gaetano--what-is-marvell-doing" class="internal alias" data-slug="2026-04-24--gaetano--what-is-marvell-doing">2026-04-24—gaetano—what-is-marvell-doing</a>, <a href="../../2026-05-08--gaetano--mtsi-earnings-breakdown" class="internal alias" data-slug="2026-05-08--gaetano--mtsi-earnings-breakdown">2026-05-08—gaetano—mtsi-earnings-breakdown</a>, <a href="../../2026-04-23--gaetano--nokia-earnings-must-read" class="internal alias" data-slug="2026-04-23--gaetano--nokia-earnings-must-read">2026-04-23—gaetano—nokia-earnings-must-read</a>, <a href="../../sources/2026-06-01--analytical-edge--week23-rebalancing" class="internal alias" data-slug="sources/2026-06-01--analytical-edge--week23-rebalancing">2026-06-01—analytical-edge—week23-rebalancing</a>, <a href="../../sources/2026-06-01--gaetano--mock-photonics-etf" class="internal alias" data-slug="sources/2026-06-01--gaetano--mock-photonics-etf">2026-06-01—gaetano—mock-photonics-etf</a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-185" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb" data-for="2-行业概述与界定-frame--kb">2. 行业概述与界定 [FRAME + KB]</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb" data-for="3-驱动力与趋势-kb">3. 驱动力与趋势 [KB]</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf" data-for="4-竞争格局-kb--inf">4. 竞争格局 [KB + INF]</a></li><li class="depth-1"><a href="#市场集中度" data-for="市场集中度">市场集中度</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-1"><a href="#gaetano-mock-etf--行业置信度加权框架" data-for="gaetano-mock-etf--行业置信度加权框架">Gaetano Mock ETF — 行业置信度加权框架</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf" data-for="5-风险监控-kb--inf">5. 风险监控 [KB + INF]</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb" data-for="6-市场规模-kb">6. 市场规模 [KB]</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf" data-for="7-产业链与投资逻辑-frame--inf">7. 产业链与投资逻辑 [FRAME + INF]</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#concepts" data-for="concepts">Concepts</a></li><li class="depth-1"><a href="#related-sectors" data-for="related-sectors">Related Sectors</a></li><li class="depth-1"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-1"><a href="#analyses" data-for="analyses">Analyses</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/analyses/frameworks/ai-buildout-stack" class="internal">ai-buildout-stack</a></li><li><a href="../../wiki/companies/sive" class="internal">sive</a></li><li><a href="../../wiki/daily/2026-05-28" class="internal">2026-05-28</a></li><li><a href="../../wiki/daily/2026-05-29" class="internal">2026-05-29</a></li><li><a href="../../wiki/daily/2026-05-31" class="internal">2026-05-31</a></li><li><a href="../../wiki/daily/2026-06-03" class="internal">2026-06-03</a></li><li><a href="../../wiki/daily/2026-06-08" class="internal">2026-06-08</a></li><li><a href="../../wiki/daily/2026-06-10" class="internal">2026-06-10</a></li><li><a href="../../wiki/sectors/ai-infrastructure-power" class="internal">ai-infrastructure-power</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

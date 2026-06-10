@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>cbrs</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="cbrs"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="cbrs"/><meta name="twitter:description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="og:description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="og:image:alt" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/cbrs"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/cbrs"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 标记含义[CURATED]用户手动维护的判断总结[KB]直接来自知识库，每条可追溯至 source page[KB + INF]知识库数据 + 分析推理[EST]知识库无覆盖的估计值，使用前需验证 0."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/cbrs-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/cbrs-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/companies/cbrs-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/companies/cbrs"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-87"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-87" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/companies/">companies</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>cbrs</a></div></nav><h1 class="article-title">cbrs</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-07T16:00:00.000Z">Jun 08, 2026</time><span>16 min read</span></p><ul class="tags"><li><a href="../../tags/cerebras" class="internal tag-link">cerebras</a></li><li><a href="../../tags/ai-chip" class="internal tag-link">ai-chip</a></li><li><a href="../../tags/wafer-scale" class="internal tag-link">wafer-scale</a></li><li><a href="../../tags/inference" class="internal tag-link">inference</a></li><li><a href="../../tags/ipo" class="internal tag-link">ipo</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯至 source page</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，使用前需验证</td></tr></tbody></table></div>
+<hr/>
+<h2 id="0-基础信息-curated">0. 基础信息 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-基础信息-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>条目</th><th>内容</th></tr></thead><tbody><tr><td><strong>公司名称</strong></td><td>Cerebras Systems Inc.</td></tr><tr><td><strong>成立时间</strong></td><td>2016</td></tr><tr><td><strong>总部</strong></td><td>San Jose, CA</td></tr><tr><td><strong>行业</strong></td><td>AI 推理硬件 / 晶圆级芯片</td></tr><tr><td><strong>企业阶段</strong></td><td>IPO-ing（2026年5月，~$33B 估值）</td></tr><tr><td><strong>创始人 / CEO</strong></td><td>Andrew Feldman (co-founder, CEO), Sean Lie (co-founder, CTO)</td></tr><tr><td><strong>组织形式</strong></td><td>公开（即将上市）</td></tr><tr><td><strong>本轮 / 最新融资</strong></td><td>Series H (Jan 2026): <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span></span></span></span>89.02/share</td></tr><tr><td><strong>关键投资者</strong></td><td>Fidelity (11%), Benchmark (9.5%), Foundation Capital (8.3%), Eclipse (7.3%), Alpha Wave (6.5%)</td></tr><tr><td><strong>关键合作伙伴</strong></td><td>TSMC（唯一代工厂）, OpenAI（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">MR</span><span class="mord mathnormal">A</span><span class="mord">+</span></span></span></span>1B 贷款）, AWS（部署合作）, G42/MBZUAI（大客户+投资者）</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cerebras 制造了全球最大的商用芯片（WSE，英伟达 B200 的 58 倍面积），在 AI 推理从快速查询变为深度思考的范式转换中成为关键受益者——但 $24.6B 积压高度集中于 OpenAI（无历史收入）、G42/MBZUAI（86% 收入集中），且云业务毛利率（30%）低于硬件（43%）。</p>
+<blockquote class="callout quote" data-callout="quote">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>多方观点 <em>(可选)</em></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>看多论点 1</li>
+<li>看多论点 2</li>
+</ul>
+</div>
+</blockquote>
+<blockquote class="callout quote" data-callout="quote">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>空方观点 <em>(可选)</em></p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>看空论点 1</li>
+<li>看空论点 2</li>
+</ul>
+</div>
+</blockquote>
+<h3 id="关键指标速览">关键指标速览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键指标速览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead><tbody><tr><td>2025 Revenue</td><td>$510M (+76% YoY)</td><td>FY2025</td><td>S-1</td></tr><tr><td>Gross Margin</td><td>39%（硬件 43%, 云 30%）</td><td>FY2025</td><td>S-1</td></tr><tr><td>GAAP Net Income</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">237.8</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">（含</span></span></span></span>363M 一次性收益）</td><td>FY2025</td><td>S-1</td></tr><tr><td>Non-GAAP Net Loss</td><td>~$75.7M</td><td>FY2025</td><td>S-1</td></tr><tr><td>RPO（积压订单）</td><td>$24.6B（48x 2025 收入）</td><td>FY2025</td><td>S-1</td></tr><tr><td>IPO 估值目标</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">33</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span></span></span></span>155/股）</td><td>2026-05</td><td>S-1 / News</td></tr><tr><td>IPO 规模</td><td>3000 万股，按上限最高 $48 亿</td><td>2026-05-11</td><td>INSIGHT NEWS PRO</td></tr><tr><td>员工数</td><td>708</td><td>Dec 2025</td><td>S-1</td></tr><tr><td>收入/员工</td><td>~$720K</td><td>FY2025</td><td>S-1</td></tr><tr><td>认购倍数</td><td>超供股 20 倍，意向资金超 $100 亿</td><td>2026-05-11</td><td>INSIGHT NEWS PRO</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-投资逻辑-kb--inf">2. 投资逻辑 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-投资逻辑-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="21-公司定位核心叙事--推理瓶颈时代的专用架构">2.1 公司定位：核心叙事 — 推理瓶颈时代的专用架构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-公司定位核心叙事--推理瓶颈时代的专用架构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 推理正从”查表”变为”深度思考”（reasoning models），推理本身成为计算瓶颈。Cerebras 的 Wafer-Scale Engine 保持所有计算在同一硅片上，消除芯片间通信延迟，声称推理速度比英伟达快 <strong>15 倍</strong>、功耗更低。收入 20x/3 年（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">25</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>510M）验证了产品市场契合。</p>
+<h3 id="22-投资框架多层论据--独一无二的-wafer-scale-科技但层叠依赖关系是最大风险">2.2 投资框架：多层论据 — 独一无二的 wafer-scale 科技，但层叠依赖关系是最大风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-投资框架多层论据--独一无二的-wafer-scale-科技但层叠依赖关系是最大风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Wafer-scale 是唯一实现全片计算不碎片化的商用方案，技术壁垒极高（与 TSMC 联合开发的专用制造工艺）。<strong>但客户即投资者即贷款人</strong>：OpenAI（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.00773em;">BMR</span><span class="mord mathnormal">A</span><span class="mord">+</span></span></span></span>1B 贷款 + 5%+ 股权 warrant）、G42（预付 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">640</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">+</span></span></span></span>544M equity warrant）、AWS（部署+ warrant）。TSMC 是唯一代工厂且无长期供应协议。$24.6B RPO 中 OpenAI 占大部分但对 2025 收入贡献为零。</p>
+<h3 id="23-为什么现在关注关键催化窗口--ipo-窗口--openai-背书">2.3 为什么现在关注：关键催化窗口 — IPO 窗口 + OpenAI 背书<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-为什么现在关注关键催化窗口--ipo-窗口--openai-背书" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cerebras 花了 5 年等待市场到来——2020 年训练为王时无人需要，2017-2019 年曾每月烧 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">8</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">无法造出</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord cjk_fallback">（每</span><span class="mord">6</span><span class="mord cjk_fallback">周董事会汇报</span><span class="mord">&quot;</span><span class="mord cjk_fallback">造不出来</span><span class="mord">&quot;</span><span class="mord cjk_fallback">）。</span><span class="mord">2024</span><span class="mord cjk_fallback">年底推理需求爆发后</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">签署</span></span></span></span>20B+ MRA（4.5 周完成——感恩节晚签条款书 → 12 月 24 日签署正式协议，反映 AI 市场前所未有的交易速度），2026 年 3 月 AWS 签署部署 term sheet。IPO 获得超 20 倍认购。</p>
+<h3 id="24-核心矛盾市场分歧点">2.4 核心矛盾：市场分歧点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#24-核心矛盾市场分歧点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>描述</em></p>
+<hr/>
+<h2 id="3-团队与治理-kb--inf">3. 团队与治理 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-团队与治理-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-核心管理层">3.1 核心管理层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-核心管理层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>人物</th><th>职位</th><th>背景</th><th>备注</th></tr></thead><tbody><tr><td>Andrew Feldman</td><td>CEO, co-founder</td><td>前 SeaMicro（被 AMD 收购）CEO</td><td>18 年与 Sean Lie 搭档；2007 年 SEC 和解 + 有罪抗辩（会计控制规避）</td></tr><tr><td>Sean Lie</td><td>CTO, co-founder</td><td>前 SeaMicro/AMD 架构师</td><td>与 Feldman 18 年合作历史</td></tr><tr><td>Fidelity / Benchmark</td><td>Top 股东</td><td>Fidelity 11%, Benchmark 9.5%</td><td>机构主导的 cap table</td></tr></tbody></table></div>
+<h3 id="32-董事会与治理">3.2 董事会与治理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-董事会与治理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>治理观察要点：创始人/CEO 二元性、内部人交易、董事会经验缺口等。</em></p>
+<h3 id="33-关键人风险">3.3 关键人风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-关键人风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>公司对核心人物的依赖程度、继任风险。</em></p>
+<ul>
+<li>创始团队合计持股仅 8.3%（较低），但三人持股控制 99.2% 投票权（三级股权结构）</li>
+<li>CEO Feldman 有 2007 年 SEC 和解记录（会计控制规避），S-1 完整披露——当前公司自身也披露重大缺陷（收入确认、库存管理、职责分离不足）</li>
+<li>Series H → IPO 仅 4 个月 step-up 74%（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">89</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>155），OpenAI warrant 第二个里程碑触发 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">40</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">市值</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">自动转移近</span></span></span></span>10 亿 equity</li>
+</ul>
+<hr/>
+<h2 id="4-产品与技术-kb">4. 产品与技术 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-产品与技术-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="41-产品矩阵">4.1 产品矩阵<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#41-产品矩阵" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>产品/服务</th><th>定位</th><th>关键数据</th><th>变现模式</th></tr></thead><tbody><tr><td><strong>CS-3 / WSE-3</strong></td><td>Wafer-Scale Engine 推理芯片</td><td>58x 英伟达 B200 面积，900K 核，44GB on-chip memory</td><td>硬件销售（43% GM）</td></tr><tr><td><strong>Cerebras Inference Cloud</strong></td><td>推理云服务</td><td>2024年8月上线，&lt;$18个月；毛利率 30%（Q4 25:21%）</td><td>按 token/月/预留容量</td></tr><tr><td><strong>AI Supercomputer</strong></td><td>多 CS-3 集群</td><td>客户自建数据中心部署</td><td>硬件销售</td></tr></tbody></table></div>
+<h3 id="42-垂直整合--技术栈">4.2 垂直整合 / 技术栈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#42-垂直整合--技术栈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Wafer-Scale 的核心优势在于消除芯片间通信延迟——数据移动是 AI 计算的最大瓶颈。通过保持整个 wafer 完整且可路由绕过缺陷，Cerebras 实现了单芯片 900K 核心的计算密度。推理性能据称比 NVIDIA 快 15 倍。但依赖单一 TSMC 代工厂，无长期供应协议，且 wafer-scale 制造工艺无法迁移至其他代工厂。</p>
+<h3 id="43-产能--运营路线图">4.3 产能 / 运营路线图<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#43-产能--运营路线图" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>对于有产能/运营爬坡逻辑的公司，这是核心变量。对于非制造型企业，可替换为「用户增长路线图」或「产品迭代路线图」。</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>当前</th><th>近期目标</th><th>远期目标</th></tr></thead><tbody><tr><td>制造产能</td><td>~数千台/年（2025）</td><td>10x 增长（2026）</td><td>匹配 $24.6B RPO</td></tr><tr><td>员工数</td><td>~800-850</td><td>持续扩张</td><td>—</td></tr></tbody></table></div>
+<p><strong>制造扩张瓶颈</strong>：CEO Feldman 表示制造扩张每一步都需要”real time and effort”——找电力、租厂房、增加产线、制造测试夹具。硬件公司的扩张节奏远慢于软件公司。TSMC 是唯一代工厂且无长期供应协议。</p>
+<h3 id="44-核心壁垒--护城河">4.4 核心壁垒 / 护城河<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#44-核心壁垒--护城河" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>技术壁垒、专利、规模效应、网络效应、监管准入等。</em></p>
+<h3 id="45-下一代发展方向">4.5 下一代发展方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#45-下一代发展方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>新产品线、下一代技术、扩张路径。</em></p>
+<hr/>
+<h2 id="5-市场空间-kb">5. 市场空间 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-市场空间-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="51-tam--份额潜力">5.1 TAM / 份额潜力<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#51-tam--份额潜力" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>可服务市场 + 公司份额框架。</em></p>
+<p>参考 <a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a> §6——AI 推理市场正随 reasoning models 爆发增长。Cerebras 定位推理专用硬件，避开与 NVIDIA 在训练市场的正面竞争。</p>
+<h3 id="公司定位与可寻址市场">公司定位与可寻址市场<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#公司定位与可寻址市场" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">24.6</span><span class="mord mathnormal" style="margin-right:0.02778em;">BRPO</span><span class="mord cjk_fallback">已锁定未来</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">4</span><span class="mord cjk_fallback">年收入：</span><span class="mspace nobreak"> </span></span></span></span>1.85B/yr（2026-27），~$5.3B/yr（2028-29）</li>
+<li>客户高度集中：OpenAI（$20B+ 积压但尚未贡献收入）、G42/MBZUAI（86% 过往收入）</li>
+</ul>
+<h3 id="52-情景分析">5.2 情景分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#52-情景分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>情景</th><th>目标价</th><th>收入假设</th><th>估值倍数</th><th>利润率假设</th><th>关键假设</th></tr></thead><tbody><tr><td>上行</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>基准</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>下行</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>极端下行</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<ul>
+<li><strong>上行情景</strong>：OpenAI 全面部署 2GW，AWS 签约大规模部署，推理专用芯片需求持续爆发 → 峰值市值 $50B+</li>
+<li><strong>基准情景</strong>：OpenAI 按计划部署，RPO 逐步兑现，云毛利率改善至 ~35-40% → ~$33B（IPO 定价合理）</li>
+<li><strong>下行情景</strong>：OpenAI MRA 争议/终止，TSMC 产能优先 NVIDIA，单一客户违约 → 市值 $15-20B 或更低</li>
+</ul>
+<hr/>
+<h2 id="6-业务进展与财务数据-kb">6. 业务进展与财务数据 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-业务进展与财务数据-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="61-营业收入">6.1 营业收入<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#61-营业收入" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead></table></div>
+<h3 id="财务指标">财务指标<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#财务指标" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead><tbody><tr><td>Revenue</td><td>$510M (+76% YoY)</td><td>FY2025</td><td>S-1</td></tr><tr><td>Gross Margin</td><td>39%（HW 43%, Cloud 30%）</td><td>FY2025</td><td>S-1</td></tr><tr><td>GAAP Net Income</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">237.8</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">（含</span></span></span></span>363M 一次收益）</td><td>FY2025</td><td>S-1</td></tr><tr><td>Non-GAAP Net Loss</td><td>~$75.7M</td><td>FY2025</td><td>S-1</td></tr><tr><td>Operating Cash Flow</td><td>($10M)</td><td>FY2025</td><td>S-1</td></tr><tr><td>Cash on Hand</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">701.7</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">+</span></span></span></span>1B OpenAI loan</td><td>Year-end 2025</td><td>S-1</td></tr><tr><td>CapEx</td><td>$383M（云容量建设）</td><td>FY2025</td><td>S-1</td></tr><tr><td>RPO</td><td>$24.6B</td><td>2025-12</td><td>S-1</td></tr><tr><td>目标估值</td><td>~$33B (EV/Forward Rev ~10-13x)</td><td>IPO 2026-05</td><td>S-1</td></tr></tbody></table></div>
+<h3 id="62-利润率与盈利">6.2 利润率与盈利<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#62-利润率与盈利" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead></table></div>
+<h3 id="关键业务指标">关键业务指标<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键业务指标" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead><tbody><tr><td>收入增长 (3yr CAGR)</td><td>~173%（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">25</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>510M）</td><td>2022→2025</td><td>S-1</td></tr><tr><td>最大客户收入占比</td><td>MBZUAI 62%, G42 24%</td><td>FY2025</td><td>S-1</td></tr><tr><td>积压收入中 OpenAI 占比</td><td>大部分 $24.6B</td><td>FY2025</td><td>S-1</td></tr><tr><td>R&amp;D 占比</td><td>48% of revenue</td><td>FY2025</td><td>S-1</td></tr></tbody></table></div>
+<h3 id="盈利评估">盈利评估<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#盈利评估" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Cerebras 在非 GAAP 基础上亏损（~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">75.7</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">），</span><span class="mord mathnormal">G</span><span class="mord mathnormal">AA</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord cjk_fallback">盈利来自</span></span></span></span>363M 一次性的远期合同负债终止收益。运营现金流为负（-<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">10</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">），</span><span class="mord">2024</span><span class="mord cjk_fallback">年的正</span><span class="mord mathnormal" style="margin-right:0.13889em;">OCF</span><span class="mord cjk_fallback">（</span></span></span></span>452M）实际来自 G42 预付 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">640</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">。</span></span></span></span>1B OpenAI 贷款附带条件——若 MRA 因 OpenAI 之外的违约终止，贷方可要求立即偿还本金+利息。</p>
+<p>核心矛盾：云业务（增长方向）毛利率（30%）低于硬件（43%），而 $24.6B RPO 大部分是云容量——收入结构向低毛利方向倾斜。</p>
+<h3 id="63-资产负债与资本结构">6.3 资产负债与资本结构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#63-资产负债与资本结构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead></table></div>
+<h3 id="64-业务分部如适用">6.4 业务分部（如适用）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#64-业务分部如适用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>数据</th><th>时间</th><th>来源</th></tr></thead></table></div>
+<h3 id="募资历史如适用">募资历史（如适用）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#募资历史如适用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>描述</em></p>
+<blockquote>
+<p>注：以上 4 个 sub-table 可按公司实际情况增减。例如纯 SaaS 公司可能不需要业务分部表，但需要增加 ARR/NRR 表。</p>
+</blockquote>
+<hr/>
+<h2 id="7-竞争分析-kb--inf">7. 竞争分析 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-竞争分析-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-竞争格局概览">7.1 竞争格局概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-竞争格局概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>竞品</th><th>定位</th><th>优势</th><th>劣势</th></tr></thead><tbody><tr><td><strong>NVIDIA (NVDA)</strong></td><td>通用 GPU（训练+推理）</td><td>~85% 市占, 75% GM, CUDA 生态，规模优势</td><td>芯片间通信瓶颈，推理效率低于专用架构</td></tr><tr><td><strong>AMD (AMD)</strong></td><td>GPU（推理优先）</td><td>MI355X 推理竞争力，ROCm 生态</td><td>追赶 NVIDIA 中，Cerebras 对比数据有限</td></tr><tr><td><strong>CoreWeave</strong></td><td>AI 专用云</td><td>$5.1B 收入，多客户，与 NVIDIA 合作</td><td>不拥有芯片层差异化，依赖 NVIDIA</td></tr><tr><td><strong>Google TPU</strong></td><td>自研 ASIC</td><td>训练成本仅 GPU 20-30%</td><td>仅供 GCP，不对外销售</td></tr><tr><td><strong>MatX (private)</strong></td><td>AI 推理芯片</td><td>前 Google TPU 架构师</td><td>产品未验证</td></tr></tbody></table></div>
+<h3 id="72-竞品对比">7.2 竞品对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-竞品对比" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>竞品</th><th>定位</th><th>优势</th><th>劣势</th></tr></thead></table></div>
+<hr/>
+<h2 id="8-风险提示与应对-kb--inf">8. 风险提示与应对 [KB + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-风险提示与应对-kb--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>严重程度</strong>：🔴 高 · 🟡 中 · 🟢 低  |  <strong>时间窗口</strong>：⌛ 短期（≤6个月）· ⏳ 中期（6-18个月）· 🕰️ 长期（>18个月）</p>
+<p>每个风险用矩阵表格呈现，取代段落式描述。</p>
+</blockquote>
+<h3 id="81-市场与竞争风险">8.1 市场与竞争风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#81-市场与竞争风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>NVIDIA 及大客户（Google TPU, AWS Trainium）的自研芯片可能侵蚀推理专用芯片需求</li>
+<li>ASIC 推理芯片竞争加剧（MatX, 其他初创）</li>
+</ul>
+<h3 id="82-技术与产品风险">8.2 技术与产品风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#82-技术与产品风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>TSMC 唯一代工厂+无长期协议——NVIDIA 等大客户优先获得产能</li>
+<li>Wafer-scale 制造工艺不可迁移至其他代工厂</li>
+</ul>
+<h3 id="83-财务与治理风险">8.3 财务与治理风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#83-财务与治理风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>CFO/会计团队被 S-1 自曝存在重大缺陷，IPO 前估值 $33B 但控制环境薄弱</li>
+<li>OpenAI warrant $40B 市值里程碑自动转移大量股权——减少长期股东的经济利益</li>
+<li>云业务毛利率改善假设可能不成立（与 hyperscaler 竞争没有结构性优势）</li>
+</ul>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业板块">行业板块<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业板块" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a>, <a href="../../wiki/sectors/semiconductors-memory" class="internal" data-slug="wiki/sectors/semiconductors-memory">semiconductors-memory</a></p>
+<h3 id="竞争对手">竞争对手<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争对手" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/matx" class="internal" data-slug="wiki/companies/matx">matx</a>, <a href="../../wiki/companies/tsm" class="internal" data-slug="wiki/companies/tsm">tsm</a>（代工依赖）</p>
+<h3 id="人物">人物<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#人物" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../cj-gustafson" class="internal" data-slug="cj-gustafson">cj-gustafson</a>（S1 Breakdown 作者）</p>
+<h3 id="相关逻辑theses">相关逻辑（Theses）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#相关逻辑theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a>（推理芯片层价值捕获）</p>
+<h3 id="关键来源">关键来源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键来源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>INSIGHT NEWS PRO 2026-05-11 早报</li>
+<li><a href="../../2026-05-22--no-priors--cerebras-andrew-feldman" class="internal alias" data-slug="2026-05-22--no-priors--cerebras-andrew-feldman">2026-05-22—no-priors—cerebras-andrew-feldman</a> — CEO 访谈：wafer-scale 旅程、OpenAI 交易内幕、制造扩张</li>
+</ul>
+<blockquote>
+<p>注：未使用的分类可删掉，保留相关的即可。</p>
+</blockquote>
+<hr/>
+<h2 id="时间线">时间线<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#时间线" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>按季度分组的大事记（最新在前）。</em></p>
+<h3 id="信号图例">信号图例<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#信号图例" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>📈 <code>YYYY-MM-DD</code> — 正面事件（财报超预期、增长、催化剂）
+⚠️ <code>YYYY-MM-DD</code> — 风险事件（监管、竞争、供应链）
+🔄 <code>YYYY-MM-DD</code> — 战略事件（收购、领导层变更、重组）
+❓ <code>YYYY-MM-DD</code> — 不确定事件（影响不明、关注中）</p>
+<h3 id="q2-2026">Q2 2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>📈 <code>2026-06-04</code> — CEO Andrew Feldman 在彭博科技会议表示：“与除英伟达外的所有AI设备制造商合作”；不合作英伟达；将与其他供应商扩展AWS/OpenAI之外的合作；批评数据中心建设商”像傻瓜一样”忽视社区关系 (Bloomberg)</p>
+</li>
+<li>
+<p>📈 <code>2026-05-21</code> — CEO Andrew Feldman 在 No Priors 播客中透露：OpenAI 交易在 4.5 周内完成（感恩节签条款书→12 月 24 日签 MRA）；内部 AI 编程支出从 8 个月前 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord">/</span><span class="mord cjk_fallback">工程师</span><span class="mord">/</span><span class="mord cjk_fallback">月增至</span></span></span></span>25-30K；制造产能目标 10x 增长；“I’m a professional David” (<a href="../../2026-05-22--no-priors--cerebras-andrew-feldman" class="internal alias" data-slug="2026-05-22--no-priors--cerebras-andrew-feldman">2026-05-22—no-priors—cerebras-andrew-feldman</a>)</p>
+</li>
+<li>
+<p>📈 <code>2026-05-12</code> — OpenAI 战略联盟：750MW/3 年算力权益（约 270 亿美元合同）；OpenAI 获得最多 10% 股权（按 $155/股约 50 亿美元）；锁定长期收入可见性但加深单一客户依赖</p>
+</li>
+<li>
+<p>📈 <code>2026-05-11</code> — IPO 定价上调至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">150</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">160/</span><span class="mord cjk_fallback">股，发行</span><span class="mord">3000</span><span class="mord cjk_fallback">万股（较原</span><span class="mord">2800</span><span class="mord cjk_fallback">万增</span><span class="mord">200</span><span class="mord cjk_fallback">万）；认购超供股</span><span class="mord">20</span><span class="mord cjk_fallback">倍，意向资金超</span></span></span></span>100 亿；目标估值 ~$33-47B（来源口径差异）</p>
+</li>
+</ul>
+<h3 id="q1-2026">Q1 2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q1-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>📈 <code>2026-03</code> — 签署 AWS binding term sheet——首个将 Cerebras 部署在 hyperscaler 数据中心中的合作</li>
+</ul>
+<h3 id="q4-2025">Q4 2025<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q4-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>📈 <code>2025-12</code> — OpenAI 签署 Master Relationship Agreement（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">+</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">750</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord cjk_fallback">）；获</span></span></span></span>1B 贷款 + 5%+ equity warrant</li>
+</ul>
+<h3 id="fy-2025">FY 2025<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fy-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>📈 <code>2025</code> — 收入 $510M (+76% YoY), 20x in 3 years; OpenAI, AWS, G42/MBZUAI 为关键客户</li>
+</ul>
+<h3 id="q3-2024">Q3 2024<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q3-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>🔄 <code>2024-08</code> — Cerebras Inference Cloud 上线</li>
+</ul>
+<h3 id="fy-2024">FY 2024<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fy-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>📈 <code>2024</code> — 收入 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">290</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">G</span><span class="mord">42</span><span class="mord cjk_fallback">预付</span></span></span></span>640M 用于产能建设</li>
+</ul>
+<h3 id="我的持仓追踪">我的持仓追踪<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#我的持仓追踪" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Tracked in <a href="../../wiki/theses/..." class="internal alias" data-slug="wiki/theses/...">…</a></em></p>
+<hr/>
+<blockquote>
+<p><strong>使用说明</strong>：新增季度分组时，插入 <code>### QN YYYY</code> 空标题即可。超过 30 条时将早期记录归档至 timeline-archive 页面。</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-37" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#0-基础信息-curated" data-for="0-基础信息-curated">0. 基础信息 [CURATED]</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#关键指标速览" data-for="关键指标速览">关键指标速览</a></li><li class="depth-0"><a href="#2-投资逻辑-kb--inf" data-for="2-投资逻辑-kb--inf">2. 投资逻辑 [KB + INF]</a></li><li class="depth-1"><a href="#21-公司定位核心叙事--推理瓶颈时代的专用架构" data-for="21-公司定位核心叙事--推理瓶颈时代的专用架构">2.1 公司定位：核心叙事 — 推理瓶颈时代的专用架构</a></li><li class="depth-1"><a href="#22-投资框架多层论据--独一无二的-wafer-scale-科技但层叠依赖关系是最大风险" data-for="22-投资框架多层论据--独一无二的-wafer-scale-科技但层叠依赖关系是最大风险">2.2 投资框架：多层论据 — 独一无二的 wafer-scale 科技，但层叠依赖关系是最大风险</a></li><li class="depth-1"><a href="#23-为什么现在关注关键催化窗口--ipo-窗口--openai-背书" data-for="23-为什么现在关注关键催化窗口--ipo-窗口--openai-背书">2.3 为什么现在关注：关键催化窗口 — IPO 窗口 + OpenAI 背书</a></li><li class="depth-1"><a href="#24-核心矛盾市场分歧点" data-for="24-核心矛盾市场分歧点">2.4 核心矛盾：市场分歧点</a></li><li class="depth-0"><a href="#3-团队与治理-kb--inf" data-for="3-团队与治理-kb--inf">3. 团队与治理 [KB + INF]</a></li><li class="depth-1"><a href="#31-核心管理层" data-for="31-核心管理层">3.1 核心管理层</a></li><li class="depth-1"><a href="#32-董事会与治理" data-for="32-董事会与治理">3.2 董事会与治理</a></li><li class="depth-1"><a href="#33-关键人风险" data-for="33-关键人风险">3.3 关键人风险</a></li><li class="depth-0"><a href="#4-产品与技术-kb" data-for="4-产品与技术-kb">4. 产品与技术 [KB]</a></li><li class="depth-1"><a href="#41-产品矩阵" data-for="41-产品矩阵">4.1 产品矩阵</a></li><li class="depth-1"><a href="#42-垂直整合--技术栈" data-for="42-垂直整合--技术栈">4.2 垂直整合 / 技术栈</a></li><li class="depth-1"><a href="#43-产能--运营路线图" data-for="43-产能--运营路线图">4.3 产能 / 运营路线图</a></li><li class="depth-1"><a href="#44-核心壁垒--护城河" data-for="44-核心壁垒--护城河">4.4 核心壁垒 / 护城河</a></li><li class="depth-1"><a href="#45-下一代发展方向" data-for="45-下一代发展方向">4.5 下一代发展方向</a></li><li class="depth-0"><a href="#5-市场空间-kb" data-for="5-市场空间-kb">5. 市场空间 [KB]</a></li><li class="depth-1"><a href="#51-tam--份额潜力" data-for="51-tam--份额潜力">5.1 TAM / 份额潜力</a></li><li class="depth-1"><a href="#公司定位与可寻址市场" data-for="公司定位与可寻址市场">公司定位与可寻址市场</a></li><li class="depth-1"><a href="#52-情景分析" data-for="52-情景分析">5.2 情景分析</a></li><li class="depth-0"><a href="#6-业务进展与财务数据-kb" data-for="6-业务进展与财务数据-kb">6. 业务进展与财务数据 [KB]</a></li><li class="depth-1"><a href="#61-营业收入" data-for="61-营业收入">6.1 营业收入</a></li><li class="depth-1"><a href="#财务指标" data-for="财务指标">财务指标</a></li><li class="depth-1"><a href="#62-利润率与盈利" data-for="62-利润率与盈利">6.2 利润率与盈利</a></li><li class="depth-1"><a href="#关键业务指标" data-for="关键业务指标">关键业务指标</a></li><li class="depth-1"><a href="#盈利评估" data-for="盈利评估">盈利评估</a></li><li class="depth-1"><a href="#63-资产负债与资本结构" data-for="63-资产负债与资本结构">6.3 资产负债与资本结构</a></li><li class="depth-1"><a href="#64-业务分部如适用" data-for="64-业务分部如适用">6.4 业务分部（如适用）</a></li><li class="depth-1"><a href="#募资历史如适用" data-for="募资历史如适用">募资历史（如适用）</a></li><li class="depth-0"><a href="#7-竞争分析-kb--inf" data-for="7-竞争分析-kb--inf">7. 竞争分析 [KB + INF]</a></li><li class="depth-1"><a href="#71-竞争格局概览" data-for="71-竞争格局概览">7.1 竞争格局概览</a></li><li class="depth-1"><a href="#72-竞品对比" data-for="72-竞品对比">7.2 竞品对比</a></li><li class="depth-0"><a href="#8-风险提示与应对-kb--inf" data-for="8-风险提示与应对-kb--inf">8. 风险提示与应对 [KB + INF]</a></li><li class="depth-1"><a href="#81-市场与竞争风险" data-for="81-市场与竞争风险">8.1 市场与竞争风险</a></li><li class="depth-1"><a href="#82-技术与产品风险" data-for="82-技术与产品风险">8.2 技术与产品风险</a></li><li class="depth-1"><a href="#83-财务与治理风险" data-for="83-财务与治理风险">8.3 财务与治理风险</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#行业板块" data-for="行业板块">行业板块</a></li><li class="depth-1"><a href="#竞争对手" data-for="竞争对手">竞争对手</a></li><li class="depth-1"><a href="#人物" data-for="人物">人物</a></li><li class="depth-1"><a href="#相关逻辑theses" data-for="相关逻辑theses">相关逻辑（Theses）</a></li><li class="depth-1"><a href="#关键来源" data-for="关键来源">关键来源</a></li><li class="depth-0"><a href="#时间线" data-for="时间线">时间线</a></li><li class="depth-1"><a href="#信号图例" data-for="信号图例">信号图例</a></li><li class="depth-1"><a href="#q2-2026" data-for="q2-2026">Q2 2026</a></li><li class="depth-1"><a href="#q1-2026" data-for="q1-2026">Q1 2026</a></li><li class="depth-1"><a href="#q4-2025" data-for="q4-2025">Q4 2025</a></li><li class="depth-1"><a href="#fy-2025" data-for="fy-2025">FY 2025</a></li><li class="depth-1"><a href="#q3-2024" data-for="q3-2024">Q3 2024</a></li><li class="depth-1"><a href="#fy-2024" data-for="fy-2024">FY 2024</a></li><li class="depth-1"><a href="#我的持仓追踪" data-for="我的持仓追踪">我的持仓追踪</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/companies/crwv" class="internal">crwv</a></li><li><a href="../../wiki/daily/" class="internal">index</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

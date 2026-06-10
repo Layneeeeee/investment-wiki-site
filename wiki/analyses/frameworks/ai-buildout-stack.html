@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>ai-buildout-stack</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="ai-buildout-stack"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="ai-buildout-stack"/><meta name="twitter:description" content="Analysis: AI Buildout 12-Layer Stack Framework 核心框架：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。 来源：2026-06-08—ren—ai-buildout-twelve-floors (Ren, Substack) 状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。 完整堆栈 Layer 1: Application ← AI 应用层..."/><meta property="og:description" content="Analysis: AI Buildout 12-Layer Stack Framework 核心框架：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。 来源：2026-06-08—ren—ai-buildout-twelve-floors (Ren, Substack) 状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。 完整堆栈 Layer 1: Application ← AI 应用层..."/><meta property="og:image:alt" content="Analysis: AI Buildout 12-Layer Stack Framework 核心框架：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。 来源：2026-06-08—ren—ai-buildout-twelve-floors (Ren, Substack) 状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。 完整堆栈 Layer 1: Application ← AI 应用层..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Analysis: AI Buildout 12-Layer Stack Framework 核心框架：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。 来源：2026-06-08—ren—ai-buildout-twelve-floors (Ren, Substack) 状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。 完整堆栈 Layer 1: Application ← AI 应用层..."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/ai-buildout-stack-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/analyses/frameworks/ai-buildout-stack"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-10" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/">analyses</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/frameworks/">frameworks</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>ai buildout stack</a></div></nav><h1 class="article-title">ai-buildout-stack</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-09T16:00:00.000Z">Jun 10, 2026</time><span>25 min read</span></p><ul class="tags"><li><a href="../../../tags/ai-buildout" class="internal tag-link">ai-buildout</a></li><li><a href="../../../tags/investment-framework" class="internal tag-link">investment-framework</a></li><li><a href="../../../tags/supply-chain" class="internal tag-link">supply-chain</a></li><li><a href="../../../tags/bottleneck" class="internal tag-link">bottleneck</a></li><li><a href="../../../tags/ren" class="internal tag-link">ren</a></li><li><a href="../../../tags/analysis" class="internal tag-link">analysis</a></li></ul></div></div><article class="popover-hint"><h1 id="analysis-ai-buildout-12-layer-stack-framework">Analysis: AI Buildout 12-Layer Stack Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analysis-ai-buildout-12-layer-stack-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>核心框架</strong>：AI 基础设施的建造成远不止 GPU/芯片层。从应用到矿产完整跨越 12 层，每层都有独立的供给约束和竞争动态。投资机会在于识别市场忽略的 bottleneck 层——而非所有人都盯着的同一层。</p>
+<p>来源：<a href="../../../sources/2026-06-08--ren--ai-buildout-twelve-floors" class="internal alias" data-slug="sources/2026-06-08--ren--ai-buildout-twelve-floors">2026-06-08—ren—ai-buildout-twelve-floors</a> (Ren, Substack)</p>
+<p>状态：轻框架，逐步填充。本版为首次全层 mapping，基于 wiki 知识库 + web research。</p>
+</blockquote>
+<hr/>
+<h2 id="完整堆栈">完整堆栈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#完整堆栈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>Layer  1:  Application       ← AI 应用层（SaaS, Agent 平台）
+Layer  2:  Model             ← 基础模型（GPT, Claude, Gemini, DeepSeek）
+Layer  3:  Framework         ← 训练/推理框架（vLLM, TensorRT, Dynamo）
+Layer  4:  Compute           ← GPU/ASIC/TPU
+Layer  5:  Networking        ← 网络互联（交换机, NIC, 光互联）
+Layer  6:  Memory            ← HBM, DRAM, NAND
+Layer  7:  Interconnect      ← 芯片间/机架内互联光学化
+Layer  8:  Substrate         ← 衬底/基板（InP, SiPh, EML）
+Layer  9:  Equipment         ← 半导体设备
+Layer 10:  Test/Reliability  ← 老化测试/可靠性验证
+Layer 11:  Packaging         ← 先进封装（CoWoS, CPO）
+Layer 12:  Critical Minerals ← 镓、锗、铟等关键原材料
+</code></pre>
+<p><strong>跨层系统</strong>：Power · Thermal · Security · Edge AI</p>
+<hr/>
+<h2 id="层的经济学特征">层的经济学特征<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#层的经济学特征" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>不同层的投资经济学完全不同。框架的价值在于区分：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>类型</th><th>特征</th><th>示例层</th><th>投资含义</th></tr></thead><tbody><tr><td><strong>Bottleneck 层</strong></td><td>供给刚性 + 需求爆发 + 短期不可替代</td><td>L6 Memory, L7 Interconnect, L8 Substrate, L10 Test</td><td>定价权、溢价、优先扩产</td></tr><tr><td><strong>赋能层</strong></td><td>技术壁垒高但供给可扩</td><td>L4 Compute, L9 Equipment</td><td>龙头优势，但需跟踪产能</td></tr><tr><td><strong>商品化层</strong></td><td>差异化低、价格竞争</td><td>L1 Application (大部分), L3 Framework (开源)</td><td>选龙头或做多周期性底部</td></tr><tr><td><strong>跨层系统</strong></td><td>贯穿所有层的基础设施</td><td>Power, Thermal, Security</td><td>总量逻辑，受总建造成本驱动</td></tr></tbody></table></div>
+<hr/>
+<h2 id="investability-评级">Investability 评级<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#investability-评级" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每层的可投资性评估——哪些层可以直接通过 public equities 配置，哪些需要间接暴露。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>评级</th><th>说明</th><th>首选标的</th><th>流动性</th></tr></thead><tbody><tr><td><strong>L1 Application</strong></td><td>🟢 <strong>可投</strong></td><td>多家大型 public SaaS，流动性好</td><td>MSFT, NOW, SNOW, CRM</td><td>优</td></tr><tr><td><strong>L2 Model</strong></td><td>🟡 <strong>间接暴露</strong></td><td>Frontier labs 多未上市（OpenAI, Anthropic, xAI）；间接通过 MSFT/GOOGL/META</td><td>MSFT, GOOGL, META</td><td>优（但 dilute）</td></tr><tr><td><strong>L3 Framework</strong></td><td>🔴 <strong>难投</strong></td><td>开源项目为主，无 pure-play；NVIDIA 通过硬件捕获价值</td><td>NVDA（间接）, NBIS（部分）</td><td>差</td></tr><tr><td><strong>L4 Compute</strong></td><td>🟢 <strong>可投</strong></td><td>多家大型 public，GPU+ASIC 多有上市</td><td>NVDA, AMD, AVGO, MRVL</td><td>优</td></tr><tr><td><strong>L5 Networking</strong></td><td>🟢 <strong>可投</strong></td><td>交换机芯片+系统 public 标的充足</td><td>AVGO, ANET, CSCO, MRVL</td><td>优</td></tr><tr><td><strong>L6 Memory</strong></td><td>🟡 <strong>间接暴露</strong></td><td>Samsung/SK Hynix 韩国上市（FX+治理风险）；MU 美国上市但非 pure HBM</td><td>MU, SNDK</td><td>中</td></tr><tr><td><strong>L7 Interconnect</strong></td><td>🟢 <strong>可投</strong></td><td>多美国上市，子层覆盖完整（光学引擎→模拟→光源→无源）</td><td>MRVL, AVGO, CRDO, MTSI, COHR, LITE, GLW</td><td>优</td></tr><tr><td><strong>L8 Substrate</strong></td><td>🔴 <strong>难投</strong></td><td>AXTI 唯一纯 InP 但市值小；Sumitomo/Mitsubishi 日本上市；间接通过 LITE/COHR</td><td>AXTI, LITE, COHR（间接）</td><td>差-中</td></tr><tr><td><strong>L9 Equipment</strong></td><td>🟢 <strong>可投</strong></td><td>多家大型 public，流动性优</td><td>ASML, AMAT, KLAC, LRCX, TER</td><td>优</td></tr><tr><td><strong>L10 Test/Reliability</strong></td><td>🟡 <strong>间接暴露</strong></td><td>AEHR 唯一纯 AI burn-in 标（~$600M）；TER/COHU 为综合设备商</td><td>AEHR（纯）, TER（部分）</td><td>差-中</td></tr><tr><td><strong>L11 Packaging</strong></td><td>🟡 <strong>间接暴露</strong></td><td>TSM 为主（非 pure CoWoS）；ASX/AMKR 含传统封装拖累</td><td>TSM, AMKR</td><td>中-优</td></tr><tr><td><strong>L12 Critical Minerals</strong></td><td>🔴 <strong>难投</strong></td><td>中国公司主导（无法投）；西方公司 AI 暴露极小（AA Ga 回收占比低）</td><td>AA, FCX（均为极间接）</td><td>差</td></tr></tbody></table></div>
+<p><strong>跨层系统</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>系统</th><th>评级</th><th>说明</th><th>首选标的</th></tr></thead><tbody><tr><td>Power</td><td>🟢 <strong>可投</strong></td><td>多家大型 public</td><td>GEV, ETN, PWR, VRT, TXN</td></tr><tr><td>Thermal</td><td>🟢 <strong>可投</strong></td><td>VRT US 上市 + 中国玩家</td><td>VRT</td></tr><tr><td>Security</td><td>🟢 <strong>可投</strong></td><td>多家大型 public</td><td>CRWD, PANW, ZS</td></tr><tr><td>Edge AI</td><td>🟡 <strong>间接暴露</strong></td><td>QCOM 端侧芯片为主；AAPL 自用</td><td>QCOM, NVDA</td></tr></tbody></table></div>
+<hr/>
+<h2 id="entry--exit-信号仪表盘">Entry / Exit 信号仪表盘<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#entry--exit-信号仪表盘" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每层的 leading indicators——何时进入（bottleneck 收紧）、何时退出（bottleneck 缓解或被 bypass）。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>🟢 进入信号</th><th>🔴 退出信号</th><th>📊 关键跟踪指标</th><th>当前信号</th></tr></thead><tbody><tr><td><strong>L1 Application</strong></td><td>AI-native ARR 增速 >50% YoY；企业 AI 渗透率 >30%</td><td>Token spend ROI 审视；seat-based 定价崩盘；纯 wrapper 大量倒闭</td><td>AI SaaS ARR growth；企业 AI 预算趋势</td><td>🟡 混杂——AI SaaS 反弹 +42% 但 token panic 已出现</td></tr><tr><td><strong>L2 Model</strong></td><td>前沿差距扩大；enterprise willingness to pay premium；蒸馏成本上升</td><td>模型商品化；开源追平前沿；API 价格战</td><td>Frontier benchmark gap；API pricing trend</td><td>🟡 混杂——蒸馏变困难但成本审查加剧</td></tr><tr><td><strong>L3 Framework</strong></td><td>推理成本差异 >10x（优化 vs 未优化）；切换成本上升</td><td>推理标准化；Dynamo 消除引擎差异；功能趋同</td><td>Inference cost/token；Dynamo 采用率</td><td>🟢 Dynamo 巩固——AI Factory OS 标准形成中</td></tr><tr><td><strong>L4 Compute</strong></td><td>GPU 租金上涨；ASIC 采用率 >30%；CUDA 替代进展</td><td>GPU 供应过剩；ASIC 回报恶化；NVDA 毛利率缩水</td><td>GPU spot pricing；ASIC design win count</td><td>🟡 H200 +48% 但 ASIC 替代加速</td></tr><tr><td><strong>L5 Networking</strong></td><td>以太网 AI 交换增速 >100% YoY；UALink/SUE 获关键客户</td><td>架构战争结束→商品化；博通/Tomahawk 见顶</td><td>AI 以太网 vs InfiniBand 份额</td><td>🟢 AI 以太网 +92% YoY，架构战争未定论</td></tr><tr><td><strong>L6 Memory</strong></td><td>HBM 价格 +50%+；产能利用率 >100%；新 fab 加速</td><td>DRAM GM >80%（已达⚠️）；存储 CapEx 井喷；客户降价</td><td>DRAM/NAND GM；HBM price；CapEx 公告</td><td>🔴 <strong>接近周期峰值</strong>——DRAM GM ~80%</td></tr><tr><td><strong>L7 Interconnect</strong></td><td>NPO 4.0 引擎/GPU 确认；InP 续涨；客户 PO lock-up</td><td>NPO 被 CPO bypass；InP 供给释放；光学引擎商品化</td><td>NPO adoption timeline；光学引擎/GPU</td><td>🟢 <strong>早期</strong>——NPO 量产前，InP 仍在收紧</td></tr><tr><td><strong>L8 Substrate</strong></td><td>InP lead time >6mo；价格 +100%+；NVIDIA EML 锁定扩至 2028+</td><td>InP 产能扩张（Sumitomo/AXTI）；SiPh 替代量产</td><td>InP wafer price；EML lead time</td><td>🟢 <strong>持续收紧</strong>——InP 缺口 70%+, 价格 +170-200%</td></tr><tr><td><strong>L9 Equipment</strong></td><td>ASML EUV 订单加速；CoWoS 设备订单翻倍；foundry CapEx 上修</td><td>Foundry 利用率 &lt;70%；TSMC CapEx 下修；设备库存堆积</td><td>ASML EUV order book；utilization</td><td>🟡 增长放缓但有 CoWoS 设备需求支撑</td></tr><tr><td><strong>L10 Test</strong></td><td>AI 芯片良率压力公开化；hyperscaler 直购 burn-in；AEHR 订单翻倍</td><td>Burn-in 被设计消除；替代检测方案量产</td><td>AEHR booking trend；芯片故障率报告</td><td>🟢 <strong>早期加速</strong>——AEHR H2 $60-80M</td></tr><tr><td><strong>L11 Packaging</strong></td><td>CoWoS wait >12mo；OSAT 利用率 >100%；CapEx 翻倍</td><td>CoWoS 产能过剩；hybrid bonding/FOPLP 替代</td><td>CoWoS 月产增速；CapEx</td><td>🟡 紧缺中但产能已扩张（月产 +50%+）</td></tr><tr><td><strong>L12 Critical</strong></td><td>出口管制升级；Ga/Ge/In 价格飙升；替代矿山 3+ 年</td><td>新矿山投产；回收技术突破；替代商用</td><td>Ga/Ge/In price index；管制新规</td><td>🟢 <strong>结构性紧张</strong>——Ga/Ge 管制已生效</td></tr></tbody></table></div>
+<h3 id="跨层系统信号">跨层系统信号<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#跨层系统信号" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>系统</th><th>🟢 进入</th><th>🔴 退出</th><th>当前信号</th></tr></thead><tbody><tr><td><strong>Power</strong></td><td>变压器订购周期 >2 年；AI 数据中心 PPA 电价上涨；电网等待 >5 年</td><td>变压器产能扩张完成；核电/可再生能源批量上线</td><td>🟢 持续紧张——变压器短缺，Grid backlog 积累</td></tr><tr><td><strong>Thermal</strong></td><td>Liquid cooling 在 GB300 成为 100% 标配；单机架功耗 >130kW</td><td>芯片 TDP 回到风冷范围；液冷普及→商品化</td><td>🟢 2026 = 液冷大年，渗透率爬坡</td></tr><tr><td><strong>Security</strong></td><td>AI Agent 安全事件暴增；监管强制审计；企业 AI-SPM 预算翻倍</td><td>安全标准化；攻防平衡稳定</td><td>🟢 AI 安全支出 $51-60B（+100%）</td></tr><tr><td><strong>Edge AI</strong></td><td>端侧模型对标 GPT-4；NPU 成标配；推理计算占比 >80%</td><td>云端推理成本降至边缘无优势；硬件商品化</td><td>🟡 早期——QCOM 2B+ NPU 部署，但主力仍在云端</td></tr></tbody></table></div>
+<h3 id="信号使用说明">信号使用说明<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#信号使用说明" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>进入条件</strong>：该层 ≥2 个 🟢 信号同时出现 → 考虑配置</li>
+<li><strong>退出条件</strong>：该层 ≥2 个 🔴 信号出现 → 考虑减仓</li>
+<li><strong>Bottleneck rotation play</strong>：当一层出现 🔴 退出信号时，资金可能流向下一层——提前布局下一层的 🟢 信号</li>
+<li><strong>当前最大机会层</strong>（最多 🟢 + 最少 🔴）：L8 InP Substrate, L10 Test/Reliability, L7 Interconnect</li>
+<li><strong>当前最危险层</strong>（最多 🔴）：L6 Memory（周期峰值信号已确认）</li>
+</ol>
+<hr/>
+<h2 id="逐层公司-mapping">逐层公司 Mapping<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#逐层公司-mapping" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="l1-application--ai-应用层">L1: Application — AI 应用层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l1-application--ai-应用层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 应用层极度分散，分为两类：<strong>传统 SaaS 嵌入 AI</strong>（WDAY, CRM, NOW, ORCL, SAP, MSFT 365 Copilot）和 <strong>AI-Native 平台</strong>（Cursor, Harvey, Notion AI, Replit）。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>暴露类型</th><th>备注</th></tr></thead><tbody><tr><td>Microsoft</td><td><a href="../../../wiki/companies/msft" class="internal" data-slug="wiki/companies/msft">msft</a></td><td>全栈</td><td>Copilot 生态，Azure AI 平台</td></tr><tr><td>ServiceNow</td><td>NOW (私)</td><td>ITSM→AI Agent 治理层</td><td>Agent 时代治理需求受益</td></tr><tr><td>Workday</td><td>WDAY (私)</td><td>HR/Finance→Agent Platform</td><td>Agent-friendly 平台转型</td></tr><tr><td>Salesforce</td><td>CRM (私)</td><td>CRM 嵌入 AI</td><td>Agent 化 CRM</td></tr><tr><td>Shopify</td><td><a href="../../../wiki/companies/shop" class="internal" data-slug="wiki/companies/shop">shop</a></td><td>电商 AI</td><td>商家 AI 工具</td></tr><tr><td>Snowflake</td><td><a href="../../../wiki/companies/snow" class="internal" data-slug="wiki/companies/snow">snow</a></td><td>数据平台 AI</td><td>数据+AI 分析</td></tr><tr><td>Datadog</td><td><a href="../../../wiki/companies/ddog" class="internal" data-slug="wiki/companies/ddog">ddog</a></td><td>可观测性 AI</td><td>AI 运维</td></tr><tr><td>Replit</td><td><a href="../../../wiki/companies/replit" class="internal" data-slug="wiki/companies/replit">replit</a></td><td>AI-Native 编码</td><td>Agentic coding</td></tr><tr><td>Uber</td><td><a href="../../../wiki/companies/uber" class="internal" data-slug="wiki/companies/uber">uber</a></td><td>AI 应用实践</td><td>AI 预算消耗典型案例</td></tr><tr><td>Palantir</td><td><a href="../../../wiki/companies/pltr" class="internal" data-slug="wiki/companies/pltr">pltr</a></td><td>AI 决策平台</td><td>AIP 平台</td></tr><tr><td>TaskUS</td><td><a href="../../../wiki/companies/task" class="internal" data-slug="wiki/companies/task">task</a></td><td>AI+BPO</td><td>AI 客服转型</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：极度分散 + 低切换成本 → 大部分商品化。赢家是嵌入工作流深 + 有治理/安全护城河的公司（NOW, PANW, CRWD）。纯 AI wrapper 无 defensibility。</p>
+<hr/>
+<h3 id="l2-model--基础模型层">L2: Model — 基础模型层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l2-model--基础模型层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>寡头竞争。全球 LLM 收入份额（Counterpoint Q1 2026）：Anthropic 31.4%, OpenAI 29.0%, Google 12.1%, Microsoft 7.2%, Meta 1.4%。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>收入份额</th><th>月活</th><th>定位</th></tr></thead><tbody><tr><td>Anthropic</td><td><a href="../../../wiki/companies/anthropic" class="internal" data-slug="wiki/companies/anthropic">anthropic</a></td><td>31.4%</td><td>~65M</td><td>企业高端，安全优先</td></tr><tr><td>OpenAI</td><td><a href="../../../wiki/companies/openai" class="internal" data-slug="wiki/companies/openai">openai</a></td><td>29.0%</td><td>~900M</td><td>消费级霸主，品牌最强</td></tr><tr><td>Google</td><td><a href="../../../wiki/companies/googl" class="internal" data-slug="wiki/companies/googl">googl</a></td><td>12.1%</td><td>~750M</td><td>生态整合，TPU 成本优势</td></tr><tr><td>Microsoft</td><td><a href="../../../wiki/companies/msft" class="internal" data-slug="wiki/companies/msft">msft</a></td><td>7.2%</td><td>~100M</td><td>企业嵌入，Copilot</td></tr><tr><td>Meta</td><td><a href="../../../wiki/companies/meta" class="internal" data-slug="wiki/companies/meta">meta</a></td><td>1.4%</td><td>1.0B</td><td>开源策略，变现弱</td></tr><tr><td>xAI</td><td><a href="../../../wiki/companies/xe" class="internal" data-slug="wiki/companies/xe">xe</a></td><td>—</td><td>—</td><td>Grok, Colossus 算力</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：寡头但定价权受蒸馏/开源压缩。模型层自身可能商品化，但拥有分发的公司（GOOGL, MSFT）可捕获后端价值。<strong>关键 tension</strong>：蒸馏正变困难（Agentic 推理链复杂化），前沿模型差距可能在扩大而非缩小（vs Jamin Ball 2026）。</p>
+<hr/>
+<h3 id="l3-framework--训练推理框架层">L3: Framework — 训练/推理框架层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l3-framework--训练推理框架层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>分为训练框架和推理引擎两个子层。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司/项目</th><th>类型</th><th>定位</th><th>备注</th></tr></thead><tbody><tr><td><strong>NVIDIA TensorRT-LLM</strong></td><td>推理引擎</td><td>Blackwell/H100 最高性能</td><td>~15K tok/s on 70B, FP8</td></tr><tr><td><strong>NVIDIA Dynamo</strong></td><td>推理操作系统</td><td>AI Factory OS（开源）</td><td>Rust 构建，引擎无关，7x Blackwell 提升</td></tr><tr><td><strong>NVIDIA Triton</strong></td><td>推理服务器</td><td>通用生产部署</td><td>Dynamo 的前身</td></tr><tr><td><strong>vLLM</strong></td><td>推理引擎</td><td>开源标准</td><td>LF AI Foundation, 广泛采用</td></tr><tr><td><strong>SGLang</strong></td><td>推理引擎</td><td>快速追赶</td><td>Tree-cache 架构，Dynamo 一等后端</td></tr><tr><td><strong>Hugging Face TGI</strong></td><td>推理引擎</td><td>多厂商支持</td><td>Rust 重写，长上下文优势</td></tr><tr><td><strong>llama.cpp</strong></td><td>推理引擎</td><td>本地/CPU</td><td>GGUF 量化标准</td></tr><tr><td><strong>MLX</strong></td><td>推理引擎</td><td>Apple Silicon</td><td>M3 Ultra 可跑 405B 4-bit</td></tr><tr><td><strong>DeepSpeed (MSFT)</strong></td><td>训练框架</td><td>Bing/Copilot</td><td>Microsoft 生态</td></tr><tr><td><strong>PyTorch (Meta)</strong></td><td>训练框架</td><td>行业标准</td><td>社区最大</td></tr><tr><td><strong>Together AI</strong></td><td>推理服务</td><td>100+ 模型托管</td><td>Dynamo 用户</td></tr><tr><td><strong>Fireworks AI</strong></td><td>推理服务</td><td>低延迟</td><td>FireAttention kernels</td></tr><tr><td><strong>Baseten</strong></td><td>推理服务</td><td>企业推理栈</td><td>Dynamo + vLLM + SGLang</td></tr><tr><td><strong>Nebius (NBIS)</strong></td><td>推理云+ Eigen AI</td><td>推理优化+量化</td><td>$643M 收购 Eigen AI</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：开源主导，但 NVIDIA Dynamo 正在成为事实上的”AI Factory OS”。推理引擎选择可产生 5-10x token 成本差异。<strong>整合加速</strong>——拥有推理优化能力的公司形成护城河（NVIDIA via Dynamo, Nebius via Eigen）。</p>
+<hr/>
+<h3 id="l4-compute--算力层">L4: Compute — 算力层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l4-compute--算力层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>暴露类型</th><th>定位</th></tr></thead><tbody><tr><td>NVIDIA</td><td><a href="../../../wiki/companies/nvda" class="internal" data-slug="wiki/companies/nvda">nvda</a></td><td>GPU</td><td>85% 市占, 75% GM, 全栈</td></tr><tr><td>AMD</td><td><a href="../../../wiki/companies/amd" class="internal" data-slug="wiki/companies/amd">amd</a></td><td>GPU</td><td>第二名，推理追赶，ROCm 生态</td></tr><tr><td>Google</td><td><a href="../../../wiki/companies/googl" class="internal" data-slug="wiki/companies/googl">googl</a></td><td>TPU</td><td>自研，训练成本 GPU 的 20-30%</td></tr><tr><td>Amazon</td><td><a href="../../../wiki/companies/amzn" class="internal" data-slug="wiki/companies/amzn">amzn</a></td><td>Trainium</td><td>AWS 自研，供不应求</td></tr><tr><td>Microsoft</td><td><a href="../../../wiki/companies/msft" class="internal" data-slug="wiki/companies/msft">msft</a></td><td>Maia 200</td><td>Azure 自研</td></tr><tr><td>Meta</td><td><a href="../../../wiki/companies/meta" class="internal" data-slug="wiki/companies/meta">meta</a></td><td>MTIA</td><td>推荐推理 TCO -44%, Broadcom 合作</td></tr><tr><td>Broadcom</td><td><a href="../../../wiki/companies/avgo" class="internal" data-slug="wiki/companies/avgo">avgo</a></td><td>ASIC 设计</td><td>Google/Meta ASIC 设计伙伴</td></tr><tr><td>Marvell</td><td><a href="../../../wiki/companies/mrvl" class="internal" data-slug="wiki/companies/mrvl">mrvl</a></td><td>ASIC 设计</td><td>Custom XPU, 数据移动平台</td></tr><tr><td>Intel</td><td><a href="../../../wiki/companies/intc" class="internal" data-slug="wiki/companies/intc">intc</a></td><td>GPU/CPU</td><td>追赶中, Gaudi</td></tr><tr><td>Huawei</td><td>private</td><td>Ascend</td><td>中国 AI 芯片第一</td></tr><tr><td>Alibaba</td><td><a href="../../../wiki/companies/baba" class="internal" data-slug="wiki/companies/baba">baba</a></td><td>Hanguang 800</td><td>真武 M890, 累计 56 万片</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：利润池最大。NVIDIA 全栈垄断（硬件+Dynamo+CUDA），但 ASIC 替代加速。关键 tension：ASIC 软件适配仍是最大障碍，CUDA 生态强大。</p>
+<hr/>
+<h3 id="l5-networking--网络互联层">L5: Networking — 网络互联层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l5-networking--网络互联层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>暴露类型</th><th>产品</th></tr></thead><tbody><tr><td>Broadcom</td><td><a href="../../../wiki/companies/avgo" class="internal" data-slug="wiki/companies/avgo">avgo</a></td><td>交换芯片</td><td>Tomahawk 6, Jericho, SUE</td></tr><tr><td>Marvell</td><td><a href="../../../wiki/companies/mrvl" class="internal" data-slug="wiki/companies/mrvl">mrvl</a></td><td>交换芯片+NVLink</td><td>100T 交换机, NVLink Fusion</td></tr><tr><td>Arista</td><td>ANET (私)</td><td>交换机系统</td><td>AI 以太网 #3, $3.5B AI 收入</td></tr><tr><td>Cisco</td><td><a href="../../../wiki/companies/csco" class="internal" data-slug="wiki/companies/csco">csco</a></td><td>交换机系统</td><td>N9100 AI 交换机, $9B 订单</td></tr><tr><td>NVIDIA</td><td><a href="../../../wiki/companies/nvda" class="internal" data-slug="wiki/companies/nvda">nvda</a></td><td>Scale-up 网络</td><td>NVLink+NVS witch, Spectrum-X</td></tr><tr><td>Celestica</td><td><a href="../../../wiki/companies/cls" class="internal" data-slug="wiki/companies/cls">cls</a></td><td>交换机 ODM</td><td>AI 后端以太网 #2</td></tr><tr><td>Dell</td><td><a href="../../../wiki/companies/dell" class="internal" data-slug="wiki/companies/dell">dell</a></td><td>服务器+网络</td><td>AI 基础设施集成</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：架构战争——NVLink (封闭) vs UALink/SUE (开放)。<strong>网络增长快于 GPU 增长</strong>——集群规模扩大推动通信复杂度。Arista $3.5B AI 收入验证层需求。</p>
+<p><strong>Key stat</strong>：AI 以太网交换机 Q1 2026 销售翻倍，800G 为主力，1.6T 开始送样（Dell’Oro）。</p>
+<hr/>
+<h3 id="l6-memory--存储层">L6: Memory — 存储层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l6-memory--存储层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>暴露类型</th><th>备注</th></tr></thead><tbody><tr><td>Samsung</td><td>005930.KS</td><td>HBM+DRAM+NAND</td><td>全球最大存储商，HBM3E</td></tr><tr><td>SK Hynix</td><td>000660.KS</td><td>HBM 龙头</td><td>HBM 技术领先，NVIDIA 主供</td></tr><tr><td>Micron</td><td><a href="../../../wiki/companies/mu" class="internal" data-slug="wiki/companies/mu">mu</a></td><td>HBM+DRAM</td><td>HBM 追赶中</td></tr><tr><td>SanDisk</td><td><a href="../../../wiki/companies/sndk" class="internal" data-slug="wiki/companies/sndk">sndk</a></td><td>NAND</td><td>独立 NAND 厂商</td></tr><tr><td>CXMT</td><td>中国</td><td>DRAM</td><td>IPO ¥295B 获批</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：结构 bottleneck。DRAM 毛利率 ~80%，NAND ~60%。HBM 供给限制直接决定能造多少 AI 加速器。<strong>周期峰值风险</strong>——2026 年存储净利润合计 ~$350B，产能扩张超调是真实担忧。</p>
+<hr/>
+<h3 id="l7-interconnect--光学互联层">L7: Interconnect — 光学互联层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l7-interconnect--光学互联层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>最复杂的层，跨光学引擎 + 模拟 + 光源 + 无源光子学。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>子层</th><th>定位</th></tr></thead><tbody><tr><td>Marvell</td><td><a href="../../../wiki/companies/mrvl" class="internal" data-slug="wiki/companies/mrvl">mrvl</a></td><td>光学引擎</td><td>NPO 全栈（SiPh+TIA+SerDes）</td></tr><tr><td>Broadcom</td><td><a href="../../../wiki/companies/avgo" class="internal" data-slug="wiki/companies/avgo">avgo</a></td><td>光学引擎</td><td>3.2T VCSEL NPO, OFC 2026</td></tr><tr><td>Semtech</td><td><a href="../../../wiki/companies/smtc" class="internal" data-slug="wiki/companies/smtc">smtc</a></td><td>模拟</td><td>FiberEdge TIA/Driver, HieFo InP</td></tr><tr><td>Credo</td><td><a href="../../../wiki/companies/crdo" class="internal" data-slug="wiki/companies/crdo">crdo</a></td><td>SiPh+DSP</td><td>DustPhotonics, 800G/1.6T NPO</td></tr><tr><td>Coherent</td><td><a href="../../../wiki/companies/cohr" class="internal" data-slug="wiki/companies/cohr">cohr</a></td><td>光源+光学</td><td>VCSEL arrays, CW 激光器</td></tr><tr><td>MACOM</td><td><a href="../../../wiki/companies/mtsi" class="internal" data-slug="wiki/companies/mtsi">mtsi</a></td><td>模拟</td><td>200G PD, 448G 驱动</td></tr><tr><td>MaxLinear</td><td><a href="../../../wiki/companies/mxl" class="internal" data-slug="wiki/companies/mxl">mxl</a></td><td>模拟</td><td>Washington 200G TIA, Rushmore DSP</td></tr><tr><td>Ciena</td><td><a href="../../../wiki/companies/cien" class="internal" data-slug="wiki/companies/cien">cien</a></td><td>光学引擎</td><td>Vesta 200 6.4T, Open CPX</td></tr><tr><td>Lumentum</td><td><a href="../../../wiki/companies/lite" class="internal" data-slug="wiki/companies/lite">lite</a></td><td>激光器</td><td>UHP 激光, ELSFP 模块</td></tr><tr><td>Corning</td><td><a href="../../../wiki/companies/glw" class="internal" data-slug="wiki/companies/glw">glw</a></td><td>无源</td><td>MMC+GlassBridge, 光纤路由</td></tr><tr><td>Sivers</td><td><a href="../../../wiki/companies/sive" class="internal" data-slug="wiki/companies/sive">sive</a></td><td>SiPh 光源</td><td>CW-WDM 激光, Ayar Labs 合作</td></tr><tr><td>POET</td><td><a href="../../../wiki/companies/poet" class="internal" data-slug="wiki/companies/poet">poet</a></td><td>光子封装</td><td>光引擎平台, Starlight 量产</td></tr><tr><td>Viavi</td><td><a href="../../../wiki/companies/viav" class="internal" data-slug="wiki/companies/viav">viav</a></td><td>测试</td><td>光学测试设备</td></tr><tr><td>Fabrinet</td><td><a href="../../../wiki/companies/fn" class="internal" data-slug="wiki/companies/fn">fn</a></td><td>制造</td><td>光模块代工</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：InP/EML gap >30%，NPO 推动光学密度 2.25→4.0 引擎/GPU。<strong>最有可能成为下一个结构性 bottleneck 的层</strong>。多公司有暴露但差异在是否有定价权。</p>
+<hr/>
+<h3 id="l8-substrate--衬底基板层">L8: Substrate — 衬底/基板层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l8-substrate--衬底基板层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>材料</th><th>角色</th></tr></thead><tbody><tr><td>AXT Inc</td><td>AXTI</td><td>InP 衬底</td><td>6 英寸 InP 龙头, YTD +198%</td></tr><tr><td>Lumentum</td><td><a href="../../../wiki/companies/lite" class="internal" data-slug="wiki/companies/lite">lite</a></td><td>EML</td><td>EML 产能 +50%</td></tr><tr><td>Coherent</td><td><a href="../../../wiki/companies/cohr" class="internal" data-slug="wiki/companies/cohr">cohr</a></td><td>EML</td><td>Double-then-double InP 扩张</td></tr><tr><td>Mitsubishi Electric</td><td>6503.T</td><td>EML</td><td>~50% EML 市占</td></tr><tr><td>Sumitomo</td><td>日本</td><td>InP 衬底</td><td>高端 InP 控制者~90%</td></tr><tr><td>IQE</td><td>IQE (UK)</td><td>外延片</td><td>化合物半导体外延</td></tr><tr><td>Yunnan Germanium</td><td>002428.CN</td><td>InP+Ge</td><td>2-6 英寸 InP 国产替代</td></tr><tr><td>SOI 供应商</td><td>SOI (私)</td><td>硅光衬底</td><td>硅光集成基础</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：<strong>最紧的 bottleneck 前哨</strong>。InP 供给缺口 >70%（需求 260-300 万片，有效供给 ~75 万片）。2 英寸 InP 价格涨 170-200%，6 英寸近 3 倍。NVIDIA 已锁定 EML 产能至 2027 年后。供应链控制在日本+美国公司手中，中国自给率 &lt;5%。</p>
+<hr/>
+<h3 id="l9-equipment--半导体设备层">L9: Equipment — 半导体设备层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l9-equipment--半导体设备层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>产品</th><th>角色</th></tr></thead><tbody><tr><td>ASML</td><td><a href="../../../wiki/companies/asml" class="internal" data-slug="wiki/companies/asml">asml</a></td><td>光刻机</td><td>EUV 垄断，AI 芯片必需</td></tr><tr><td>Applied Materials</td><td>AMAT (私)</td><td>沉积/刻蚀</td><td>全品类</td></tr><tr><td>Lam Research</td><td>LRCX (私)</td><td>刻蚀/沉积</td><td>3D NAND/HBM 关键</td></tr><tr><td>KLA Corp</td><td>KLAC (私)</td><td>检测/量测</td><td>良率控制</td></tr><tr><td>Tokyo Electron</td><td>8035.T</td><td>沉积/刻蚀</td><td>日本设备龙头</td></tr><tr><td>Teradyne</td><td><a href="../../../wiki/companies/ter" class="internal" data-slug="wiki/companies/ter">ter</a></td><td>测试</td><td>SoC 测试</td></tr><tr><td>Advantest</td><td>ATEYY</td><td>测试</td><td>HBM/DRAM 测试</td></tr><tr><td>Camtek</td><td><a href="../../../wiki/companies/camt" class="internal" data-slug="wiki/companies/camt">camt</a></td><td>先进封装检测</td><td>CoWoS 量测</td></tr><tr><td>Onto Innovation</td><td>ONTO (私)</td><td>过程控制</td><td>先进封装</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：设备需求受 AI 资本支出驱动但稳定增长。ASML EUV 唯一垄断。设备股已大幅重估（费城半导体指数年内 +57%）。<strong>AI 增量 vs 传统周期性衰退</strong>是核心矛盾。</p>
+<hr/>
+<h3 id="l10-testreliability--老化测试可靠性层">L10: Test/Reliability — 老化测试/可靠性层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l10-testreliability--老化测试可靠性层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>产品</th><th>定位</th></tr></thead><tbody><tr><td>Aehr Test Systems</td><td><a href="../../../wiki/companies/aehr" class="internal" data-slug="wiki/companies/aehr">aehr</a></td><td>Wafer-level burn-in</td><td><strong>唯一纯 AI burn-in 标</strong>，FOX-XP 系统 $5-6M/台</td></tr><tr><td>Trio-Tech</td><td>TRT (私)</td><td>Burn-in 板/服务</td><td>$5.3M AI GPU 订单，BIB</td></tr><tr><td>KYEC (京元电子)</td><td>2449.TW</td><td>测试服务</td><td>NVIDIA+ASIC burn-in，自研设备</td></tr><tr><td>Teradyne</td><td><a href="../../../wiki/companies/ter" class="internal" data-slug="wiki/companies/ter">ter</a></td><td>测试设备</td><td>SoC/存储测试</td></tr><tr><td>Cohu</td><td><a href="../../../wiki/companies/cohu" class="internal" data-slug="wiki/companies/cohu">cohu</a></td><td>测试分选</td><td>半导体测试</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：小而关键的 bottleneck。AI 处理器 0.5% burn-in 故障筛选率阻止首年失效。AEHR H2 订单 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">60</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">80</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">（</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal" style="margin-right:0.08125em;">sH</span><span class="mord">1</span><span class="mspace nobreak"> </span></span></span></span>20M）。Wafer-level burn-in 在 AI 芯片制造中从可选变必需。<strong>市场最小但增速最快的层</strong>。</p>
+<hr/>
+<h3 id="l11-packaging--先进封装层">L11: Packaging — 先进封装层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l11-packaging--先进封装层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>工艺</th><th>定位</th></tr></thead><tbody><tr><td>TSMC</td><td><a href="../../../wiki/companies/tsm" class="internal" data-slug="wiki/companies/tsm">tsm</a></td><td>CoWoS</td><td>绝对龙头，2026 月产 10.5-13 万片</td></tr><tr><td>ASE/ASX</td><td>3711.TW</td><td>CoWoS 外溢</td><td>CoWoS 收入 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span></span></span></span>3.5B</td></tr><tr><td>Amkor</td><td><a href="../../../wiki/companies/amkr" class="internal" data-slug="wiki/companies/amkr">amkr</a></td><td>先进封装</td><td>纯 OSAT, Google/Amazon ASIC</td></tr><tr><td>Powertech</td><td>6239.TW</td><td>FOPLP</td><td>良率 95%, 2026 H2 验证</td></tr><tr><td>Camtek</td><td><a href="../../../wiki/companies/camt" class="internal" data-slug="wiki/companies/camt">camt</a></td><td>封装检测</td><td>CoWoS 量测设备</td></tr><tr><td>POET</td><td><a href="../../../wiki/companies/poet" class="internal" data-slug="wiki/companies/poet">poet</a></td><td>光子封装</td><td>光引擎平台</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：CoWoS 持续紧缺至 2027+。OSAT 端产能年增 113% 但仍是外溢而非替代。HBM+CoWoS 构成 AI 芯片的双重封装约束。<strong>设备商弹性最大</strong>——CoWoS 产能每翻倍一次，检测/组装设备订单同步放大。</p>
+<hr/>
+<h3 id="l12-critical-minerals--关键原材料层">L12: Critical Minerals — 关键原材料层<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#l12-critical-minerals--关键原材料层" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>材料</th><th>AI 用途</th><th>主要生产商</th><th>中国控制率</th></tr></thead><tbody><tr><td><strong>镓 (Ga)</strong></td><td>GaN 功率芯片, 光模块</td><td>Chalco, Alcoa (Wagerup), Yunnan Germanium</td><td>~99% (初级)</td></tr><tr><td><strong>锗 (Ge)</strong></td><td>SiGe 光模块, 红外</td><td>Yunnan Germanium, Teck Resources</td><td>~70%+</td></tr><tr><td><strong>铟 (In)</strong></td><td>InP 衬底, ITO 靶材</td><td>Tin Industry, Huaxi Tin</td><td>~60%</td></tr><tr><td><strong>锡 (Sn)</strong></td><td>HBM 焊料, Chiplet 封装</td><td>Tin Industry, Yunnan Tin</td><td>~70%</td></tr><tr><td><strong>铜 (Cu)</strong></td><td>PCB, 液冷, 配电</td><td>Freeport-McMoRan, Zijin, Jiangxi Copper</td><td>~40%</td></tr><tr><td><strong>钨 (W)</strong></td><td>PCB 微型钻头</td><td>Xiamen Tungsten</td><td>~80%</td></tr><tr><td><strong>稀土 (NdPr)</strong></td><td>AI 服务器风扇电机</td><td>Northern Rare Earth, MP Materials</td><td>~70%</td></tr></tbody></table></div>
+<p><strong>层特征</strong>：<strong>物理供给约束不可快速解除</strong>。中国对 Ga/Ge/Sb 的出口管制是最大地缘政治变量。AI 金属需求 vs 矿业产能扩张（7-10 年周期）存在根本性错配。Alcoa 在澳洲建镓回收厂、Teck/Anglo 合并等西方产能建设初期。纯 upstream 金属股的 AI beta 混杂商品周期性，需精挑。</p>
+<hr/>
+<h2 id="跨层系统-mapping">跨层系统 Mapping<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#跨层系统-mapping" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="power--电力">Power — 电力<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#power--电力" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>子领域</th><th>定位</th></tr></thead><tbody><tr><td>GE Vernova</td><td>GEV (私)</td><td>燃气轮机+电网</td><td>Hyperscaler >1/3 orders</td></tr><tr><td>Eaton</td><td>ETN (私)</td><td>配电/变压器</td><td>变压器短缺→定价权</td></tr><tr><td>Quanta Services</td><td>PWR (私)</td><td>电网建设</td><td>$39.2B backlog, 劳力护城河</td></tr><tr><td>Vertiv</td><td>VRT (私)</td><td>数据中心电力+冷却</td><td>$9.5B backlog, 液冷周期</td></tr><tr><td>TXN</td><td><a href="../../../wiki/companies/txn" class="internal" data-slug="wiki/companies/txn">txn</a></td><td>电源管理芯片</td><td>模拟芯片 AI 周期启动</td></tr><tr><td>Mersen</td><td><a href="../../../wiki/companies/mersen" class="internal" data-slug="wiki/companies/mersen">mersen</a></td><td>电力保护/分配</td><td>AI 数据中心电力设备</td></tr><tr><td>Arteche</td><td><a href="../../../wiki/companies/arteche" class="internal" data-slug="wiki/companies/arteche">arteche</a></td><td>变电站设备</td><td>电网设备</td></tr><tr><td>Kehua Data</td><td>002335.CN</td><td>UPS+液冷</td><td>中国 AI 数据中心</td></tr></tbody></table></div>
+<h3 id="thermal--热管理">Thermal — 热管理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#thermal--热管理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>技术</th><th>定位</th></tr></thead><tbody><tr><td>Vertiv</td><td>VRT (私)</td><td>液冷系统</td><td>NVIDIA 液冷供应商</td></tr><tr><td>Envicool (英维克)</td><td>002837.CN</td><td>冷板液冷</td><td>NVIDIA MGX+NVL72 推荐</td></tr><tr><td>Dongyangguang</td><td>600673.CN</td><td>冷板+IDC</td><td>秦淮数据收购, 月产 30 万片</td></tr><tr><td>Honeywell</td><td><a href="../../../wiki/companies/hon" class="internal" data-slug="wiki/companies/hon">hon</a></td><td>能效软件</td><td>Forge AI 优化平台</td></tr></tbody></table></div>
+<p><strong>关键趋势</strong>：2026 = AI 液冷大年。NVIDIA Rubin/GB300 100% 液冷，Google TPU v7 (980W TDP) 超出风冷极限。</p>
+<h3 id="security--安全">Security — 安全<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security--安全" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>定位</th><th>AI-Specific</th></tr></thead><tbody><tr><td>CrowdStrike</td><td><a href="../../../wiki/companies/crwd" class="internal" data-slug="wiki/companies/crwd">crwd</a></td><td>AI 原生安全</td><td>Falcon Data Security, Agentic MDR</td></tr><tr><td>Palo Alto</td><td><a href="../../../wiki/companies/panw" class="internal" data-slug="wiki/companies/panw">panw</a></td><td>平台安全</td><td>Prisma AIRS 3.0 + AI Agent Gateway</td></tr><tr><td>Zscaler</td><td>ZS (私)</td><td>Zero Trust</td><td>AI Protect $100M bookings</td></tr><tr><td>SentinelOne</td><td>S (私)</td><td>AI 端点</td><td>Purple AI 安全助手</td></tr></tbody></table></div>
+<p><strong>市场</strong>：AI 安全支出 2026 年 ~$51-60B（Gartner），agentic AI 安全 42% CAGR 至 2032。<strong>安全是 AI 采用的前提条件</strong>——Anthropic Mythos 零日漏洞催化企业安全审计需求。</p>
+<h3 id="edge-ai--边缘推理">Edge AI — 边缘推理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#edge-ai--边缘推理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>公司</th><th>代码</th><th>定位</th></tr></thead><tbody><tr><td>Qualcomm</td><td><a href="../../../wiki/companies/qcom" class="internal" data-slug="wiki/companies/qcom">qcom</a></td><td>2B+ NPU 部署, 端侧推理</td></tr><tr><td>Apple</td><td><a href="../../../wiki/companies/aapl" class="internal" data-slug="wiki/companies/aapl">aapl</a></td><td>3B/20B 端侧模型, WWDC 2026</td></tr><tr><td>NVIDIA</td><td><a href="../../../wiki/companies/nvda" class="internal" data-slug="wiki/companies/nvda">nvda</a></td><td>Jetson 边缘平台, Rubin CPX</td></tr><tr><td>Groq</td><td>被 NVIDIA 收购</td><td>LPU 推理架构→Rubin 路线</td></tr></tbody></table></div>
+<p><strong>趋势</strong>：推理占全部 AI 计算的 2/3（2026，Deliotte）。Qualcomm 论点：推理时代奖励分布而非集中。<strong>端侧推理将重构 SaaS 经济</strong>——云端推理税随着本地算力增强被侵蚀。</p>
+<hr/>
+<h2 id="跨层关联矩阵">跨层关联矩阵<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#跨层关联矩阵" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>层间 bottleneck 传导路径：</p>
+<pre><code>CoWoS (L11) 瓶颈缓解 → HBM (L6) 需求加速 → InP/EML (L8) 供给压力
+电力 (Power) 约束 → 数据中心选址限制 → 光学互联距离需求变化
+模型层 (L2) 成本下降 → 推理量暴增 → 推理芯片 (L3/L4) 需求 + 存储 (L6) 需求
+</code></pre>
+<p><strong>Key insight</strong>：当一个层 bottleneck 缓解时，资金通常流向<strong>下一个紧的层</strong>。CoWoS 扩产后 → HBM 成为瓶颈 → HBM 扩产中 → Interconnect/InP 将成为下一个。当前 cycle 位置：L6 (HBM) 正在缓解中，L8 (InP/EML) 正在收紧。</p>
+<hr/>
+<h2 id="框架局限性">框架局限性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#框架局限性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>当前仅 1 个 direct source</strong>——层映射来自 Ren 框架 + web research 补充，非单一权威来源</li>
+<li><strong>公司跨层</strong>——NVDA 横跨 L4+L5+L6，GOOGL 横跨 L2+L4+L5，单层映射过度简化</li>
+<li><strong>层间替代性未体现</strong>——电互联（铜缆）vs 光互联在某些场景可相互替代</li>
+<li><strong>Bottleneck 动态性</strong>——瓶颈随时间在不同层间移动，静态 snapshot 可能误导</li>
+<li><strong>未量化</strong>——没有每层的 TAM 或供给缺口数据，目前是定性组织工具</li>
+</ol>
+<hr/>
+<h2 id="后续填充计划">后续填充计划<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#后续填充计划" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>优先</th><th>待做</th><th>触发条件</th></tr></thead><tbody><tr><td>🔴</td><td>L8 InP/EML bottleneck 量化</td><td>光芯片供给数据 sources</td></tr><tr><td>🔴</td><td>L6 Memory cycle position 判断</td><td>DRAM pricing / utilization 数据</td></tr><tr><td>🟡</td><td>L5 Networking 架构战争更新</td><td>UALink vs NVLink vs SUE 进展</td></tr><tr><td>🟡</td><td>L10 AEHR/TRT 深度覆盖</td><td>Burn-in 经济学的 sources</td></tr><tr><td>🟡</td><td>L12 Critical Minerals 供应链</td><td>Ga/Ge/In 出口管制动态</td></tr><tr><td>🔵</td><td>跨层传导模型（bottleneck rotation）</td><td>多层数据积累后建模</td></tr></tbody></table></div>
+<hr/>
+<h2 id="sources">Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../../../sources/2026-06-08--ren--ai-buildout-twelve-floors" class="internal alias" data-slug="sources/2026-06-08--ren--ai-buildout-twelve-floors">2026-06-08—ren—ai-buildout-twelve-floors</a> — Framework origin (Ren, 2026-06-08)</li>
+<li>Web research: Application/Model/Framework/Networking/Substrate/Test/CriticalMinerals/Power/Thermal/Security/EdgeAI landscape (2026-06-10)</li>
+</ul>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Concepts: <a href="../../../wiki/concepts/everything-is-computer-framework" class="internal" data-slug="wiki/concepts/everything-is-computer-framework">everything-is-computer-framework</a> (complementary), <a href="../../../wiki/concepts/proof-layer" class="internal" data-slug="wiki/concepts/proof-layer">proof-layer</a></li>
+<li>Sectors: <a href="../../../wiki/sectors/ai-infrastructure-power" class="internal" data-slug="wiki/sectors/ai-infrastructure-power">ai-infrastructure-power</a>, <a href="../../../wiki/sectors/optical-interconnect-photonics" class="internal" data-slug="wiki/sectors/optical-interconnect-photonics">optical-interconnect-photonics</a>, <a href="../../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a>, <a href="../../../wiki/sectors/semiconductors-memory" class="internal" data-slug="wiki/sectors/semiconductors-memory">semiconductors-memory</a></li>
+<li>Frameworks: <a href="../../../wiki/analyses/frameworks/physical-ai-stack" class="internal" data-slug="wiki/analyses/frameworks/physical-ai-stack">physical-ai-stack</a> (similar layered approach, Physical AI domain), <a href="../../../wiki/analyses/frameworks/optics-proof-layer" class="internal" data-slug="wiki/analyses/frameworks/optics-proof-layer">optics-proof-layer</a>, <a href="../../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></li>
+<li>Trackers: <a href="../../../wiki/analyses/trackers/optical-supply-chain" class="internal" data-slug="wiki/analyses/trackers/optical-supply-chain">optical-supply-chain</a></li>
+<li>Theses: <a href="../../../wiki/theses/photonics-bottleneck-layers" class="internal" data-slug="wiki/theses/photonics-bottleneck-layers">photonics-bottleneck-layers</a></li>
+</ul>
+<h2 id="open-questions">Open Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>每层的 bottleneck 程度如何量化？TAM growth vs 供给增速可做 proxy，但需要跨 layer 一致的数据源。 </p></div>
+                  
+                </div>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>当一层 bottleneck 缓解后，资金流向下一层的传导时间是多少？CoWoS→HBM→Interconnect 的历史可做参考。 </p></div>
+                  
+                </div>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>L8 InP 紧缺（缺口 70%+）vs L6 HBM（正在缓解）——资金应流向 L8 公司还是等待 InP 产能缓解信号？ </p></div>
+                  
+                </div>
+<blockquote class="callout question" data-callout="question">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>跨层公司（NVDA, GOOGL, AVGO）在框架中被重复计入多层——应如何评估它们的&quot;层间套利&quot;价值？ </p></div>
+                  
+                </div>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#analysis-ai-buildout-12-layer-stack-framework" data-for="analysis-ai-buildout-12-layer-stack-framework">Analysis: AI Buildout 12-Layer Stack Framework</a></li><li class="depth-1"><a href="#完整堆栈" data-for="完整堆栈">完整堆栈</a></li><li class="depth-1"><a href="#层的经济学特征" data-for="层的经济学特征">层的经济学特征</a></li><li class="depth-1"><a href="#investability-评级" data-for="investability-评级">Investability 评级</a></li><li class="depth-1"><a href="#entry--exit-信号仪表盘" data-for="entry--exit-信号仪表盘">Entry / Exit 信号仪表盘</a></li><li class="depth-2"><a href="#跨层系统信号" data-for="跨层系统信号">跨层系统信号</a></li><li class="depth-2"><a href="#信号使用说明" data-for="信号使用说明">信号使用说明</a></li><li class="depth-1"><a href="#逐层公司-mapping" data-for="逐层公司-mapping">逐层公司 Mapping</a></li><li class="depth-2"><a href="#l1-application--ai-应用层" data-for="l1-application--ai-应用层">L1: Application — AI 应用层</a></li><li class="depth-2"><a href="#l2-model--基础模型层" data-for="l2-model--基础模型层">L2: Model — 基础模型层</a></li><li class="depth-2"><a href="#l3-framework--训练推理框架层" data-for="l3-framework--训练推理框架层">L3: Framework — 训练/推理框架层</a></li><li class="depth-2"><a href="#l4-compute--算力层" data-for="l4-compute--算力层">L4: Compute — 算力层</a></li><li class="depth-2"><a href="#l5-networking--网络互联层" data-for="l5-networking--网络互联层">L5: Networking — 网络互联层</a></li><li class="depth-2"><a href="#l6-memory--存储层" data-for="l6-memory--存储层">L6: Memory — 存储层</a></li><li class="depth-2"><a href="#l7-interconnect--光学互联层" data-for="l7-interconnect--光学互联层">L7: Interconnect — 光学互联层</a></li><li class="depth-2"><a href="#l8-substrate--衬底基板层" data-for="l8-substrate--衬底基板层">L8: Substrate — 衬底/基板层</a></li><li class="depth-2"><a href="#l9-equipment--半导体设备层" data-for="l9-equipment--半导体设备层">L9: Equipment — 半导体设备层</a></li><li class="depth-2"><a href="#l10-testreliability--老化测试可靠性层" data-for="l10-testreliability--老化测试可靠性层">L10: Test/Reliability — 老化测试/可靠性层</a></li><li class="depth-2"><a href="#l11-packaging--先进封装层" data-for="l11-packaging--先进封装层">L11: Packaging — 先进封装层</a></li><li class="depth-2"><a href="#l12-critical-minerals--关键原材料层" data-for="l12-critical-minerals--关键原材料层">L12: Critical Minerals — 关键原材料层</a></li><li class="depth-1"><a href="#跨层系统-mapping" data-for="跨层系统-mapping">跨层系统 Mapping</a></li><li class="depth-2"><a href="#power--电力" data-for="power--电力">Power — 电力</a></li><li class="depth-2"><a href="#thermal--热管理" data-for="thermal--热管理">Thermal — 热管理</a></li><li class="depth-2"><a href="#security--安全" data-for="security--安全">Security — 安全</a></li><li class="depth-2"><a href="#edge-ai--边缘推理" data-for="edge-ai--边缘推理">Edge AI — 边缘推理</a></li><li class="depth-1"><a href="#跨层关联矩阵" data-for="跨层关联矩阵">跨层关联矩阵</a></li><li class="depth-1"><a href="#框架局限性" data-for="框架局限性">框架局限性</a></li><li class="depth-1"><a href="#后续填充计划" data-for="后续填充计划">后续填充计划</a></li><li class="depth-1"><a href="#sources" data-for="sources">Sources</a></li><li class="depth-1"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#open-questions" data-for="open-questions">Open Questions</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript.js" type="module" data-persist="true"></script></html>

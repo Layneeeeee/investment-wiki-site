@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>artificial-intelligence</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="artificial-intelligence"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="artificial-intelligence"/><meta name="twitter:description" content="数据来源标记 本文件使用 section-level 来源标记，仅在需要验证的估算处保留 inline [EST] 标注。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + AI 的分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 关键跟踪指标 [KB] 核心跟踪指标，每次 ingest 后检查是否需更新。 指标说明当前信号来源推理成本/TokenAI 可及性和用例扩展编码..."/><meta property="og:description" content="数据来源标记 本文件使用 section-level 来源标记，仅在需要验证的估算处保留 inline [EST] 标注。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + AI 的分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 关键跟踪指标 [KB] 核心跟踪指标，每次 ingest 后检查是否需更新。 指标说明当前信号来源推理成本/TokenAI 可及性和用例扩展编码..."/><meta property="og:image:alt" content="数据来源标记 本文件使用 section-level 来源标记，仅在需要验证的估算处保留 inline [EST] 标注。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + AI 的分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 关键跟踪指标 [KB] 核心跟踪指标，每次 ingest 后检查是否需更新。 指标说明当前信号来源推理成本/TokenAI 可及性和用例扩展编码..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/artificial-intelligence"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/artificial-intelligence"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 本文件使用 section-level 来源标记，仅在需要验证的估算处保留 inline [EST] 标注。 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + AI 的分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 关键跟踪指标 [KB] 核心跟踪指标，每次 ingest 后检查是否需更新。 指标说明当前信号来源推理成本/TokenAI 可及性和用例扩展编码..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/artificial-intelligence-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/artificial-intelligence-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/artificial-intelligence-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/artificial-intelligence"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-385"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-385" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>artificial intelligence</a></div></nav><h1 class="article-title">artificial-intelligence</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-09T16:00:00.000Z">Jun 10, 2026</time><span>102 min read</span></p><ul class="tags"><li><a href="../../tags/ai" class="internal tag-link">ai</a></li><li><a href="../../tags/artificial-intelligence" class="internal tag-link">artificial-intelligence</a></li><li><a href="../../tags/ai-infrastructure" class="internal tag-link">ai-infrastructure</a></li><li><a href="../../tags/foundation-models" class="internal tag-link">foundation-models</a></li><li><a href="../../tags/ai-agents" class="internal tag-link">ai-agents</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本文件使用 <strong>section-level</strong> 来源标记，仅在需要验证的估算处保留 inline [EST] 标注。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + AI 的分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="关键跟踪指标-kb">关键跟踪指标 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关键跟踪指标-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>核心跟踪指标，每次 ingest 后检查是否需更新。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>推理成本/Token</td><td>AI 可及性和用例扩展</td><td>编码 -91%（8 个月），全行业 >99%（1 年）</td><td>ARK 2026</td></tr><tr><td>数据中心 CapEx</td><td>基础设施增速</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace nobreak"> </span></span></span></span>1.4T（2030E），29% CAGR</td><td>ARK 2026</td></tr><tr><td>OpenRouter Token 需求</td><td>开发者采用</td><td>Dec 2024→Dec 2025 增加 25x</td><td>ARK 2026</td></tr><tr><td>AI-Native ARR</td><td>收入验证</td><td>OpenAI <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mspace nobreak"> </span></span></span></span>9B→<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">30</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">in</span><span class="mord mathnormal">Q</span><span class="mord">12026</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">500</span></span></span></span>1B（2022）</td><td>ARK 2026; 硅谷坐标 2026; Krishna Rao <a href="../../2026-05-13--patrick-oshaughnessy--krishna-rao-anthropic-compute" class="internal alias" data-slug="2026-05-13--patrick-oshaughnessy--krishna-rao-anthropic-compute">2026-05-13—patrick-oshaughnessy—krishna-rao-anthropic-compute</a></td></tr><tr><td>Anthropic ARR增速</td><td>AI-Native 收入增速</td><td>~50%/month（2026年初）</td><td>硅谷坐标 2026</td></tr><tr><td>OpenAI/Gemini ARR增速</td><td>AI-Native 收入增速</td><td>~50%/quarter（体量增长后加速）</td><td>硅谷坐标 2026</td></tr><tr><td>Hyperscaler CAPEX/OCF ratio</td><td>投入强度</td><td>40%(2023)→65%(2025)→~90%(2026)</td><td>硅谷坐标 2026</td></tr><tr><td>中美模型差距</td><td>竞争动态</td><td>中国落后 ~6 个月，TSMC vs SMIC 38x</td><td>ARK 2026</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>用户手动维护的判断总结。数据支撑在正文对应 section 中可查。</p>
+</blockquote>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 行业正处于<strong>基础设施大规模建设期（导入期末→成长期初）</strong>，类比 1990s 互联网早期——算力成本断崖式下降驱动需求指数级扩张，但 Capex 回报兑现尚未验证，行业正在从”卖模型”向”卖代理”转型。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>推理成本暴跌是行业最核心的因果链</strong>：过去一年推理成本下降 >99%，OpenRouter token 需求增长 25 倍。成本弹性需求逻辑已验证。（详见 §3.3 技术驱动）</li>
+<li><strong>Capex 周期正处于”信仰驱动→回报验证”的拐点</strong>：Hyperscaler backlog $1.45T 但融资疲劳迹象已现。（详见 §3.2 经济驱动 + §5 风险）</li>
+<li><strong>模型层正在被蒸馏和开源商品化</strong>：蒸馏成本仅 ~$25M，开源模型快速缩小差距。（详见 §3.4 短期趋势）</li>
+<li><strong>AI Native 收入正在兑现，但盈利未验证</strong>：OpenAI ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mclose">)</span><span class="mord">/</span><span class="mspace nobreak"> </span></span></span></span>30B (Elad Gil est.) / ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">45</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord cjk_fallback">硅谷坐标</span><span class="mord mathnormal">es</span><span class="mord mathnormal">t</span><span class="mord">.</span><span class="mclose">)</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mspace nobreak"> </span></span></span></span>9B (Mar) → ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">45</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">850</span></span></span></span>1B。两家头部 AI 公司的合计 revenue 约占美国 GDP 的 0.5%。（详见 §6 市场规模）</li>
+<li><strong>90-95%+ 的 AI 公司将失败，卖盘窗口正在关闭</strong>：每个技术周期（汽车、互联网、SaaS、移动、加密）都是同样比例。创始人应在 12-18 个月内评估自己的”价值最大化窗口”——关注增长二阶导。存活公司的特征：模型进步→产品受益、深度嵌入工作流、专有数据。（详见 <a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>）</li>
+<li><strong>最大尾部风险：CapEx 周期反转</strong>——如果 AI 营收无法兑现，全产业链受损。（详见 §5 风险）</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li><strong>AI 基础设施供应链</strong>（芯片、电力、数据中心建设）——确定性强，CapEx 增长有实际需求支撑</li>
+<li><strong>企业级 AI 代理平台</strong>——从 Copilot 到 Agent 的升级周期，切换成本可能形成</li>
+<li><strong>AI 网络安防/模型审计</strong>——监管趋严的直接受益方，竞争者少</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li><strong>纯模型公司</strong>——定价权被蒸馏和开源压缩，盈利未验证</li>
+<li><strong>Consumer AI</strong>——变现路径不清晰，竞争激烈</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li><strong>缺乏 AI 战略的传统 SaaS</strong>——面临 AI-native 替代威胁</li>
+<li><strong>单一依赖 AI 概念的中小型上市公司</strong>——ASX 已警告炒作</li>
+</ul>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>本报告研究的 AI 行业涵盖：<strong>基础模型训练与推理、AI 数据中心基础设施、AI 代理平台、应用层工具与 AI-native 应用</strong>。不包含：传统机器学习（非 LLM/Transformer 架构）、纯硬件制造（芯片代工归入半导体行业）、AI 赋能的传统行业改造（如 AI+农业归入农业）。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>阶段</th><th>时期</th><th>标志性事件</th><th>特征</th></tr></thead><tbody><tr><td>萌芽期</td><td>~2017-2020</td><td>Transformer 架构 + GPT-3 (175B)</td><td>学术驱动，算力约束，无商业化产品</td></tr><tr><td>导入期</td><td>2022-2024</td><td>ChatGPT 发布（2022.11）→ 最快破亿用户</td><td>C 端爆发，模型军备竞赛（GPT-4/Claude 3），推理成本仍高</td></tr><tr><td><strong>当前：导入期末→成长期初</strong></td><td><strong>2025-2026</strong></td><td><strong>推理成本 >99% 下降 → 需求弹性爆发</strong></td><td><strong>CapEx 大规模建设，AI Native 企业收入起飞，代理协议标准化（MCP/ACP/A2A），白宫考虑监管</strong></td></tr><tr><td>成长期（预期）</td><td>2027-2030</td><td>AI 代理成为主流交互范式，Capex 回报验证或证伪</td><td>商业闭环验证，行业洗牌，赢家浮现</td></tr></tbody></table></div>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 行业按技术栈可以分为以下六层，每层有不同的经济特征和投资逻辑：</p>
+<ul>
+<li><strong>应用层（AI SaaS、Agent 平台）</strong>：最接近终端用户。市场高度分散（CR4 &lt; 20% [EST]）。代表：Cursor（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">）、</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal" style="margin-right:0.03588em;">ey</span><span class="mord cjk_fallback">（</span></span></span></span>100M）、Notion AI。</li>
+<li><strong>协议层（MCP/ACP/A2A）</strong>：新兴层，标准尚未统一。Anthropic 的 MCP、OpenAI+Stripe 的 ACP、Google 的 A2A 在竞争成为”AI 的 HTTP”。</li>
+<li><strong>模型层（基础模型 + 开源）</strong>：寡头结构。OpenAI GPT-5.5（60% AI Index，<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">11.30/</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">），</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">os</span><span class="mord cjk_fallback">私人测试中。蒸馏成本仅</span><span class="mspace nobreak"> </span></span></span></span>25M。</li>
+<li><strong>推理层（推理服务、缓存、部署）</strong>：正在 IaaS 化。Optimal batch size ≈ 300 × sparsity ratio（~2,000-3,000 for MoE）。</li>
+<li><strong>算力层（GPU/ASIC + 数据中心）</strong>：利润池最大。Nvidia 85% 市占，75% GM。Hyperscaler backlog $1.45T。</li>
+<li><strong>能源层（电力、冷却）</strong>：Token 用量 6B/min→15B/min。核电重启讨论，海洋/太空替代数据中心方案出现（Panthalassa 波浪能 $1B 估值）。</li>
+</ul>
+<hr/>
+<h2 id="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查pest--趋势合并">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查（PEST + 趋势合并）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查pest--趋势合并" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-政策与监管-policy--regulatory-13条">3.1 政策与监管 (Policy &amp; Regulatory) [13条]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-政策与监管-policy--regulatory-13条" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Trump AI 监管行政令——白宫内部安全派与商业派激烈内斗后紧急推迟</strong>：特朗普政府在签署 AI 监管行政令前数小时紧急推迟，因白宫内斗——财长贝森特等人因 Anthropic Mythos 模型暴露金融漏洞力推监管，风投家萨克斯等商业顾问警告 FDA 式审批将损害创新让中国得利，后者占上风。82% 选民支持安全测试但政策窗口暂时关闭。自願框架取代强制审查。（INSIGHT NEWS PRO 2026-05-22 早报）[KB]</li>
+<li><strong>欧盟科技主权加速——美国断供风险暴露</strong>：一名国际法官被美国制裁后遭服务断供，暴露欧盟4.5亿消费者对美科技/支付基础设施的高度脆弱。欧盟加速支付替代（银行方案拟2027覆盖13国跨境支付、数字欧元）、云与芯片本地化。Visa/Mastercard面临替代压力，欧洲云/AI基础设施商获政策支持。2023年欧盟贸易结构：商品顺差1566亿欧、服务逆差1086亿欧——服务依赖性弱点凸显。（INSIGHT NEWS PRO 2026-05-11 晚报）</li>
+<li><strong>白宫考虑 AI 模型政府安全审查</strong>：白宫内部讨论通过行政令建立 AI 审查工作组，Anthropic 的 Mythos 模型被发现数千个关键 OS/浏览器漏洞（27+ 年未被发现）是触发事件。这将减缓模型发布节奏，增加合规成本，并创造模型审计和网络安全服务的需求。（Insight News Pro 2026-05-05）</li>
+<li><strong>CAISI 模型审查扩展至全行业</strong>：Google、Microsoft、xAI 已同意在模型公开发布前向商务部 CAISI 提交早期版本供政府评估。CAISI 迄今完成 40+ 次评估，OpenAI 提交 GPT-5.5-Cyber 供测，Anthropic 自 9 月起提供红队与修补记录。AI 模型发布前政府审查正在走向制度化。（Insight News Pro 2026-05-06 早报+晚报）</li>
+<li><strong>美国 AI 监管分裂风险</strong>：xAI 起诉科罗拉多 AI 法，获 DOJ 支持；300+ 商业领袖抗议合规负担；自 2019 年约 98 家公司流失人才。科罗拉多”硅山”声誉正在逆转。（Insight News Pro 2026-05-04）</li>
+<li><strong>AI 安全法规加速推进</strong>：Mythos 披露可能触发英国金融机构强制安全审计；美国财政部召集华尔街 CEOs 讨论标准化 AI 模型测试。<strong>5月8日更新</strong>：IMF 正式警告 AI 驱动的网络攻击可能引发系统性金融冲击——Mythos 发现的”数千”高危漏洞显著缩短漏洞发现时间；有限向 40 家机构发布补丁工具加剧全球防护差距。白宫已要求 Anthropic 推迟 Mythos 扩展，万斯召集多位 AI CEO，考虑类似 FDA 的联邦 AI 模型审查流程，将覆盖 Mythos 和 GPT-5.5-Cyber。（Dwarkesh Patel 2026; INSIGHT NEWS PRO 2026-05-08 晚报）</li>
+<li><strong>AI 驱动的零日漏洞利用从理论走向现实</strong>：谷歌安全团队捕获首个已知的 AI 辅助零日漏洞利用，目标为系统管理工具；该漏洞可绕过 MFA；谷歌确认并非 Anthropic Mythos 或自家 Gemini 发现；政府紧急响应已启动。推动身份/访问管理和漏洞扫描需求。(INSIGHT NEWS PRO 2026-05-12 晚报) [KB]</li>
+<li><strong>指数规则为 AI 巨头 IPO 开绿灯</strong>：S&amp;P 提议上市等待期 12→6 个月 + 免去 GAAP 盈利要求（市值 ≥$100B）；Nasdaq “Fast Entry” 已生效（前 40 大 → 15 个交易日纳入指数）；FTSE Russell 提议 5 天等待。SpaceX IPO 为首个测试案例。（ARK 2026）</li>
+<li><strong>Anthropic Mythos 向 FSB 与全球金融监管作简报——AI 安全监管国际化</strong>：Anthropic 因其 Mythos 模型发现”数十年”老旧 OS/浏览器零日漏洞，主动向金融稳定理事会（FSB）和全球金融监管机构汇报。英国央行行长触发监管关注。渗透测试 SaaS、补丁管理与漏洞响应厂商受益。Anthropic 合规成本上升，商业化进程可能放缓。（INSIGHT NEWS PRO 2026-05-18 晚报）[KB]</li>
+<li><strong>美国拟设 5 亿美元基金补贴盟国采购美 AI/芯片</strong>：两党参议员立法在国务院设办公室，向盟国提供采购补贴以替代中国技术。同时中国”一带一路”2025 年投入 2130 亿美元。科技外交竞赛加剧。（INSIGHT NEWS PRO 2026-05-20 早报）[KB]</li>
+<li><strong>Trump AI 监管行政令——自愿框架要求提前 90 天提交模型</strong>：特朗普政府酝酿以自愿框架为核心的 AI 监管行政令，要求开发者在发布前 90 天提交模型并向关键基础设施方提前开放。此举回应 MAGA 民粹派对 Anthropic Mythos 等强模型安全性的担忧。虽非强制审批，但为联邦政府介入模型发布节奏设立了政策接口。（INSIGHT NEWS PRO 2026-05-21 早报）[KB]</li>
+<li><strong>欧洲央行要求银行将漏洞补丁部署压缩至 30 分钟内——Mythos 驱动监管升级</strong>：ECB 因 Anthropic Mythos 模型发现数千高危 OS/浏览器漏洞，将 111 家欧元区大行 IT 弱点列为紧急议题，要求补丁部署从数周缩至 30 分钟级。Mythos 目前仅少数美方机构可访问，欧银无法获取需借信息共享。银行网络安全 SaaS、补丁自动化工具、威胁情报服务商受益，传统核心银行系统供应商面临交付压力。（INSIGHT NEWS PRO 2026-05-25 早报）[KB]</li>
+<li>**中国发布 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.136em;"></span><span class="mord">2950</span><span class="mord cjk_fallback">亿（</span><span class="mord amsrm" style="margin-right:0.025em;">¥</span><span class="mord">2</span><span class="mord cjk_fallback">万亿）</span><span class="mord">5</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">算力基建计划</span><span class="mord">——</span><span class="mord cjk_fallback">要求</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">80</span></span></span></span>295B），要求 ≥80% 采用国产芯片/技术（华为等），由国有企业主导建设和运营。该计划实质性地排挤 NVDA/AMD 在华市场份额的同时，为中国 AI 芯片生态（华为昇腾、海光、寒武纪）提供大规模验证和部署场景。同步扩大 1260H 清单至 20+ 企业，形成”自主算力+限制外企”双轨政策架构。此前字节跳动已考虑 $700 亿 AI CapEx，中国 AI 算力军备竞赛进一步升级。（Bloomberg/Reuters <a href="../../sources/2026-06-09--insight-news--早报+晚报" class="internal alias" data-slug="sources/2026-06-09--insight-news--早报+晚报">2026-06-09—insight-news—早报+晚报</a>）</li>
+</ul>
+<h3 id="32-经济与市场-economic--market-32条">3.2 经济与市场 (Economic &amp; Market) [32条]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-经济与市场-economic--market-32条" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>数据中心 CapEx 确定性增长，但融资疲劳迹象显现</strong>：Hyperscaler 2026 年 CapEx 合计 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">630</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">（含</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord cjk_fallback">），将消耗运营现金流的近</span><span class="mord">90</span></span></span></span>38B 暴跌至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">1.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">——</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">PEX</span><span class="mord cjk_fallback">正在吃掉所有自由现金流。</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">a</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord cjk_fallback">总计</span></span></span></span>1.45T。管理层一致说 CapEx 追逐已签约需求。但 Oracle 相关 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">38</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">银团贷款花了</span><span class="mord">6</span><span class="mord cjk_fallback">个月才分配完毕，</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span></span></span></span>13B 数据中心几乎全部债务融资 + 额外 $25B 债券。全球银行正在通过 SRT、私募再销售和 CMBS/证券化将 AI 数据中心建设贷款集中风险转移至非银行市场。（ARK 2026; Insight News Pro 2026-05-04/05; 硅谷坐标 2026）</li>
+<li><strong>GPU 供给缺口持续扩大——长约/短约价格全面反转</strong>：GPU 租赁长约价格过去 12 个月每月降 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.05</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0.10</span><span class="mord cjk_fallback">，</span><span class="mord">2025</span><span class="mord cjk_fallback">年</span><span class="mord">12</span><span class="mord cjk_fallback">月出现反转；短约价格弹性极大，类似酒店定价在旺季暴涨。</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mord">200</span><span class="mord cjk_fallback">租赁</span></span></span></span>2.75→$4.08/hr（+48%）。存储合同 3-4 月集中续签长协叠加涨价，放大 Q1 CAPEX 压力。2025 年 7 月是大科技 vs 半导体板块的分水岭——市场开始计算 2026 年 CAPEX 后，大科技显著跑输半导体。（硅谷坐标 2026; Insight News Pro）</li>
+<li><strong>科技盈利能力对冲地缘政治风险</strong>：Morgan Stanley 指出本轮财报季——由科技、超大规模云和半导体驱动——已在抵消伊朗/霍尔木兹冲突的宏观拖累。S&amp;P 500 Q2 2026 盈利预期 +2%；Q1 beat rate 6% 中位数（4 年最强）。（Insight News Pro 2026-05-04）</li>
+<li><strong>Nvidia 向康宁投资 5 亿美元扩大光纤制造</strong>：推动康宁美国产能增 10 倍、光纤产能 +50% 以上。Meta 同时签下高达 60 亿美元购缆协议。光纤在数据中心互联供应链中的地位进一步巩固，铜缆替代压力上升。（Insight News Pro 2026-05-07 早报）</li>
+<li><strong>Scale AI 获 5 亿美元国防部合同</strong>：Meta 持股 49% 的 Scale AI 赢得多年期 DoD 合同，用于军事数据筛选与决策辅助。军方正将 AI 从试点推进到规模部署，机密云与国防 AI 数据治理厂商受益。（Insight News Pro 2026-05-07 早报）</li>
+<li>**<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">725</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">投资使超大规模云商</span><span class="mord mathnormal" style="margin-right:0.13889em;">FCF</span><span class="mord cjk_fallback">降至十年低点</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：四大云</span><span class="mord mathnormal">Q</span><span class="mord">3</span><span class="mord cjk_fallback">合计自由现金流约</span></span></span></span>40B，股东回报被压缩。亚马逊今年预计烧掉 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，计划到</span><span class="mord">2026</span><span class="mord cjk_fallback">年累计投资</span></span></span></span>2000B。微软称价格上涨使今年资本支出增加 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">250</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">。</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">ore</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">上调</span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal">p</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">至</span></span></span></span>31-35B，Q1 收入 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">20.8</span><span class="mord cjk_fallback">亿，积压</span></span></span></span>994 亿，但 Q2 指引低于预期。（FT; INSIGHT NEWS PRO 2026-05-08 晚报）</li>
+<li>**Nvidia 向 IREN 投资 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">21</span><span class="mord cjk_fallback">亿锁定算力部署通道</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：以股权</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">认股权证方式合作（</span><span class="mord">5</span><span class="mord cjk_fallback">年</span><span class="mord">3000</span><span class="mord cjk_fallback">万股</span></span></span></span>70），IREN 同步获取 $34 亿 AI 云合同。Nvidia 从纯芯片供应商向”资本+算力”生态整合者演进。（INSIGHT NEWS PRO 2026-05-08 早报）</li>
+<li><strong>TSMC 营收增速放缓</strong>：4 月同比 +17.5% 至 NT<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">4107</span><span class="mord cjk_fallback">亿，增速创数月新低，但</span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal">p</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">上限</span></span></span></span>560 亿表明继续押注先进制程。AI 巨头合计预留 $7250 亿但芯片需求具短期波动性，消费电子疲软与内存成本上升带来结构性压力。（INSIGHT NEWS PRO 2026-05-08 晚报）</li>
+<li><strong>Arm 自研 AI 处理器获超 20 亿美元订单</strong>：Arm 从 IP 授权商向数据中心芯片供应商转型，2027-28 年 AI 芯片预期销售 20 亿美元。CPU 需求预计增长 4 倍，x86 服务器份额面临被 Arm 蚕食风险。（Insight News Pro 2026-05-07 早报+晚报）</li>
+<li>**Anthropic 向 SpaceX 租赁 300+MW 算力——年化 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord cjk_fallback">租赁</span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">oss</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord cjk_fallback">（</span><span class="mspace nobreak"> </span><span class="mord">220</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord mathnormal" style="margin-right:0.13889em;">GP</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">）以提升</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">imi</span><span class="mord mathnormal">t</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">并满足激增需求。粗略推算</span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord cjk_fallback">年收入增加</span></span></span></span>5B+。SpaceX 在变现地面 xAI 基础设施同时，筹划轨道计算作为未来基础设施即服务。Anthropic 还表示了多 GW 轨道计算容量兴趣。竞争张力：SpaceX 向直接竞品（Anthropic vs xAI/Grok）出租；Colossus 2 训练可能因 300MW 减少而影响 xAI 自身模型。（ARK Disrupt 2026-05-11）</li>
+<li><strong>中国AI出口暴增——每小时5亿美元，芯片出口同比+100%</strong>：3590亿美元/月创出口纪录，AI相关商品拉动出口重心从劳动密集型向技术密集型转移。但美国技术限制和高端芯片瓶颈构成长期风险。中国AI供应商面临组件短缺——中际旭创一季度预付款增超10倍至15亿元，产能瓶颈2026年内难以完全缓解。传统工艺芯片代工厂和AI数据中心设备供应链受益。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</li>
+<li><strong>Nvidia $95.2B 采购承诺锁定供应链</strong>：Nvidia 以巨额长期采购承诺预购内存、光学与代工产能，较三月增长89%，约为预计自由现金流一半。短期强化上游议价能力并推高零部件价格，同时压缩中小芯片设计公司和AI初创获取产能的通道。行业呈现资源向巨头集中的态势。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</li>
+<li><strong>Anthropic 以 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">900</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">估值融资</span></span></span></span>30-50B，超越 OpenAI 成为全球估值最高 AI 公司</strong>：9个月从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">61.5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>183B → <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">380</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>900B+，ARR 从 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">9</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">年底）飙升至</span><span class="mspace nobreak"> </span></span></span></span>45B+（2026年5月）。<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">900</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">20</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">。对比</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace nobreak"> </span></span></span></span>852B / ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">30</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">28</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">。</span><span class="mord mathnormal">G</span><span class="mord mathnormal">oo</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">此前以</span></span></span></span>350B 估值投 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">10</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（可追加至</span></span></span></span>30B），Amazon 投 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（可追加</span></span></span></span>20B），本轮领投方为 Dragoneer/General Catalyst/Lightspeed。本轮被视为 IPO 前最后一轮（最早 2026年10月，GS/JPM/MS 承销）。（Bl-omberg/FT; INSIGHT NEWS PRO 2026-05-13 早报）[KB]</li>
+<li>**Pictet 多资产基金将 30% 现金（~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">10.5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">）投入</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">股票</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span></span></span></span>35 亿基金股票敞口升至 65%，持仓 SK 海力士（YTD +194%）、三星（+138%），基金年回报 43% 领先同类。同步削减黄金避险配置。反映机构在地缘风险缓和下的 AI 长期周期押注。（INSIGHT NEWS PRO 2026-05-11 晚报）</li>
+<li><strong>JP Morgan 策略主管 Peters：通胀风险潜伏在股市峰值之下</strong>：12% 资本支出增长（剔除 AI），超 $7000 亿美国巨头 2026 年资本支出——国家安全驱动的实体/供应链投资抬升通胀，资本流向从纯软件向实体/能源/供应链转移。建议黄金+短久期债券对冲，韩国/台湾等新兴市场受益。（INSIGHT NEWS PRO 2026-05-11 晚报）</li>
+<li>**Nvidia 16 个月投 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">90</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">生态</span><span class="mord">——</span><span class="mord cjk_fallback">向</span><span class="mord">145</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">家企业注资</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：以股权</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">认股权证投资价值约</span></span></span></span>90B（消耗约 40% 运营现金流），投资覆盖 OpenAI/Anthropic、CoreWeave、Coherent/Lumentum、Corning 等。NVLink/Nemotron 兼容性为投资附带条件，形成生态锁定效应。美/欧/英监管机构已展开正式调查。高盛/Wedbush/Mizuho 质疑”循环融资”——投资对象用 Nvidia 资金购买 Nvidia GPU，可能虚增营收。（INSIGHT NEWS PRO 2026-05-20 晚报）[KB]</li>
+<li><strong>华为宣称芯片架构突破——LogicFolding 技术或挑战台积电先进制程垄断</strong>：华为发布 LogicFolding 与配套尺度理论，称能在有限进口设备下走替代性先进制程路径，目标 2031 年量产 1.4nm 芯片，无需 ASML EUV 光刻机。中芯国际当日暴涨 18%。若能量产，将把与台积电制程差距从约 5 年缩至 2 年，重塑高端芯片竞争格局，提升中国自对准四重 patterning 设备与代工供应链的战略价值。良率与量产可行性尚未被外部验证。（INSIGHT NEWS PRO 2026-05-25 晚报）[KB]</li>
+<li><strong>顶级投资者 James Anderson：大型科技公司软件时代已结束，万亿美元 CAPEX 不可逆地流向硬件</strong>：AI 驱动的 CAPEX 浪潮正在重塑科技权力版图——谷歌、Meta、微软被迫将现金流输向英伟达、台积电和 ASML，终结 20 年低 CAPEX、高利润模式。费城半导体指数年内涨 57%；传统软件股承压。Anderson 认为 AI 芯片供应紧张与硬件定价权被市场低估，利润池正从软件平台不可逆地向硬件供应链转移。（INSIGHT NEWS PRO 2026-05-21 晚报）[KB]</li>
+<li><strong>Morgan Stanley：AI 掀起”全方位”并购浪潮</strong>：顶级科技交易银行家指出 AI 正推动覆盖所有规模和行业的并购潮——芯片、电力、网络、基础设施。谷歌/黑石 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">25</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">云</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>1.5B 收购 Empower 为最新案例。大公司凭借高估值和高利润持续发起大规模收购，英伟达收购 Mellanox 为战略转型样板。去年 AI 推动科技交易额达 $9,011 亿。（INSIGHT NEWS PRO 2026-05-21 早报）[KB]</li>
+<li><strong>AI 推动美国可转债发行激增</strong>：2026 年前 4 月可转债发行约 $340B（同比增超 100%），约 50% 与 AI 相关（数据中心、电力、云扩容）。低息可转债降低 AI 基础设施融资成本，但对传统公司债和直接股权融资形成替代压力。可转债承销与套利策略基金受益。（INSIGHT NEWS PRO 2026-05-20 晚报）[KB]</li>
+<li>**七大科技巨头 AI 资本支出融资加速——年内债券发行已达 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">134</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord">7</span><span class="mord cjk_fallback">年内债券发行</span></span></span></span>1340 亿，远超 2025 全年 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">875</span><span class="mord cjk_fallback">亿。</span><span class="mord mathnormal">A</span><span class="mord mathnormal">lp</span><span class="mord mathnormal">hab</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">发</span></span></span></span>200 亿 AI 专项债，含百年来科技公司首支百年债。标普 500 资本支出 2026 年预计增长 33%，回购仅增 3%——股东回报正让位于 AI 再投资。资本分配天平向基础设施倾斜。（INSIGHT NEWS PRO 2026-05-22 晚报）[KB]</li>
+<li>**Anthropic <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">算力承诺</span><span class="mord">——3</span><span class="mord cjk_fallback">芯片平台可互换性作为核心战略</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.02778em;">CFO</span><span class="mord mathnormal" style="margin-right:0.02778em;">Kr</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">hna</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">a</span><span class="mord mathnormal">o</span><span class="mord cjk_fallback">披露同月签署</span><span class="mord">5</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal">G</span><span class="mord mathnormal">oo</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord cjk_fallback">（</span><span class="mord">2027</span><span class="mord cjk_fallback">年起）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal">A</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">zo</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">aini</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord cjk_fallback">协议，总</span><span class="mord mathnormal">co</span><span class="mord mathnormal">mmi</span><span class="mord mathnormal">t</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">超</span></span></span></span>100B。公司投入多年自建编排层和编译器，实现 AWS Trainium / Google TPU / Nvidia GPU 三种芯片的可互换使用——同一芯片上午跑推理、下午跑模型开发。这是唯一一个实现三平台 fungibility 的语言实验室，被 CFO 称为”前沿实验室中最高效的算力使用者”。这种灵活性源于与 Annapurna Labs 的深度合作（影响芯片路线图）和自建编译器栈。(<a href="../../2026-05-13--patrick-oshaughnessy--krishna-rao-anthropic-compute" class="internal alias" data-slug="2026-05-13--patrick-oshaughnessy--krishna-rao-anthropic-compute">2026-05-13—patrick-oshaughnessy—krishna-rao-anthropic-compute</a>) [KB]</li>
+<li><strong>AI 数据中心借贷成华尔街风险焦点</strong>：34% 受访者认为 AI 超大规模支出将成系统性信贷源（较 4 月翻倍）。科技公司自去年借款超 $3000B 用于 AI 建设。银行通过 SRT、CMBS 等工具将集中贷款风险转移至非银行市场。（INSIGHT NEWS PRO 2026-05-20 晚报）[KB]</li>
+<li><strong>AI 正在复兴初级岗位而非取代</strong>：1500 雇主调研显示使用 AI 的企业 2026 年增聘初级岗位为减员的 3 倍。超 40% 受访者称 AI 接管重复性工作后初级岗转向更复杂分析职能。大都会人寿初级招聘增近 30%。利好校园招聘 SaaS、AI 技能培训、企业 AI Agent 供应商。（INSIGHT NEWS PRO 2026-05-20 早报）[KB]</li>
+<li><strong>Token spend ROI 审视倒计时</strong>：企业目前有无限的 AI Token 预算，但 ROI 对话预计在 6-12 个月内到来。Token spend 作为虚荣指标是危险的——类比代码行数。（Schoening 2026）</li>
+<li><strong>算力供应紧张 + 涨价</strong>：Nvidia H200 租赁 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.75</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>4.08/hr（+48%，2 个月内）。云厂商实施高峰限流。Token 用量 6B/min→15B/min。（Insight News Pro）</li>
+<li><strong>AI 可靠性未达到企业标准</strong>：Claude 98.95% 可用性低于 99.99% 企业 SLA，已导致客户流失。（Insight News Pro 2026-04-13）</li>
+<li><strong>“AI 是好共识”——Elad Gil 的市场时机判断</strong>：当前 AI 投资周期中，做共识（而非逆向）可能是正确选择。“有些时刻做逆向很聪明，有些时刻做共识最聪明。我认为我们现在正处在做共识非常正确的时刻。“（<a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>）</li>
+<li><strong>HBM 算力约束是行业结构性平衡器</strong>：所有 AI lab（OpenAI、Anthropic、Google、xAI）在 HBM 内存供应上同样受限，这一约束预计持续 ~2 年。意味着短期内没有任何一家 lab 能大幅领先——算力天花板成为竞争格局的平衡器。从前端瓶颈（CoWoS 封装）已转移至内存，下一瓶颈将是电力/数据中心。（<a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>；交叉参考 <a href="../../wiki/sectors/semiconductors-memory" class="internal" data-slug="wiki/sectors/semiconductors-memory">semiconductors-memory</a>）</li>
+<li><strong>GPU Second Life 框架——Neocloud 估值模型的结构性盲区</strong>：Jamin Ball 指出推理芯片保留 5 年以上可用性意味着 neoclouds 拥有免费的重签约期权——在芯片成本已折旧后以更高利润率重新签约推理需求。当前 EV/GW 估值模型完全忽略了这个期权价值。CoreWeave 等已上市 neoclouds 的市场定价与理论价值之间存在潜在错位。若此框架成立，每过一个折旧周期，期权价值自动增加，重估催化剂是”时间”而非”新消息”。参见 <a href="../../sources/2026-05-29--jamin-ball--gpu-second-life" class="internal alias" data-slug="sources/2026-05-29--jamin-ball--gpu-second-life">2026-05-29—jamin-ball—gpu-second-life</a>。</li>
+<li>**字节跳动考虑 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">700</span><span class="mord cjk_fallback">亿</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">资本支出</span><span class="mord">——</span><span class="mord cjk_fallback">中国</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">基础设施军备竞赛升级</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：字节跳动内部讨论</span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.05764em;">pE</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">提高至</span></span></span></span>700 亿（去年约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">250</span><span class="mord cjk_fallback">亿），主要用于建设数据中心和</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">基础设施。将由</span><span class="mord">2025</span><span class="mord cjk_fallback">年约</span></span></span></span>500 亿利润支撑。若条件允许，2027 年可能提至 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">1000</span><span class="mord cjk_fallback">亿。对比：腾讯</span><span class="mord">2025</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.05764em;">pE</span><span class="mord mathnormal">x</span><span class="mord amsrm" style="margin-right:0.025em;">¥</span><span class="mord">792</span><span class="mord cjk_fallback">亿（</span><span class="mspace nobreak"> </span></span></span></span>117 亿），阿里 ¥1260 亿（~$186 亿）。字节的支出将标志着中国互联网巨头在 AI 基础设施投入上的重大升级，直接追赶美国 hyperscaler 水平。已与高通达成数百万颗 AI ASIC 采购协议。（INSIGHT NEWS PRO 2026-05-27 晚报）[KB]</li>
+<li><strong>Token Panic：从 tokenmaxxing 到 tokenpanic 的叙事翻转</strong>：企业 AI 部署突然面临成本压力——Uber 4 个月内烧完全年 AI 预算，Sam Altman 确认成本成为”巨大问题”，Microsoft AI 负责人称 “Anthropic is extremely expensive”。Anthropic ARR 达 $45B（年初至今 5x），但价格敏感度急剧上升。OpenAI、Google、Microsoft 在 4-6 月统一转向按使用量计费。Citrini 认为”Free-AI is ending. Tokenomics is beginning.”——企业将分层使用模型，日常任务转向开源/小型模型，前沿模型仅用于高价值场景。这是一个从”所有 AI 支出都是好支出”到”每一美元 token 都要证明 ROI”的转变，可能影响推理基础设施的部署结构。（<a href="../../sources/2026-06-08--citrini--state-of-the-themes-june-2026" class="internal alias" data-slug="sources/2026-06-08--citrini--state-of-the-themes-june-2026">2026-06-08—citrini—state-of-the-themes-june-2026</a>）</li>
+<li><strong>“矽升碳降”——AI 驱动的人类历史上最大财富转移</strong>：Rick (@rickawsb) 框架——财富正从碳基资产（传统经济、零售、地产）不可逆地向硅基资产（半导体、AI 基础设施）转移。AI 需求像”黑洞”一样从核心芯片向外辐射，吸收一切物理世界的材料（从 MLCC 到铜、钢，甚至建筑用沙）。Herman Jin 的”应缺尽缺”扩展至广义半导体含能源和基础材料。实践含义：SMH（半导体 ETF）正成为新时代的 QQQ，传统指数（SPY/QQQ）包含过多”碳基资产”。（<a href="../../sources/2026-05-14--168x--rick-awsb-ai-acceleration" class="internal alias" data-slug="sources/2026-05-14--168x--rick-awsb-ai-acceleration">2026-05-14—168x—rick-awsb-ai-acceleration</a>）[KB]</li>
+<li><strong>AI 三大辯論（Three Great Debates）——從 NVDA 走勢看趨勢→算力→賺錢的信仰轉變</strong>：Frank (@qinbafrank) 框架將 NVDA 股價走勢劃分為三個階段，每個階段對應一個市場核心疑問及其被證據解答的過程：(1) <strong>2022-2023「是不是趨勢」</strong>—ChatGPT 引爆預期但無企業採購，GPU 股高位震盪 6 個月。(2) <strong>2024-2025Q1「需不需要這麼多算力」</strong>—DeepSeek 低成本訓練恐慌 (2025.1)，Sam Altman <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">7</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">數據中心願景從被嘲笑到被接受。</span><span class="mopen">(</span><span class="mord">3</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord">2025</span><span class="mord mathnormal">Q</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">2026</span><span class="mord mathnormal">Q</span><span class="mord">2</span><span class="mord cjk_fallback">「投入巨額資本支出到底能不能賺錢」</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord">—2026</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal">Q</span><span class="mord">1</span><span class="mord cjk_fallback">雲廠商業績爆發</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">從</span><span class="mspace nobreak"> </span></span></span></span>30B(3月)→$45B(5月)，質疑→驗證轉折。Frank 判斷 AI 商業化剛走過貨幣化轉折點、行至半程，目前大的層面還在上升中段。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+<li><strong>AI 滲透率紅利——10% 拐點正在加速擴大</strong>：Frank 引用高盛數據，美國企業 AI 採購滲透率從 2025Q3 的<del>9.7% 升至 2026Q1/Q2 的</del>18%。科技產業規律：滲透率過 10% 即為拐點——證明技術有用，之後蔓延速度極快。18% 距離 40-50% 的減速區還有較大空間。更多用戶 → 更多付費用戶 → ARPU 上升（Free→Pro→Max），這是本輪 AI 牛市的底層驅動力。與 2000 年網路泡沫的核心區別：(1) 當前全球 40-50 億支智慧型手機作為基礎設施；(2) AI 變現模式（訂閱+consumption）比 2000 年網路成熟得多。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+</ul>
+<h3 id="33-技术与创新-technology--innovation-19条">3.3 技术与创新 (Technology &amp; Innovation) [19条]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-技术与创新-technology--innovation-19条" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>推理成本崩溃是行业最底层驱动力</strong>：过去一年推理成本下降 >99%。OpenRouter Token 需求 25x（Dec 2024→Dec 2025）。软件推理成本 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.50</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>0.32/M tokens（-91%，8 个月）。（ARK 2026）</li>
+<li><strong>Rack-scale 推理经济学成为新竞争维度</strong>：SemiAnalysis InferenceX 基准测试显示 GB300 NVL72 在 DeepSeek V4 推理上达到 $0.156/百万 token（50 tok/s/user），比 B200 便宜 >10x——72-GPU NVLink domain 使 Wide Expert Parallelism 将 MoE 通信保持在 NVLink 上而非 InfiniBand 溢出。CUDA + 华为 CANN 是唯二实现 DeepSeek V4 Day 0 推理支持的平台；AMD MI355X Day 0 仅 1-2 tok/s/user（26 天内提升 100x 后超越 H200）（<a href="../../sources/2026-02-05--semianalysis--deepseekv4-inference-performance" class="internal alias" data-slug="sources/2026-02-05--semianalysis--deepseekv4-inference-performance">2026-02-05—semianalysis—deepseekv4-inference-performance</a>）</li>
+<li><strong>Token 需求 Jevons 悖论持续验证</strong>：Google I/O 2026 披露每月处理 <strong>3.2  quadrillion tokens（7x YoY）</strong>。Silicon Data 指数显示 token 支出自 Dec 2025 翻倍，增速约为 GPU 租赁价格的 2 倍——“token 支出复合增长速度约 2x 快于 GPU 租金”。（a16z Moses 2026 per <a href="../../2026-05-22--a16z-moses--charts-of-the-week-sohn" class="internal alias" data-slug="2026-05-22--a16z-moses--charts-of-the-week-sohn">2026-05-22—a16z-moses—charts-of-the-week-sohn</a>）</li>
+<li><strong>模型训练规模面临新挑战</strong>：Scaling 在每个量级都遇到新的失败模式——“因果断裂”（据传是 LLaMA 4 表现不佳的原因）和”添加偏差”（据传影响了 GPT-4 早期训练）。失败集可能不是有限的——新模式在每个规模水平出现。（Dwarkesh Patel 2026）</li>
+<li><strong>Scaling laws 获 Gemini 3 确认——但仍属经验观察而非物理定律</strong>：Gemini 3 确认预训练 scaling laws 继续成立，这是 Hopper 推出以来首个严格测试。Gavin Baker 将之比喻为”古埃及人对太阳的精确测量——他们可以完美对齐金字塔的东西轴，但不知道轨道力学”。推理模型在 Blackwell 延迟的 18 个月缺口期内提供了全套 AI 进步——ARC AGI 从 0-8%（4 年）→ 95%（3 个月）。三条 scaling laws（预训练 + RLVR + test-time compute）已形成乘法叠加关系。(<a href="../../2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai" class="internal alias" data-slug="2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai">2025-12-09—patrick-oshaughnessy—gavin-baker-gpus-tpus-economics-of-ai</a>) [KB]</li>
+<li><strong>上下文记忆墙——Agent 扩展至长任务的结构性约束</strong>：KV Cache 随上下文线性增长，计算是平坦的。交叉点在 ~200K tokens。密集注意力没有解决百万 token 的路径。上下文长度在 100-200K 停滞了 1-2 年。（Pope 2026, MatX）</li>
+<li><strong>单 Agent 架构优于多 Agent（控制计算预算时）</strong>：控制 token 预算时单 Agent 匹配或超越多 Agent。多 Agent 协调在工具密集型任务上造成 2-6x 效率损失，错误放大 17.2x。集中式编排器模式（矛盾 -36.4%，遗漏 -66.8%）可能是企业部署模型。（AlphaSignal 2026）</li>
+<li><strong>物理世界 AI 五个原语同步成熟</strong>：学习物理学、具身行动、仿真、感知流形、闭环 Agent。前沿领域：机器人（VLAs/WAMs）、自主科学（自驱动实验室）、新接口（BCI、AR、无声语音）。（a16z Hsu 2026）</li>
+<li><strong>自研 ASIC 正成为云厂商核心竞争壁垒</strong>：四家 hyperscaler 同步推进自研 AI 芯片（AWS Trainium、Google TPU v7、Microsoft Maia 200、Meta MTIA）。Google TPU 最为领先——同等 Flops 训练成本仅为 GPU 的 20-30%，三种 SOTA 模型中的两种（Gemini 3, Mysos）已在 TPU 上训练，仅 OpenAI 5.5 基于 GPU。</li>
+<li><strong>Google 的”低生产成本商”策略——正在被 Blackwell/Rubén 打破</strong>：Gavin Baker 指出 Google 长期作为 token 最低成本生产商，通过负 30% 利润率运行 AI 来”吸走 AI 生态系统中的经济氧气”，限制竞争对手的筹融资空间。Blackwell（的复杂产品过渡：风冷→液冷、1000lb→3000lb 机架、30kw→130kw）完成后，GB300 与 GB200 机架完全兼容，将使 Nvidia GPU 用户成为新的最低成本生产商。Google 因此面临战略抉择——要么接受更高的推理成本，要么加速自研芯片以摆脱 Broadcom 的 50-55% 后端毛利率（2027 年 TPU 规模下约 $15B 支付给 Broadcom）。已引入 MediaTek 作为 Broadcom 的制衡信号。(<a href="../../2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai" class="internal alias" data-slug="2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai">2025-12-09—patrick-oshaughnessy—gavin-baker-gpus-tpus-economics-of-ai</a>) [KB]AWS Trainium 在 2026 Q1 从打折促销变为供不应求，Jassy 称 Trainium 每年为亚马逊节省数百亿美元 CAPEX + 数百基点运营利润率提升。ASIC 软件适配仍是最大障碍——CUDA 生态强大，目前仅 TPU 通过与 DeepMind 紧密协作跑通适配。(<a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a>)</li>
+<li><strong>自我改进 Agent 出现：Agent 从基础设施消费者变为生产者</strong>：Sakana AI 的 Darwin-Gödel Machine (DGM) 将 Agent 改进视为开放式进化搜索——LLM 向自身 Python 代码库提出改进建议，SWE-bench 从 20%→50%。Meta 的 Hyperagents (DGM-H) 将任务 Agent 和元 Agent 合并为单一可编辑程序，自主进化出持久记忆和多阶段评估流水线——论文评审 0.0→0.710，机器人奖励函数 0.060→0.372（超越人类基线 0.348）。风险：reward hacking、局部最优陷阱、算力无限消耗。(<a href="../../2026-05-10--alpha-signal--self-improving-agents" class="internal alias" data-slug="2026-05-10--alpha-signal--self-improving-agents">2026-05-10—alpha-signal—self-improving-agents</a>) [KB]</li>
+<li><strong>World Models 赛道升温——五条技术路线并行竞争</strong>：2025-2026 年世界模型快速成为 AI 前沿焦点。至少五条不同路线在竞争：(1) <strong>纯视频预测</strong>（Google Genie 3、OpenAI Sora）— 视觉惊艳但不可交互、60s 限制、无物理；(2) <strong>3D 世界生成</strong>（World Labs Marble）— 空间一致性但不可交互；(3) <strong>物理仿真视频</strong>（NVIDIA Cosmos）— 硬件生态驱动；(4) <strong>JEPA 联合嵌入预测</strong>（Meta/LeCun AMI，$1B）— 尚未验证；(5) <strong>符号推理+扩散渲染</strong>（Moonlake AI）— 可交互、因果一致、多人、不限时长。核心分歧：世界模型需要 action-conditioned interactivity（能预测 actions 后果），还是仅需视觉一致性？Moonlake 的 Chris Manning 直接反对 LeCun 的纯视觉世界观，认为语言/符号是”认知工具”而非低比特率通信。这场路线之争将决定下一波 AI 能力边界。(<a href="../../02-Work/Investment/_investment-wiki/sources/2026-04-02--latent-space--moonlake-world-models" class="internal alias" data-slug="02-Work/Investment/_investment-wiki/sources/2026-04-02--latent-space--moonlake-world-models">2026-04-02—latent-space—moonlake-world-models</a>) [KB]</li>
+<li><strong>递归架构复兴——Latent-Space 推理作为参数扩展的替代路径</strong>：研究人员正在重新审视被 LLM 取代的递归架构（HRM、TRM），用 latent-space reasoning 替代 token-space CoT。HRM（Hierarchical Reasoning Model）使用高/低双层循环模块——27M 参数在 ARC-AGI 上以仅 1000 训练样本达到 SOTA，推理速度比 token 生成模型快 <strong>100x</strong>。Samsung 的 TRM（Tiny Recursive Model）进一步简化——<strong>5M 参数</strong>在 Sudoku-Extreme 上达到 87.4%（DeepSeek-R1: 0.0%），ARC-AGI-1 45%。RecursiveMAS 将递归原则引入多 Agent 编排——agent 间传递 latent representation 而非文本 token，实现 <strong>2.4x 加速、75.6% token 节省、8.3% 准确率提升</strong>。核心 trade-off：递归模型是专用推理引擎，缺乏语义世界知识——预示着”双模 AI”未来（大 LLM 处理语言/创意 + 小递归引擎处理确定性推理）。最适合领域：具身 AI/机器人（延迟敏感）、科学探索（数据稀缺）。(<a href="../../2026-05-18--alpha-signal--recursive-architectures" class="internal alias" data-slug="2026-05-18--alpha-signal--recursive-architectures">2026-05-18—alpha-signal—recursive-architectures</a>) [KB]</li>
+<li><strong>中国 AI 视频生成竞赛领先——字节跳动向企业客户索约 $200 万预付</strong>：中国短视频平台凭借海量原生视频素材与灵活内容策略在视频生成赛道上领先。零售商需求高达 10 万个视频，电商广告的规模化视频需求推动 AI 视频 SaaS 化。3 月 OpenAI 部分停用 Sora，高算力成本凸显视频生成商业化瓶颈。（INSIGHT NEWS PRO 2026-05-18 早报）[KB]</li>
+<li><strong>Decart 多芯片编排——降低 GPU 切换成本，英伟达参投</strong>：Decart 完成 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">3</span><span class="mord cjk_fallback">亿融资（估值</span><span class="mspace nobreak"> </span></span></span></span>40 亿），英伟达为战略投资者。Decart Optimization Stack (DOS) 可在主流 AI 芯片间迁移，已在亚马逊 Twitch 和零售业务线落地。若 DOS 规模化采用，将削弱英伟达的 GPU 锁定效应，促使芯片厂商竞争转向软件生态。（INSIGHT NEWS PRO 2026-05-19 早报）[KB]</li>
+<li><strong>阿里巴巴发布真武 M890 AI 芯片</strong>：144GB HBM、性能升 3 倍，累计出货 56 万片。国内 AI 芯片市场第二（仅次于华为昇腾）。同时公布路线图：V900（2027Q3，216GB）→ J900（2028Q3）。中国 AI 芯片自研加速追赶。（INSIGHT NEWS PRO 2026-05-20 晚报）[KB]</li>
+<li><strong>Google I/O：搜索 AI 代理化、智能眼镜重启、Spark 个人助理</strong>：Gemini 3.5 月活 9 亿，搜索从”10 条蓝链”向 AI 代理界面迁移。Antigravity 代理平台（源自 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">收购）开发者订阅</span></span></span></span>100/月。智能眼镜与三星/Warby Parker 合作重启硬件入口。2026 年承诺 $1900 亿 AI/云资本支出。（INSIGHT NEWS PRO 2026-05-20 早报+晚报）[KB]</li>
+<li>**联想 AI 服务器订单管道达 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">210</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：联想</span><span class="mord mathnormal">Q</span><span class="mord">4</span><span class="mord cjk_fallback">营收</span></span></span></span>21.6B（+27%），净利 $5.21 亿（+479%），基础设施业务收入 +37%。AI 相关收入占比 38%（+84% YoY）。PC 市占率升至 26%（5 年高点）。联想从 PC 龙头向 AI 推理算力核心玩家延伸。（INSIGHT NEWS PRO 2026-05-22 晚报）[KB]</li>
+<li><strong>AI 自主数学突破——通用 reasoning model 产出可发表证明</strong>：OpenAI 未发布推理模型自主否定了 Erdős 单位距离猜想（1946 提出，悬赏求解）。Fields 奖得主 Sir Timothy Gowers 评价：“若人类撰写并投稿至 Annals of Mathematics，我会毫无犹豫推荐接受——此前无任何 AI 生成的证明接近此水准。“与 Google AlphaProof（专用于数学证明）不同，此成果来自通用 reasoning model，无直接商业应用，但标志 AI 加速科学发现的能力拐点。(<a href="../../2026-05-27--ark--disrupt-weekly-spv-longevity-spacex" class="internal alias" data-slug="2026-05-27--ark--disrupt-weekly-spv-longevity-spacex">2026-05-27—ark—disrupt-weekly-spv-longevity-spacex</a>) [KB]</li>
+<li><strong>US 开源模型生态缺口——蒸馏追赶策略面临结构性障碍</strong>：Jamin Ball（Altimeter Capital）指出美国在芯片和 AI 应用层领先，但开源模型层被中资实验室（DeepSeek/Qwen/Kimi）主导。核心矛盾：开源基础设施软件（MongoDB/Databricks/Confluent）的”成为默认→变现”剧本在 AI 模型层失效——投资者无法看清开源模型的货币化路径。更关键的是<strong>蒸馏正变困难</strong>——前沿模型复杂化（多 Agent 编排、工具调用、产品嵌入）后，“逐个提问”式蒸馏无法复现 Agentic 推理链；预训练成本（无蒸馏头寸）仍然高企。Ball 认为开源 vs 前沿的差距可能在<strong>扩大而非缩小</strong>，与市场”开源收敛”共识形成对立。80/20 分层（~80% 用例不需要前沿模型）创造了开源模型的需求空间，但这取决于差距不会扩大到”不够好”。(<a href="../../sources/2026-06-05--jamin-ball--us-open-source-ai-models" class="internal alias" data-slug="sources/2026-06-05--jamin-ball--us-open-source-ai-models">2026-06-05—jamin-ball—us-open-source-ai-models</a>) [KB]</li>
+<li><strong>苹果 WWDC 2026：官宣与 Google Gemini 合作 + Siri AI 升级</strong>：Apple 正式承认无法在基础模型能力上追赶第一梯队，选择与 Google Gemini 合作共建 5 个 Foundation Models。端侧模型分两档（3B 全设备 / 20B MoE 需 M4+/12GB+），Siri AI 升级为对话式助手（独立 App + 跨平台同步 + 屏幕感知 + App Actions），但缺乏真正的 Agent 自主规划和多步执行能力。国区/欧盟不可用，中国 AI 合作伙伴未定。信号意义：(1) Apple 的战略选择强化 Google 在 AI 基础层的地位；(2) 端侧 AI 成为硬件升级驱动力（利好 AAPL）但体验碎片化；(3) 隐私约束可能结构性地限制 Apple 实现真正的 Agentic AI。(<a href="../../sources/2026-06-09--kaze--wwdc26-summary" class="internal alias" data-slug="sources/2026-06-09--kaze--wwdc26-summary">2026-06-09—kaze—wwdc26-summary</a>) [KB]</li>
+</ul>
+<h3 id="34-短期趋势1-2-年2026-202747条">3.4 短期趋势（1-2 年，2026-2027）[47条]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势1-2-年2026-202747条" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>Agent 化迁移</strong>：从 Chatbot 到 Agent 的范式转换。MCP/ACP/A2A 等协议在竞争成为”AI 的 HTTP”——赢家将捕获协议层价值。Codex 是 Agentic 编程的杀手级应用（20 倍增长）。</p>
+</li>
+<li>
+<p><strong>推理成本继续下降</strong>：ASIC 推理专用芯片出货（Google TPU v7, AWS Helios, MatX）。大批量推理成本 asymptotic 到纯计算成本。</p>
+</li>
+<li>
+<p><strong>AI-Native SaaS 冲击传统 SaaS</strong>：Cursor $1B ARR（3 年）→ SaaS 末日论辩论。Notion’s Schoening：“软件构建成本归零意味着更多软件，而非不同软件。”</p>
+</li>
+<li>
+<p><strong>企业 AI 预算 ROI 审视</strong>：Token 用量作为虚荣指标的年代结束。将创造 AI 基础设施支出的逆风。</p>
+</li>
+<li>
+<p><strong>AI 内部工具建设成本崩溃</strong>：Stripe 的 Protodash——1 人设计经理，~18 个月，Claude Code。PM 使用人数超过设计师。自测试 AI 截图自身输出并迭代。（Stripe Protodash 2026）</p>
+</li>
+<li>
+<p><strong>AI 变现的 3-Pillar 框架</strong>：传统 SaaS freemium 在 AI 时代失效（免费用户 GPU 成本非零）。Google AI 订阅产品负责人 Vikas Kansal 提出三支柱：① 闸门使用强度（按用量/速度/上下文窗口定价，而非模型智商）② 闸门成果（按”节省工时”定价，Intercom Fin $0.99/次解决）③ 闸门重计算模态（视频/3D/实时仿真放最高 tier）。(Kansal 2026 per <a href="../../2026-05-06--vikas-kansal--ai-freemium-monetization" class="internal alias" data-slug="2026-05-06--vikas-kansal--ai-freemium-monetization">2026-05-06—vikas-kansal—ai-freemium-monetization</a>) [KB]</p>
+</li>
+<li>
+<p><strong>AI 驱动的企业重组加速</strong>：Gartner 显示约 80% 采用 AI 的公司正在裁员。Meta 裁员 8,000 人（~10%），Coinbase 减员 14%，PayPal 计划 2-3 年内裁 20%。AI 正迫使 CEO 在裁员与重培训之间做出取舍，压缩对传统招聘和可替代岗位的需求，同时推动算力和云计算投入。（Insight News Pro 2026-05-06 晚报）</p>
+</li>
+<li>
+<p><strong>Cloudflare 裁员 1100 人（~20%），AI 用量 +600%</strong>：Cloudflare 宣布 AI 优先重组，过去 3 个月内部 AI 使用量增长 600%，上调全年指引。裁员一次性费用 $1.4-1.5 亿。反映企业 AI 工作流自动化正在加速取代传统人力结构。（INSIGHT NEWS PRO 2026-05-08 早报）</p>
+</li>
+<li>
+<p><strong>AI 公司卖盘窗口：90-95%+ 将失败，12-18 个月内是价值最大化时机</strong>：Elad Gil 指出每个技术周期（汽车、互联网、SaaS、移动、加密）都是 ~2% 的存活率。AI 创始人们应评估自己的”价值最大化窗口”——增长二阶导放缓是信号。存活特征：模型进步→产品受益、深度嵌入工作流、专有数据。买盘选项：大型 lab、科技巨头、垂直收购者、竞争对手合并。（<a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>）</p>
+</li>
+<li>
+<p><strong>“个人 IPO”现象</strong>：Meta 对 AI 人才的激进竞价（Tens of millions 至 hundreds of millions 级别）导致 50-300 名 AI 研究员作为一个阶层获得了相当于 IPO 的财富跃升——这是历史上罕见的行业级人才财富再分配，仅在早期加密浪潮时出现过。（<a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a>）</p>
+</li>
+<li>
+<p><strong>模型公司成为新”云入口”——Bargaining Power 不可逆转地转移</strong>：传统云厂商从”SaaS 分发者”变为模型公司下游。Anthropic 已实现多云分发（AWS Bedrock → GCP Vertex AI → Azure AI Foundry），OpenAI 快速跟进（进驻 AWS Bedrock 获 $500 亿投资）。Frontier Lab 越分散渠道，其 Bargaining Power 越强。这对 Azure 影响最大（OpenAI 曾是其独家差异点），对 AWS 影响最小（最大开发者市场）。（<a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a>）</p>
+</li>
+<li>
+<p><strong>Meta CAPEX 后置放大 2027 年利润压力</strong>：Meta Q1 CAPEX 低于预期 → Q2-Q4 需追赶 missed 部分 + 新增 $100 亿。下半年 CAPEX 非线性增长推高 2027 年折旧，而裁员节约可能无法持续对冲——2027 年利润预期面临实质性下调风险。（<a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a>）</p>
+</li>
+<li>
+<p><strong>AI 广告变现双路径并行</strong>：Google AI Overviews 打开 60-70% 长尾搜索 Query 变现，在用户购买意愿最强时插入原生广告。Meta Overlay Ads（改名 Partnership Ads）参考抖音路径，实现广告展示量 +19% 和单价 +12% 同步增长（通常两者矛盾）。推荐算法对广告收入的年度贡献通常是小个位数（≤5pp/year）。（<a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a>）</p>
+</li>
+<li>
+<p><strong>AI Mobile App 爆发</strong>：AI 移动应用下载量、消费支出、使用时长在 Q1 2026 全部近乎翻倍（YoY）。Codex 日安装量在 2026 年 5 月短暂超越 Claude Code，反映 AI 产品格局仍高度流动——产品品质而非营销决定赢家。（<a href="../../2026-05-09--a16z--charts-of-the-week-other-income" class="internal alias" data-slug="2026-05-09--a16z--charts-of-the-week-other-income">2026-05-09—a16z—charts-of-the-week-other-income</a>）</p>
+</li>
+<li>
+<p><strong>欧洲 AI 基础设施追赶——100 亿欧元法国 AI 超级工厂</strong>：Iliad/Orange/EDF/Scaleway 财团竞标在法建设大型 AI 数据中心园区（初期 100MW），Iliad 或投入 40 亿欧元。欧洲主权 AI 算力建设加速，对美 AWS/GCP 形成替代压力。（INSIGHT NEWS PRO 2026-05-20 晚报）[KB]</p>
+</li>
+<li>
+<p><strong>银行业 AI 转型加速：HSBC 培训 20 万员工，StanChart 裁 8000 人</strong>：汇丰要求全员再培训以适应 AI 自动化，设首席 AI 官（David Rice）。渣打四年拟裁 8000 人，汇丰称 AI 已在客户入职、风险监控和联络中心部署。银行 AI 软件/云 GPU/网络安全供应商受益，离岸外包和传统招聘受损。（INSIGHT NEWS PRO 2026-05-20 早报+晚报）[KB]</p>
+</li>
+<li>
+<p><strong>Michael Burry 警告 AI/科技股崩盘风险，类比 2000 年泡沫顶峰</strong>：(INSIGHT NEWS PRO 2026-05-12 早报) [KB]</p>
+</li>
+<li>
+<p><strong>半导体板块罕见回撤——SOX -6.8%，动量交易触发止损</strong>：费城半导体指数一度暴跌 6.8%，英特尔年内涨 227%、美光涨 169%，估值回调风险高但 AI 资本持续流入。市场更倾向估值与仓位的短期再平衡而非基本面逆转——关注中美会谈结果与下游服务器订单变化。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</p>
+</li>
+<li>
+<p><strong>Grok 节节败退——下载量从 2000 万降至 830 万，付费率仅 0.174%</strong>：xAI 的 Grok 用户热度大幅回落，企业采纳不及 Claude 与 Gemini。SpaceX 将 Colossus 数据中心算力租予 Anthropic（年化数十亿美元），显示 xAI 竞争力不足而算力资产正在变现给竞品。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</p>
+</li>
+<li>
+<p><strong>AI 自动化悖论——更多自动化 = 更多人类工作</strong>：Dan Shipper（Every CEO）指出每一项自动化都需要一个人类来管理——Every 在极度 AI 前卫的同时人员翻倍（15→30）。基准测试高估了模型的自主性，因为它们衡量的是已被框定的问题。最有价值的人类工作是无法被评分到写下来为止的任务。“我们拥有如此多的自动化、如此多的 AI——而我也工作得更多了。“代理商需要”关心它们”的人类——切断联系后代理商很快变得无用。(<a href="../../2026-05-24--lenny-rachitsky--dan-shipper-ai-paradox" class="internal alias" data-slug="2026-05-24--lenny-rachitsky--dan-shipper-ai-paradox">2026-05-24—lenny-rachitsky—dan-shipper-ai-paradox</a>) [KB]</p>
+</li>
+<li>
+<p><strong>Agent 架构进化：个人代理 → 超级代理 → 代理间通信</strong>：Dan Shipper 预测一年内知识工作将分叉为两种模式：(1) 每公司一个”超级代理”（在 Slack 中），员工委托异步工作——Shopify 的 River、Ramp 的代理为早期案例；(2) Codex/Claude Co-work 成为所有知识工作的操作系统，SaaS 工具在其内置浏览器中运行。“CLI 已死”——GUI 作为代理交互的主要工作界面正在回归。两个代理优于一个：Codex 与另一代理通信可提供比人类输入更丰富的上下文。个人代理（OpenClaw 模式）正在失败，因为维护一个代理对大多数人来说工作量太大。超级代理将从公司层面向下渗透到团队和专业代理。([[sources/2026-05-24—lenny-rachitsky—dan-shipper-ai-paradox]) [KB]</p>
+</li>
+<li>
+<p><strong>苹果 iOS 27 将 Siri 重构为始终在线 AI Agent</strong>：Siri 从被动语音助手转型为聊天式跨应用执行代理，标志 AI Agent 从企业级功能向消费电子标配演进的里程碑。带动终端 AI 芯片和图像传感器需求。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</p>
+</li>
+<li>
+<p><strong>沃尔玛裁减/搬迁 ~1000 人，AI 重组加速</strong>：新设全球 AI 负责人，整合技术团队减少重叠。Cloudflare 裁员 1100 人（~20%）、AI 用量 +600% 同样印证 AI 驱动的企业重组正在加速。（INSIGHT NEWS PRO 2026-05-13 早报）[KB]</p>
+</li>
+<li>
+<p><strong>B2B AI 市场高度碎片化</strong>：YipitData 数据显示 &lt;20% 的企业仅使用单一 AI 供应商，多数同时使用 2-5 家甚至 6-9 家。B2B AI 市场目前无通吃格局——信号快速传播，客户愿意试用新产品，不承诺单一平台。（<a href="../../2026-05-09--a16z--charts-of-the-week-other-income" class="internal alias" data-slug="2026-05-09--a16z--charts-of-the-week-other-income">2026-05-09—a16z—charts-of-the-week-other-income</a>）</p>
+</li>
+<li>
+<p><strong>AI 内容”垃圾盈余”——净消费者福利改善</strong>：Amazon 电子书月发布量自 ChatGPT 后翻了 3 倍（>30 万/月），但 NBER 研究（Reimers &amp; Waldfogel）发现 2025 年的选择集相比纯人类反事实仍创造了 ~7% 的消费者盈余增加。在 LLM 之前即出版的作家在 2023 年后生产力大幅提升——AI 在增强优秀创作者，而非仅替代。（<a href="../../2026-05-09--a16z--charts-of-the-week-other-income" class="internal alias" data-slug="2026-05-09--a16z--charts-of-the-week-other-income">2026-05-09—a16z—charts-of-the-week-other-income</a>）</p>
+</li>
+<li>
+<p><strong>AI 客服替代——尚未发生</strong>：菲律宾 IT/BPO 行业就业从 115 万（2016）增至 190 万（2025），穿越所有 AI 里程碑。美国 Indeed 客服岗位招聘自 2025 年 8 月起加速增长（同比 ~+10pp）。Goldman 测算 AI 客服代表成本 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">92/</span><span class="mord cjk_fallback">天</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">人类</span></span></span></span>90/天——大致平价。Klarna 2025 年 5 月逆转全面 AI 替代决策重新招聘，CEO 称”过度关注效率和成本导致质量下降”。但语音 AI 成本正在快速下降，替代可能只是时间问题。（<a href="../../2026-05-09--a16z--charts-of-the-week-other-income" class="internal alias" data-slug="2026-05-09--a16z--charts-of-the-week-other-income">2026-05-09—a16z—charts-of-the-week-other-income</a>）</p>
+</li>
+<li>
+<p><strong>Hyperscaler”其他收入”揭示技术投资周期</strong>：Q1 2026 hyperscaler 其他收入占净利润 >1/3（vs 历史 5-10%），Google <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">37.7</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">来自非上市股权未实现收益，</span><span class="mord mathnormal">A</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">zo</span><span class="mord mathnormal">n</span></span></span></span>15.6B 来自 Anthropic 投资。科技投资现占美国全部商业投资的 55%。KKR：科技 capex 贡献了 Q1 2% GDP 增长中的 1.9pp——基本全部。（<a href="../../2026-05-09--a16z--charts-of-the-week-other-income" class="internal alias" data-slug="2026-05-09--a16z--charts-of-the-week-other-income">2026-05-09—a16z—charts-of-the-week-other-income</a>）</p>
+</li>
+<li>
+<p><strong>Block（SQ）AI 转型——代码产出 +2.5x，Agent 主动智能</strong>：Block Q1 结果：CashApp GP +38% YoY，Square GP +9% YoY。AI 为核心驱动力——Goose（内部自动化）和 BuilderBot 使任何人均可通过 Slack 构建产品功能；2026 年 1 月以来人均代码变更 +2.5x。MoneyBot（CashApp）和 ManagerBot（Square）从被动聊天进化为主动智能——~70% 对话由 AI 主动发起；完成 ManagerBot 洞察环节的商家回访率 +33%；CashApp 用户使用 MoneyBot 操作后再次使用概率 5x。Neighborhoods 连接 CashApp 59M MAU 与 Square 商家，~100K 用户关注商家，$320M 年化 GPV。风险：员工减少 ~40%，文化和执行风险；Neighborhoods 仍早期。（ARK Disrupt 2026-05-11）</p>
+</li>
+<li>
+<p><strong>Genesis AI 发布 GENE-26.5——机器人操作基础模型</strong>：Khosla 支持的 Genesis AI 发布首个机器人操作基础模型 GENE-26.5。构建人形五指灵巧手（与 Wuji Tech 合作），配备 1:1 数据手套采集丰富运动/力/触觉数据。训练数据 = 手套数据 + 互联网视频 + 高保真仿真。演示：单手打蛋、多步烹饪、移液、双手冰沙制作、钢琴、空中魔方。处于早期阶段，未商业化，竞争激烈（Tesla Optimus, Figure, 1X 等）。（ARK Disrupt 2026-05-11）</p>
+</li>
+<li>
+<p><strong>企业 AI 采纳游戏化——Quests/Token Leaderboard/Skills Marketplace</strong>：Delight.ai 构建内部平台 The Automators Platform，将 AI 采纳视作消费产品运营：① Quests——任何人可请求 AI 自动化，AI 亦可从 spec 自动构建；② Token Leaderboard——从 Beginner（0 tokens）到 AI God（100M+ tokens/day），5 个 tier；③ Skills Marketplace——跨职能共享 prompt/plugin 仓库。营销团队 2 天构建完整 swag store（集成 Stripe），无需工程支持。Token smoothing metric——dip = people off/AI not working。警告：测 token 消耗有”代码行数”谬误风险——Kim 明确”不是绩效评估而是对话工具”。（How I AI 2026）</p>
+</li>
+<li>
+<p><strong>Google+黑石 AI 云合资——TPU 首次大规模对外商业化</strong>：Google 与 Blackstone 合资成立新 AI 云公司，$5B 股权注入（Blackstone 为主要股东），Google 贡献 TPU 硬件、软件与管理。目标 2027 上线 500MW 算力。TPU 首次大规模对外商业化，直接与 Nvidia GPU 云竞争。数据中心运营商和 Google Cloud 受益，云 GPU 租赁商（CoreWeave 等）面临竞争压力。（INSIGHT NEWS PRO 2026-05-19 早报）[KB]</p>
+</li>
+<li>
+<p><strong>Neocloud 建设规模堪比美国铁路时代——<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">7.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">潜在投资、</span></span></span></span>13.5Tn 潜在价值创造</strong>：Jamin Ball（Altimeter）测算 OpenAI/Anthropic 等 AI lab 可能推动 150GW 新数据中心建设（2030 年前），总投入 <del><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">7.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">（</span><span class="mspace nobreak"> </span></span></span></span>1.7Tn/年 ≈ 美国 GDP 的 5%）。以 CoreWeave/IREN 当前 EV/GW 基准（</del><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">90</span><span class="mord mathnormal">b</span><span class="mord">/</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord cjk_fallback">），</span><span class="mord">150</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span></span></span></span>13.5Tn 潜在企业价值创造。SpaceX 以 ~$15b/年向 Anthropic 出租 Colossus 算力，验证 neocloud 模式在极端规模下的可行性。类比：1880 年代铁路建设 ≈ 6% GDP，2000 年电信建设 ≈ 1.2%，曼哈顿计划 ≈ 0.4%。（<a href="../../2026-05-22--jamin-ball--neocloud-boom" class="internal alias" data-slug="2026-05-22--jamin-ball--neocloud-boom">2026-05-22—jamin-ball—neocloud-boom</a>）</p>
+</li>
+<li>
+<p><strong>Meta 大规模重组——7000 员工转至 AI 岗位，8000 人裁员</strong>：Meta 将 7000 名员工调至 AI 与智能代理方向，同时裁员 8000 人（~10%）并推行扁平化管理。数千亿美元级基础设施投入，自建数据中心压缩对外部云（AWS/GCP）的依赖。自研 Avocado 模型持续进展。AI 芯片供应商（Nvidia）和数据中心建设承包商受益。（INSIGHT NEWS PRO 2026-05-19 早报）[KB]</p>
+</li>
+<li>
+<p><strong>Dell AI 产品新增 1000 客户——企业级自建 AI 部署加速</strong>：Dell 年度大会宣布 AI 产品客户从 4000 增至 5000 家。推出 Deskside Agentic AI，与 Google/Palantir 合作强化本地与混合部署。礼来约用 1000 颗 Nvidia GPU 推动大客户级采购潮。企业自建 AI 对云 GPU 租赁平台构成竞争压力。（INSIGHT NEWS PRO 2026-05-19 早报）[KB]</p>
+</li>
+<li>
+<p><strong>AI 热潮从大型股向小型科技股扩散——小盘科技创 1995 年以来最大领先幅度</strong>：标普 600 小型科技指数年内涨近 54%（vs 标普 500 科技 +20.1%），两者差距创 1995 年以来之最。PSCT ETF 今年获 $4970 万净流入（此前连 4 年流出）。小型半导体预计 Q2 利润增近 40%。VIAVI（VIAV）、MaxLinear（MXL）等录得三位数涨幅。分析师警告投机性交易推动小型股创历史新高，利率上行和高杠杆使可持续性存疑。（INSIGHT NEWS PRO 2026-05-27 晚报）[KB]</p>
+</li>
+<li>
+<p><strong>Fujikura 暴跌 40%——AI 光学组件需求信号受挫</strong>：Fujikura 三年盈利展望 3150 亿日元远低于市场预期 4550 亿，股价 4 日暴跌约 40%。AI 驱动的光缆与连接器需求预期被证伪。原材料价格上行与硬件支出节奏重新评估压缩扩产溢价。光缆制造商毛利率承压。（INSIGHT NEWS PRO 2026-05-19 晚报）[KB]</p>
+</li>
+<li>
+<p><strong>WSJ：AI 芯片狂热埋下自我毁灭的种子——内存周期风险重现</strong>：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1500</span><span class="mord cjk_fallback">亿扩产计划（美光等），未来</span><span class="mord">12</span><span class="mord cjk_fallback">个月行业盈利接近</span></span></span></span>1000 亿，但 AI 驱动的需求高度周期化。Alphabet 三月论文显著提高内存效率，技术改进构成需求端下行风险。内存制造商短期利润飙升但中长期回调风险显著，晶圆设备与材料供应商短期受益。（INSIGHT NEWS PRO 2026-05-18 早报）[KB]</p>
+</li>
+<li>
+<p><strong>Baidu AI 收入首超广告——中国 AI 商业化里程碑</strong>：百度最新季度 AI 业务占比首次超 50%，云成收入主引擎。营收仅降 1% 至 ¥321 亿，宣布 $50 亿回购与首次派息。Q1 净利润同比降 55% 至 ¥34.5 亿——转型投入尚未完全兑现为盈利。Kunlun Chip 独立上市计划推进中。（INSIGHT NEWS PRO 2026-05-18 晚报）[KB]</p>
+</li>
+<li>
+<p><strong>AI 迫使咨询行业向按成果定价转型</strong>：AI 将标准化数据分析与诊断工作商品化，Fin 每次 $0.99 的 AI 代理推动行业从按小时计费向按成果/按件计费转移。咨询公司被迫调整合伙人激励与现金策略以对冲收入波动，咨询自动化 SaaS 和按成果计费平台需求上升。传统按小时计费咨询公司收入可预测性与估值承压。（INSIGHT NEWS PRO 2026-05-25 早报）[KB]</p>
+</li>
+<li>
+<p><strong>专用模型经济学——Composer 2.5 以 1/60 成本实现接近前沿的编码表现</strong>：Cursor 的 Composer 2.5（基于 Kimi K2.5 微调）在编码 agent benchmark（AAC Index）上得 62 分 vs Opus 4.7 的 66 分 vs GPT-5.5 的 65 分，但每任务成本仅 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">0.07</span><span class="mord cjk_fallback">（</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">s</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span></span></span></span>4.10 / GPT-5.5 $4.82 = ~60x 差异）。85% 算力预算投入 RL 与合成数据，合成数据量较前代增 25x。SDFT（Self-distilled Fine-Tuning）实现多步骤 agentic loop 中的局部纠正，解决 50+ 步长任务的 credit assignment 问题。核心启示：模型层正按”成本效率”而非”原始智能”重新分层。(<a href="../../2026-05-25--alphasignal--specialized-ai-models" class="internal alias" data-slug="2026-05-25--alphasignal--specialized-ai-models">2026-05-25—alphasignal—specialized-ai-models</a>) [KB]</p>
+</li>
+<li>
+<p><strong>混合架构（Model Routing）成为 AI 工程默认模式——80-90% 专用模型 + 10-20% 前沿模型</strong>：AI 工程团队正将工作负载按复杂度路由——80-90% 的编码任务交予专用模型（Composer 2.5 级别），仅 10-20% 最难任务（新架构设计、零样本边缘案例、深度研究）保留前沿模型。此模式使单位经济可持续，同时保留前沿能力。模型路由与成本感知编排正成为核心工程能力，基础设施层（模型路由/编排中间件）可能比纯模型层更具投资价值。(<a href="../../2026-05-25--alphasignal--specialized-ai-models" class="internal alias" data-slug="2026-05-25--alphasignal--specialized-ai-models">2026-05-25—alphasignal—specialized-ai-models</a>) [KB]</p>
+</li>
+<li>
+<p><strong>产品数据飞轮——专用模型的真正护城河</strong>：Cursor 利用 IDE 界面的产品交互数据，通过 SDFT 在模型偏离正确路径时插入局部文本提示——在多步骤任务中比末端 pass/fail 信号精确得多。任何拥有深度专有领域数据（法律、医疗、金融、内部代码库）的组织都有类似起点。Tinker（Thinking Machines）等工具正在降低构建专用模型的基础设施门槛——Python-native API 抽象 GPU 集群管理，使垂直模型建设走向标准化工程团队可及。(<a href="../../2026-05-25--alphasignal--specialized-ai-models" class="internal alias" data-slug="2026-05-25--alphasignal--specialized-ai-models">2026-05-25—alphasignal—specialized-ai-models</a>) [KB]</p>
+</li>
+<li>
+<p><strong>模型特殊化基础设施正在被商品化</strong>：Thinking Machines 的 Tinker 提供 Python-native API 用于分布式 LLM 微调，抽象 GPU 集群管理。随着这类基础设施成熟，定制垂直模型将不再限于 hyperscaler，而是对标准工程团队开放。模式类比：AWS 抽象化数据中心管理。(<a href="../../2026-05-25--alphasignal--specialized-ai-models" class="internal alias" data-slug="2026-05-25--alphasignal--specialized-ai-models">2026-05-25—alphasignal—specialized-ai-models</a>) [KB]</p>
+</li>
+<li>
+<p><strong>AI 编码的”衰减效应”（Attenuation Effect）</strong>：MIT/Wharton 研究跟踪 10 万+ GitHub 开发者发现，AI 在上游大幅加速代码生产（异步 agent 17x 代码量，同步 agent 741% 代码行数增幅），但软件发布仅增加 ~20%。瓶颈从”写代码”转移到”下游验证”（review、testing、deployment）。人类审核者成为绝对瓶颈——异步 agent 无法直接发布。DORA 报告进一步佐证：AI 是现有能力的严格乘数——如果 CI/review 流程本身慢，AI 代码只会加剧问题。行业正从 SDLC 向 ADLC（Agentic Development Lifecycle）迁移，开发者从创作者变为 orchestrator（验证架构、定义测试、设定安全 guardrails）。投资启示：价值可能向软件生命周期的<strong>验证与编排层</strong>（CI/CD、测试自动化、安全扫描）转移，而不仅是代码生成层。(<a href="../../sources/2026-06-07--ben-dickson--ai-coding-attenuation-effect" class="internal alias" data-slug="sources/2026-06-07--ben-dickson--ai-coding-attenuation-effect">2026-06-07—ben-dickson—ai-coding-attenuation-effect</a>) [KB]</p>
+</li>
+<li>
+<p><strong>视觉 AI 从像素走向代码</strong>：a16z 提出视觉生成正从 pixel-native（扩散模型直接出像素）向 code-native（生成可执行的编码表示：SVG/HTML/React/Blender 脚本/Lottie/USD）迁移。核心优势：code-native 创造 <strong>Code→Render→Inspect→Revise</strong> 闭环，每次迭代改进底层制品而非仅重采样——test-time compute 可以收敛。市场按 runtime 组织（浏览器/SVG/Lottie/Blender/游戏引擎），每个 runtime 有自己的表示方式和反馈循环。3D 资产因其对结构一致性（几何、材质、零件层级、功能约束）的要求，可能受益最大。赢家将是”拥有循环”的产品——生成→渲染→检查→修改，而非仅生成更漂亮的输出。(<a href="../../sources/2026-06-02--yoko-li--visual-ai-is-code" class="internal alias" data-slug="sources/2026-06-02--yoko-li--visual-ai-is-code">2026-06-02—yoko-li—visual-ai-is-code</a>) [KB]</p>
+</li>
+<li>
+<p><strong>Benedict Evans “1997 moment” 框架：AI 采用分布仍极不均匀</strong> — 即使最活跃的 13-18 岁人群中，仅 15-20% 是日活用户，20% 周活，60% 完全不使用。Evans 认为 AI 类比互联网/移动规模（而非工业革命），当前处于”1997 时刻”——令人兴奋但大部分应用尚未建成，多数人每周或每两周使用一次。(<a href="../../sources/2026-06-01--benedict-evans--ai-eating-the-world" class="internal alias" data-slug="sources/2026-06-01--benedict-evans--ai-eating-the-world">2026-06-01—benedict-evans—ai-eating-the-world</a>) [KB]</p>
+</li>
+<li>
+<p><strong>“加速正在被加速”——康波周期压缩框架</strong>：Rick (@rickawsb) 提出 AI 是”母革命”，不只是一次工业革命，而是将催生无数次工业革命（机器人→生命科学→新材料→航天）层层叠加。技术周期从蒸汽 200 年→自动化 50 年→互联网 20 年→AI 当前被极速压缩。Sequoia 年会称”未来 100 年压缩到 100 天”——Rick 解读”未来 1,000 天被压缩到极短时间”。SMH 是新时代的 QQQ。核心建议：不要追逐 Alpha 而错过 Beta。（<a href="../../sources/2026-05-14--168x--rick-awsb-ai-acceleration" class="internal alias" data-slug="sources/2026-05-14--168x--rick-awsb-ai-acceleration">2026-05-14—168x—rick-awsb-ai-acceleration</a>）[KB]</p>
+</li>
+<li>
+<p><strong>“模型即應用，算力即模型”——SaaS 被模型吞噬加速</strong>：Rick 框架：模型正在向下吃掉所有没有深层护城河和专有数据的应用——SaaS 估值压缩是结构性而非周期性的。Google 高管观点”如果未来只有一个应用，那个应用就是模型”。在生命科学中同样成立：AI 模型公司（Google、OpenAI）将捕获大部分价值，不可绕过的物理瓶颈（湿实验自动化、机器人硬件、材料供应）是少数例外。（<a href="../../sources/2026-05-14--168x--rick-awsb-ai-acceleration" class="internal alias" data-slug="sources/2026-05-14--168x--rick-awsb-ai-acceleration">2026-05-14—168x—rick-awsb-ai-acceleration</a>）[KB]</p>
+</li>
+<li>
+<p><strong>Tony Fadell “不要认知投降”——AI 代码脆性 vs 品味护城河</strong>：Fadell 警告”不要认知投降”——AI 生成的代码（以 Anthropic Claude 源代码泄露为例）被软件架构师评价为” brittle”（脆性）、缺乏分层。Fadell 类比快时尚（H&amp;M） vs 奢侈品牌：AI 做原型极好，但生产级代码的架构、可维护性、安全性仍需人类。关键论点：<strong>当 AI 让建造变得极其容易，真正的差异化来自品味和策展能力</strong>——“出彩的东西都是经过深思熟虑的”。Flighty 是”奢侈软件”的案例——不能通过 vibe coding 复制其版本一。（<a href="../../sources/2026-06-07--lenny--tony-fadell-build-taste" class="internal alias" data-slug="sources/2026-06-07--lenny--tony-fadell-build-taste">2026-06-07—lenny—tony-fadell-build-taste</a>）[KB]</p>
+</li>
+<li>
+<p><strong>Fadell “语音为主” UI 层级翻转预测</strong>：Fadell 认为当前设备交互顺序（触摸/滑动 → 键盘 → 语音）需要完全翻转——语音成为主交互，键盘其次，触摸/滑动降为末位。但显示屏不会消失（除非 BCI/视网膜投影成熟），智能手机”小方块”形态会持续。过渡需要长时间——用户还未信任 AI 到放手控制的程度。消费者 AI 定价警示：“$20-200/月不可持续”——除非产品带来非凡价值。类比 General Magic——技术超前但社会尚未准备好。（<a href="../../sources/2026-06-07--lenny--tony-fadell-build-taste" class="internal alias" data-slug="sources/2026-06-07--lenny--tony-fadell-build-taste">2026-06-07—lenny—tony-fadell-build-taste</a>）[KB]</p>
+</li>
+<li>
+<p>**AI 巨头 IPO 集群——SpaceX/Anthropic/OpenAI 合计 ><span class="katex-error" title="ParseError: KaTeX parse error: Expected 'EOF', got '&amp;' at position 32: …密集上市**：指数规则改革（S&amp;̲P 12→6 月等待期、Nas…" style="color:#cc0000;">3T 估值，最快 2026 年底密集上市**：指数规则改革（S&amp;P 12→6 月等待期、Nasdaq Fast Entry、FTSE Russell 5 日等待期）为 AI 巨头 IPO 开绿灯。SpaceX 最新估 </span>1.78T（MSCI 提前纳入），Anthropic ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">965</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">PO</span><span class="mord cjk_fallback">前最后一轮，最早</span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord">10</span><span class="mord cjk_fallback">月），</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace nobreak"> </span></span></span></span>852B。三者合计 >$3T，若 2026-2027 年窗口打开，将成为史上最大科技 IPO 集群，对二级市场流动性和 AI 板块估值产生重大影响。（FT/Bloomberg <a href="../../sources/2026-06-09--insight-news--早报+晚报" class="internal alias" data-slug="sources/2026-06-09--insight-news--早报+晚报">2026-06-09—insight-news—早报+晚报</a>）</p>
+</li>
+</ul>
+<h3 id="35-结构性长期问题-9条">3.5 结构性长期问题 [9条]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题-9条" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI 时代劳动份额（labor share）面临结构性挑战——60% 常数的首次动摇？</strong>：劳动份额（labor share，经济总产出中支付给人类工资的比例）数百年来稳定在 ~60%（Kaldor fact），但全供应链自动化（network-adjusted capital share → 1）可能首次打破这一常数。关键框架：(1) <strong>关系型部门（Relational Sector）</strong>——人类参与本身是价值构成部分的商品/服务（医生当面诊断、艺术家创作），可能是未来唯一稀缺的领域，但规模存疑；(2) <strong>品种扩张防止饱和（Variety Expansion）</strong>——“蒙古歌手类比”：14世纪蒙古人会预测所有支出流向歌手，但实际上资本品品种爆炸性扩张阻止了饱和——H100 租金反而比 3 年前更贵；(3) <strong>O-ring 自动化对称性</strong>——AI 在某些任务上质量低于人类会阻碍自动化（坏 O-ring），但当 AI 在所有任务上超过人类后，人类反而成为拉低整体质量的 O-ring；(4) <strong>AI 是电力型（价值广泛扩散）还是社交媒体型（价值集中在平台）</strong>——这决定了发展中国家的投资策略、再分配政策与 AI 安全博弈结构。核心未知数：经济学家目前缺乏关于消费者需求弹性的系统性数据（Imas 呼吁”数据马歇尔计划”）。（<a href="../../sources/2026-06-05--dwarkesh--imas-trammell-economics-of-agi" class="internal alias" data-slug="sources/2026-06-05--dwarkesh--imas-trammell-economics-of-agi">2026-06-05—dwarkesh—imas-trammell-economics-of-agi</a>）[KB]</li>
+<li><strong>AI 的能源约束将成为瓶颈</strong>：Token 用量 6B→15B/min。Guggenheim 的 Schwarz 警告美国电力基础设施滞后可能削弱 AI 竞争力，私人资本和付溢价的超大规模运营商将成为新电源建设的主要推动力。核电重启讨论（X-energy SMR），替代能源方案出现——Panthalassa 波浪能漂浮数据中心（Thiel 支持，~$1B 估值）、SpaceX 轨道数据中心方案。佐治亚州拟取消数据中心税减免，地方审批摩擦上升。（Insight News Pro 2026-05-05/06）</li>
+<li><strong>“电力作为调速器”——电约束下 tokens/watt 主导 TCO</strong>：Gavin Baker 提出当电力（而非算力成本）是 AI 扩展的硬约束时，tokens/watt 成为唯一重要的指标——最好的产品无论价格如何都会获胜。这给最先进的计算技术（Nvidia GPU）极端的定价权。“一个 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">50</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">的数据中心如果每瓦产出</span><span class="mord">5</span><span class="mord cjk_fallback">倍</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">，就比</span></span></span></span>35B 的数据中心产生更多收入。” 短期解决方案：天然气 + 太阳能（核能太慢，受 NEPA 等法规限制）。Caterpillar 已将涡轮机产能提高 75%。远期方案：轨道数据中心（5-6 年），第一性原理优势：24 小时太阳照射、免费冷却、激光真空互联。(<a href="../../2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai" class="internal alias" data-slug="2025-12-09--patrick-oshaughnessy--gavin-baker-gpus-tpus-economics-of-ai">2025-12-09—patrick-oshaughnessy—gavin-baker-gpus-tpus-economics-of-ai</a>) [KB]</li>
+<li><strong>PJM 电网警告：现有结构无法承受 AI 负载</strong>：PJM 服务 13 州 6700 万人口，若不改造将加剧供电短缺。马里兰与伊利诺伊电价 5 年分别上涨 51% 与 41%。政策文件提出三条路径，AEP 威胁退出。若决策拖延，数据中心投资可能转向他处。输电设备制造商、储能、燃气机组承包商受益。（Insight News Pro 2026-05-07 早报）</li>
+<li><strong>中美 AI 算力差距可能维持但出口管制收紧</strong>：TSMC 比 SMIC 多 38 倍计算产能。（ARK 2026, p.35）</li>
+<li><strong>开源与闭源模型趋同</strong>：蒸馏和商品化使模型层利润压缩，价值向上（应用）和向下（芯片）转移。但前沿模型保持溢价——“视网膜显示屏”类比：在某个智能阈值之上，速度和模态比原始能力更重要。（Schoening 2026）</li>
+<li><strong>AI 基础设施 Capex $1.4T 回报验证或证伪</strong>：如果 AI 营收无法兑现，CapEx 削减将反噬整个产业链——行业最大尾部风险。</li>
+<li><strong>跨行业 AI 收敛加速</strong>：AI 同时赋能自主驾驶、生物科技、国防、区块链和半导体。<a href="../../wiki/sectors/physical-ai-autonomous-systems" class="internal" data-slug="wiki/sectors/physical-ai-autonomous-systems">physical-ai-autonomous-systems</a>、<a href="../../wiki/sectors/biotech-multiomics" class="internal" data-slug="wiki/sectors/biotech-multiomics">biotech-multiomics</a>、<a href="../../wiki/sectors/space-defense" class="internal" data-slug="wiki/sectors/space-defense">space-defense</a>、<a href="../../wiki/sectors/blockchain-fintech" class="internal" data-slug="wiki/sectors/blockchain-fintech">blockchain-fintech</a>、<a href="../../wiki/sectors/semiconductors-memory" class="internal" data-slug="wiki/sectors/semiconductors-memory">semiconductors-memory</a> 的发展轨迹与 AI 紧密耦合。</li>
+<li><strong>Frank 回調分類法——AI 時代個股回調的三種劇本</strong>：Frank (@qinbafrank) 將個股回調分為三級：(1) <strong>殺估值</strong>——好公司好業績但漲太多，估值從 30-40x 壓回 20-25x，價值資金重新進場。(2) <strong>殺業績</strong>——不是虧損而是成長不及預期（預期 50% 實際 48%），MSFT 雲端 38% vs 預期 39% 即為典型。(3) <strong>殺邏輯</strong>（最致命）——公司賴以生存的敘事被摧毀，如 Meta 2022（元宇宙證偽）、光互連公司被踢出 NVDA 供應鏈。殺估值和殺業績可逆，殺邏輯不可逆。而大盤級別分為小（個位數，殺估值+宏觀擾動）、中（~15%，重大宏觀衝擊）、大（25%+，宏觀邏輯重置——2008/2020/2022/2025 關稅戰）。」目前（2026年5月）納指 YTD 回調 ~13-14%，接近中級別但未越過 15%。唯有 AI 商業化成長速度放緩（大模型 ARR/雲業績不及預期）才會觸發級別躍升。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+</ul>
+<hr/>
+<h2 id="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf--玩家动态按需更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="市场集中度-est">市场集中度 [EST]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度-est" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>子赛道</th><th>CR4 估计</th><th>结构</th><th>说明</th></tr></thead><tbody><tr><td>AI 训练芯片</td><td>~95%+（NVDA+AMD+Google+AWS）</td><td>寡头</td><td>Nvidia ~85%（KB），CR4 ~95%+ 为推断</td></tr><tr><td>Hyperscaler Cloud</td><td>~67%（AWS+Azure+GCP）</td><td>寡头</td><td>约 2025 年行业估算 [EST]</td></tr><tr><td>基础模型（闭源）</td><td>~80%+（OpenAI+Anthropic+Google+Meta）</td><td>寡头</td><td>从 KB 玩家信息推断 [EST]</td></tr><tr><td>企业 AI 应用</td><td>&lt;20%</td><td>高度分散</td><td>无知识库数据 [EST]</td></tr><tr><td>AI 推理服务</td><td>新兴</td><td>碎片化</td><td>多数未独立上市 [EST]</td></tr></tbody></table></div>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>OpenAI（private, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">300</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">估值</span><span class="mord">/</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">估计分歧</span><span class="mspace nobreak"> </span></span></span></span>20-30B）</strong>：定位 AI 消费操作系统。GPT-5.5 在 AI Index 领先（60%），定价 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">11.30/</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">（双倍竞品均价）。</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord">4</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">活跃用户。</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">s</span><span class="mord mathnormal">p</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">实现云中共享代理。战略：将模型领先转化为代理平台。风险：</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">PO</span><span class="mord cjk_fallback">被诉讼干扰（</span><span class="mord mathnormal">A</span><span class="mord mathnormal">lt</span><span class="mord mathnormal">man</span><span class="mord cjk_fallback">民事案），盈利未证明，蒸馏压力。</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">分歧</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mspace nobreak"> </span></span></span></span>20B vs Elad Gil ~$30B（可能为 run rate vs ARR 口径差异）。（ARK 2026; Downing; Elad Gil/Tim Ferriss 2026）</li>
+<li><strong>Anthropic（private, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">60</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">900</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">估值</span><span class="mord">/</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">估计分歧</span><span class="mspace nobreak"> </span></span></span></span>9-45B）</strong>：定位企业安全 AI。Feature shipping 速度从 6 个月→1 周。产品路线图：task → multi-task → 50-100+ agent swarms。Mythos 在私人 “Glass Wing” 测试——发现数千个 27+ 年 OS/浏览器漏洞。<strong>5月8日更新</strong>：FT 报道 Anthropic 年化收入已达 <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">45</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">，正在考虑近</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>900B 估值</strong>的巨型融资轮，拟募资 **<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">用于算力储备与</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">os</span><span class="mord cjk_fallback">部署。如果数据准确，这将是此前估计（</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mspace nobreak"> </span></span></span></span>9B, Elad Gil ~$30B）的 1.5-5x，可能为 run rate 口径差异，但显著表明营收在加速。风险：安全优先限制发布速度，白宫要求推迟 Mythos 扩展。（Cat Wu 2026; Dwarkesh Patel 2026; Elad Gil/Tim Ferriss 2026; INSIGHT NEWS PRO 2026-05-08 晚报）</li>
+<li>**Nvidia（NVDA, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">市值）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">算力标准。</span><span class="mord">85</span></span></span></span>50B 市场被迫让给 AMD/华为等竞争对手。风险：ASIC 侵蚀（Google TPU, AWS Helios, MatX）。（ARK 2026）</li>
+<li>**Microsoft（MSFT, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">3</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">市值）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：云</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord cjk_fallback">应用。</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mord mathnormal">u</span><span class="mord mathnormal">re</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">40</span></span></span></span>370 亿但口径争议大（含 GPU 租赁、OpenAI API 分销、AI 相关产品增量）。2025 年 7 月后跑输半导体和 peers。Copilot Studio 是亮点（每季度翻倍增长，达 Office Copilot 收入 20-25%，consumption 转型见效）。Maia 200 仅支持 GPT-4o 级别模型。Responsible AI + 模型调度层牺牲部分模型质量。OpenAI 独家解除后 AWS 以 $500 亿投资入局，Azure AI 差异化持续稀释。（ARK 2026; 硅谷坐标 2026）</li>
+<li>**Meta（META, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">市值）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：最大</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.05764em;">pE</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">支出者（</span><span class="mspace nobreak"> </span></span></span></span>135B 2026）。开源 Llama 策略 + 自研 Avocado 模型。Q1 收入 +33% 但有机仅 +3%（4pp FX + 2pp 选举低基数 + 3pp 产品）。Latte 推荐模型（论文→大规模采用罕见案例）和 Overlay Ads（改名 Partnership Ads，类似抖音路径）是产品化创新。AI coding 采用最激进（PIP 考核代码量，multi-coding agent 有激励）。风险：CAPEX 后置→2027 年折旧压力、负债 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">57</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">+</span></span></span></span>25B 新债、广告收入集中。（Insight News Pro 2026-05-05; 硅谷坐标 2026）</li>
+<li><strong>Google（GOOGL, ~$2T+ 市值）</strong>：GCP 增速 63% 领跑 Hyperscaler（AWS 28%, Azure 40%）。TPU 是最具竞争力的自研 AI 芯片——同等 Flops 成本仅为 GPU 20-30%，毛利率高于 GPU。三种 SOTA 模型中的两种（Gemini 3, Mysos）基于 TPU 训练。TPU 2026 产能 &lt;400 万张，2027E 近 1000 万张。内部（Gemini/Search）vs 外部（Cloud/Anthropic）三方争夺同一批 TPU 是增长瓶颈。AI Overviews 打开 60-70% 长尾搜索 Query 变现。AI 收入质量最高（Gemini 收入 100% 确认在 GCP 内）。风险：TPU 产能受限依赖 Nvidia CoWoS。（硅谷坐标 2026）</li>
+<li>**Amazon（AMZN, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">市值）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord cjk_fallback">增速</span><span class="mord">28</span></span></span></span>330 亿 + 5GW Trainium 承诺）和 OpenAI（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">500</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mord mathnormal">roc</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback">入驻）的云厂商。</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">aini</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord cjk_fallback">自研芯片从打折到供不应求的逆转。</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord cjk_fallback">产能瓶颈</span><span class="mord">2026</span><span class="mord mathnormal">Q</span><span class="mord">1</span><span class="mord cjk_fallback">解决。但</span><span class="mord mathnormal" style="margin-right:0.13889em;">FCF</span><span class="mord cjk_fallback">从</span></span></span></span>38B 暴跌至 $1.2B，CAPEX 压力巨大。Anthropic 在 Bedrock 的 API 收入 margin 较薄（强客户议价权）。（硅谷坐标 2026）</li>
+<li>**AMD（AMD, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">XXXB</span><span class="mord cjk_fallback">市值）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.13889em;">GP</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord cjk_fallback">市场第二名（仅次于</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mord mathnormal">ia</span><span class="mord cjk_fallback">），但在中国</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">芯片市场占据独特位置。美国出口管制导致</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mord mathnormal">ia</span><span class="mord cjk_fallback">中国份额从</span><span class="mord">95</span></span></span></span>50B 中国 AI 芯片市场中 AMD 凭借 CPU/FPGA 等多元化产品线和 ROCm 开源软件栈成为美方最大受益方。中国收入约占 AMD 总收入 20%。苏姿丰 2026 年 5 月低调访华获副总理会见，推广 ROCm 替代 CUDA，但软件生态仍远弱于 Nvidia——中国客户（如阿里巴巴）需投入大量工程资源适配。（Reuters 2026-05-29）</li>
+<li><strong>DeepSeek（private）</strong>：开源 MoE 模型。v4（1.6T params, MIT, 1M context），Agentic-capable。（AlphaSignal 2026）</li>
+<li><strong>Kimi / Moonshot AI（private）</strong>：开源 Agentic 模型。K2.6（1T params, 384 experts），AI Index #1 开源。（AlphaSignal 2026）</li>
+<li><strong>Alibaba / Qwen（9988）</strong>：开源密集模型。Qwen3.6-27B，Apache 2.0，本地友好。</li>
+<li><strong>AssemblyAI（private）</strong>：Voice AI / Speech Language Model。Universal-3 Pro Streaming，LLM-as-decoder，&lt;300ms P50 latency。（AlphaSignal 2026）</li>
+<li><strong>MatX（private）</strong>：AI 芯片初创。CEO Reiner Pope 前 Google TPU 架构师，定制推理芯片。（Pope 2026）</li>
+<li>**Ambarella (AMBA, ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3.1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">市值</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：边缘</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord cjk_fallback">视觉</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord cjk_fallback">。</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord">2026</span></span></span></span>390.7M (+37% YoY)，~80% 收入来自边缘 AI，FCF 正零负债。产品周期从 5nm (CV72/CV75) 向 4nm (CV7) 演进，ASP 结构性上行。三大增长引擎：机器人/仓储（N1 感知中枢已部署）、汽车（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">13</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">管道）、边缘基础设施。</span><span class="mord mathnormal">G</span><span class="mord mathnormal">a</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">an</span><span class="mord mathnormal">o</span><span class="mord cjk_fallback">基准情形</span></span></span></span>90-95。<a href="../../wiki/companies/amba" class="internal" data-slug="wiki/companies/amba">amba</a></li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>资金壁垒（高）</strong>：训练 SOTA 模型需要 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">，建设数据中心</span><span class="mspace nobreak"> </span></span></span></span>10B+。</li>
+<li><strong>技术壁垒（中高，但被侵蚀）</strong>：蒸馏成本仅 ~$25M。开源模型快速追赶。RL-driven over-training（100× Chinchilla）正在变成”以总成本最小化”的平衡。（Dwarkesh Patel 2026）</li>
+<li><strong>切换成本（企业高，消费级低）</strong>：企业云集成、工作流嵌入后迁移困难。C 端 ChatGPT 切换到 Claude 无摩擦。</li>
+<li><strong>网络效应（中等）</strong>：OpenAI Codex 开发者生态，Llama 开源社区，但非强锁定。</li>
+<li><strong>人才壁垒（中等）</strong>：人才高度流动。GitHub + AI 代理使”人人都能开发”。</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>白宫 AI 模型审查行政令</strong>：如果通过，将延迟前沿模型发布，增加合规成本，影响 OpenAI/Anthropic 的 IPO 时间线。（Insight News Pro 2026-05-05）</li>
+<li><strong>美国 AI 监管分裂</strong>：科罗拉多效应（人才外流）可能扩散。（Insight News Pro 2026-05-04）</li>
+<li><strong>中美科技脱钩升级</strong>：TSMC vs SMIC 38x 算力差距，但出口管制在收紧。（ARK 2026）</li>
+<li><strong>Capex 周期反转</strong>：最大尾部风险——如果 AI 营收无法实现 → CapEx 削减 → 全产业链受损。Hyperscaler CAPEX/OCF 比率已达 ~90%，Amazon FCF 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">38</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">降至</span></span></span></span>1.2B——容错空间极小。2025 年 7 月市场已开始 Price in 这一风险。（硅谷坐标 2026）</li>
+<li><strong>Meta CAPEX 后置放大 2027 年利润风险</strong>：Q1 低支出 + 新增 $100 亿 → 下半年 CAPEX 非线性增长 → 2027 年折旧远超市场预期。裁员节约可能无法持续对冲。（硅谷坐标 2026）</li>
+<li><strong>AI 债务市场关闭</strong>：Meta <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">13</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">100</span></span></span></span>25B 新债。银行通过 SRT 转移贷款风险。a16z Moses Sternstein 进一步量化：Hyperscaler 2026 年约 $150B 的 AI 资本支出来自债务融资，与 Tiezhu 的 10Y 4.7%+ 摧毁一切框架交叉验证——若利率环境收紧或信贷条件恶化，AI 基础设施的资本支出周期面临减速风险。（Insight News Pro 2026-05-04/05；<a href="../../sources/2026-04-03--a16z--charts-retail-to-moon" class="internal alias" data-slug="sources/2026-04-03--a16z--charts-retail-to-moon">2026-04-03—a16z—charts-retail-to-moon</a>）</li>
+<li><strong>霍尔木兹持续升级</strong>：Brent $112.93+ → 加息 → AI 基础设施折现率上升。（Insight News Pro 2026-05-05）</li>
+<li><strong>科技股集中度风险</strong>：AI/科技股在 S&amp;P 500 占比历史最高。（a16z 2026）</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>模型能力饱和</strong>：“Retina Display”类比——Scaling Law 在某个阈值后效益递减。如果发生——对 CapEx 叙事是根本性打击。但当前推理成本弹性需求支持持续增长。</li>
+<li><strong>蒸馏不可阻止</strong>：蒸馏成本 ~$25M。“模型即服务”业务模型归零风险。（Dwarkesh Patel 2026）</li>
+<li><strong>Agent 能力停滞</strong>：上下文记忆墙（~200K tokens）是结构性约束。（Pope 2026, MatX）</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>模型层利润率压缩</strong>：开源免费 → 闭源被迫降价。蒸馏是结构性而非周期性的。</li>
+<li><strong>推理服务商品化</strong>：IaaS 式竞争——单位收益下降但用量增长。</li>
+<li><strong>GPU 竞争加剧</strong>：AMD、Google、AWS、MatX → Nvidia 高市占和毛利率不可持续。</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb--财报季更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>全部数据来自 ARK 2026 Big Ideas 报告（乐观情景）。</p>
+</blockquote>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>TAM：数据中心系统支出</strong>：~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">500</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">可能达到</span><span class="mspace nobreak"> </span></span></span></span>1.4T（2030），29% CAGR。Capex 增长率从 5%（2023 年，前 ChatGPT）→ 29% 的拐点是 AI 投资周期的核心数字。（ARK 2026, p.21）</li>
+<li><strong>TAM：全球软件支出</strong>：~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1.2</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>3.4-7T（2030），CAGR 范围 19-56%。三种采用速度情景（保守/基准/激进）产生 2 倍范围的差异，表明极端不确定性。（ARK 2026, p.37，引用 McKinsey 2023, Statista 2025）</li>
+<li><strong>SAM：AI 代理促成电商</strong>：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord">410</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">2025</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→></span></span></span></span>8T（2030），占据在线支出的 2%→25%。（ARK 2026, p.29）</li>
+<li><strong>SAM：AI 搜索广告</strong>：~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">50</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace nobreak"> </span></span></span></span>300B+（2030），AI 搜索流量 10%→65%。（ARK 2026, p.30）</li>
+<li><strong>SOM：AI-Native 企业 ARR</strong>：OpenAI ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">20</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">45</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mord">250</span></span></span></span>9B (Mar) → ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">45</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mord cjk_fallback">（</span><span class="mord">850</span></span></span></span>1B（2022 年成立），Harvey <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord cjk_fallback">（法律），</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">ce</span></span></span></span>100M（医疗），Sierra $100M（客服）。（ARK 2026, p.36; Citrini 2026; 硅谷坐标 2026）</li>
+</ul>
+<h3 id="验证逻辑">验证逻辑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#验证逻辑" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>自下而上验证</strong>：Hyperscaler backlog <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1.45</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>364B+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">GCP</span></span></span></span>460B, Azure <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">627</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.05764em;">pE</span><span class="mord mathnormal">x</span><span class="mord cjk_fallback">运行率</span><span class="mspace nobreak"> </span></span></span></span>630B+（含 Meta）≈ 2.3 年覆盖率。但 CAPEX/OCF 比率已达 ~90%，现金消耗速度是最大约束。（硅谷坐标 2026）</li>
+<li><strong>自上而下验证</strong>：科技 CapEx/GDP 约 1998 年水平，但 P/E 远低于 dot-com 峰值。铁路顶峰时占美国市值 63%，科技远未达到。~70% 今天的市场在 1900 年还不存在。（a16z 2026）</li>
+<li><strong>交叉验证信号</strong>：Jane Street 投资 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">在</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">ore</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord cjk_fallback">并签订</span></span></span></span>6B Vera Rubin 使用协议。但 Oracle $38B 项目银团贷款需 6 个月分配。（Insight News Pro）</li>
+</ul>
+<h3 id="历史增长核对">历史增长核对<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#历史增长核对" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>时期</th><th>变化</th><th>来源</th></tr></thead><tbody><tr><td>Hyperscaler Capex</td><td>2021→2026</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord">135</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→></span></span></span></span>500B（3x）</td><td>ARK 2026, p.22</td></tr><tr><td>AI Agent 任务时长</td><td>2025</td><td>6→31 分钟（5x）</td><td>ARK 2026, p.33</td></tr><tr><td>软件推理成本</td><td>Apr→Dec 2025</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.50</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>0.32（-91%，8 个月）</td><td>ARK 2026, p.34</td></tr><tr><td>OpenRouter Token 需求</td><td>Dec 2024→Dec 2025</td><td>25x</td><td>ARK 2026, p.20</td></tr><tr><td>Codex 活跃用户</td><td>Jan→May 2026</td><td>~0.2M→4M（~20x）</td><td>ARK 2026 (Downing)</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--kb--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + KB + INF] ← 框架稳定，仅重大变化更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--kb--inf--框架稳定仅重大变化更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>芯片（GPU/ASIC） → 云（Hyperscaler） → 模型层 → 推理服务 → AI 应用/Agent
+      ↑                     ↑              ↑         ↑            ↑
+  利润池最大？            增长中？       被商品化？    IaaS化？   最有机会？
+</code></pre>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>芯片（GPU/ASIC）</strong>：Nvidia 85% 市占，~75% GM。（ARK 2026）AMD MI355X 小型推理有竞争力；Google TPU v7、AWS Helios 在开发中；MatX（前 Google TPU 架构师）在构建定制推理芯片。（Pope 2026）→ <strong>全产业链利润最厚环节，但 ASIC 侵蚀趋势已现。</strong></li>
+<li><strong>Hyperscaler Cloud（AWS/Azure/GCP）</strong>：云收入加速——AWS +28% YoY，Azure +40%，GCP +63%Q1 2026。（ARK 2026; 硅谷坐标 2026）Backlog $1.45T。毛利率参考：Hyperscaler 云业务通常 30-60% [EST，需验证]。<strong>关键结构性变化</strong>：模型公司（OpenAI/Anthropic）正在成为新”云入口”——云从 SaaS 分发者变为模型公司下游，Bargaining Power 正在不可逆地转移。四家同步推进自研 ASIC（Trainium/TPU/Maia/MTIA）以保护 margin。（硅谷坐标 2026）</li>
+<li><strong>模型层（OpenAI/Anthropic/Meta/开源）</strong>：GPT-5.5 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">11.30/</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mord cjk_fallback">，蒸馏成本</span><span class="mspace nobreak"> </span></span></span></span>25M。（ARK 2026; Dwarkesh Patel 2026）→ <strong>定价权正在被蒸馏和开源侵蚀。</strong></li>
+<li><strong>推理服务层</strong>：Optimal batch size ≈ 300 × sparsity ratio（~2,000-3,000 for MoE）。成本 asymptotic 到纯计算成本。（Pope 2026）毛利率和利润池规模 [EST，知识库未覆盖]。</li>
+<li><strong>AI 应用/Agent 层</strong>：Cursor <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">（</span><span class="mord">3</span><span class="mord cjk_fallback">年），</span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal" style="margin-right:0.03588em;">ey</span></span></span></span>100M（2 年）。（ARK 2026）→ <strong>最有机会层，但市场高度分散。</strong></li>
+</ul>
+<h3 id="73-成本结构-est">7.3 成本结构 [EST]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-成本结构-est" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p>以下为行业常识估计，知识库无对应数据。使用前需验证。</p>
+</blockquote>
+<ul>
+<li><strong>训练成本</strong>：算力（GPU+电力）~60-80%，人力 ~10-20%，数据 ~5-15%。</li>
+<li><strong>推理成本</strong>：算力 ~80-90%。KV Cache 增长是关键非线性因素。</li>
+<li><strong>Scale-up domain 演进</strong>：Hopper（8 GPUs）→ Blackwell（72）→ Rubin（~500+）→ Capex 密集度持续上升。（硬件层次来自 Pope 2026）</li>
+<li><strong>降本路径</strong>：量化、蒸馏、ASIC 专业化、本地推理。</li>
+</ul>
+<h3 id="74-投资框架-frame--inf">7.4 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="三层框架">三层框架<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#三层框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>投资逻辑</th><th>验证条件</th><th>颠覆风险</th></tr></thead><tbody><tr><td><strong>上游：AI 基础设施</strong></td><td>CapEx 确定增长 → 芯片/电力/数据中心受益</td><td>CapEx 持续 ~29% CAGR</td><td>AI 营收不兑现 → CapEx 削减</td></tr><tr><td><strong>中游：模型/平台</strong></td><td>赢家通吃 → 头部集中</td><td>平台锁定效应验证</td><td>蒸馏+开源→商品化，无平台赢家</td></tr><tr><td><strong>下游：AI 应用</strong></td><td>新品类创造 → 千亿公司出现</td><td>Killer App 出现</td><td>AI Agent 能力停滞</td></tr></tbody></table></div>
+<h4 id="细分赛道评估">细分赛道评估<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#细分赛道评估" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>细分赛道</th><th>市场空间</th><th>竞争</th><th>壁垒</th><th>综合</th><th>逻辑</th></tr></thead><tbody><tr><td>AI 芯片（GPU/ASIC）</td><td>大</td><td>中</td><td>高</td><td>⭐⭐⭐⭐⭐</td><td>CapEx 确定性最高，利润池最大</td></tr><tr><td>Hyperscaler Cloud</td><td>大</td><td>中</td><td>高</td><td>⭐⭐⭐⭐</td><td>AI 工作负载增长强劲，估值已高</td></tr><tr><td>企业 AI 代理平台</td><td>大</td><td>中</td><td>中</td><td>⭐⭐⭐⭐</td><td>正在破圈，切换成本可能形成</td></tr><tr><td>AI 网络安防/审计</td><td>中</td><td>低</td><td>中</td><td>⭐⭐⭐⭐</td><td>监管驱动需求，竞争者少</td></tr><tr><td>基础模型（闭源）</td><td>大</td><td>高</td><td>中</td><td>⭐⭐⭐</td><td>定价权被侵蚀，盈利未验证</td></tr><tr><td>AI 推理服务</td><td>中</td><td>高</td><td>低</td><td>⭐⭐</td><td>IaaS 式商品化，利润率低</td></tr><tr><td>Consumer AI</td><td>中</td><td>高</td><td>低</td><td>⭐⭐</td><td>变现路径不清，差异化难</td></tr></tbody></table></div>
+<h3 id="75-潜在标的映射">7.5 潜在标的映射<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#75-潜在标的映射" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标的</th><th>产业链层</th><th>上市</th><th>核心业务</th><th>关键数据</th><th>估值参考</th><th>投资逻辑</th><th>主要风险</th><th></th></tr></thead><tbody><tr><td><strong>Nvidia (NVDA)</strong></td><td>算力层（芯片）</td><td>公开</td><td>AI 训练/推理 GPU 标准</td><td>GPU 85% 市占, ~75% GM</td><td>~$3T+ 市值</td><td>直接 CapEx 受益，产业链利润最厚环节</td><td>ASIC 侵蚀（Google TPU/AWS Helios/MatX），估值已高</td><td></td></tr><tr><td><strong>Microsoft (MSFT)</strong></td><td>云 + 应用</td><td>公开</td><td>Azure 云 + Copilot + OpenAI 生态</td><td>Azure +39%, $627B backlog</td><td>~$3T+ 市值</td><td>Copilot 企业覆盖 + OpenAI 生态权</td><td>AI ROI 未验证，OpenAI 与 AWS 合作后关系复杂化</td><td></td></tr><tr><td><strong>Meta (META)</strong></td><td>基础设施</td><td>公开</td><td>Llama 开源模型 + AI infra 建设</td><td>~$135B 2026 CapEx</td><td>~$1T+ 市值</td><td>开源 Llama 生态策略</td><td>负债 $57B+, 广告收入集中，CapEx 回报不确定</td><td></td></tr><tr><td><strong>ServiceNow (NOW)</strong></td><td>AI 应用（企业 Agent）</td><td>公开</td><td>企业级 AI 代理平台</td><td>$300B 2030 目标</td><td>—</td><td>AI 订阅驱动企业升级</td><td>竞争（Salesforce Agentforce）</td><td></td></tr><tr><td><strong>OpenAI</strong></td><td>模型层</td><td>未上市</td><td>基础模型 + ChatGPT + Codex</td><td>ARR ~$20-45B, Codex 4M 用户</td><td>~$300-850B（估值分歧大）</td><td>AI 消费操作系统，IPO 催化剂</td><td>IPO 被 Altman 民事案干扰，盈利未验证，蒸馏压力</td><td></td></tr><tr><td><strong>Anthropic</strong></td><td>模型层</td><td>未上市</td><td>企业安全 AI + Claude 系列</td><td>ARR ~$45B, 850% CAGR</td><td>~$900B（~20x run rate）</td><td>企业级安全差异化，IPO/战略投资</td><td>安全优先限制发布速度，零日囤积治理争议</td><td></td></tr><tr><td><strong>MatX</strong></td><td>算力层（推理芯片）</td><td>未上市</td><td>定制 AI 推理芯片</td><td>CEO 前 Google TPU 架构师</td><td>—</td><td>推理 ASIC 最有希望挑战者</td><td>产品未验证，巨额 CapEx 需求</td><td></td></tr><tr><td><strong>AssemblyAI</strong></td><td>推理服务层</td><td>未上市</td><td>Speech Language Model / Voice AI</td><td>Universal-3 Pro &lt;300ms P50</td><td>—</td><td>SLM 新赛道先发</td><td>模型层可能内化语音能力</td><td></td></tr><tr><td><strong>CoreWeave</strong></td><td>推理服务层</td><td>未上市</td><td>AI 专用云服务</td><td>Oracle <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">38</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">项目</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mord mathnormal">an</span><span class="mord mathnormal">e</span><span class="mord mathnormal">St</span><span class="mord mathnormal">ree</span><span class="mord mathnormal">t</span></span></span></span>1B</td><td>—</td><td>AI 工作负载迁移受益</td><td>融资依赖，竞争 AWS/Azure/GCP</td><td></td></tr><tr><td><strong>Cursor</strong></td><td>AI 应用（开发工具）</td><td>未上市（已收购）</td><td>AI-native 编程 IDE</td><td>$1B ARR（3 年）</td><td>$3B+（Stripe 收购）</td><td>AI 开发杀手级应用</td><td>GitHub Copilot 竞争</td><td></td></tr></tbody></table></div>
+<blockquote>
+<p><strong>免责声明</strong>：以上标的列为研究参考框架，不构成买卖建议。未上市公司估值来自新闻报道，准确度有限。</p>
+</blockquote>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/openai" class="internal" data-slug="wiki/companies/openai">openai</a>, <a href="../../wiki/companies/meta" class="internal" data-slug="wiki/companies/meta">meta</a>, <a href="../../wiki/companies/pltr" class="internal" data-slug="wiki/companies/pltr">pltr</a>, <a href="../../wiki/companies/tsla" class="internal" data-slug="wiki/companies/tsla">tsla</a>, <a href="../../wiki/companies/assembly-ai" class="internal" data-slug="wiki/companies/assembly-ai">assembly-ai</a>, <a href="../../wiki/companies/matx" class="internal" data-slug="wiki/companies/matx">matx</a>, <a href="../../wiki/companies/amzn" class="internal" data-slug="wiki/companies/amzn">amzn</a>, <a href="../../wiki/companies/googl" class="internal" data-slug="wiki/companies/googl">googl</a>, <a href="../../wiki/companies/msft" class="internal" data-slug="wiki/companies/msft">msft</a>, <a href="../../wiki/companies/nvda" class="internal" data-slug="wiki/companies/nvda">nvda</a>, <a href="../../wiki/companies/anthropic" class="internal" data-slug="wiki/companies/anthropic">anthropic</a>, <a href="../../wiki/companies/amd" class="internal" data-slug="wiki/companies/amd">amd</a>, <a href="../../wiki/companies/baba" class="internal" data-slug="wiki/companies/baba">baba</a>, <a href="../../wiki/companies/cbrs" class="internal" data-slug="wiki/companies/cbrs">cbrs</a></p>
+<h3 id="people">People<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#people" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../dwarkesh-patel" class="internal" data-slug="dwarkesh-patel">dwarkesh-patel</a>, <a href="../../reiner-pope" class="internal" data-slug="reiner-pope">reiner-pope</a>, <a href="../../fei-fei-li" class="internal" data-slug="fei-fei-li">fei-fei-li</a>, <a href="../../claire-vo" class="internal" data-slug="claire-vo">claire-vo</a>, <a href="../../lenny-rachitsky" class="internal" data-slug="lenny-rachitsky">lenny-rachitsky</a>, <a href="../../max-schoening" class="internal" data-slug="max-schoening">max-schoening</a>, <a href="../../oliver-hsu" class="internal" data-slug="oliver-hsu">oliver-hsu</a>, <a href="../../cat-wu" class="internal" data-slug="cat-wu">cat-wu</a>, <a href="../../elad-gil" class="internal" data-slug="elad-gil">elad-gil</a>, <a href="../../zhou-mo" class="internal" data-slug="zhou-mo">zhou-mo</a>, <a href="../../jamin-ball" class="internal" data-slug="jamin-ball">jamin-ball</a></p>
+<h3 id="concepts">Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/concepts/model-distillation" class="internal" data-slug="wiki/concepts/model-distillation">model-distillation</a>, <a href="../../wiki/concepts/model-routing" class="internal" data-slug="wiki/concepts/model-routing">model-routing</a>, <a href="../../wiki/concepts/ai-agent-operating-system" class="internal" data-slug="wiki/concepts/ai-agent-operating-system">ai-agent-operating-system</a>, <a href="../../wiki/concepts/ai-debt-market-fatigue" class="internal" data-slug="wiki/concepts/ai-debt-market-fatigue">ai-debt-market-fatigue</a>, <a href="../../wiki/concepts/ai-corporate-restructuring" class="internal" data-slug="wiki/concepts/ai-corporate-restructuring">ai-corporate-restructuring</a></p>
+<h3 id="related-sectors">Related Sectors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-sectors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/sectors/physical-ai-autonomous-systems" class="internal" data-slug="wiki/sectors/physical-ai-autonomous-systems">physical-ai-autonomous-systems</a>, <a href="../../wiki/sectors/biotech-multiomics" class="internal" data-slug="wiki/sectors/biotech-multiomics">biotech-multiomics</a>, <a href="../../wiki/sectors/space-defense" class="internal" data-slug="wiki/sectors/space-defense">space-defense</a>, <a href="../../wiki/sectors/blockchain-fintech" class="internal" data-slug="wiki/sectors/blockchain-fintech">blockchain-fintech</a>, <a href="../../wiki/sectors/semiconductors-memory" class="internal" data-slug="wiki/sectors/semiconductors-memory">semiconductors-memory</a>, <a href="../../wiki/sectors/saas" class="internal" data-slug="wiki/sectors/saas">saas</a></p>
+<h3 id="macro">Macro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/macro/hormuz-oil-shock-2026" class="internal" data-slug="wiki/macro/hormuz-oil-shock-2026">hormuz-oil-shock-2026</a></p>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../2026-03-18--ark-ai--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-ai--big-ideas-2026">2026-03-18—ark-ai—big-ideas-2026</a>, <a href="../../2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai" class="internal alias" data-slug="2026-04-27--ark--disrupt-newsletter-psychedelics-tesla-openai">2026-04-27—ark—disrupt-newsletter-psychedelics-tesla-openai</a>, <a href="../../2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler" class="internal alias" data-slug="2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler">2026-05-04—ark—disrupt-newsletter-robinhood-intellia-hyperscaler</a>, <a href="../../2026-04-24--a16z--charts-software-ate-the-world" class="internal alias" data-slug="2026-04-24--a16z--charts-software-ate-the-world">2026-04-24—a16z—charts-software-ate-the-world</a>, <a href="../../2026-05-02--lenny-rachitsky--max-schoening-notion-agency" class="internal alias" data-slug="2026-05-02--lenny-rachitsky--max-schoening-notion-agency">2026-05-02—lenny-rachitsky—max-schoening-notion-agency</a>, <a href="../../2026-04-15--dwarkesh-patel--what-i-learned-april-2025" class="internal alias" data-slug="2026-04-15--dwarkesh-patel--what-i-learned-april-2025">2026-04-15—dwarkesh-patel—what-i-learned-april-2025</a>, <a href="../../2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms" class="internal alias" data-slug="2026-04-29--dwarkesh-patel--reiner-pope-math-behind-llms">2026-04-29—dwarkesh-patel—reiner-pope-math-behind-llms</a>, <a href="../../2026-05-03--alpha-signal--single-multi-agent-architecture" class="internal alias" data-slug="2026-05-03--alpha-signal--single-multi-agent-architecture">2026-05-03—alpha-signal—single-multi-agent-architecture</a>, <a href="../../2026-04-23--lenny-rachitsky--cat-wu-anthropic-product-velocity" class="internal alias" data-slug="2026-04-23--lenny-rachitsky--cat-wu-anthropic-product-velocity">2026-04-23—lenny-rachitsky—cat-wu-anthropic-product-velocity</a>, <a href="../../2026-04-30--alpha-signal--assemblyai-universal-3-pro" class="internal alias" data-slug="2026-04-30--alpha-signal--assemblyai-universal-3-pro">2026-04-30—alpha-signal—assemblyai-universal-3-pro</a>, <a href="../../2026-05-04--how-i-ai--owen-williams-stripe-protodash" class="internal alias" data-slug="2026-05-04--how-i-ai--owen-williams-stripe-protodash">2026-05-04—how-i-ai—owen-williams-stripe-protodash</a>, <a href="../../2026-03-31--lenny-rachitsky--claire-vo-openclaw-personal-ai-agent" class="internal alias" data-slug="2026-03-31--lenny-rachitsky--claire-vo-openclaw-personal-ai-agent">2026-03-31—lenny-rachitsky—claire-vo-openclaw-personal-ai-agent</a>, <a href="../../2026-05-01--elad-gil--tim-ferriss-interview" class="internal alias" data-slug="2026-05-01--elad-gil--tim-ferriss-interview">2026-05-01—elad-gil—tim-ferriss-interview</a> + <a href="../../2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings" class="internal alias" data-slug="2026-05-08--fundaai-zhou-mo--ai-industry-after-big-tech-earnings">2026-05-08—fundaai-zhou-mo—ai-industry-after-big-tech-earnings</a> + INSIGHT NEWS PRO 2026-05-07 + <a href="../../2026-05-11--ark--disrupt-weekly-shopify-agentic-commerce" class="internal alias" data-slug="2026-05-11--ark--disrupt-weekly-shopify-agentic-commerce">2026-05-11—ark—disrupt-weekly-shopify-agentic-commerce</a> + <a href="../../2026-05-11--how-i-ai--john-kim-delight-ai-adoption-playbook" class="internal alias" data-slug="2026-05-11--how-i-ai--john-kim-delight-ai-adoption-playbook">2026-05-11—how-i-ai—john-kim-delight-ai-adoption-playbook</a> + <a href="../../02-Work/Investment/_investment-wiki/sources/2026-04-02--latent-space--moonlake-world-models" class="internal alias" data-slug="02-Work/Investment/_investment-wiki/sources/2026-04-02--latent-space--moonlake-world-models">2026-04-02—latent-space—moonlake-world-models</a> + <a href="../../2026-05-25--alphasignal--specialized-ai-models" class="internal alias" data-slug="2026-05-25--alphasignal--specialized-ai-models">2026-05-25—alphasignal—specialized-ai-models</a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-181" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#关键跟踪指标-kb" data-for="关键跟踪指标-kb">关键跟踪指标 [KB]</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" data-for="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查pest--趋势合并" data-for="3-驱动力与趋势-kb--每次-ingestnews--research-notes--articles检查pest--趋势合并">3. 驱动力与趋势 [KB] ← 每次 ingest（news / research notes / articles）检查（PEST + 趋势合并）</a></li><li class="depth-1"><a href="#31-政策与监管-policy--regulatory-13条" data-for="31-政策与监管-policy--regulatory-13条">3.1 政策与监管 (Policy &amp; Regulatory) [13条]</a></li><li class="depth-1"><a href="#32-经济与市场-economic--market-32条" data-for="32-经济与市场-economic--market-32条">3.2 经济与市场 (Economic &amp; Market) [32条]</a></li><li class="depth-1"><a href="#33-技术与创新-technology--innovation-19条" data-for="33-技术与创新-technology--innovation-19条">3.3 技术与创新 (Technology &amp; Innovation) [19条]</a></li><li class="depth-1"><a href="#34-短期趋势1-2-年2026-202747条" data-for="34-短期趋势1-2-年2026-202747条">3.4 短期趋势（1-2 年，2026-2027）[47条]</a></li><li class="depth-1"><a href="#35-结构性长期问题-9条" data-for="35-结构性长期问题-9条">3.5 结构性长期问题 [9条]</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf--玩家动态按需更新" data-for="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新</a></li><li class="depth-1"><a href="#市场集中度-est" data-for="市场集中度-est">市场集中度 [EST]</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf--新风险出现风险缓解时更新" data-for="5-风险监控-kb--inf--新风险出现风险缓解时更新">5. 风险监控 [KB + INF] ← 新风险出现/风险缓解时更新</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-0"><a href="#6-市场规模-kb--财报季更新" data-for="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-1"><a href="#验证逻辑" data-for="验证逻辑">验证逻辑</a></li><li class="depth-1"><a href="#历史增长核对" data-for="历史增长核对">历史增长核对</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--kb--inf--框架稳定仅重大变化更新" data-for="7-产业链与投资逻辑-frame--kb--inf--框架稳定仅重大变化更新">7. 产业链与投资逻辑 [FRAME + KB + INF] ← 框架稳定，仅重大变化更新</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-成本结构-est" data-for="73-成本结构-est">7.3 成本结构 [EST]</a></li><li class="depth-1"><a href="#74-投资框架-frame--inf" data-for="74-投资框架-frame--inf">7.4 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#75-潜在标的映射" data-for="75-潜在标的映射">7.5 潜在标的映射</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#people" data-for="people">People</a></li><li class="depth-1"><a href="#concepts" data-for="concepts">Concepts</a></li><li class="depth-1"><a href="#related-sectors" data-for="related-sectors">Related Sectors</a></li><li class="depth-1"><a href="#macro" data-for="macro">Macro</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/analyses/frameworks/ai-buildout-stack" class="internal">ai-buildout-stack</a></li><li><a href="../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal">ai-stack-modular-middle</a></li><li><a href="../../wiki/analyses/trackers/physical-ai" class="internal">physical-ai</a></li><li><a href="../../wiki/companies/aaoi" class="internal">aaoi</a></li><li><a href="../../wiki/companies/amba" class="internal">amba</a></li><li><a href="../../wiki/companies/amzn" class="internal">amzn</a></li><li><a href="../../wiki/companies/anthropic" class="internal">anthropic</a></li><li><a href="../../wiki/companies/assembly-ai" class="internal">assembly-ai</a></li><li><a href="../../wiki/companies/baba" class="internal">baba</a></li><li><a href="../../wiki/companies/bzai" class="internal">bzai</a></li><li><a href="../../wiki/companies/cbrs" class="internal">cbrs</a></li><li><a href="../../wiki/companies/cohr" class="internal">cohr</a></li><li><a href="../../wiki/companies/crwv" class="internal">crwv</a></li><li><a href="../../wiki/companies/dell" class="internal">dell</a></li><li><a href="../../wiki/companies/exa" class="internal">exa</a></li><li><a href="../../wiki/companies/fn" class="internal">fn</a></li><li><a href="../../wiki/companies/glw" class="internal">glw</a></li><li><a href="../../wiki/companies/googl" class="internal">googl</a></li><li><a href="../../wiki/companies/hubn" class="internal">hubn</a></li><li><a href="../../wiki/companies/matx" class="internal">matx</a></li><li><a href="../../wiki/companies/mediatek" class="internal">mediatek</a></li><li><a href="../../wiki/companies/moonlake" class="internal">moonlake</a></li><li><a href="../../wiki/companies/msft" class="internal">msft</a></li><li><a href="../../wiki/companies/nbis" class="internal">nbis</a></li><li><a href="../../wiki/companies/nvda" class="internal">nvda</a></li><li><a href="../../wiki/companies/openai" class="internal">openai</a></li><li><a href="../../wiki/companies/spacex" class="internal">spacex</a></li><li><a href="../../wiki/concepts/ai-agent-operating-system" class="internal">ai-agent-operating-system</a></li><li><a href="../../wiki/concepts/ai-chip-architecture" class="internal">ai-chip-architecture</a></li><li><a href="../../wiki/concepts/ai-corporate-restructuring" class="internal">ai-corporate-restructuring</a></li><li><a href="../../wiki/concepts/ai-debt-market-fatigue" class="internal">ai-debt-market-fatigue</a></li><li><a href="../../wiki/concepts/everything-is-computer-framework" class="internal">everything-is-computer-framework</a></li><li><a href="../../wiki/concepts/model-distillation" class="internal">model-distillation</a></li><li><a href="../../wiki/concepts/model-routing" class="internal">model-routing</a></li><li><a href="../../wiki/concepts/neocloud" class="internal">neocloud</a></li><li><a href="../../wiki/concepts/openclaw" class="internal">openclaw</a></li><li><a href="../../wiki/concepts/retail-flow-vulnerability" class="internal">retail-flow-vulnerability</a></li><li><a href="../../wiki/concepts/technological-convergence" class="internal">technological-convergence</a></li><li><a href="../../wiki/daily/2026-05-20" class="internal">2026-05-20</a></li><li><a href="../../wiki/daily/2026-05-21" class="internal">2026-05-21</a></li><li><a href="../../wiki/daily/2026-05-22" class="internal">2026-05-22</a></li><li><a href="../../wiki/daily/2026-05-23" class="internal">2026-05-23</a></li><li><a href="../../wiki/daily/2026-05-24" class="internal">2026-05-24</a></li><li><a href="../../wiki/daily/2026-05-25" class="internal">2026-05-25</a></li><li><a href="../../wiki/daily/2026-05-27" class="internal">2026-05-27</a></li><li><a href="../../wiki/daily/2026-05-29" class="internal">2026-05-29</a></li><li><a href="../../wiki/daily/2026-05-31" class="internal">2026-05-31</a></li><li><a href="../../wiki/daily/2026-06-01" class="internal">2026-06-01</a></li><li><a href="../../wiki/daily/2026-06-08" class="internal">2026-06-08</a></li><li><a href="../../wiki/daily/2026-06-09" class="internal">2026-06-09</a></li><li><a href="../../wiki/sectors/cybersecurity" class="internal">cybersecurity</a></li><li><a href="../../wiki/sectors/semiconductors-memory" class="internal">semiconductors-memory</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

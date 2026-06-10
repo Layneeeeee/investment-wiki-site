@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>physical-ai-stack</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="physical-ai-stack"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="physical-ai-stack"/><meta name="twitter:description" content="Analysis: Physical AI 投资堆栈框架 核心框架：Physical AI 不是单一产品类别，而是一个多层的赋能技术垂直堆栈。投资机会在于识别哪些层具有 bottleneck 经济学（供给稀缺、技术难度高、替代方案少）vs 哪些层会商品化（高量低利、价格竞争）。 来源：2026-05-23—gaetano—physical-ai-theme (Gaetano, Crux Capital) Layer 1 公司深度 mapping 见：2026-05-26—gaetano—physical-ai-layer1-training 快速参考：Physical AI 投资堆栈 flow..."/><meta property="og:description" content="Analysis: Physical AI 投资堆栈框架 核心框架：Physical AI 不是单一产品类别，而是一个多层的赋能技术垂直堆栈。投资机会在于识别哪些层具有 bottleneck 经济学（供给稀缺、技术难度高、替代方案少）vs 哪些层会商品化（高量低利、价格竞争）。 来源：2026-05-23—gaetano—physical-ai-theme (Gaetano, Crux Capital) Layer 1 公司深度 mapping 见：2026-05-26—gaetano—physical-ai-layer1-training 快速参考：Physical AI 投资堆栈 flow..."/><meta property="og:image:alt" content="Analysis: Physical AI 投资堆栈框架 核心框架：Physical AI 不是单一产品类别，而是一个多层的赋能技术垂直堆栈。投资机会在于识别哪些层具有 bottleneck 经济学（供给稀缺、技术难度高、替代方案少）vs 哪些层会商品化（高量低利、价格竞争）。 来源：2026-05-23—gaetano—physical-ai-theme (Gaetano, Crux Capital) Layer 1 公司深度 mapping 见：2026-05-26—gaetano—physical-ai-layer1-training 快速参考：Physical AI 投资堆栈 flow..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/physical-ai-stack"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/physical-ai-stack"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Analysis: Physical AI 投资堆栈框架 核心框架：Physical AI 不是单一产品类别，而是一个多层的赋能技术垂直堆栈。投资机会在于识别哪些层具有 bottleneck 经济学（供给稀缺、技术难度高、替代方案少）vs 哪些层会商品化（高量低利、价格竞争）。 来源：2026-05-23—gaetano—physical-ai-theme (Gaetano, Crux Capital) Layer 1 公司深度 mapping 见：2026-05-26—gaetano—physical-ai-layer1-training 快速参考：Physical AI 投资堆栈 flow..."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/physical-ai-stack-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/physical-ai-stack-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/analyses/frameworks/physical-ai-stack-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/analyses/frameworks/physical-ai-stack"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-21"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-21" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/">analyses</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../wiki/analyses/frameworks/">frameworks</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>physical ai stack</a></div></nav><h1 class="article-title">physical-ai-stack</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-26T16:00:00.000Z">May 27, 2026</time><span>26 min read</span></p><ul class="tags"><li><a href="../../../tags/physical-ai" class="internal tag-link">physical-ai</a></li><li><a href="../../../tags/investment-framework" class="internal tag-link">investment-framework</a></li><li><a href="../../../tags/robotics" class="internal tag-link">robotics</a></li><li><a href="../../../tags/edge-compute" class="internal tag-link">edge-compute</a></li><li><a href="../../../tags/supply-chain" class="internal tag-link">supply-chain</a></li><li><a href="../../../tags/gaetano" class="internal tag-link">gaetano</a></li><li><a href="../../../tags/analysis" class="internal tag-link">analysis</a></li></ul></div></div><article class="popover-hint"><h1 id="analysis-physical-ai-投资堆栈框架">Analysis: Physical AI 投资堆栈框架<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#analysis-physical-ai-投资堆栈框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>核心框架</strong>：Physical AI 不是单一产品类别，而是一个多层的赋能技术垂直堆栈。投资机会在于识别哪些层具有 bottleneck 经济学（供给稀缺、技术难度高、替代方案少）vs 哪些层会商品化（高量低利、价格竞争）。</p>
+<p>来源：<a href="../../../2026-05-23--gaetano--physical-ai-theme" class="internal alias" data-slug="2026-05-23--gaetano--physical-ai-theme">2026-05-23—gaetano—physical-ai-theme</a> (Gaetano, Crux Capital)</p>
+<p>Layer 1 公司深度 mapping 见：<a href="../../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a></p>
+</blockquote>
+<hr/>
+<h2 id="快速参考physical-ai-投资堆栈">快速参考：Physical AI 投资堆栈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#快速参考physical-ai-投资堆栈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart LR\n  subgraph A[\&quot;上游 · 数据与训练\&quot;]\n    direction LR\n    T[\&quot;Training&lt;br/>上游\&quot;] --> Sim[\&quot;Simulation&lt;br/>上游\&quot;]\n  end\n  subgraph B[\&quot;感知与计算\&quot;]\n    direction LR\n    P[\&quot;Perception&lt;br/>感知层\&quot;] --> EC[\&quot;Edge Compute&lt;br/>关键赋能\&quot;]\n  end\n  subgraph C[\&quot;决策与控制\&quot;]\n    direction LR\n    SW[\&quot;Software/Planning&lt;br/>软件层\&quot;] --> CT[\&quot;Control Systems&lt;br/>工业必需\&quot;]\n  end\n  subgraph D[\&quot;物理基础\&quot;]\n    direction LR\n    MA[\&quot;Motion/Actuation&lt;br/>卖铲子\&quot;] --> PE[\&quot;Power/Energy&lt;br/>能源基础\&quot;]\n  end\n  subgraph E[\&quot;部署与市场\&quot;]\n    direction LR\n    CF[\&quot;Connectivity/Fleet&lt;br/>连接层\&quot;] --> I[\&quot;Integration&lt;br/>高粘性\&quot;] --> EM[\&quot;End Markets&lt;br/>ROI驱动\&quot;]\n  end\n\n  Sim --> P\n  EC --> SW\n  CT --> MA\n  PE --> CF&quot;">flowchart LR
+  subgraph A[&quot;上游 · 数据与训练&quot;]
+    direction LR
+    T[&quot;Training&lt;br/>上游&quot;] --> Sim[&quot;Simulation&lt;br/>上游&quot;]
+  end
+  subgraph B[&quot;感知与计算&quot;]
+    direction LR
+    P[&quot;Perception&lt;br/>感知层&quot;] --> EC[&quot;Edge Compute&lt;br/>关键赋能&quot;]
+  end
+  subgraph C[&quot;决策与控制&quot;]
+    direction LR
+    SW[&quot;Software/Planning&lt;br/>软件层&quot;] --> CT[&quot;Control Systems&lt;br/>工业必需&quot;]
+  end
+  subgraph D[&quot;物理基础&quot;]
+    direction LR
+    MA[&quot;Motion/Actuation&lt;br/>卖铲子&quot;] --> PE[&quot;Power/Energy&lt;br/>能源基础&quot;]
+  end
+  subgraph E[&quot;部署与市场&quot;]
+    direction LR
+    CF[&quot;Connectivity/Fleet&lt;br/>连接层&quot;] --> I[&quot;Integration&lt;br/>高粘性&quot;] --> EM[&quot;End Markets&lt;br/>ROI驱动&quot;]
+  end
+
+  Sim --> P
+  EC --> SW
+  CT --> MA
+  PE --> CF
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层</th><th>功能</th><th>投资特征</th><th>瓶颈潜力</th><th>关键变量</th></tr></thead><tbody><tr><td>Training</td><td>AI 模型学习数据</td><td>上游，控制数据/模型者靠近价值</td><td>高 (数据稀缺)</td><td>真实世界数据获取成本</td></tr><tr><td>Simulation</td><td>虚拟世界练习</td><td>工具型，战略性</td><td>中 (sim-to-real gap)</td><td>仿真逼真度进展</td></tr><tr><td>Perception</td><td>传感器感知环境</td><td>广阔，多传感器融合</td><td>高 (复杂度增长)</td><td>传感器成本曲线</td></tr><tr><td>Edge Compute</td><td>本地推理处理</td><td>关键赋能，每系统必需</td><td>高 (功耗+性能约束)</td><td>AI 芯片效率演进</td></tr><tr><td>Software/Planning</td><td>信息→决策</td><td>价值流向能交付者</td><td>中 (取决于复杂度)</td><td>任务通用性进展</td></tr><tr><td>Control Systems</td><td>精确安全执行</td><td>”枯燥”但必需，精度+安全硬约束</td><td>中 (认证门槛)</td><td>工业安全标准</td></tr><tr><td>Motion/Actuation</td><td>物理运动执行</td><td>经典卖铲子，硬件需求不变</td><td>低 (供应充足)</td><td>磨损/维护成本</td></tr><tr><td>Power/Energy</td><td>能量输送</td><td>效率是关键，越智能越耗电</td><td>中 (能量密度)</td><td>电池技术进展</td></tr><tr><td>Connectivity/Fleet</td><td>多机协调</td><td>延迟敏感，安全成独立问题</td><td>低 (现有方案多)</td><td>5G/工业以太网覆盖</td></tr><tr><td>Integration</td><td>真实世界部署</td><td>高粘性，最深的护城河之一</td><td>高 (综合能力稀缺)</td><td>客户信赖度</td></tr><tr><td>End Markets</td><td>价值创造</td><td>ROI 驱动采用</td><td>—</td><td>劳动力/效率痛点</td></tr></tbody></table></div>
+<hr/>
+<h2 id="核心论点physical-ai-是-optics-之前的-optics">核心论点：Physical AI 是 optics 之前的 optics？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心论点physical-ai-是-optics-之前的-optics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Gaetano 将 Physical AI 定位为 optics super cycle 之前早期的 analogous situation。关键对比：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>Optics 早期 (2024 初)</th><th>Physical AI 现在 (2026)</th></tr></thead><tbody><tr><td>市场规模</td><td>~$3B tokenized assets (类比)</td><td>~$30B tokenized; Physical AI 更早期</td></tr><tr><td>机构覆盖</td><td>极少 dedicated analyst</td><td>多家买方覆盖，但系统性框架少</td></tr><tr><td>公开标的</td><td>少数纯玩 (AAOI, LITE 等)</td><td>多数赋能层存于工业公司内部</td></tr><tr><td>催化剂</td><td>AI 数据中心光互联需求爆发</td><td>AI 向劳动力迁移（demographic driver）</td></tr><tr><td>风险</td><td>技术路线不确定 (CPO 时间表)</td><td>Sim-to-real 差距、部署时间线</td></tr></tbody></table></div>
+<p><strong>核心差异</strong>：Optics 的超周期由 AI 数据中心的一个明确瓶颈驱动（光互联带宽跟不上 GPU 计算增长）。Physical AI 的驱动更分散——劳动力替代、安全自动化、效率提升——这意味着投资机会可能更广泛但更难集中押注。</p>
+<hr/>
+<h2 id="11-层堆栈详解">11 层堆栈详解<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-层堆栈详解" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-training训练">1. Training（训练）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-training训练" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 模型不仅需要文本/代码/图像数据，还需要理解空间、运动、物体、力、时间和因果关系的训练数据。不同于 Gen AI，Physical AI 的训练数据获取成本高得多——真实物理交互数据难以大规模收集。</p>
+<p><strong>关键投资问题</strong>：</p>
+<ul>
+<li>谁能获取稀缺的真实物理交互数据？</li>
+<li>合成数据能否有效替代真实数据？</li>
+<li>World models 和 VLA 模型架构的发展方向？</li>
+</ul>
+<p><strong>投资特征</strong>：上游，控制数据流和模型训练基础设施者靠近价值端，但多数机会在私有市场。</p>
+<hr/>
+<h4 id="layer-1-投资结构--三大子类">Layer 1 投资结构 — 三大子类<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-1-投资结构--三大子类" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Gaetano（Crux Capital）将 Training/Model Development 层的公司划分为三个子类，每类有不同的投资特征、风险 profile 和估值驱动因素（<a href="../../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>）：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>子类</th><th>功能</th><th>投资特征</th><th>代表标的</th></tr></thead><tbody><tr><td><strong>① Picks-and-shovels</strong></td><td>直接销售数据/标注/eval 工具与服务</td><td>现有 AI 收入已验证，Physical AI=expansion leg；偏服务型，margin 取决于可复用 IP 占比</td><td><a href="../../../wiki/companies/inod" class="internal" data-slug="wiki/companies/inod">inod</a>, <a href="../../../wiki/companies/task" class="internal" data-slug="wiki/companies/task">task</a>, NBIS/Toloka</td></tr><tr><td><strong>② 物理世界数据拥有者</strong></td><td>拥有稀缺的真实世界数据集（卫星、地理空间、传感器网络）</td><td>Capex 密集，数据护城河深，但变现路径更长；AI 降低使用门槛可扩展 TAM</td><td><a href="../../../wiki/companies/pl" class="internal" data-slug="wiki/companies/pl">pl</a>, BKSY, SPIR, REKR</td></tr><tr><td><strong>③ 自主数据循环所有者</strong></td><td>部署 Physical AI 系统 → 产生运营数据 → 改善模型</td><td>最纯的 Physical AI 敞口，但收入时间线最远；数据飞轮是核心护城河</td><td>WRD, PONY, <a href="../../../wiki/companies/aur" class="internal" data-slug="wiki/companies/aur">aur</a>, KDK, MBLY, PDYN</td></tr></tbody></table></div>
+<hr/>
+<h4 id="-picks-and-shovels--公司详解">① Picks-and-Shovels — 公司详解<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-picks-and-shovels--公司详解" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>这三家公司已经通过 general AI 模型开发 cycle 产生实质性收入，Physical AI 是下一阶段的扩张期权。</p>
+<h5 id="inod-innodata--最纯的-layer-1-公开标的"><a href="../../../wiki/companies/inod" class="internal" data-slug="wiki/companies/inod">inod</a> (Innodata) — 最纯的 Layer 1 公开标的<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inod-innodata--最纯的-layer-1-公开标的" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>定位</strong></td><td>AI 数据工程公司，覆盖预训练/中训练/后训练/评估全生命周期</td></tr><tr><td><strong>Q1 收入证据</strong></td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">90.1</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mopen">(</span><span class="mord">+</span><span class="mord">54</span></span></span></span>25M adj EBITDA (28% margin) [FC]</td></tr><tr><td><strong>客户扩张</strong></td><td>新 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">51</span><span class="mord mathnormal" style="margin-right:0.05017em;">MB</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">h</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">（去年</span></span></span></span>0）+ 其他 Big Tech 客户 +453% YoY [FC]</td></tr><tr><td><strong>Physical AI 连接</strong></td><td>联邦业务（Palantir CV, MDA SHIELD）涉足高后果 AI；管理层明确将 embodied AI/robotics 作为长期叙事</td></tr><tr><td><strong>Margin 路径</strong></td><td>可复用数据集→synthetic data→agent eval platform→从 services 向 platform 迁移</td></tr><tr><td><strong>需警惕</strong></td><td>股票已涨 ~200% post-earnings；训练阶段存在季度波动；若保持 custom services 则 margin 受限</td></tr></tbody></table></div>
+<h5 id="task-taskus--运营型-ai-services"><a href="../../../wiki/companies/task" class="internal" data-slug="wiki/companies/task">task</a> (TaskUs) — 运营型 AI Services<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#task-taskus--运营型-ai-services" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>定位</strong></td><td>BPO 公司中的 AI Services 业务（20% 收入），提供 AV/机器人数据标注、eval、远程操作</td></tr><tr><td><strong>Q1 收入证据</strong></td><td>AI Services $61.9M (+36.1% YoY, 连续 6 季度 >30%), >40% 新签来自 AI Services [FC]</td></tr><tr><td><strong>AV/机器人进展</strong></td><td>AV 已从数据标注演进到 live remote operations；机器人约在 AV 三年前阶段；管理称 2026 triple [FC]</td></tr><tr><td><strong>案例验证</strong></td><td>LiDAR 标注、语义映射、配送机器人远程操作；2x training scalability, 33% faster proficiency, 30%+ 低成本 [FC]</td></tr><tr><td><strong>重估潜力</strong></td><td>AI Services 占比持续扩大 → 可能从 BPO (~1x rev) 重新定价为 AI services (~3-5x rev)</td></tr><tr><td><strong>需警惕</strong></td><td>最大客户自动化压力压低了 Q2 指引；传统 BPO 估值折扣短期内难消除</td></tr></tbody></table></div>
+<h5 id="nbistoloka--ai-cloud-中的-layer-1-隐藏资产">NBIS/Toloka — AI Cloud 中的 Layer 1 隐藏资产<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nbistoloka--ai-cloud-中的-layer-1-隐藏资产" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>结构</strong></td><td>Nebius AI Cloud（$390M Q1, +841% YoY, 45% adj EBITDA margin） + Toloka（数据/eval） + Avride（AV/配送）[FC]</td></tr><tr><td><strong>Toloka 的 Layer 1 角色</strong></td><td>训练数据、模型评估、red-teaming、RL 反馈；随着 Physical AI 演进，评估需求复杂度提升</td></tr><tr><td><strong>Physical AI 证据</strong></td><td>1X Technologies（人形机器人）使用 Nebius Cloud [FC]；Avride 自主车+配送机器人共享技术栈</td></tr><tr><td><strong>估值讨论</strong></td><td>如果 AI Cloud 业务自身 justify 估值，Toloka 和 Avride 是免费 call options</td></tr><tr><td><strong>需警惕</strong></td><td>Toloka 已引入外部资本，Avride 计划最终 deconsolidate → 股东 Physical AI 敞口会降低</td></tr></tbody></table></div>
+<hr/>
+<h4 id="-physical-world-data-owners">② Physical-World Data Owners<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-physical-world-data-owners" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h5 id="pl-planet-labs--物理世界的基础数据集"><a href="../../../wiki/companies/pl" class="internal" data-slug="wiki/companies/pl">pl</a> (Planet Labs) — 物理世界的基础数据集<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pl-planet-labs--物理世界的基础数据集" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>定位</strong></td><td>650+ 卫星发射，每日全球地表扫描。“LLMs can talk about the text of the internet, but they know very little about the physical world.”</td></tr><tr><td><strong>Q4 收入证据</strong></td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">86.8</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mopen">(</span><span class="mord">+</span><span class="mord">41</span></span></span></span>307.7M (+26%), 首个全年 adj EBITDA 盈利 + FCF 正 [FC]</td></tr><tr><td><strong>数据集规模</strong></td><td>陆地每点位平均 3,000+ 次采集 → 时间序列数据，可训练变化检测模型</td></tr><tr><td><strong>AI 叙事</strong></td><td>NVIDIA 合作（100x 数据预处理加速）+ Google Suncatcher（太空 TPU R&amp;D）[FC]</td></tr><tr><td><strong>主权飞轮</strong></td><td>€240M 德国 + 九位数瑞典 sovereign 协议 → 资助卫星扩张 → 更多数据 → 更好解决方案</td></tr><tr><td><strong>需警惕</strong></td><td>对机器人/具身 AI 最不直接（地球观测 ≠ 机器人训练）；FY2027 GM 预计下降；GAAP EPS -$0.48（非现金 warrant revaluation）[FC]</td></tr></tbody></table></div>
+<hr/>
+<h4 id="-桥梁标的--synthetic-data--simulation">③ 桥梁标的 — Synthetic Data &amp; Simulation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-桥梁标的--synthetic-data--simulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h5 id="u-unity--layer-12-桥梁"><a href="../../../wiki/companies/u" class="internal" data-slug="wiki/companies/u">u</a> (Unity) — Layer 1→2 桥梁<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#u-unity--layer-12-桥梁" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>Layer 1 角色</strong></td><td>Perception tools 生成带标签的合成训练数据（CV/机器人），填补真实世界数据难以覆盖的稀有/危险场景</td></tr><tr><td><strong>Layer 2 角色</strong></td><td>Unity AI（公测）加速世界创建；仿真环境可用于 Physical AI 部署前测试</td></tr><tr><td><strong>Q1 证据</strong></td><td>Strategic Grow <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">279</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mopen">(</span><span class="mord">+</span><span class="mord">49</span></span></span></span>154M (+15% YoY)</td></tr><tr><td><strong>Runtime 数据</strong></td><td>Vector 运行于 20 年游戏数据 + 数十亿用户互动 → 交互行为数据可能随 AI 环境发展增值</td></tr><tr><td><strong>需警惕</strong></td><td>核心身份是游戏引擎公司，Physical AI 是 equity story 中极小部分；自身的 turnaround 独立于 Physical AI</td></tr></tbody></table></div>
+<hr/>
+<h4 id="layer-1-投资核心注释">Layer 1 投资核心注释<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-1-投资核心注释" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li><strong>General AI vs Physical AI 收入区分</strong> — INOD 和 TASK 今天的主要收入来自 general AI 模型开发cycle，Physical AI 是叙事期权。追踪 Physical AI 专属收入的占比是判断叙事兑现程度的关键指标。</li>
+<li><strong>公开市场敞口有限</strong> — Layer 1 最纯正的标的（Scale AI、Hive、Physical Intelligence）在私有市场。公开标的要么是服务公司（INOD/TASK），要么是 Physical AI 只占业务小部分（NBIS/U/PL）。</li>
+<li><strong>Internalization 风险</strong> — Frontier labs（OpenAI、Anthropic、Google）可能内部化数据/eval 工作流，减少对第三方依赖。目前看模型复杂度增长超过内部化速度，但需要持续监控。</li>
+<li><strong>Gaetano 自身持仓</strong> — 截至本文，Gaetano 在 Physical AI 主题中仅持有一家公司。对比其 optics 覆盖（有具体仓位披露），Layer 1 仍处于 framework building 阶段，而非 conviction positioning。参见 <a href="../../../gaetano" class="internal" data-slug="gaetano">gaetano</a> 和 <a href="../../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>。</li>
+</ol>
+<h3 id="2-simulation仿真">2. Simulation（仿真）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-simulation仿真" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 在虚拟世界中练习后再部署到真实环境。仿真层解决”真实世界实践昂贵、缓慢且有风险”的问题。关键挑战是 <strong>sim-to-real 差距</strong>——仿真中完美运行的系统可能在真实环境中失败。</p>
+<p><strong>Sim-to-real 差距的影响</strong>：</p>
+<ul>
+<li>如果差距迅速缩小 → Physical AI 部署加速，利好下游应用</li>
+<li>如果差距持续存在 → 部署时间线延迟，利好仿真工具提供商</li>
+</ul>
+<p><strong>投资特征</strong>：工具型，具有战略重要性，但 TAM 可能有限。仿真收入和 Physical AI 部署成功率直接相关。</p>
+<h3 id="3-perception感知">3. Perception（感知）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-perception感知" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 的”眼睛和耳朵”。多种传感器类型（摄像头、激光雷达、雷达、深度传感器、热成像、SWIR、力传感器）通过传感器融合构建完整的环境理解。</p>
+<p><strong>关键观察</strong>：</p>
+<ul>
+<li>单个传感器类型都有局限性（摄像头在黑暗中失效、激光雷达在烟雾中退化）</li>
+<li>传感器融合（多传感器协同）是构建可靠感知的必需路径</li>
+<li>感知层复杂度随部署环境增加（仓库 &lt; 公路 &lt; 战场 &lt; 手术室）</li>
+</ul>
+<p><strong>投资特征</strong>：广阔的投资领域，每种子类型有不同的竞争格局。感知可能在 Physical AI 规模化过程中成为关键瓶颈。</p>
+<h3 id="4-edge-compute边缘计算">4. Edge Compute（边缘计算）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-edge-compute边缘计算" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 系统中最关键的技术赋能层之一。AI 不能在安全关键场景中依赖云端往返延迟，推理必须在设备附近（“边缘”）完成。</p>
+<p><strong>关键驱动力</strong>：</p>
+<ul>
+<li><strong>延迟约束</strong>：安全关键决策需要毫秒级响应</li>
+<li><strong>带宽约束</strong>：传感器产生的原始数据量过大，无法全部上传云端</li>
+<li><strong>可靠性</strong>：网络中断时系统必须能独立运行</li>
+<li><strong>隐私/安全</strong>：敏感数据（医疗、国防）应在本地处理</li>
+</ul>
+<p><strong>已有覆盖的标的</strong>：<a href="../../../wiki/companies/nok" class="internal" data-slug="wiki/companies/nok">nok</a>（边缘网络基础设施）、<a href="../../../wiki/companies/bzai" class="internal" data-slug="wiki/companies/bzai">bzai</a>（边缘 AI 推理芯片）</p>
+<p><strong>投资特征</strong>：Physical AI 中最具吸引力的层之一——每个 Physical AI 系统都需要本地智能。功耗-性能约束创造技术护城河。</p>
+<h3 id="5-software--planning软件与规划">5. Software &amp; Planning（软件与规划）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-software--planning软件与规划" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>将感知信息转化为决策。包含任务规划（高层的”去拿那个盒子”）和运动规划（具体的路径、速度、避障）。集群场景下（多机器人协同）复杂度进一步增加。</p>
+<p><strong>关键竞争要素</strong>：</p>
+<ul>
+<li>任务通用性：能否处理未见过的场景</li>
+<li>故障恢复：第一次计划失败时的反应能力</li>
+<li>集群协调：多机协同效率</li>
+</ul>
+<p><strong>投资特征</strong>：价值流向能交付可用软件的公司，但软件层通常绑定到硬件平台，独立软件机会有限。</p>
+<h3 id="6-control-systems控制系统">6. Control Systems（控制系统）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-control-systems控制系统" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>“决策”与”安全物理运动”之间的桥梁。确保机器以正确的速度、力、路径运动，不超出安全边界。</p>
+<p><strong>关键特性</strong>：</p>
+<ul>
+<li>在工业环境（强大力矩的机械臂可能伤人）和医疗环境（手术机器人需要极精细控制）中尤其关键</li>
+<li>需要持续反馈循环（编码器、力/扭矩传感器、位置传感器）</li>
+<li>控制调整频率可达每秒数百/数千次</li>
+</ul>
+<p><strong>投资特征</strong>：“枯燥”的工业必需层，精度和安全认证创造进入壁垒，但增长较慢。</p>
+<h3 id="7-motion--actuation运动与执行">7. Motion &amp; Actuation（运动与执行）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-motion--actuation运动与执行" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 的”肌肉和关节”——电机、伺服、执行器、夹爪、关节、车轮。将软件指令转化为物理运动。</p>
+<p><strong>关键观察</strong>：</p>
+<ul>
+<li>物理磨损不可避免（电机发热、轴承磨损、齿轮退化）→ 维护/替换需求创造持续收入</li>
+<li>这是最纯粹的”卖铲子”层——无论最终的人形机器人赢家是谁，所有机器人都需要高质量的运动硬件</li>
+<li>跨终端市场受益（仓库、工厂、手术室、野外机器人）</li>
+</ul>
+<p><strong>投资特征</strong>：经典 picks-and-shovels，收入稳定但利润率可能受压。赢家是能服务于多终端市场的供应商。</p>
+<h3 id="8-power--energy电力与能源">8. Power &amp; Energy（电力与能源）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-power--energy电力与能源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>所有 Physical AI 系统都需要能源。包括电池、BMS、电源模块、电机驱动、电源管理芯片、连接器、热管理。</p>
+<p><strong>核心张力</strong>：更智能 = 更耗电。人形机器人需要同时为摄像头、芯片、关节、平衡系统供电——电池寿命成为关键限制因素。</p>
+<p><strong>投资问题</strong>：</p>
+<ul>
+<li>谁提供让机器运行更久、更冷、更高效的电源骨干？</li>
+<li>热管理能力成为差异化因素（功率密度增加驱动热挑战）</li>
+</ul>
+<h3 id="9-connectivity--fleet连接与集群">9. Connectivity &amp; Fleet（连接与集群）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-connectivity--fleet连接与集群" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>单台机器人可以做有用工作，但集群（数百台机器人协调）的收益远大于单机之和。连接层包括 WiFi、私有 5G、工业以太网、边缘网关。集群协调软件是”空中交通管制”。</p>
+<p><strong>关键特性</strong>：</p>
+<ul>
+<li>延迟：机器间通信需要接近即时</li>
+<li>安全：连接的机器 = 攻击面。一旦网络被干扰，物理系统可能被破坏</li>
+<li>数据：机器运营数据可改善维护、安全、系统设计</li>
+</ul>
+<h3 id="10-systems-integration系统集成">10. Systems Integration（系统集成）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-systems-integration系统集成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>最容易被低估但最关键的一层。Physical AI 系统必须融入客户现有的运营（建筑布局、工作流程、软件系统、安全规则、ROI 目标）。</p>
+<p><strong>为什么这是护城河</strong>：</p>
+<ul>
+<li>客户需要信任系统后才投入日常运营</li>
+<li>一旦集成（安装、校准、验证、培训），更换成本极高</li>
+<li>需要处理旧版软件、劣质数据、工会规则、安全审查</li>
+</ul>
+<p><strong>投资特征</strong>：高粘性，但难以规模化（劳动密集，非纯软件）。可能是 Physical AI 中最被低估的投资机会，但商业模式偏服务/项目型。</p>
+<h3 id="11-end-markets终端市场">11. End Markets（终端市场）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-end-markets终端市场" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 的采用最终由客户 ROI 驱动。最有可能率先大规模采用的终端市场：明确痛点、足够预算、有紧迫性。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>终端市场</th><th>驱动力</th><th>采用速度</th><th>关键例子</th></tr></thead><tbody><tr><td>仓储/物流</td><td>重复劳动、劳动力压力、吞吐量需求</td><td>高</td><td>亚马逊仓库机器人</td></tr><tr><td>国防</td><td>威胁响应、减少人员风险</td><td>高</td><td>无人机、自主监控</td></tr><tr><td>医疗</td><td>手术精度、一致性、微创</td><td>中</td><td>达芬奇手术机器人</td></tr><tr><td>农业</td><td>劳动力短缺、精准农业</td><td>中</td><td>自动驾驶拖拉机</td></tr><tr><td>矿业/建筑</td><td>危险环境、大型资产</td><td>中低</td><td>自主采矿车</td></tr><tr><td>交通运输</td><td>安全、燃料效率</td><td>中低</td><td>自动驾驶卡车/出租车</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-问投资筛选框架">7 问投资筛选框架<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-问投资筛选框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Physical AI 公司评估清单：</p>
+<h3 id="q1直接性directness">Q1：直接性（Directness）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q1直接性directness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>该公司销售的是 Physical AI 系统的必需品，还是主要靠叙事连接？有多少是纯玩（pure play）vs 混在更大的传统业务中？</p>
+<p><strong>应用</strong>：Nokia 的边缘计算业务是其通信帝国的一部分——Physical AI 连接只是增长尾风，非主要驱动力。Blaize 的边缘 AI 推理芯片则更接近纯玩。</p>
+<h3 id="q2收入证据revenue-evidence">Q2：收入证据（Revenue Evidence）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q2收入证据revenue-evidence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 收入今天已存在，还是全是未来预测？对那些预测”未来 massive growth”但今天没有收入的公司要保持怀疑。</p>
+<p><strong>应用</strong>：手术机器人有明确的当期收入。人形机器人公司基本零收入。</p>
+<h3 id="q3瓶颈价值bottleneck-value">Q3：瓶颈价值（Bottleneck Value）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q3瓶颈价值bottleneck-value" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>供给是否稀缺？技术难度是否高？客户是否有替代方案？Physical AI 中的瓶颈可能包括：边缘计算、感知、安全认证的控制系统、仿真、精密运动、功率效率、真实世界数据、部署集成、可信的国防系统。</p>
+<p><strong>应用</strong>：安全认证的控制系统（Q6 层）的进入壁垒远高于通用电机（Q7 层）。</p>
+<h3 id="q4利润率捕获margin-capture">Q4：利润率捕获（Margin Capture）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q4利润率捕获margin-capture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>该层会变成高量低利（商品化）还是维持高利润率（软件、服务、专有技术、不可替代组件）？</p>
+<p><strong>应用</strong>：基础电机厂商面临价格竞争。专有仿真软件或有数据优势的感知系统可以维持更高利润率。</p>
+<h3 id="q5持久性durability">Q5：持久性（Durability）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q5持久性durability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>公司能否受益于多种部署路径——无论最终赢家是仓储机器人、无人机、工厂机器人、自动驾驶拖拉机、手术系统还是人形机器人？</p>
+<p><strong>应用</strong>：边缘芯片供应商受益于所有 Physical AI 形态。特定形态的关节执行器则依赖形态获胜。</p>
+<h3 id="q6扭矩torque">Q6：扭矩（Torque）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q6扭矩torque" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>部署数量、积压订单、设计赢单、客户广度或毛利率是否在改善？适合评估早期机会的”跟踪”信号。</p>
+<p><strong>应用</strong>：类似 AEHR 的故事——订单增长先于收入确认。</p>
+<h3 id="q7客户-roi">Q7：客户 ROI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#q7客户-roi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Physical AI 当且仅当解决真实的运营问题才会被采用。改善吞吐量、安全、劳动力效率、正常运行时间、质量或总成本。酷炫 demo 在客户愿意掏真金白银之前价值有限。</p>
+<p><strong>应用</strong>：仓库机器人的 ROI（减少劳动力成本 + 提高吞吐量）比人形机器人的 ROI（目前不清楚）更清晰。</p>
+<hr/>
+<h2 id="与已有框架的关联">与已有框架的关联<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#与已有框架的关联" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>已有框架</th><th>关系</th><th>差异</th></tr></thead><tbody><tr><td><a href="../../../wiki/analyses/frameworks/photonics-value-chain" class="internal" data-slug="wiki/analyses/frameworks/photonics-value-chain">photonics-value-chain</a></td><td>Physical AI 的感知+连接层与 photonics 重叠</td><td>Photonics 聚焦数据中心的通信瓶颈；Physical AI 覆盖更广的工业场景</td></tr><tr><td><a href="../../../wiki/analyses/frameworks/optics-proof-layer" class="internal" data-slug="wiki/analyses/frameworks/optics-proof-layer">optics-proof-layer</a></td><td>Physical AI 的测试/验证需求是 Proof Layer 的扩展需求</td><td>Proof Layer 侧重光学专门的测试设备；Physical AI 需要更广的工业测试</td></tr><tr><td><a href="../../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></td><td>共享”电子工业生产模式”底层逻辑</td><td>Everything-is-computer 用智能手机蓝图类比；Physical AI 框架更具体地分解为 11 层供应链</td></tr><tr><td><a href="../../../photonics-bottleneck-layers" class="internal" data-slug="photonics-bottleneck-layers">photonics-bottleneck-layers</a></td><td>Physical AI 的边缘计算+连接层可能增加对光互联的需求</td><td>不同瓶颈层——photonics 瓶颈在 AI 数据中心互联，Physical AI 瓶颈在感知/计算/控制</td></tr><tr><td><a href="../../../wiki/sectors/physical-ai-autonomous-systems" class="internal" data-slug="wiki/sectors/physical-ai-autonomous-systems">physical-ai-autonomous-systems</a></td><td>Physical AI 覆盖该 sector 的 robotics 子集</td><td>Sector page 是行业概览（包含 robotaxi、能源等）；此框架是投资方法论</td></tr></tbody></table></div>
+<h2 id="框架局限性">框架局限性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#框架局限性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>多数机会在私有市场</strong>：Physical AI 最纯正的标的（Figure、Physical Intelligence、World Labs）尚未上市。公开市场的敞口多是工业大公司内的增长尾风</li>
+<li><strong>11 层堆栈部分重叠</strong>：Training 和 Simulation 的界限在实践中模糊；Control 和 Software 有交叠——框架是分析工具而非精确分类</li>
+<li><strong>缺乏量化权重</strong>：7 问框架全凭分析师判断，没有评分系统——不同人用同一框架分析同一公司可能得出不同结论</li>
+<li><strong>竞争比 optics 更拥挤</strong>：Physical AI 覆盖面广，大量买方分析师和行业专家已覆盖，不像 2024 初 optics 那样”无人知晓”</li>
+<li><strong>尚未验证</strong>：Gaetano 的 optics 框架有实际回报验证（AAOI、AEHR 等案例），但 Physical AI 框架目前零回报记录</li>
+</ol>
+<h2 id="待验证信号">待验证信号<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#待验证信号" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Gaetano 发布 Physical AI Mock ETF（验证能否找到 10+ public pure plays）</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 第一个 Physical AI 具体公司深度报告（验证框架的应用质量）</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 机构的 Physical AI dedicated fund/ETF 设立（验证主题从”地下”到”主流”的拐点）</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Figure/Physical Intelligence IPO（验证公开市场能否投 Physical AI pure plays）</li>
+</ul>
+<h2 id="交叉引用">交叉引用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#交叉引用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>概念：<a href="../../../02-Work/Investment/_investment-wiki/wiki/concepts/physical-ai" class="internal" data-slug="02-Work/Investment/_investment-wiki/wiki/concepts/physical-ai">physical-ai</a></li>
+<li>行业：<a href="../../../wiki/sectors/physical-ai-autonomous-systems" class="internal" data-slug="wiki/sectors/physical-ai-autonomous-systems">physical-ai-autonomous-systems</a></li>
+<li>人物：<a href="../../../gaetano" class="internal" data-slug="gaetano">gaetano</a>、<a href="../../../oliver-hsu" class="internal" data-slug="oliver-hsu">oliver-hsu</a></li>
+<li>来源：<a href="../../../2026-05-23--gaetano--physical-ai-theme" class="internal alias" data-slug="2026-05-23--gaetano--physical-ai-theme">2026-05-23—gaetano—physical-ai-theme</a>、<a href="../../../2026-05-26--gaetano--physical-ai-layer1-training" class="internal alias" data-slug="2026-05-26--gaetano--physical-ai-layer1-training">2026-05-26—gaetano—physical-ai-layer1-training</a>、<a href="../../../2026-04-15--a16z--hsu-frontier-systems-physical-world" class="internal alias" data-slug="2026-04-15--a16z--hsu-frontier-systems-physical-world">2026-04-15—a16z—hsu-frontier-systems-physical-world</a>、<a href="../../../2026-02-17--a16z--hsu-factory-economics" class="internal alias" data-slug="2026-02-17--a16z--hsu-factory-economics">2026-02-17—a16z—hsu-factory-economics</a>、<a href="../../../2026-01-07--a16z--mcentush-everything-is-computer" class="internal alias" data-slug="2026-01-07--a16z--mcentush-everything-is-computer">2026-01-07—a16z—mcentush-everything-is-computer</a></li>
+<li>已有分析：<a href="../../../wiki/analyses/frameworks/photonics-value-chain" class="internal" data-slug="wiki/analyses/frameworks/photonics-value-chain">photonics-value-chain</a>、<a href="../../../wiki/analyses/frameworks/optics-proof-layer" class="internal" data-slug="wiki/analyses/frameworks/optics-proof-layer">optics-proof-layer</a>、<a href="../../../wiki/analyses/frameworks/ai-stack-modular-middle" class="internal" data-slug="wiki/analyses/frameworks/ai-stack-modular-middle">ai-stack-modular-middle</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-6" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#analysis-physical-ai-投资堆栈框架" data-for="analysis-physical-ai-投资堆栈框架">Analysis: Physical AI 投资堆栈框架</a></li><li class="depth-1"><a href="#快速参考physical-ai-投资堆栈" data-for="快速参考physical-ai-投资堆栈">快速参考：Physical AI 投资堆栈</a></li><li class="depth-1"><a href="#核心论点physical-ai-是-optics-之前的-optics" data-for="核心论点physical-ai-是-optics-之前的-optics">核心论点：Physical AI 是 optics 之前的 optics？</a></li><li class="depth-1"><a href="#11-层堆栈详解" data-for="11-层堆栈详解">11 层堆栈详解</a></li><li class="depth-2"><a href="#1-training训练" data-for="1-training训练">1. Training（训练）</a></li><li class="depth-2"><a href="#2-simulation仿真" data-for="2-simulation仿真">2. Simulation（仿真）</a></li><li class="depth-2"><a href="#3-perception感知" data-for="3-perception感知">3. Perception（感知）</a></li><li class="depth-2"><a href="#4-edge-compute边缘计算" data-for="4-edge-compute边缘计算">4. Edge Compute（边缘计算）</a></li><li class="depth-2"><a href="#5-software--planning软件与规划" data-for="5-software--planning软件与规划">5. Software &amp; Planning（软件与规划）</a></li><li class="depth-2"><a href="#6-control-systems控制系统" data-for="6-control-systems控制系统">6. Control Systems（控制系统）</a></li><li class="depth-2"><a href="#7-motion--actuation运动与执行" data-for="7-motion--actuation运动与执行">7. Motion &amp; Actuation（运动与执行）</a></li><li class="depth-2"><a href="#8-power--energy电力与能源" data-for="8-power--energy电力与能源">8. Power &amp; Energy（电力与能源）</a></li><li class="depth-2"><a href="#9-connectivity--fleet连接与集群" data-for="9-connectivity--fleet连接与集群">9. Connectivity &amp; Fleet（连接与集群）</a></li><li class="depth-2"><a href="#10-systems-integration系统集成" data-for="10-systems-integration系统集成">10. Systems Integration（系统集成）</a></li><li class="depth-2"><a href="#11-end-markets终端市场" data-for="11-end-markets终端市场">11. End Markets（终端市场）</a></li><li class="depth-1"><a href="#7-问投资筛选框架" data-for="7-问投资筛选框架">7 问投资筛选框架</a></li><li class="depth-2"><a href="#q1直接性directness" data-for="q1直接性directness">Q1：直接性（Directness）</a></li><li class="depth-2"><a href="#q2收入证据revenue-evidence" data-for="q2收入证据revenue-evidence">Q2：收入证据（Revenue Evidence）</a></li><li class="depth-2"><a href="#q3瓶颈价值bottleneck-value" data-for="q3瓶颈价值bottleneck-value">Q3：瓶颈价值（Bottleneck Value）</a></li><li class="depth-2"><a href="#q4利润率捕获margin-capture" data-for="q4利润率捕获margin-capture">Q4：利润率捕获（Margin Capture）</a></li><li class="depth-2"><a href="#q5持久性durability" data-for="q5持久性durability">Q5：持久性（Durability）</a></li><li class="depth-2"><a href="#q6扭矩torque" data-for="q6扭矩torque">Q6：扭矩（Torque）</a></li><li class="depth-2"><a href="#q7客户-roi" data-for="q7客户-roi">Q7：客户 ROI</a></li><li class="depth-1"><a href="#与已有框架的关联" data-for="与已有框架的关联">与已有框架的关联</a></li><li class="depth-1"><a href="#框架局限性" data-for="框架局限性">框架局限性</a></li><li class="depth-1"><a href="#待验证信号" data-for="待验证信号">待验证信号</a></li><li class="depth-1"><a href="#交叉引用" data-for="交叉引用">交叉引用</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../../wiki/analyses/frameworks/ai-buildout-stack" class="internal">ai-buildout-stack</a></li><li><a href="../../../wiki/analyses/trackers/physical-ai" class="internal">physical-ai</a></li><li><a href="../../../wiki/concepts/physical-ai" class="internal">physical-ai</a></li><li><a href="../../../wiki/daily/2026-05-27" class="internal">2026-05-27</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript.js" type="module" data-persist="true"></script></html>

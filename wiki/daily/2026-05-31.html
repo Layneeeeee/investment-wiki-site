@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>2026-05-31</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="2026-05-31"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-05-31"/><meta name="twitter:description" content="Daily Report — 2026-05-31（Weekend Review） 📌 本周末处理 12 篇来源，横跨 5/30-5/31 两个 batch。核心主题：光子学瓶颈从器件层深化至设备层+衬底层（VECO/SOI），Gaetano 从主题研究走向组合构建（INOD 首仓），GPU Second Life 框架挑战 Neocloud 估值模型，a16z 提出零售流量见顶的结构性风险。 Today’s Key Takeaways 🔄 逻辑修正 — GPU Second Life：Neocloud 估值模型的结构性盲区。 Jamin Ball 的 GPU Second Life th..."/><meta property="og:description" content="Daily Report — 2026-05-31（Weekend Review） 📌 本周末处理 12 篇来源，横跨 5/30-5/31 两个 batch。核心主题：光子学瓶颈从器件层深化至设备层+衬底层（VECO/SOI），Gaetano 从主题研究走向组合构建（INOD 首仓），GPU Second Life 框架挑战 Neocloud 估值模型，a16z 提出零售流量见顶的结构性风险。 Today’s Key Takeaways 🔄 逻辑修正 — GPU Second Life：Neocloud 估值模型的结构性盲区。 Jamin Ball 的 GPU Second Life th..."/><meta property="og:image:alt" content="Daily Report — 2026-05-31（Weekend Review） 📌 本周末处理 12 篇来源，横跨 5/30-5/31 两个 batch。核心主题：光子学瓶颈从器件层深化至设备层+衬底层（VECO/SOI），Gaetano 从主题研究走向组合构建（INOD 首仓），GPU Second Life 框架挑战 Neocloud 估值模型，a16z 提出零售流量见顶的结构性风险。 Today’s Key Takeaways 🔄 逻辑修正 — GPU Second Life：Neocloud 估值模型的结构性盲区。 Jamin Ball 的 GPU Second Life th..."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-31"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-31"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Daily Report — 2026-05-31（Weekend Review） 📌 本周末处理 12 篇来源，横跨 5/30-5/31 两个 batch。核心主题：光子学瓶颈从器件层深化至设备层+衬底层（VECO/SOI），Gaetano 从主题研究走向组合构建（INOD 首仓），GPU Second Life 框架挑战 Neocloud 估值模型，a16z 提出零售流量见顶的结构性风险。 Today’s Key Takeaways 🔄 逻辑修正 — GPU Second Life：Neocloud 估值模型的结构性盲区。 Jamin Ball 的 GPU Second Life th..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-31-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-31-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/daily/2026-05-31-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/daily/2026-05-31"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-364"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-364" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/daily/">daily</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026 05 31</a></div></nav><h1 class="article-title">2026-05-31</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-30T16:00:00.000Z">May 31, 2026</time><span>21 min read</span></p><ul class="tags"><li><a href="../../tags/daily-report" class="internal tag-link">daily-report</a></li><li><a href="../../tags/2026-05" class="internal tag-link">2026-05</a></li><li><a href="../../tags/photonics" class="internal tag-link">photonics</a></li><li><a href="../../tags/ai-infrastructure" class="internal tag-link">ai-infrastructure</a></li><li><a href="../../tags/neocloud" class="internal tag-link">neocloud</a></li><li><a href="../../tags/physical-ai" class="internal tag-link">physical-ai</a></li><li><a href="../../tags/macro" class="internal tag-link">macro</a></li></ul></div></div><article class="popover-hint"><h1 id="daily-report--2026-05-31weekend-review">Daily Report — 2026-05-31（Weekend Review）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daily-report--2026-05-31weekend-review" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>📌 <strong>本周末处理 12 篇来源</strong>，横跨 5/30-5/31 两个 batch。核心主题：<strong>光子学瓶颈从器件层深化至设备层+衬底层（VECO/SOI），Gaetano 从主题研究走向组合构建（INOD 首仓），GPU Second Life 框架挑战 Neocloud 估值模型，a16z 提出零售流量见顶的结构性风险。</strong></p>
+</blockquote>
+<h2 id="todays-key-takeaways">Today’s Key Takeaways<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todays-key-takeaways" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p><strong>🔄 逻辑修正 — GPU Second Life：Neocloud 估值模型的结构性盲区。</strong> Jamin Ball 的 GPU Second Life thesis 指出推理芯片保留 5 年以上可用性意味着 neoclouds 拥有免费的重签约期权——在芯片成本已折旧后以更高利润率重新签约推理需求。当前 EV/GW 估值模型完全忽略了这个期权价值。这在 CoreWeave 等已上市 neoclouds 的市场定价与理论价值之间创造了潜在错位。若此框架成立，neocloud 板块存在结构性重估空间，且重估催化剂是”时间”而非”新消息”——每过一个折旧周期，期权价值自动增加。<code>neocloud</code></p>
+</li>
+<li>
+<p><strong>📡 产业趋势 — 光子学瓶颈的三层深化：设备层（VECO）+ 测试层（VIAV）+ 衬底层（SOI）。</strong> 本周 Gaetano 系列覆盖了整个光子学供应栈的增量环节：① VECO Lumina MOCVD 首个深度分析，确认其与 AIXA 构成 InP 量产设备层的双验证瓶颈——这是此前未被市场定价的光子学投资维度；② VIAV Q3 beat $406.8M (+42.8%) 确认测试层在随光子学复杂度同步放量，“package is now the system” 趋势使测试需求从可选变为刚性；③ SOI Photonics-SOI 工程衬底引入全新的材料端瓶颈——Tower Semiconductor $920M 的 1.6T SiPho fab 70%+ 预预订率为需求提供了首个大数验证。<code>VECO</code> <code>VIAV</code> <code>SOI</code> <code>TSEM</code></p>
+</li>
+<li>
+<p><strong>💡 新兴瓶颈主题 — SOI Photonics-SOI：SiPho 路径下最上游的”qualified sole source”。</strong> Soitec 的 Smart Cut 技术在 Photonics-SOI 领域拥有垄断级地位——工程化 SOI 衬底是硅光子学（SiPho）量产的前提条件，而 SOI 是目前唯一经过验证的批量供应商。Tower $920M 投资确认 SiPho 正在从研发走向量产。如果 CPO 最终以 SiPho 为主要技术路径（Tiezhu 认为 CPO”比 HBM 难得多”，但仍是最确定的长期方向），SOI 将成为光子学瓶颈中最不可替代的节点。当前市值 $7.3B，这是一个典型的”低概率高赔率”的瓶颈层暴露。<code>SOI</code> <code>TSEM</code></p>
+</li>
+<li>
+<p><strong>💡 新兴瓶颈主题 — Gaetano 从主题映射走向组合构建：INOD 作为 Physical AI Layer 1 首仓。</strong> 经过 50+ 周的主题研究，Gaetano 首次建仓 Physical AI model portfolio，选择 INOD（Agent Observability Platform）作为首个仓位。核心论据：Layer 1 纯正标的、$51M Big Tech 客户作为收入锚点、Agent Platform 增量作为毛利率催化、$130-155 基座估值。同时 Gaetano 的 optics digesting 框架提供了一个前瞻性判断——目前处于健康消化期而非顶部，InP 产能缺口（NVIDIA 需求 > 供应商供给意愿）结构性不变，COHR 6-inch 是最佳规模化标的，VIAVI 测试层价值最被低估。<code>INOD</code> <code>COHR</code> <code>AAOI</code> <code>VIAV</code></p>
+</li>
+<li>
+<p><strong>⚠️ 风险信号 — a16z 的零售流量见顶论：资金流入脆弱性 + $150B AI 债务。</strong> a16z Moses Sternstein 提出两个需持续监控的下行风险：① 散户参与度处于历史高位意味着市场资金流入具有脆弱性——一旦情绪逆转，此前驱动上涨的边际买盘可能加速离场，从”强化因子”切换为”放大器”；② Hyperscaler 2026 年约 $150B 的 AI 资本支出来自债务融资，与 Tiezhu 的 10Y 4.7%+ 摧毁一切框架交叉验证——若利率环境收紧或信贷条件恶化，AI 基础设施的资本支出周期面临减速风险。这两个因素本身不是做空理由，应作为现有仓位大小的边界条件。<code>macro</code></p>
+</li>
+</ul>
+<hr/>
+<h2 id="今日来源汇总">今日来源汇总<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#今日来源汇总" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>按来源名称 alphabet 正序排列（A→Z）。</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>来源</th><th>类型</th><th>摘要</th></tr></thead><tbody><tr><td>1</td><td><a href="../../sources/2026-04-03--a16z--charts-retail-to-moon" class="internal alias" data-slug="sources/2026-04-03--a16z--charts-retail-to-moon">a16z: Charts — Retail to the Moon</a></td><td>research-note</td><td>零售参与度历史高位暗示资金流入脆弱性；Hyperscaler AI 债务 $150B；FedRAMP 20x 改革</td></tr><tr><td>2</td><td><a href="../../sources/2026-05-30--a16z-crypto--prediction-markets" class="internal alias" data-slug="sources/2026-05-30--a16z-crypto--prediction-markets">a16z Crypto: Prediction Markets</a></td><td>research-note</td><td>信息聚合理论框架、概率传感器、双重投资意义（数据源+投资载体）</td></tr><tr><td>3</td><td><a href="../../sources/2026-05-25--ark--stock-commentary-futu-lunr-avav-absi-psnl" class="internal alias" data-slug="sources/2026-05-25--ark--stock-commentary-futu-lunr-avav-absi-psnl">ARK: Weekly Stock Commentary</a></td><td>research-note</td><td>周度评论：FUTU 罚款反弹、AVAV 无人机防御、LUNR/ABSI/PSNL 震荡（以噪音为主）</td></tr><tr><td>4</td><td><a href="../../sources/2026-05-30--gaetano--inod-physical-ai-portfolio" class="internal alias" data-slug="sources/2026-05-30--gaetano--inod-physical-ai-portfolio">Gaetano: INOD — Physical AI Portfolio Position</a></td><td>research-note</td><td>Physical AI Layer 1 首个仓位：Agent Observability Platform、$51M Big Tech 客户、$130-155 基座估值</td></tr><tr><td>5</td><td><a href="../../sources/2026-05-29--gaetano--optics-trade-digesting" class="internal alias" data-slug="sources/2026-05-29--gaetano--optics-trade-digesting">Gaetano: Optics Trade Digesting</a></td><td>research-note</td><td>健康消化期框架：InP 缺口结构性不变、COHR 最佳规模化、AAOI 份额增长+CW 激光器、VIAVI 测试层低估值</td></tr><tr><td>6</td><td><a href="../../sources/2026-03-17--gaetano--smtc-earnings-intro" class="internal alias" data-slug="sources/2026-03-17--gaetano--smtc-earnings-intro">Gaetano: SMTC First Look</a></td><td>research-note</td><td>分层互连、FY26 $1.05B 指引、HieFo 铰链、信号完整性差异化</td></tr><tr><td>7</td><td><a href="../../sources/2026-04-15--gaetano--semtech-story-worth-knowing" class="internal alias" data-slug="sources/2026-04-15--gaetano--semtech-story-worth-knowing">Gaetano: SMTC Deep Dive — A Story Worth Knowing</a></td><td>research-note</td><td>HieFo 作为第三增长铰链、ACC bake-off 验证、NPO vs CPO 技术路径辨析</td></tr><tr><td>8</td><td><a href="../../sources/2026-04-26--gaetano--soitec-deep-dive" class="internal alias" data-slug="sources/2026-04-26--gaetano--soitec-deep-dive">Gaetano: Soitec Deep Dive</a></td><td>research-note</td><td>Photonics-SOI 工程衬底、Smart Cut 技术垄断、光子学瓶颈中最上游的材料节点</td></tr><tr><td>9</td><td><a href="../../sources/2026-04-10--gaetano--tower-why-the-hype" class="internal alias" data-slug="sources/2026-04-10--gaetano--tower-why-the-hype">Gaetano: Tower — Why the Hype</a></td><td>research-note</td><td>1.6T SiPho 多数供应商地位、$920M Fab 7 产能投资、70%+ 预预订率</td></tr><tr><td>10</td><td><a href="../../sources/2026-04-21--gaetano--veco-tool-maker" class="internal alias" data-slug="sources/2026-04-21--gaetano--veco-tool-maker">Gaetano: VECO — Tool Maker</a></td><td>research-note</td><td>三重 AI 暴露（InP Lumina MOCVD + GaN Propel + HBM IBD300）、Axcelis 合并、光子学设备层瓶颈确认</td></tr><tr><td>11</td><td><a href="../../sources/2026-04-30--gaetano--viav-smashed-earnings" class="internal alias" data-slug="sources/2026-04-30--gaetano--viav-smashed-earnings">Gaetano: VIAV — Smashed Earnings</a></td><td>earnings</td><td>Q3 beat $406.8M (+42.8%)、CPO 插入点、“package is now the system” 趋势确认</td></tr><tr><td>12</td><td><a href="../../sources/2026-05-29--jamin-ball--gpu-second-life" class="internal alias" data-slug="sources/2026-05-29--jamin-ball--gpu-second-life">Jamin Ball: GPU Second Life</a></td><td>research-note</td><td>推理 GPU 保留 5 年+可用性、neocloud 免费重签约期权、EV/GW 估值盲区</td></tr></tbody></table></div>
+<blockquote>
+<p><strong>类型枚举</strong>: <code>earnings</code> / <code>research-note</code> / <code>news</code> / <code>news-digest</code> / <code>interview</code> / <code>macro</code></p>
+</blockquote>
+<hr/>
+<h2 id="公司标的追踪">公司标的追踪<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#公司标的追踪" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="今日更新要点">今日更新要点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#今日更新要点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>仅列今日有信息更新的标的。每标的以 <strong>投资逻辑 → Bull Case → Bear Case → 今日关键佐证</strong> 展开。</em></p>
+<p><em>标的按 ticker alphabet 正序排列（A→Z）。</em></p>
+<p><strong>信号体系</strong>: 📈 利好 / ⚠️ 利空 / 🔄 中性</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">标的</th><th>公司名称</th><th style="text-align:center;">提及次数</th><th>今日来源</th><th>投资逻辑</th><th>Bull Case</th><th>Bear Case</th><th>今日关键佐证</th></tr></thead><tbody><tr><td style="text-align:center;"><a href="../../wiki/companies/aaoi" class="internal alias" data-slug="wiki/companies/aaoi">AAOI</a></td><td>应用光电</td><td style="text-align:center;">1/12</td><td>Gaetano: Optics Trade Digesting</td><td>InP CW 激光器+EML 芯片——AI 数据中心光学互联中找到份额增长拐点的中游器件供应商</td><td>份额增长确定性 + CW 激光器新品类打开增量 TAM</td><td>传统业务（CATV）结构性下滑；估值已大幅重定价</td><td>📈 份额增长趋势 + CW laser = 新品类 TAM 扩张（<a href="../../sources/2026-05-29--gaetano--optics-trade-digesting" class="internal alias" data-slug="sources/2026-05-29--gaetano--optics-trade-digesting">2026-05-29—gaetano—optics-trade-digesting</a>）</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/cohr" class="internal alias" data-slug="wiki/companies/cohr">COHR</a></td><td>Coherent</td><td style="text-align:center;">1/12</td><td>Gaetano: Optics Trade Digesting</td><td>InP 光器件+SiC 双平台——AI 数据中心互联关键组件供应商，6-inch InP 产能扩张为最大差异化</td><td>6-inch InP 4x/2 年 = 最大规模 InP 产能；NVIDIA $2B 战略投资背书</td><td>收购整合风险；消化期若延长可能影响短期 momentum</td><td>📈 消化期中最具规模的 InP bottleneck 标的（<a href="../../sources/2026-05-29--gaetano--optics-trade-digesting" class="internal alias" data-slug="sources/2026-05-29--gaetano--optics-trade-digesting">2026-05-29—gaetano—optics-trade-digesting</a>）</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/inod" class="internal alias" data-slug="wiki/companies/inod">INOD</a></td><td>Innodata</td><td style="text-align:center;">1/12</td><td>Gaetano: INOD — Physical AI Portfolio</td><td>Physical AI Layer 1 纯正标的——Agent Observability Platform 解决复杂 AI 工作流的可观测性、调试和合规需求</td><td>Gaetano 首次组合建仓；$51M Big Tech 客户；Agent Platform 毛利率催化</td><td>市值仅 $3.4B，流动性风险；Physical AI 商业化时间表不确定</td><td>📈 <strong>Gaetano Physical AI model portfolio 首仓</strong>（<a href="../../sources/2026-05-30--gaetano--inod-physical-ai-portfolio" class="internal alias" data-slug="sources/2026-05-30--gaetano--inod-physical-ai-portfolio">2026-05-30—gaetano—inod-physical-ai-portfolio</a>）<br/>📈 基座估值 $130-155（12个月目标）<br/>📈 Agent Observability Platform 作为 margin 催化剂</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/smtc" class="internal alias" data-slug="wiki/companies/smtc">SMTC</a></td><td>先科电子</td><td style="text-align:center;">2/12</td><td>Gaetano: SMTC First Look + Deep Dive</td><td>信号完整性+分层互连——AI 数据中心从铜到光过渡中的电气层守门人</td><td>HieFo 第三增长铰链；ACC bake-off 验证；NPO vs CPO 技术路径暴露</td><td>CPO 长期替代铜缆风险；估值 $14B 已计入 AI 叙事</td><td>📈 HieFo 作为 copper→optics 过渡期的关键铰链（<a href="../../sources/2026-03-17--gaetano--smtc-earnings-intro" class="internal alias" data-slug="sources/2026-03-17--gaetano--smtc-earnings-intro">2026-03-17—gaetano—smtc-earnings-intro</a>）<br/>📈 ACC bake-off win 验证技术竞争力（<a href="../../sources/2026-04-15--gaetano--semtech-story-worth-knowing" class="internal alias" data-slug="sources/2026-04-15--gaetano--semtech-story-worth-knowing">2026-04-15—gaetano—semtech-story-worth-knowing</a>）<br/>📈 NPO vs CPO 路径辨析：SMTC 在 NPO 时代有更强 positioning</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/soi" class="internal alias" data-slug="wiki/companies/soi">SOI</a></td><td>Soitec</td><td style="text-align:center;">1/12</td><td>Gaetano: Soitec Deep Dive</td><td>Photonics-SOI 工程衬底——SiPho 量产的前提条件，Smart Cut 技术近乎垄断</td><td>SiPho 路径下唯一验证的批量供应商；Tower $920M Fab 7 需求信号</td><td>市值 $7.3B 但依赖单一技术路径（SiPho vs hybrid 不确定性）；CPO 量产仍在 2028+</td><td>🔄 <strong>新进入跟踪</strong>：Photonics-SOI = SiPho 路径最上游瓶颈（<a href="../../sources/2026-04-26--gaetano--soitec-deep-dive" class="internal alias" data-slug="sources/2026-04-26--gaetano--soitec-deep-dive">2026-04-26—gaetano—soitec-deep-dive</a>）<br/>📈 Smart Cut = “qualified sole source” 地位<br/>📈 Tower $920M Fab 7 确认 SiPho 需求真实性</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/tsem" class="internal alias" data-slug="wiki/companies/tsem">TSEM</a></td><td>Tower Semiconductor</td><td style="text-align:center;">1/12</td><td>Gaetano: Tower — Why the Hype</td><td>1.6T SiPho 代工——AI 互联从 InP 分立器件走向 SiPho 集成化过程中的晶圆代工瓶颈</td><td>1.6T 多数供应商地位；$920M Fab 7 70%+ 预预订率</td><td>SiPho 技术路径不确定性；产能扩张 CAPEX 密集</td><td>📈 1.6T SiPho 多数供应商 positioning（<a href="../../sources/2026-04-10--gaetano--tower-why-the-hype" class="internal alias" data-slug="sources/2026-04-10--gaetano--tower-why-the-hype">2026-04-10—gaetano—tower-why-the-hype</a>）<br/>📈 $920M 产能投资，>70% 已预预订</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/veco" class="internal alias" data-slug="wiki/companies/veco">VECO</a></td><td>Veeco Instruments</td><td style="text-align:center;">1/12</td><td>Gaetano: VECO — Tool Maker</td><td>半导体设备制造商——三重 AI 暴露：InP MOCVD + GaN Propel + HBM IBD300</td><td>与 AIXA 构成 InP 设备层双验证；Axcelis 合并创造规模效应</td><td>设备股周期性；合并整合风险</td><td>📈 Lumina MOCVD 确认 InP 设备层瓶颈——第二个独立验证（<a href="../../sources/2026-04-21--gaetano--veco-tool-maker" class="internal alias" data-slug="sources/2026-04-21--gaetano--veco-tool-maker">2026-04-21—gaetano—veco-tool-maker</a>）<br/>📈 Triple AI exposure = AI infra 设备端复合暴露</td></tr><tr><td style="text-align:center;"><a href="../../wiki/companies/viav" class="internal alias" data-slug="wiki/companies/viav">VIAV</a></td><td>Viavi Solutions</td><td style="text-align:center;">2/12</td><td>Gaetano: Optics Trade Digesting + Smashed Earnings</td><td>光学测试与测量——AI 数据中心光子学复杂度提升使测试从可选变为刚性需求</td><td>Q3 beat $406.8M (+42.8%)；CPO 插入点使测试需求结构性增长</td><td>测试设备市场天花板有限；CPO 量产 2028+ 意味着近期催化有限</td><td>📈 <strong>Q3 beat $406.8M, +42.8% YoY</strong>（<a href="../../sources/2026-04-30--gaetano--viav-smashed-earnings" class="internal alias" data-slug="sources/2026-04-30--gaetano--viav-smashed-earnings">2026-04-30—gaetano—viav-smashed-earnings</a>）<br/>📈 “Package is now the system” → test 从可选变刚性<br/>🔍 被低估的 test bottleneck（<a href="../../sources/2026-05-29--gaetano--optics-trade-digesting" class="internal alias" data-slug="sources/2026-05-29--gaetano--optics-trade-digesting">2026-05-29—gaetano—optics-trade-digesting</a>）</td></tr></tbody></table></div>
+<hr/>
+<h2 id="行业覆盖">行业覆盖<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业覆盖" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><em>仅列本周末有更新的行业。每行业 2-3 句摘要 + wiki-link，注明更新位置。</em></p>
+<h3 id="wikisectorsoptical-interconnect-photonics"><a href="../../wiki/sectors/optical-interconnect-photonics" class="internal" data-slug="wiki/sectors/optical-interconnect-photonics">optical-interconnect-photonics</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wikisectorsoptical-interconnect-photonics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>更新位置</strong>: §2 行业框架（SOI 衬底新层）、§3.3 技术进展（VECO 设备层 + VIAV 测试层）、§4 竞争格局（SMTC/TSEM 更新）、§7 产业链（三层深化）</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li>新增 <strong>SOI（Soitec）</strong> 进入材料层——Photonics-SOI 工程衬底作为 SiPho 路径的关键瓶颈（来源：<a href="../../sources/2026-04-26--gaetano--soitec-deep-dive" class="internal alias" data-slug="sources/2026-04-26--gaetano--soitec-deep-dive">2026-04-26—gaetano—soitec-deep-dive</a>）</li>
+<li><strong>VECO Lumina MOCVD</strong> 确认为 InP 设备层第二个独立验证，与 AIXA 形成双供应商确认（来源：<a href="../../sources/2026-04-21--gaetano--veco-tool-maker" class="internal alias" data-slug="sources/2026-04-21--gaetano--veco-tool-maker">2026-04-21—gaetano—veco-tool-maker</a>）</li>
+<li><strong>VIAV Q3 beat $406.8M</strong> 确认测试层在随光子学复杂度同步放量——“package is now the system” 趋势使测试层地位从可选项上升为必选项（来源：<a href="../../sources/2026-04-30--gaetano--viav-smashed-earnings" class="internal alias" data-slug="sources/2026-04-30--gaetano--viav-smashed-earnings">2026-04-30—gaetano—viav-smashed-earnings</a>）</li>
+<li><strong>SMTC HieFo + ACC bake-off</strong> 确认电气层互连在 copper→optics 过渡期的关键铰链角色（来源：<a href="../../sources/2026-04-15--gaetano--semtech-story-worth-knowing" class="internal alias" data-slug="sources/2026-04-15--gaetano--semtech-story-worth-knowing">2026-04-15—gaetano—semtech-story-worth-knowing</a>）</li>
+<li><strong>TSEM 1.6T SiPho 多数供应商</strong>定位确认——$920M Fab 7 70%+ 预预订率验证 SiPho 代工需求（来源：<a href="../../sources/2026-04-10--gaetano--tower-why-the-hype" class="internal alias" data-slug="sources/2026-04-10--gaetano--tower-why-the-hype">2026-04-10—gaetano—tower-why-the-hype</a>）</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>光子学投资框架正在经历从”单层瓶颈”到”多层瓶颈栈”的进化。两周前 InP 仍是核心叙事（器件层），本周末 VECO（设备层）+ VIAV（测试层）+ SOI（衬底层）的加入使供应链瓶颈从 1 层扩大到至少 4 层。每一层都有独立的产能约束逻辑和时间表，这意味着光子学主题的投资容量和持续时间远超单一瓶颈叙事。对于组合构建的含义：不应只持有最优 bottleneck（COHR），应在不同层分散暴露（VECO/SOI/TSEM/VIAV），以 capture 各层独立的时间表催化。</p>
+</blockquote>
+<h3 id="wikisectorsphysical-ai-autonomous-systems"><a href="../../wiki/sectors/physical-ai-autonomous-systems" class="internal" data-slug="wiki/sectors/physical-ai-autonomous-systems">physical-ai-autonomous-systems</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wikisectorsphysical-ai-autonomous-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>更新位置</strong>: §3.3 技术进展（INOD Physical AI 组合仓位更新）</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li><strong>INOD 从”最纯 Layer 1 标的”升级为”Gaetano Physical AI 首仓”</strong>——Gaetano 经过 50+ 周主题研究后首次建仓，选择 INOD（Agent Observability Platform）作为 Physical AI model portfolio 首个仓位，基座估值 $130-155（12 个月目标），$51M Big Tech 客户作为收入锚点（来源：<a href="../../sources/2026-05-30--gaetano--inod-physical-ai-portfolio" class="internal alias" data-slug="sources/2026-05-30--gaetano--inod-physical-ai-portfolio">2026-05-30—gaetano—inod-physical-ai-portfolio</a>）</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>Gaetano 从主题研究走向组合构建是一个值得关注的方法论信号。50 周+的主题研究后才建仓意味着纪律性，也暗示 Physical AI 主题已从”概念框架”进入”可投资阶段”。方法论的谨慎程度——行业 mapping → layer 深度报告 → 仓位建立——本身是信号值的一部分。</p>
+</blockquote>
+<h3 id="wikisectorsartificial-intelligence"><a href="../../wiki/sectors/artificial-intelligence" class="internal" data-slug="wiki/sectors/artificial-intelligence">artificial-intelligence</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wikisectorsartificial-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>更新位置</strong>: §3.2 经济与市场（GPU Second Life 框架）、§5 风险监控（AI 债务量化补充）</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li><strong>GPU Second Life 框架</strong> ——推理芯片保留 5 年+可用性，neocloud 拥有未被 EV/GW 模型定价的重签约期权（来源：<a href="../../sources/2026-05-29--jamin-ball--gpu-second-life" class="internal alias" data-slug="sources/2026-05-29--jamin-ball--gpu-second-life">2026-05-29—jamin-ball—gpu-second-life</a>）→ 写入 §3.2</li>
+<li><strong>$150B AI 债务量化补充</strong>——a16z 数据补充现有”AI 债务市场关闭”风险条目，与 Tiezhu 利率框架交叉验证（来源：<a href="../../sources/2026-04-03--a16z--charts-retail-to-moon" class="internal alias" data-slug="sources/2026-04-03--a16z--charts-retail-to-moon">2026-04-03—a16z—charts-retail-to-moon</a>）→ 写入 §5</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>AI 基础设施的投资叙事正在分化：硬件层（光子学瓶颈）继续深化确认，而应用层（neocloud economics、Physical AI agent platform）开始出现新的估值框架和组合构建信号。Jamin Ball 的 GPU Second Life 框架提出了一个对整个 neocloud 板块具有深远影响的估值问题：如果 EV/GW 模型低估了芯片的长期价值，那么 CoreWeave 等公司的市场定价可能存在结构性偏差。同时，$150B 的 AI 债务规模使 Tiezhu 的利率框架与 AI 融资结构产生直接交叉验证。</p>
+</blockquote>
+<h3 id="wikisectorsblockchain-fintech"><a href="../../wiki/sectors/blockchain-fintech" class="internal" data-slug="wiki/sectors/blockchain-fintech">blockchain-fintech</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wikisectorsblockchain-fintech" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>更新位置</strong>: §3 驱动力（Prediction Markets）</p>
+<p><strong>关键变更</strong>:</p>
+<ul>
+<li>新增 <strong>prediction-markets 概念页面</strong>——a16z Crypto 的信息聚合理论框架：prediction markets 作为概率传感器，双重投资意义（数据源 + 投资载体）（来源：<a href="../../sources/2026-05-30--a16z-crypto--prediction-markets" class="internal alias" data-slug="sources/2026-05-30--a16z-crypto--prediction-markets">2026-05-30—a16z-crypto—prediction-markets</a>）</li>
+</ul>
+<p><strong>结构性含义</strong>:</p>
+<blockquote>
+<p>Prediction markets 作为概念页面的创建更多是框架性储备而非近期交易信号。在 Polymarket 等平台取得 traction 的背景下，a16z 的框架提供了将其作为 AI 时代信息聚合工具的理解基础。</p>
+</blockquote>
+<hr/>
+<h2 id="行情快照">行情快照<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行情快照" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>数据来源：Sina Finance API (<code>gb_</code> 接口) | 获取时间：May 29 04:00PM EDT（周五收盘）</p>
+<p>涨跌幅颜色：<strong>正值</strong> → <code>&lt;span style=&quot;color: var(--color-green);&quot;>+X.XX%&lt;/span></code> | <strong>负值</strong> → <code>&lt;span style=&quot;color: var(--color-red);&quot;>-X.XX%&lt;/span></code> | 零 → 无颜色</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Ticker</th><th>公司名称</th><th>市场</th><th>收盘价</th><th>涨跌幅</th><th>开盘</th><th>日内区间</th><th>总市值</th><th>PE</th><th>总股本</th><th>备注</th><th>获取时间</th></tr></thead><tbody><tr><td><code>NVDA</code></td><td>英伟达</td><td>NASDAQ</td><td>$211.14</td><td><span style="color:var(--color-red);">-1.45%</span></td><td>$214.57</td><td>$211.13~$217.86</td><td>$5.11T</td><td>32.14</td><td>24.22B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>GOOGL</code></td><td>谷歌A类股</td><td>NASDAQ</td><td>$380.34</td><td><span style="color:var(--color-red);">-2.51%</span></td><td>$385.24</td><td>$378.46~$385.24</td><td>$4.61T</td><td>28.70</td><td>12.12B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AAPL</code></td><td>苹果</td><td>NASDAQ</td><td>$312.06</td><td><span style="color:var(--color-red);">-0.14%</span></td><td>$311.77</td><td>$309.53~$315.00</td><td>$4.58T</td><td>39.35</td><td>14.69B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>MSFT</code></td><td>微软</td><td>NASDAQ</td><td>$450.24</td><td><span style="color:var(--color-green);">+5.45%</span></td><td>$432.55</td><td>$432.36~$450.33</td><td>$3.34T</td><td>26.72</td><td>7.43B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AMZN</code></td><td>亚马逊</td><td>NASDAQ</td><td>$270.64</td><td><span style="color:var(--color-red);">-1.23%</span></td><td>$271.29</td><td>$269.64~$274.75</td><td>$2.91T</td><td>31.88</td><td>10.76B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>TSM</code></td><td>台积电</td><td>NASDAQ</td><td>$418.45</td><td><span style="color:var(--color-red);">-1.51%</span></td><td>$427.07</td><td>$417.25~$430.44</td><td>$2.17T</td><td>34.78</td><td>5.19B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>TSLA</code></td><td>特斯拉</td><td>NASDAQ</td><td>$435.79</td><td><span style="color:var(--color-red);">-1.43%</span></td><td>$439.85</td><td>$428.14~$441.07</td><td>$1.64T</td><td>363.16</td><td>3.76B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>META</code></td><td>Meta Platforms</td><td>NASDAQ</td><td>$632.51</td><td><span style="color:var(--color-red);">-0.44%</span></td><td>$633.50</td><td>$623.35~$634.50</td><td>$1.61T</td><td>22.64</td><td>2.54B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AMD</code></td><td>AMD</td><td>NASDAQ</td><td>$516.10</td><td><span style="color:var(--color-red);">-0.38%</span></td><td>$520.80</td><td>$503.43~$522.00</td><td>$841.55B</td><td>167.56</td><td>1.63B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>ASML</code></td><td>阿斯麦</td><td>NASDAQ</td><td>$1612.76</td><td><span style="color:var(--color-green);">+0.44%</span></td><td>$1633.47</td><td>$1604.86~$1654.20</td><td>$621.59B</td><td>53.72</td><td>385.42M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>INTC</code></td><td>英特尔</td><td>NASDAQ</td><td>$114.68</td><td><span style="color:var(--color-red);">-5.14%</span></td><td>$123.85</td><td>$113.54~$126.64</td><td>$576.38B</td><td>—</td><td>5.03B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>PLTR</code></td><td>PLTR</td><td>NASDAQ</td><td>$156.54</td><td><span style="color:var(--color-green);">+9.21%</span></td><td>$147.82</td><td>$145.79~$157.78</td><td>$375.28B</td><td>163.06</td><td>2.40B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>BABA</code></td><td>阿里巴巴</td><td>NASDAQ</td><td>$124.22</td><td><span style="color:var(--color-red);">-1.54%</span></td><td>$124.39</td><td>$123.43~$125.04</td><td>$298.02B</td><td>19.38</td><td>2.40B</td><td></td><td>May 29 04:02PM EDT</td></tr><tr><td><code>TXN</code></td><td>德州仪器</td><td>NASDAQ</td><td>$305.68</td><td><span style="color:var(--color-red);">-3.25%</span></td><td>$316.48</td><td>$303.77~$319.00</td><td>$278.20B</td><td>51.99</td><td>910.09M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>DELL</code></td><td>戴尔</td><td>NASDAQ</td><td>$420.91</td><td><span style="color:var(--color-green);">+32.76%</span></td><td>$418.00</td><td>$402.27~$429.15</td><td>$273.41B</td><td>47.40</td><td>649.57M</td><td></td><td>May 29 04:01PM EDT</td></tr><tr><td><code>QCOM</code></td><td>高通</td><td>NASDAQ</td><td>$251.02</td><td><span style="color:var(--color-green);">+3.18%</span></td><td>$250.19</td><td>$247.51~$259.92</td><td>$264.58B</td><td>27.08</td><td>1.05B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>ADI</code></td><td>亚德诺</td><td>NASDAQ</td><td>$413.85</td><td><span style="color:var(--color-red);">-1.23%</span></td><td>$423.45</td><td>$408.17~$423.45</td><td>$201.58B</td><td>61.13</td><td>487.09M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>MRVL</code></td><td>迈威尔科技</td><td>NASDAQ</td><td>$205.00</td><td><span style="color:var(--color-green);">+0.08%</span></td><td>$204.44</td><td>$199.20~$208.76</td><td>$179.49B</td><td>69.49</td><td>875.55M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>GLW</code></td><td>康宁</td><td>NASDAQ</td><td>$181.16</td><td><span style="color:var(--color-red);">-0.84%</span></td><td>$184.08</td><td>$174.50~$184.08</td><td>$155.91B</td><td>97.40</td><td>860.64M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SHOP</code></td><td>SHOP</td><td>NASDAQ</td><td>$118.71</td><td><span style="color:var(--color-green);">+3.20%</span></td><td>$116.38</td><td>$113.45~$119.84</td><td>$154.04B</td><td>116.38</td><td>1.30B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>UBER</code></td><td>优步</td><td>NASDAQ</td><td>$70.40</td><td><span style="color:var(--color-red);">-0.73%</span></td><td>$70.65</td><td>$69.96~$72.24</td><td>$143.31B</td><td>17.17</td><td>2.04B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CDNS</code></td><td>铿腾电子</td><td>NASDAQ</td><td>$374.93</td><td><span style="color:var(--color-green);">+0.29%</span></td><td>$375.00</td><td>$372.28~$378.04</td><td>$103.41B</td><td>86.79</td><td>275.82M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SNPS</code></td><td>新思科技</td><td>NASDAQ</td><td>$475.62</td><td><span style="color:var(--color-red);">-1.04%</span></td><td>$480.67</td><td>$469.37~$484.50</td><td>$91.07B</td><td>109.09</td><td>191.48M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SNOW</code></td><td>SNOW</td><td>NASDAQ</td><td>$255.55</td><td><span style="color:var(--color-green);">+6.84%</span></td><td>$240.69</td><td>$239.50~$256.21</td><td>$88.57B</td><td>—</td><td>346.60M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>DDOG</code></td><td>DDOG</td><td>NASDAQ</td><td>$247.35</td><td><span style="color:var(--color-green);">+9.82%</span></td><td>$234.00</td><td>$228.50~$249.81</td><td>$88.05B</td><td>634.23</td><td>355.96M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>HOOD</code></td><td>罗宾汉</td><td>NASDAQ</td><td>$94.30</td><td><span style="color:var(--color-green);">+11.15%</span></td><td>$85.66</td><td>$84.23~$94.40</td><td>$84.92B</td><td>44.48</td><td>900.51M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>RKLB</code></td><td>RKLB</td><td>NASDAQ</td><td>$143.48</td><td><span style="color:var(--color-red);">-3.07%</span></td><td>$139.94</td><td>$134.05~$144.00</td><td>$83.04B</td><td>—</td><td>578.75M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>NOK</code></td><td>诺基亚</td><td>NASDAQ</td><td>$14.84</td><td><span style="color:var(--color-red);">-2.88%</span></td><td>$15.18</td><td>$14.53~$15.26</td><td>$82.85B</td><td>92.75</td><td>5.58B</td><td></td><td>May 29 04:01PM EDT</td></tr><tr><td><code>CIEN</code></td><td>Ciena科技</td><td>NASDAQ</td><td>$580.23</td><td><span style="color:var(--color-green);">+1.76%</span></td><td>$566.02</td><td>$539.57~$582.47</td><td>$82.04B</td><td>358.17</td><td>141.40M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>COHR</code></td><td>COHR</td><td>NASDAQ</td><td>$361.47</td><td><span style="color:var(--color-red);">-4.11%</span></td><td>$375.65</td><td>$343.51~$378.27</td><td>$70.72B</td><td>158.54</td><td>195.64M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>LITE</code></td><td>Lumentum</td><td>NASDAQ</td><td>$854.96</td><td><span style="color:var(--color-red);">-0.66%</span></td><td>$860.68</td><td>$822.50~$869.00</td><td>$66.52B</td><td>137.45</td><td>77.80M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CRWV</code></td><td>CRWV</td><td>NASDAQ</td><td>$109.53</td><td><span style="color:var(--color-green);">+2.50%</span></td><td>$108.02</td><td>$102.30~$110.25</td><td>$59.76B</td><td>—</td><td>545.57M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>TER</code></td><td>泰瑞达</td><td>NASDAQ</td><td>$374.31</td><td><span style="color:var(--color-red);">-2.18%</span></td><td>$385.16</td><td>$368.10~$386.97</td><td>$58.60B</td><td>68.81</td><td>156.54M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>NBIS</code></td><td>NBIS</td><td>NASDAQ</td><td>$231.09</td><td><span style="color:var(--color-green);">+2.10%</span></td><td>$227.86</td><td>$210.40~$233.60</td><td>$55.23B</td><td>68.17</td><td>239.00M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CBRS</code></td><td>CBRS</td><td>NASDAQ</td><td>$236.99</td><td><span style="color:var(--color-red);">-2.31%</span></td><td>$247.12</td><td>$232.56~$251.35</td><td>$52.05B</td><td>215.45</td><td>219.61M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CRDO</code></td><td>CRDO</td><td>NASDAQ</td><td>$236.03</td><td><span style="color:var(--color-green);">+6.15%</span></td><td>$228.25</td><td>$224.50~$240.81</td><td>$43.54B</td><td>122.93</td><td>184.45M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>WDAY</code></td><td>工时公司</td><td>NASDAQ</td><td>$146.19</td><td><span style="color:var(--color-green);">+12.45%</span></td><td>$133.62</td><td>$132.28~$146.52</td><td>$36.11B</td><td>45.26</td><td>247.00M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>RBLX</code></td><td>Roblox</td><td>NASDAQ</td><td>$47.15</td><td><span style="color:var(--color-green);">+0.68%</span></td><td>$46.52</td><td>$46.24~$47.84</td><td>$33.76B</td><td>—</td><td>715.98M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>TSEM</code></td><td>Tower Semi</td><td>NASDAQ</td><td>$255.23</td><td><span style="color:var(--color-red);">-7.36%</span></td><td>$283.22</td><td>$244.35~$285.00</td><td>$28.80B</td><td>117.08</td><td>112.82M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CRCL</code></td><td>CRCL</td><td>NASDAQ</td><td>$113.00</td><td><span style="color:var(--color-green);">+4.40%</span></td><td>$108.03</td><td>$106.75~$114.44</td><td>$28.09B</td><td>—</td><td>248.58M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>MTSI</code></td><td>MACOM</td><td>NASDAQ</td><td>$364.64</td><td><span style="color:var(--color-red);">-6.76%</span></td><td>$393.91</td><td>$357.07~$393.91</td><td>$27.82B</td><td>154.51</td><td>76.30M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>FN</code></td><td>Fabrinet</td><td>NASDAQ</td><td>$654.16</td><td><span style="color:var(--color-red);">-2.06%</span></td><td>$668.00</td><td>$625.68~$672.75</td><td>$23.44B</td><td>55.63</td><td>35.83M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SOFI</code></td><td>SOFI</td><td>NASDAQ</td><td>$18.22</td><td><span style="color:var(--color-green);">+7.37%</span></td><td>$18.26</td><td>$17.68~$18.59</td><td>$23.37B</td><td>37.96</td><td>1.28B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>PSTG</code></td><td>PSTG</td><td>NASDAQ</td><td>$67.80</td><td><span style="color:var(--color-green);">0.00%</span></td><td>$65.44</td><td>$64.54~$67.83</td><td>$22.41B</td><td>—</td><td>—</td><td></td><td>Apr 16 04:03PM EDT</td></tr><tr><td><code>IOT</code></td><td>IOT</td><td>NASDAQ</td><td>$34.99</td><td><span style="color:var(--color-green);">+10.83%</span></td><td>$32.04</td><td>$31.94~$35.20</td><td>$20.39B</td><td>—</td><td>582.71M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>PL</code></td><td>PL</td><td>NASDAQ</td><td>$51.14</td><td><span style="color:var(--color-red);">-0.51%</span></td><td>$49.12</td><td>$44.78~$51.27</td><td>$18.23B</td><td>—</td><td>356.39M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>GH</code></td><td>GH</td><td>NASDAQ</td><td>$129.69</td><td><span style="color:var(--color-red);">-2.65%</span></td><td>$133.22</td><td>$128.31~$133.97</td><td>$17.20B</td><td>—</td><td>132.60M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>FUTU</code></td><td>富途控股</td><td>NASDAQ</td><td>$104.07</td><td><span style="color:var(--color-red);">-0.80%</span></td><td>$103.90</td><td>$100.15~$108.24</td><td>$14.59B</td><td>11.50</td><td>140.19M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AUR</code></td><td>AUR</td><td>NASDAQ</td><td>$7.34</td><td><span style="color:var(--color-green);">+3.82%</span></td><td>$7.02</td><td>$6.95~$7.70</td><td>$14.40B</td><td>—</td><td>1.96B</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SMTC</code></td><td>先科电子</td><td>NASDAQ</td><td>$152.54</td><td><span style="color:var(--color-red);">-8.29%</span></td><td>$168.84</td><td>$151.44~$172.30</td><td>$14.21B</td><td>—</td><td>93.15M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>SANM</code></td><td>新美亚</td><td>NASDAQ</td><td>$259.73</td><td><span style="color:var(--color-red);">-1.33%</span></td><td>$265.30</td><td>$256.07~$268.80</td><td>$13.92B</td><td>54.00</td><td>53.60M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>U</code></td><td>U</td><td>NASDAQ</td><td>$30.47</td><td><span style="color:var(--color-green);">+1.77%</span></td><td>$30.04</td><td>$29.44~$30.91</td><td>$13.30B</td><td>—</td><td>436.53M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AAOI</code></td><td>应用光电</td><td>NASDAQ</td><td>$158.41</td><td><span style="color:var(--color-red);">-6.28%</span></td><td>$168.55</td><td>$153.10~$169.00</td><td>$12.71B</td><td>—</td><td>80.24M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>VIAV</code></td><td>Viavi</td><td>NASDAQ</td><td>$48.56</td><td><span style="color:var(--color-green);">+0.14%</span></td><td>$48.39</td><td>$45.88~$49.12</td><td>$11.98B</td><td>—</td><td>246.69M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>OKLO</code></td><td>OKLO</td><td>NASDAQ</td><td>$66.88</td><td><span style="color:var(--color-red);">-1.78%</span></td><td>$68.09</td><td>$64.28~$70.01</td><td>$11.64B</td><td>—</td><td>173.99M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>XE</code></td><td>X-energy</td><td>NASDAQ</td><td>$26.91</td><td><span style="color:var(--color-red);">-2.46%</span></td><td>$27.46</td><td>$26.08~$27.46</td><td>$10.56B</td><td>—</td><td>392.35M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AXTI</code></td><td>AXT</td><td>NASDAQ</td><td>$103.16</td><td><span style="color:var(--color-red);">-10.84%</span></td><td>$115.44</td><td>$100.00~$116.00</td><td>$6.75B</td><td>—</td><td>65.42M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CRSP</code></td><td>CRSP</td><td>NASDAQ</td><td>$56.18</td><td><span style="color:var(--color-red);">-0.35%</span></td><td>$56.38</td><td>$54.27~$56.39</td><td>$5.42B</td><td>—</td><td>96.45M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>VECO</code></td><td>Veeco</td><td>NASDAQ</td><td>$57.64</td><td><span style="color:var(--color-red);">-2.52%</span></td><td>$59.07</td><td>$56.16~$59.70</td><td>$3.52B</td><td>147.79</td><td>61.03M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>INOD</code></td><td>Innodata</td><td>NASDAQ</td><td>$104.98</td><td><span style="color:var(--color-green);">+5.67%</span></td><td>$102.00</td><td>$97.50~$107.77</td><td>$3.43B</td><td>86.05</td><td>32.66M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AMBA</code></td><td>安霸</td><td>NASDAQ</td><td>$72.18</td><td><span style="color:var(--color-red);">-21.41%</span></td><td>$82.52</td><td>$71.05~$85.90</td><td>$3.17B</td><td>—</td><td>43.86M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AEHR</code></td><td>Aehr Test</td><td>NASDAQ</td><td>$92.33</td><td><span style="color:var(--color-red);">-7.66%</span></td><td>$101.37</td><td>$90.77~$101.50</td><td>$2.90B</td><td>—</td><td>31.45M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>PENG</code></td><td>Penguin</td><td>NASDAQ</td><td>$55.83</td><td><span style="color:var(--color-green);">+3.26%</span></td><td>$59.95</td><td>$55.62~$60.87</td><td>$2.83B</td><td>—</td><td>50.75M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>COHU</code></td><td>科休半导体</td><td>NASDAQ</td><td>$52.75</td><td><span style="color:var(--color-red);">-2.41%</span></td><td>$54.45</td><td>$51.93~$55.13</td><td>$2.49B</td><td>—</td><td>47.18M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>LWLG</code></td><td>LWLG</td><td>NASDAQ</td><td>$10.86</td><td><span style="color:var(--color-red);">-5.24%</span></td><td>$11.32</td><td>$10.40~$11.32</td><td>$1.67B</td><td>—</td><td>154.08M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>AIP</code></td><td>Arteris</td><td>NASDAQ</td><td>$35.95</td><td><span style="color:var(--color-red);">-2.63%</span></td><td>$37.33</td><td>$34.88~$37.95</td><td>$1.66B</td><td>—</td><td>46.17M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>ABSI</code></td><td>Absci</td><td>NASDAQ</td><td>$6.75</td><td><span style="color:var(--color-green);">+11.02%</span></td><td>$5.97</td><td>$5.85~$7.34</td><td>$1.05B</td><td>—</td><td>155.91M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>CERS</code></td><td>Cerus</td><td>NASDAQ</td><td>$3.04</td><td><span style="color:var(--color-green);">+4.11%</span></td><td>$2.90</td><td>$2.88~$3.13</td><td>$609.12M</td><td>—</td><td>200.37M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>TASK</code></td><td>TASK</td><td>NASDAQ</td><td>$6.33</td><td><span style="color:var(--color-green);">+0.32%</span></td><td>$6.30</td><td>$6.21~$6.34</td><td>$579.69M</td><td>5.41</td><td>91.58M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>BZAI</code></td><td>BZAI</td><td>NASDAQ</td><td>$1.76</td><td><span style="color:var(--color-green);">+10.69%</span></td><td>$1.63</td><td>$1.59~$1.83</td><td>$250.45M</td><td>—</td><td>142.30M</td><td></td><td>May 29 04:00PM EDT</td></tr><tr><td><code>ALMU</code></td><td>ALMU</td><td>NASDAQ</td><td>$21.58</td><td><span style="color:var(--color-red);">-6.54%</span></td><td>$22.69</td><td>$20.80~$22.69</td><td>$0</td><td>—</td><td>—</td><td></td><td>May 29 04:00PM EDT</td></tr></tbody></table></div>
+<h3 id="行情摘要">行情摘要<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行情摘要" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p><strong>行情摘要（2026-05-29 收盘）：</strong> 周五科技板块分化明显——AI 应用端软件标的反弹（SNOW +6.84%、DDOG +9.82%、WDAY +12.45%、IOT +10.83%），而光子学硬件板块普遍回调（COHR -4.11%、AAOI -6.28%、MTSI -6.76%、SMTC -8.29%），与本周光学消化期的叙事一致。DELL +32.76% 为当日最大亮点（FY27Q1 财报全面超预期）。MSFT +5.45% 可能反映市场对 AI 应用层渗透加速的定价。AMBA -21.41% 为最大拖累。</p>
+<ul>
+<li><strong>AI 应用/软件反弹</strong>：SNOW +6.84%、DDOG +9.82%、WDAY +12.45%、IOT +10.83%、PLTR +9.21%、HOOD +11.15%——市场对 AI 应用层 monetization 信心回暖</li>
+<li><strong>光子学/光学硬件回调</strong>：COHR -4.11%、AAOI -6.28%、MTSI -6.76%、SMTC -8.29%、TSEM -7.36%、AXTI -10.84%——光学消化期在价格层面的体现，与 Gaetano 的 optics digesting 框架一致</li>
+<li><strong>DELL +32.76%</strong>：AI 服务器 FY27Q1 全面超预期，$43.84B rev +88%，backlog $513B，长线 AI 基础设施需求信号</li>
+</ul>
+</blockquote>
+<hr/>
+<h2 id="备注">备注<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#备注" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>🆕 <strong>新公司页</strong>：<a href="../../wiki/companies/soi" class="internal" data-slug="wiki/companies/soi">soi</a>（Soitec — Photonics-SOI 工程衬底）</li>
+<li>🆕 <strong>新概念页</strong>：<a href="../../wiki/concepts/retail-flow-vulnerability" class="internal" data-slug="wiki/concepts/retail-flow-vulnerability">retail-flow-vulnerability</a>（a16z 零售流量见顶论——散户参与度历史高位的市场脆弱性）</li>
+<li>🆕 <strong>新概念页</strong>：<a href="../../wiki/concepts/prediction-markets" class="internal" data-slug="wiki/concepts/prediction-markets">prediction-markets</a>（a16z Crypto 信息聚合框架）</li>
+<li>🔴 <strong>大幅更新</strong>：<a href="../../wiki/companies/smtc" class="internal" data-slug="wiki/companies/smtc">smtc</a> — 新增 §1.5 证据质量拆解、Bulls Side、HieFo/ACC bake-off/NPO vs CPO</li>
+<li>🔴 <strong>大幅更新</strong>：<a href="../../wiki/companies/veco" class="internal" data-slug="wiki/companies/veco">veco</a> — 首个深度覆盖，三重 AI 暴露 + Axcelis 合并</li>
+<li>🔴 <strong>大幅更新</strong>：<a href="../../wiki/companies/tsem" class="internal" data-slug="wiki/companies/tsem">tsem</a> — 1.6T SiPho 多数供应商定位 + $920M Fab 7</li>
+<li>🔴 <strong>大幅更新</strong>：<a href="../../wiki/companies/viav" class="internal" data-slug="wiki/companies/viav">viav</a> — Q3 beat 数据、§6 财务、CPO 插入点分析</li>
+<li>📝 <strong>提及</strong>：<a href="../../wiki/companies/inod" class="internal" data-slug="wiki/companies/inod">inod</a>（Agent Platform, $130-155 valuation）、<a href="../../wiki/companies/cohr" class="internal" data-slug="wiki/companies/cohr">cohr</a>（InP 消化期确认）、<a href="../../wiki/companies/aaoi" class="internal" data-slug="wiki/companies/aaoi">aaoi</a>（share-gain + CW laser）</li>
+<li><strong>Thesis 更新</strong>：<a href="../../wiki/theses/photonics-bottleneck-layers" class="internal" data-slug="wiki/theses/photonics-bottleneck-layers">photonics-bottleneck-layers</a> — 新增 VECO/VIAV/SOI/TSEM 证据</li>
+<li><strong>Tracker 已 cascade</strong>：optical-supply-chain（本轮信号已在前序 segment 中 cascade 完成）</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-171" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#daily-report--2026-05-31weekend-review" data-for="daily-report--2026-05-31weekend-review">Daily Report — 2026-05-31（Weekend Review）</a></li><li class="depth-1"><a href="#todays-key-takeaways" data-for="todays-key-takeaways">Today’s Key Takeaways</a></li><li class="depth-1"><a href="#今日来源汇总" data-for="今日来源汇总">今日来源汇总</a></li><li class="depth-1"><a href="#公司标的追踪" data-for="公司标的追踪">公司标的追踪</a></li><li class="depth-2"><a href="#今日更新要点" data-for="今日更新要点">今日更新要点</a></li><li class="depth-1"><a href="#行业覆盖" data-for="行业覆盖">行业覆盖</a></li><li class="depth-2"><a href="#wikisectorsoptical-interconnect-photonics" data-for="wikisectorsoptical-interconnect-photonics">wiki/sectors/optical-interconnect-photonics</a></li><li class="depth-2"><a href="#wikisectorsphysical-ai-autonomous-systems" data-for="wikisectorsphysical-ai-autonomous-systems">wiki/sectors/physical-ai-autonomous-systems</a></li><li class="depth-2"><a href="#wikisectorsartificial-intelligence" data-for="wikisectorsartificial-intelligence">wiki/sectors/artificial-intelligence</a></li><li class="depth-2"><a href="#wikisectorsblockchain-fintech" data-for="wikisectorsblockchain-fintech">wiki/sectors/blockchain-fintech</a></li><li class="depth-1"><a href="#行情快照" data-for="行情快照">行情快照</a></li><li class="depth-2"><a href="#行情摘要" data-for="行情摘要">行情摘要</a></li><li class="depth-1"><a href="#备注" data-for="备注">备注</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/daily/" class="internal">index</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>blockchain-fintech</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Investment Research Wiki"/><meta property="og:title" content="blockchain-fintech"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="blockchain-fintech"/><meta name="twitter:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="og:image:alt" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta property="twitter:domain" content="layneeeeee.github.io/investment-wiki-site"/><meta property="og:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/blockchain-fintech"/><meta property="twitter:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/blockchain-fintech"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="数据来源标记 标记含义出现位置[CURATED]用户手动维护的判断总结，非机械聚合§1[FRAME]纯框架设计（结构、分类方法），可复用§2, §7[KB]直接来自知识库，每条可追溯§3, §4, §5, §6[KB + INF]知识库数据 + 分析推理§4, §5, §7[EST]知识库无覆盖的估计值，使用前需验证inline 标注 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xheW5lL015T2JzaWRpYW4vMDItV29yay9JbnZlc3RtZW50L19pbnZlc3RtZW50LXdpa2kvcXVhcnR6LXNpdGUvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://layneeeeee.github.io/investment-wiki-site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/blockchain-fintech-og-image.webp"/><meta property="og:image:url" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/blockchain-fintech-og-image.webp"/><meta name="twitter:image" content="https://layneeeeee.github.io/investment-wiki-site/wiki/sectors/blockchain-fintech-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="wiki/sectors/blockchain-fintech"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Investment Research Wiki</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-389"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-389" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/">wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../wiki/sectors/">sectors</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>blockchain fintech</a></div></nav><h1 class="article-title">blockchain-fintech</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-07T16:00:00.000Z">Jun 08, 2026</time><span>31 min read</span></p><ul class="tags"><li><a href="../../tags/blockchain" class="internal tag-link">blockchain</a></li><li><a href="../../tags/fintech" class="internal tag-link">fintech</a></li><li><a href="../../tags/bitcoin" class="internal tag-link">bitcoin</a></li><li><a href="../../tags/stablecoin" class="internal tag-link">stablecoin</a></li><li><a href="../../tags/tokenization" class="internal tag-link">tokenization</a></li><li><a href="../../tags/defi" class="internal tag-link">defi</a></li><li><a href="../../tags/payments" class="internal tag-link">payments</a></li></ul></div></div><article class="popover-hint"><h2 id="数据来源标记">数据来源标记<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源标记" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>标记</th><th>含义</th><th>出现位置</th></tr></thead><tbody><tr><td>[CURATED]</td><td>用户手动维护的判断总结，非机械聚合</td><td>§1</td></tr><tr><td>[FRAME]</td><td>纯框架设计（结构、分类方法），可复用</td><td>§2, §7</td></tr><tr><td>[KB]</td><td>直接来自知识库，每条可追溯</td><td>§3, §4, §5, §6</td></tr><tr><td>[KB + INF]</td><td>知识库数据 + 分析推理</td><td>§4, §5, §7</td></tr><tr><td>[EST]</td><td>知识库无覆盖的估计值，<strong>使用前需验证</strong></td><td>inline 标注</td></tr></tbody></table></div>
+<hr/>
+<h2 id="1-核心摘要-curated">1. 核心摘要 [CURATED]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-核心摘要-curated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="一句话总结">一句话总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一句话总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>加密货币、区块链基础设施和传统金融服务的融合已到达监管拐点，GENIUS Act 推动主流采纳——稳定币正从交易/储蓄工具演变为核心支付基础设施，Bitcoin 正在成熟为机构资产类别。</p>
+<h3 id="核心观点">核心观点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心观点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>稳定币作为支付轨道</strong>：调整后月交易量约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">4.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal">Q</span><span class="mord">1</span><span class="mord cjk_fallback">），</span><span class="mord mathnormal" style="margin-right:0.10903em;">GEN</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">A</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">后加速增长。流通速度翻倍至</span><span class="mord">6</span><span class="mord cjk_fallback">倍（真实使用超过被动持有）。</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">稳定币商业交易</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">128</span></span></span></span>300M+/月（2024 年 11 月 → 2026 年初）。</li>
+<li><strong>Bitcoin 成熟为机构资产类别</strong>：美国 ETF + 上市公司持有总供应量的 12%。特朗普战略比特币储备。Metaplanet <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5.4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">库房。数字资产市场到</span><span class="mord">2030</span><span class="mord cjk_fallback">年可达约</span></span></span></span>28T（约 61% CAGR）：比特币约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">16</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">，智能合约约</span></span></span></span>6T。</li>
+<li><strong>稳定币正在本地化</strong>：境内支付占总交易量约 75%（2024 年初为 50%），与跨境叙事相反。亚洲主导（2/3 交易量）。非 USD 变体（BRLA 通过 PIX 月交易量 $400M）在 MiCA 推动下增长。</li>
+<li><strong>与 AI 的融合</strong>：区块链上的 AI agents 实现自主支付，但也引入新的安全风险——a16z 实验发现 AI agents 构建 DeFi 价格操纵利用的成功率达 70%。</li>
+<li>**a16z 加倍押注：加密基金 5 (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∗</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal">a</span><span class="mord">16</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mord cjk_fallback">为</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mord">5</span><span class="mord cjk_fallback">筹集</span></span></span></span>2.2B，瞄准加密周期的基础设施→效用阶段。核心论文：稳定币采纳作为网络（而非投机）、资本市场成熟（永续合约、预测市场、链上借贷）、以及 AI agents 需要透明/无需许可的区块链基础设施。从顶级 VC 验证了该领域的长期论文。（a16z crypto 2026 per <a href="../../2026-05-06--a16z-crypto--fund-5-announcement" class="internal alias" data-slug="2026-05-06--a16z-crypto--fund-5-announcement">2026-05-06—a16z-crypto—fund-5-announcement</a>）[KB]</li>
+<li><strong>收入栈整合</strong>：计费 + 收入确认 + 税收整合为单一平台（Tabs、Sequence、Cleverbridge）。Robinhood 从周期性经纪业务向经常性订阅转型（Gold ARR 约 $100M，类比 Amazon Prime）。</li>
+</ul>
+<h3 id="投资方向">投资方向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>看好</strong></p>
+<ul>
+<li>稳定币基础设施（Circle USDC、Stripe Tempo 链）</li>
+<li>Bitcoin 库房策略（MicroStrategy、Metaplanet）</li>
+<li>订阅模式金融科技（Robinhood Gold 飞轮）</li>
+<li>资产管理代币化（BlackRock）</li>
+</ul>
+<p><strong>谨慎</strong></p>
+<ul>
+<li>DeFi 平台（AI agent 安全风险；利用复杂度瓶颈在缩小）</li>
+<li>小型 L1/L2 链（开发者心智份额和流动性竞争）</li>
+</ul>
+<p><strong>回避</strong></p>
+<ul>
+<li>纯挖矿业务（商品化；监管悬而未决）</li>
+</ul>
+<hr/>
+<h2 id="key-metrics-to-watch-kb">Key Metrics to Watch [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-metrics-to-watch-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>说明</th><th>当前信号</th><th>来源</th></tr></thead><tbody><tr><td>Stablecoin adjusted monthly volume</td><td>Adoption as payments rail</td><td>~$4.5T (Q1 2026) — accelerating post-GENIUS Act</td><td>Hackett 2026</td></tr><tr><td>Stablecoin velocity</td><td>Real usage vs passive holding</td><td>6x (doubled from 2.6x in 2024)</td><td>Hackett 2026</td></tr><tr><td>C2B stablecoin transactions</td><td>Commerce adoption</td><td>284.6M in 2025 (+128% YoY)</td><td>Hackett 2026</td></tr><tr><td>Intra-country share of stablecoin volume</td><td>Localization of usage</td><td>~75% (up from 50% in early 2024)</td><td>Hackett 2026</td></tr><tr><td>Bitcoin market cap vs gold</td><td>Store of value displacement</td><td>Institutional adoption accelerating; US ETFs + public companies hold 12% of supply</td><td>ARK 2026 (citing Glassnode)</td></tr></tbody></table></div>
+<hr/>
+<h2 id="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="行业定义-frame">行业定义 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业定义-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>区块链与金融科技代表加密货币、区块链基础设施和传统金融服务的融合。该领域涵盖数字资产发行、去中心化金融、稳定币支付、现实世界资产代币化和金融科技平台（数字银行、经纪、支付）。该领域已到达 GENIUS Act 带来的监管拐点，推动主流采纳和机构参与。</p>
+<h3 id="发展历程-kb">发展历程 [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#发展历程-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2024–2025 年初</strong>：Bitcoin ETF 获批，推动机构配置。美国 ETF + 上市公司积累 BTC 供应量的 12%。稳定币开始从交易工具向支付轨道转型。</li>
+<li><strong>2025 年</strong>：C2B 稳定币商业交易达 2.846 亿笔（+128% YoY）。稳定币流通速度开始加速。Robinhood Gold 订阅模式获得 traction。</li>
+<li><strong>2026 年初</strong>：GENIUS Act 提供监管清晰度，加速稳定币采纳。月调整后交易量达约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">4.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">。流通速度翻倍至</span><span class="mord">6</span><span class="mord cjk_fallback">倍。非</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord cjk_fallback">稳定币（</span><span class="mord mathnormal" style="margin-right:0.00773em;">BR</span><span class="mord mathnormal">L</span><span class="mord mathnormal">A</span><span class="mord cjk_fallback">通过</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord cjk_fallback">月交易量</span></span></span></span>400M）增长。特朗普战略比特币储备建立。Metaplanet $5.4B 比特币库房。</li>
+<li><strong>2026 年中</strong>：a16z crypto 筹集 $2.2B Fund 5，表明对基础设施→效用转型的信心。核心论文：稳定币作为网络采纳（而非投机）、链上资本市场成熟、AI agent × 区块链交集。</li>
+</ul>
+<h3 id="分层图谱-frame">分层图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#分层图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>L1/L2 智能合约平台</strong>——竞争开发者心智份额和流动性的基础层区块链和扩展方案（Ethereum、Solana、Coinbase Base）</li>
+<li><strong>稳定币基础设施</strong>——锚定数字货币的发行方和轨道（Circle USDC、BRLA 等非 USD 变体）</li>
+<li><strong>金融服务层</strong>——交易所（Coinbase）、经纪商（Robinhood）、支付（Stripe Tempo）、数字银行（SoFi）</li>
+<li><strong>机构与资产管理</strong>——Bitcoin 库房（MicroStrategy、Metaplanet）、代币化（BlackRock）、ETF</li>
+</ol>
+<hr/>
+<h2 id="3-驱动力与趋势-kb--每次-ingest-检查">3. 驱动力与趋势 [KB] ← 每次 ingest 检查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-驱动力与趋势-kb--每次-ingest-检查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-policy--regulatory">3.1 Policy &amp; Regulatory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-policy--regulatory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>GENIUS Act</strong>：监管清晰度作为稳定币采纳的主要增长催化剂。推动主流机构参与和稳定币支付量加速。</li>
+<li><strong>CLARITY Act 突破</strong>：稳定币监管的两党进展——收益分享妥协文本允许基于活动的奖励，同时限制被动收益。获 Circle CSO 认可。结合欧洲 MiCA 授权，稳定币监管在大西洋两岸正从不确定性走向清晰化。（<a href="../../2026-05-09--ark--weekly-stock-commentary" class="internal alias" data-slug="2026-05-09--ark--weekly-stock-commentary">2026-05-09—ark—weekly-stock-commentary</a>）</li>
+<li><strong>全球碎片化</strong>：美国大选后政策变化；国际监管分化（欧洲 MiCA 推动非 USD 稳定币）；SEC 对加密资产的分类辩论。</li>
+<li><strong>稳定币银行挤兑风险</strong>：如果对储备金支持失去信心，支付栈的结构性脆弱性。</li>
+<li><strong>CBDC 竞争</strong>：央行数字货币可能与私人稳定币竞争，但采纳仍处于初期。</li>
+</ul>
+<h3 id="32-economic--market">3.2 Economic &amp; Market<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-economic--market" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>稳定币作为支付轨道</strong>：月调整后交易量约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">4.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">2026</span><span class="mord cjk_fallback">年</span><span class="mord mathnormal">Q</span><span class="mord">1</span><span class="mord cjk_fallback">），</span><span class="mord mathnormal" style="margin-right:0.10903em;">GEN</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">A</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord cjk_fallback">后加速增长。流通速度翻倍至</span><span class="mord">6</span><span class="mord cjk_fallback">倍（真实使用超过被动持有）。</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">稳定币商业交易</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">128</span></span></span></span>300M+/月（2024 年 11 月 → 2026 年初）。</li>
+<li><strong>机构采纳由协调需求驱动，而非回报</strong>：华尔街采用区块链并非为了加密回报，而是解决后端协调问题——碎片化系统、手动对账、交易对手风险管理。这将采纳动机从投机驱动转向效用驱动，可能创造更持久的需求。类比：金融服务的云计算，区块链为多方提供无需中央运营商的协调中性系统。（<a href="../../2026-05-21--a16z-guy--finance-digital-transformation" class="internal alias" data-slug="2026-05-21--a16z-guy--finance-digital-transformation">2026-05-21—a16z-guy—finance-digital-transformation</a>）[KB]</li>
+<li><strong>非 USD 稳定币增长</strong>：MiCA 驱动；BRLA 通过 PIX 集成月交易量 $400M。本地货币变体成为新兴市场的关键趋势。</li>
+<li><strong>摩根士丹利通过 E*Trade 推出低价加密交易</strong>：50 个基点定价争夺 E*Trade 860 万零售客户份额，同时推进 ETF 与托管能力。传统银行直接拉入与加密交易所的客户竞争，降低零售用户进入门槛，但也对 Robinhood 等纯加密平台构成定价压力。（INSIGHT NEWS PRO 2026-05-07 早报）</li>
+<li><strong>Robinhood Gold 订阅飞轮</strong>：Robinhood 从周期性经纪业务向经常性订阅模式转型。Gold (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5/</span><span class="mord cjk_fallback">月</span><span class="mclose">)</span><span class="mord cjk_fallback">用户持有</span><span class="mord">5</span><span class="mord cjk_fallback">倍资产，存款增速快</span><span class="mord">1.2</span><span class="mord cjk_fallback">倍。</span><span class="mord mathnormal">G</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">d</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mord cjk_fallback">约</span></span></span></span>100M。产品飞轮：银行 ($1.6B 存款) → 存款支撑投资 → 消费数据支持信贷 → 均在 Gold 内复合。类比 Amazon Prime——为采纳定价，而非近期收入。（ARK 2026, <a href="../../2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler" class="internal alias" data-slug="2026-05-04--ark--disrupt-newsletter-robinhood-intellia-hyperscaler">2026-05-04—ark—disrupt-newsletter-robinhood-intellia-hyperscaler</a>）</li>
+<li><strong>支付处理 M&amp;A 整合</strong>：Francisco Partners 洽谈收购加拿大收单机构 Moneris（约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">估值，每年</span><span class="mord">500</span><span class="mord cjk_fallback">亿</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">笔交易）。反映北美银行继续剥离收单业务，重塑支付生态。</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">an</span><span class="mord mathnormal">c</span><span class="mord mathnormal">i</span><span class="mord mathnormal">sco</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">n</span><span class="mord mathnormal">ers</span><span class="mord cjk_fallback">管理约</span></span></span></span>450B 资产，筹集 $14B 基金用于进一步支付整合。（Insight News Pro 2026-05-04 早报）</li>
+<li><strong>代币化资产市场爆发</strong>：代币化资产（RWA，不含稳定币）市值于 2026 年 4 月突破 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">30</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，并维持在</span><span class="mspace nobreak"> </span></span></span></span>34B。从 2024 年中期的 &lt;$3B 增长至此，不到两年翻了 10 倍。驱动因素：GENIUS Act 稳定币监管清晰化、机构级链上基础设施成熟、稳定币轨道降低结算摩擦。（<a href="../../2026-05-23--hackett--tokenization-boom-7-charts" class="internal alias" data-slug="2026-05-23--hackett--tokenization-boom-7-charts">2026-05-23—hackett—tokenization-boom-7-charts</a>）[KB]</li>
+<li><strong>国债代币化主导市场</strong>：美国国债代币化占代币化资产总市值的约 45%（$15.2B）。BlackRock、Franklin Templeton 等资管巨头已进入，为链上稳定币持有者提供传统货币市场收益的接入。（Hackett 2026）[KB]</li>
+<li><strong>黄金在商品代币化中近乎垄断</strong>：代币化商品总市值 ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5.1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，其中黄金占</span><span class="mspace nobreak"> </span></span></span></span>5B（~98%）。白银及其他产品仅 $57.6M。黄金天然适合代币化：全球标准化、易储存、耐储存、已通过纸质凭证大量交易；加密社区对其有长期 affinity（“digital gold”叙事）。Tether XAUT、Paxos PAXG 主导供给。（Hackett 2026）[KB]</li>
+<li><strong>多链格局形成</strong>：Ethereum 仍以 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">15.7</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">（</span><span class="mspace nobreak"> </span><span class="mord">51</span></span></span></span>4B、Solana <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2.2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal">St</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span>1.7B、Liquid Network <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1.5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal" style="margin-right:0.13889em;">XRP</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mord mathnormal" style="margin-right:0.03588em;">Ksy</span><span class="mord mathnormal">n</span><span class="mord mathnormal">c</span><span class="mord">/</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">bi</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord cjk_fallback">各接近</span></span></span></span>1B。驱动力：成本、流动性、合规要求、市场覆盖关系。（Hackett 2026）[KB]</li>
+<li><strong>ZKsync Cari Network — 区域银行区块链存款网络</strong>：Matter Labs 构建 Prividium → Cari Network，5 家美国区域银行（Huntington Bancshares、First Horizon、M&amp;T Bank、KeyCorp、Old National Bancorp）通过 ZKsync 区块链 rails 实现客户存款的跨机构即时转移，资金从未离开受监管银行体系。这验证了”区块链作为协调基础设施”论文——传统银行采用区块链解决后端碎片化和对账问题，而非追求加密回报。（<a href="../../sources/2026-06-06--jason-rosenthal--whats-working-crypto" class="internal alias" data-slug="sources/2026-06-06--jason-rosenthal--whats-working-crypto">2026-06-06—jason-rosenthal—whats-working-crypto</a>）[KB]</li>
+</ul>
+<h3 id="33-technology--innovation">3.3 Technology &amp; Innovation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#33-technology--innovation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DeFi 安全 + AI 风险</strong>：a16z 实验发现 AI agents (Codex + GPT 5.4) 在技能引导下构建价格操纵利用的成功率达 70%。Agent 总能发现漏洞但在多步经济利用执行上失败——瓶颈是执行复杂度而非知识。Agent 通过 <code>anvil_reset</code> 逃离实验沙箱。（Park 2026 via <a href="../../2026-04-29--daejun-park--ai-agents-defi-exploits" class="internal alias" data-slug="2026-04-29--daejun-park--ai-agents-defi-exploits">2026-04-29—daejun-park—ai-agents-defi-exploits</a>）</li>
+<li><strong>L1/L2 链 proliferation</strong>：智能合约平台竞争开发者心智份额和流动性。Base (Coinbase) 作为领先 L2 出现。碎片化创造安全表面积和流动性碎片化风险。</li>
+<li><strong>AI Agent 自主支付基础设施（AgentCash/x402）</strong>：Merit Systems 构建 AgentCash，基于 x402 协议实现 AI agents 使用加密货币支付 API 访问。模式：Agent 从代理钱包发起微支付 → API 提供商接收加密支付 → 无需人工管理的计费系统。这代表 AI × 区块链融合的最直接应用——“payments are how agents become actors rather than assistants”。(Rosenthal 2026 via <a href="../../sources/2026-06-06--jason-rosenthal--whats-working-crypto" class="internal alias" data-slug="sources/2026-06-06--jason-rosenthal--whats-working-crypto">2026-06-06—jason-rosenthal—whats-working-crypto</a>)[KB]</li>
+</ul>
+<h3 id="34-短期趋势">3.4 短期趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#34-短期趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>“稳定币正在本地化”</strong>：与跨境叙事相反，境内支付现占总交易量约 75%（2024 年初为 50%）。亚洲主导（2/3 交易量：新加坡、香港、日本）。BRLA/PIX 模式（本地货币稳定币 + 即时支付网络集成）是新兴市场的模板。（Hackett 2026 via <a href="../../2026-04-25--hackett--stablecoins-going-local" class="internal alias" data-slug="2026-04-25--hackett--stablecoins-going-local">2026-04-25—hackett—stablecoins-going-local</a>）</li>
+<li><strong>数字资产市场预测</strong>：到 2030 年可达约 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">28</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">61</span></span></span></span>16T，智能合约约 $6T。Bitcoin 成熟为机构资产类别——美国 ETF + 上市公司持有供应量的 12%。</li>
+<li><strong>HOOD AI Agent 交易推出</strong> — Robinhood 推出 AI Agent 交易功能（支持 Anthropic Claude / Cursor），agent 获得专属投资账户（支出限额）。最先支持股票交易，期权/加密货币后续推出。这是券商 AI 应用的重大边界拓展——从”AI 辅助分析”到”AI 自主交易”。Gold 卡用户 76.5 万（同比 4x），Gold ARR ~$1B。AI Agent 作为新增长维度。（INSIGHT NEWS PRO 2026-05-28 早报）</li>
+<li><strong>收入栈融合</strong>：计费 + 收入确认 + 税收整合为单一平台（Tabs、Sequence、Cleverbridge 领先）——与 SaaS 领域共享的趋势。金融科技基础设施玩家（Stripe、Coinbase、SoFi、Robinhood）在加密、支付和数字银行领域竞争。</li>
+<li><strong>支付处理 M&amp;A</strong>：Francisco Partners 瞄准 Moneris（约 $2B），银行继续剥离收单业务。反映支付生态的更广泛重塑。（Insight News Pro 2026-05-04 早报）</li>
+<li><strong>代币化资产的可组合性鸿沟</strong>：大多数代币化资产尚未实现真正的链上可组合性——仅有 ~5% 的代币化国债（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">800</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>15.2B）部署在 DeFi 协议中。代币化资产可分为两大阵营：<strong>“拟物链上”（skeuomorphically onchain）</strong>——资产在区块链上作为数字记录存在但功能不变（国债、黄金）；<strong>“原生链上”（natively onchain）</strong>——从设计起就为可组合性构建（再保险代币 84% 部署于 DeFi，私募信贷 33%）。Pantera Capital 的 “token presence index” 将 >75% 的代币化资产归入最低层。（<a href="../../2026-05-23--hackett--tokenization-boom-7-charts" class="internal alias" data-slug="2026-05-23--hackett--tokenization-boom-7-charts">2026-05-23—hackett—tokenization-boom-7-charts</a>）[KB]</li>
+<li><strong>资产支持信贷增长最快</strong>：代币化房屋净值信用额度（HELOCs）在 185 天内达到 $1B 市值，是史上最快的代币化资产类别。专业金融（再保险、比特币挖矿票据）第二快（不到 2 年）。风投类最慢（7+ 年）。（Hackett 2026）[KB]</li>
+<li><strong>代币化市场远期预测（100x+）</strong>：主流机构一致预测百倍增长，但范围差异巨大：McKinsey <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">4</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">2030</span><span class="mord cjk_fallback">，最窄）、</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>11T（2030）、BCG/Ripple <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">9.4</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">（</span><span class="mord">2030</span><span class="mord cjk_fallback">）</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span></span></span></span>18.9T（2033）、Standard Chartered $30T+（2034，最宽）。差异主要源于定义范围（是否包含稳定币和存款）而非采用率分歧。（Hackett 2026）[KB]</li>
+<li><strong>Agent 经济体需要 Crypto 支付 rails——AI × 区块链在基础设施层的必然融合</strong>：Rick (@rickawsb) 提出当 AI 驱动的”一人公司”甚至”无人公司”成为主流，大量交易将在 AI Agent 之间发生——交易量将增加 10 万-100 万倍，单笔金额将缩小至几釐钱，交易对手将是即时生成的、用完即弃的 Agent。现有金融基础设施（银行、信用卡、ACH）无法支持这种规模和颗粒度。Crypto 是唯一能承载未来 Agent 经济体的结算层。链上美股从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">向</span></span></span></span>500B+ 增长可能驱动新一轮 DeFi Summer，预测市场（Polymarket 模式）为链上选择权”打了样”。（<a href="../../sources/2026-05-14--168x--rick-awsb-ai-acceleration" class="internal alias" data-slug="sources/2026-05-14--168x--rick-awsb-ai-acceleration">2026-05-14—168x—rick-awsb-ai-acceleration</a>）[KB]</li>
+<li><strong>Frank「加密是資本範式而非生產力」框架——真正有價值的兩個方向</strong>：Frank (@qinbafrank) 提出核心判斷：<strong>加密本質是資本範式（資產發行、交易、結算），不是生產力革命</strong>。它唯一的 10 倍效率提升在資產發行和 24/7 全球交易——而非遊戲、社交、電商等 Web3 應用。真正有價值的兩個方向：(1) <strong>RWA（真實世界資產上鏈）</strong>—SEC 主席 Atkins 明確推動美國金融體系從鏈下遷到鏈上——股息自動發放、不良流動性資產全球觸達。DeFi 的真實瓶頸不是技術而是缺乏高品質底層抵押資產（當前鏈上主要只有 BTC），當蘋果等股票大量上鏈後借貸和衍生品才能大規模爆發。(2) <strong>AI Agent 經濟體</strong>——未來虛擬世界原住民是 bot/agent，它們之間需要智慧合約和加密貨幣作為互動和價值傳遞媒介。穩定幣可能取代 SWIFT 成為全球支付結算層。牛市分化效應：BTC ETF 引入成熟資本後，幣市從同漲同跌轉向高度分化——只有極少數資產能獲得資金追逐，類似美股前 100 家公司佔總市值 91-92%。（<a href="../../sources/2026-05-14--168x--qinbafrank-ai-three-debates" class="internal alias" data-slug="sources/2026-05-14--168x--qinbafrank-ai-three-debates">2026-05-14—168x—qinbafrank-ai-three-debates</a>）[KB]</li>
+</ul>
+<h3 id="35-结构性长期问题">3.5 结构性长期问题<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#35-结构性长期问题" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>与 AI 的融合（区块链上的 AI agents、自主支付）。稳定币基础设施代表新的全球支付层。BRLA/PIX 模式是新兴市场建立本地货币稳定币生态的模板。然而，AI 驱动利用的 DeFi 安全风险是一个日益增长的担忧——当前的瓶颈（执行复杂度）可能随着 AI agents 改进而缩小。</p>
+<hr/>
+<h2 id="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-竞争格局-kb--inf--玩家动态按需更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="核心玩家画像">核心玩家画像<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#核心玩家画像" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Circle (CRCL)</strong></p>
+<ul>
+<li>角色：USDC 稳定币发行方，合规优先的稳定币基础设施</li>
+<li>定位：全球监管最严格的稳定币发行方（MiCA 授权，通过 CLARITY Act 获得美国监管清晰度）</li>
+<li>风险：监管依赖；USDC 市场份额 vs USDT；依赖储备金收益率作为收入</li>
+<li>催化剂：CLARITY Act 通过；MiCA 驱动的欧洲扩张；机构稳定币采纳</li>
+</ul>
+<p><strong>Coinbase</strong> (COIN)</p>
+<ul>
+<li>角色：领先的美国加密交易所 + Base L2</li>
+<li>定位：中心化交易所 + L2 基础设施</li>
+<li>风险：交易所业务的监管不确定性；来自 Robinhood 在加密经纪领域的竞争</li>
+</ul>
+<p><strong>Robinhood</strong> (HOOD)</p>
+<ul>
+<li>角色：零售经纪 + 数字银行 + 加密 + AI Agent 平台</li>
+<li>定位：从周期性经纪业务向经常性订阅模式转型。Gold (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5/</span><span class="mord cjk_fallback">月</span><span class="mclose">)</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.00773em;">RR</span><span class="mspace nobreak"> </span></span></span></span>1B。银行 $1.6B 存款。AI Agent 交易推出——从”AI 辅助分析”到”AI 自主交易”。</li>
+<li>关键指标：Gold 用户持有 5 倍资产，存款增速快 1.2 倍；Gold 卡用户 76.5 万（同比 4x）；AI Agent 交易新增增长维度</li>
+<li>风险：周期性交易收入依赖；加密和银行业的监管风险；AI Agent 安全性和责任问题</li>
+</ul>
+<p><strong>Circle</strong> (private)</p>
+<ul>
+<li>角色：USDC 稳定币发行方</li>
+<li>定位：在调整后交易量中占主导</li>
+<li>风险：稳定币银行挤兑风险；CBDC 竞争；监管收紧</li>
+</ul>
+<p><strong>BlackRock</strong> (BLK)</p>
+<ul>
+<li>角色：资产管理 + 代币化</li>
+<li>定位：自建代币化平台；最大资产管理公司进入区块链领域</li>
+<li>风险：代币化资产的监管不确定性</li>
+</ul>
+<p><strong>Stripe</strong> (private)</p>
+<ul>
+<li>角色：支付 + 稳定币基础设施（Tempo 链）</li>
+<li>定位：为商家支付构建集成的稳定币轨道</li>
+<li>风险：来自传统支付处理商的竞争</li>
+</ul>
+<p><strong>MicroStrategy</strong> (MSTR)</p>
+<ul>
+<li>角色：Bitcoin 库房</li>
+<li>定位：最大的上市公司比特币持有者</li>
+<li>风险：Bitcoin 价格波动；杠杆风险</li>
+</ul>
+<p><strong>Metaplanet</strong> (private, Japan)</p>
+<ul>
+<li>角色：Bitcoin 库房——$5.4B 比特币持有量</li>
+<li>定位：亚洲最大的上市比特币持有者</li>
+<li>风险：Bitcoin 价格波动；日本特定监管风险</li>
+</ul>
+<p><strong>SoFi Technologies</strong> (SOFI)</p>
+<ul>
+<li>角色：数字银行、借贷、金融科技基础设施</li>
+<li>关键指标：Q1 营收 +41% YoY 至 $1.1B；技术部门 -27% 因大型客户转型</li>
+<li>风险：技术部门收入集中；来自 Robinhood 和传统银行的竞争</li>
+</ul>
+<h3 id="市场集中度">市场集中度<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#市场集中度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>稳定币发行</strong>：集中——Circle (USDC) 在调整后交易量中占主导。非 USD 变体 (BRLA) 正在兴起但仍较小。</li>
+<li><strong>加密经纪</strong>：集中——Coinbase 和 Robinhood 竞争零售和机构流量。</li>
+<li><strong>Bitcoin 库房</strong>：集中在少数玩家（MicroStrategy、Metaplanet）。</li>
+<li><strong>支付处理</strong>：碎片化但正在整合——Francisco Partners 筹集 $14B 基金用于整合。</li>
+</ul>
+<h3 id="进入壁垒-moats">进入壁垒 (Moats)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#进入壁垒-moats" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>稳定币网络效应</strong>：更多用户 → 更多商家接受 → 更多效用 → 更多用户。流通速度 (6x) 证明真实使用在 compounding。</li>
+<li><strong>监管牌照</strong>：合规运营的交易所（Coinbase、Robinhood）受益于监管清晰度，而未注册的竞争对手面临阻力。</li>
+<li><strong>订阅粘性</strong>：Robinhood Gold 用户持有 5 倍资产且存款增长更快——经常性收入模式的转换成本。</li>
+<li><strong>Bitcoin 先发优势</strong>：MicroStrategy 和 Metaplanet 已建立作为比特币库房策略的品牌认知。</li>
+</ul>
+<hr/>
+<h2 id="5-风险监控-kb--inf--新风险出现时更新">5. 风险监控 [KB + INF] ← 新风险出现时更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-风险监控-kb--inf--新风险出现时更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="政策宏观风险">政策/宏观风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#政策宏观风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>美国大选后政策变化；国际监管分化</li>
+<li>SEC 对加密资产的分类辩论（证券 vs 商品）</li>
+<li>加密市场的利率敏感性</li>
+<li>与科技股风险的相关性（宏观因素）</li>
+<li>稳定币银行挤兑风险——支付栈的结构性脆弱性</li>
+<li>CBDC 可能竞争私人稳定币</li>
+</ul>
+<h3 id="技术颠覆风险">技术颠覆风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术颠覆风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>DeFi 安全 + AI agent 利用：a16z 实验发现 AI agents (Codex + GPT 5.4) 构建价格操纵利用的成功率达 70%；执行复杂度是当前瓶颈但可能在缩小（<a href="../../2026-04-29--daejun-park--ai-agents-defi-exploits" class="internal alias" data-slug="2026-04-29--daejun-park--ai-agents-defi-exploits">2026-04-29—daejun-park—ai-agents-defi-exploits</a>）</li>
+<li>L1/L2 安全碎片化增加攻击面</li>
+<li>跨多个协议的智能合约风险</li>
+<li>高吞吐量链的可扩展性约束</li>
+</ul>
+<h3 id="竞争价格风险">竞争/价格风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#竞争价格风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>CBDC 与私人稳定币竞争</li>
+<li>TradFi 银行构建竞争性支付轨道</li>
+<li>L1/L2 链竞争碎片化流动性和开发者心智份额</li>
+<li>支付处理利润率压缩来自行业整合（Francisco Partners $14B 基金）</li>
+<li>Bitcoin 价格波动影响库房公司</li>
+</ul>
+<h3 id="技术采用风险">技术/采用风险<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术采用风险" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>代币化的可组合性鸿沟</strong>：当前大部分代币化资产（国债、黄金）属于”数字化”而非真正的链上可编程性。如果代币化停留在”数字记录”层面而无法实现可组合性，其变革性影响和 TAM 将被大幅压缩。再保险代币（84% 部署于 DeFi）证明可组合性是可实现的——但需要从设计之初就刻意构建，而非事后添加。（<a href="../../2026-05-23--hackett--tokenization-boom-7-charts" class="internal alias" data-slug="2026-05-23--hackett--tokenization-boom-7-charts">2026-05-23—hackett—tokenization-boom-7-charts</a>）[KB]</li>
+<li><strong>多链流动性碎片化</strong>：7+ 条链各持有 >$1B 代币化资产，若缺乏互操作性，可能导致流动性碎片化和用户体验退化。不同链上合规要求的差异进一步复杂化跨链资产转移。</li>
+</ul>
+<hr/>
+<h2 id="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-市场规模-kb--财报季更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="tam--sam--som">TAM / SAM / SOM<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tam--sam--som" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>指标</th><th>估计值</th><th>来源</th><th>As of</th></tr></thead><tbody><tr><td>Digital asset market cap forecast</td><td>~$28T by 2030 (61% CAGR)</td><td>ARK 2026</td><td>2030E</td></tr><tr><td>Bitcoin price forecast (base case)</td><td>~$16T market cap (63% CAGR)</td><td>ARK 2026</td><td>2030E</td></tr><tr><td>Smart contract market cap forecast</td><td>~$6T (54% CAGR)</td><td>ARK 2026</td><td>2030E</td></tr><tr><td>US ETF + public company BTC holdings</td><td>12% of total supply</td><td>ARK 2026 (citing Glassnode)</td><td>Dec 2025</td></tr><tr><td>Stablecoin monthly adj. volume</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4.5</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">m</span></span></span></span>3.5T)</td><td>Hackett 2026</td><td>Q1 2026</td></tr><tr><td>Stablecoin velocity (adj. volume/supply)</td><td>6x (doubled from 2.6x)</td><td>Hackett 2026</td><td>Early 2026</td></tr><tr><td>Bitcoin market cap</td><td>~$1–2T</td><td>Market data</td><td>2026</td></tr><tr><td>Global payments revenue</td><td>~$1.5T+</td><td>McKinsey</td><td>2025</td></tr><tr><td>Tokenized asset market cap</td><td>~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">34</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span></span></span></span>3B mid-2024)</td><td>Hackett 2026 (RWA.xyz)</td><td>May 2026</td></tr><tr><td>Tokenized U.S. Treasurys</td><td>$15.2B (~45% of market)</td><td>Hackett 2026</td><td>May 2026</td></tr><tr><td>Tokenized gold</td><td>~$5B (98% of all tokenized commodities)</td><td>Hackett 2026</td><td>May 2026</td></tr><tr><td>Tokenization market forecast (McKinsey)</td><td>$2-4T by 2030</td><td>McKinsey 2026</td><td>2030E</td></tr><tr><td>Tokenization market forecast (Ark)</td><td>$11T by 2030</td><td>Ark Invest 2026</td><td>2030E</td></tr><tr><td>Tokenization market forecast (BCG/Ripple)</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">9.4</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">b</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord">2030</span><span class="mpunct">,</span></span></span></span>18.9T by 2033</td><td>BCG/Ripple 2026</td><td>2030E</td></tr><tr><td>Tokenization market forecast (Standard Chartered)</td><td>$30T+ by 2034</td><td>Standard Chartered 2026</td><td>2034E</td></tr><tr><td>Tokenized bonds deployed in DeFi</td><td>~5% (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">800</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>15.2B)</td><td>Hackett 2026</td><td>May 2026</td></tr><tr><td>Fastest category to $1B (asset-backed credit)</td><td>185 days</td><td>Hackett 2026</td><td>May 2026</td></tr></tbody></table></div>
+<hr/>
+<h2 id="7-产业链与投资逻辑-frame--inf--框架稳定">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-产业链与投资逻辑-frame--inf--框架稳定" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-产业链图谱-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Infrastructure Layer</strong> — L1 blockchains, L2 scaling solutions, smart contract platforms</p>
+<ul>
+<li>Provides the base ledger and execution environment</li>
+<li>Competing for developer mindshare, liquidity, and security</li>
+</ul>
+<p><strong>Issuer / Intermediary Layer</strong> — Stablecoin issuers (Circle USDC), exchanges (Coinbase), payment rails (Stripe Tempo)</p>
+<ul>
+<li>Converts blockchain infrastructure into financial products</li>
+<li>Regulatory compliance is the key differentiator</li>
+</ul>
+<p><strong>Application Layer</strong> — DeFi, payments, neobanking, tokenization, Bitcoin treasury</p>
+<ul>
+<li>End-user facing financial services</li>
+<li>Revenue stack convergence (billing + revrec + tax consolidating into single platform)</li>
+</ul>
+<p><strong>End-User Layer</strong> — Consumers (C2B commerce), institutions (asset allocation via ETFs), enterprises (payments, treasury)</p>
+<ul>
+<li>Adoption driven by regulatory clarity (GENIUS Act) and infrastructure maturity</li>
+</ul>
+<h3 id="72-各环节分析">7.2 各环节分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-各环节分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>稳定币基础设施</strong>是最具变革性的层——创建独立于传统卡网络的新的全球支付轨道。流通速度翻倍（2.6x → 6x）确认真实使用，而非仅被动持有。</li>
+<li><strong>交易所和经纪商</strong>面临监管负担但受益于网络效应。Robinhood 的 Gold 订阅模式展示了远离周期性交易收入的路径。</li>
+<li><strong>Bitcoin 库房</strong>仍是一个集中的、高波动性的策略。MicroStrategy 和 Metaplanet 具有先发品牌优势但面临价格风险。</li>
+</ul>
+<h3 id="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#73-投资框架-frame--inf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>关键框架考量：</p>
+<ul>
+<li><strong>稳定币替代论文</strong>：稳定币正从交易/储蓄工具演变为核心支付基础设施，可能取代 $1.5T+ 全球支付收入池的一部分。流通速度 (6x) 和境内交易量占比（约 75%）确认真实经济用途。</li>
+<li><strong>监管催化剂</strong>：GENIUS Act 提供解锁机构参与的监管清晰度。美国稳定币框架可能成为其他司法管辖区的模板。</li>
+<li><strong>区块链领域的 Wright’s Law</strong>：随着区块链交易吞吐量扩展，每笔交易成本下降——扩大可寻址应用（微支付、IoT、AI agent 支付）。</li>
+<li><strong>AI + 区块链融合</strong>：双刃剑趋势——AI agents 实现自主支付和智能合约自动化，但也引入新的利用向量（a16z 实验中构建 DeFi 利用的成功率达 70%）。</li>
+<li><strong>区块链作为协调基础设施</strong>：最持久的机构采纳论文不是关于加密回报，而是区块链解决金融的基本协调问题——多方共享状态而无需中央运营商。这使区块链定位为金融服务的云计算：后端基础设施升级，而非消费趋势。隐藏的超能力是可组合性——共享可编程基础设施上的金融资产可以组合和扩展而无需从头构建，这可能比成本节约更重要。（<a href="../../2026-05-21--a16z-guy--finance-digital-transformation" class="internal alias" data-slug="2026-05-21--a16z-guy--finance-digital-transformation">2026-05-21—a16z-guy—finance-digital-transformation</a>）[KB]</li>
+</ul>
+<h3 id="74-标的-mapping-kb">7.4 标的 Mapping [KB]<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#74-标的-mapping-kb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Category</th><th>Companies</th><th>Notes</th></tr></thead><tbody><tr><td>Stablecoin Infrastructure</td><td>Circle (private), Stripe (private)</td><td>USDC dominant in adjusted volumes; Stripe building Tempo chain for merchant stablecoin rail</td></tr><tr><td>Exchange / Brokerage</td><td>Coinbase (COIN), Robinhood (HOOD)</td><td>Coinbase leading US exchange + Base L2; Robinhood Gold subscription flywheel ($100M ARR)</td></tr><tr><td>Bitcoin Treasury</td><td>MicroStrategy (MSTR), Metaplanet (private, Japan)</td><td>First-mover brand advantage; concentrated BTC exposure; price volatility risk</td></tr><tr><td>Tokenization / Asset Mgmt</td><td>BlackRock (BLK)</td><td>In-house tokenization platform; largest asset manager entering blockchain</td></tr><tr><td>Neobank / Fintech</td><td>SoFi (SOFI)</td><td>Q1 revenue +41% YoY to $1.1B; Technology segment -27% as large client transitioned</td></tr><tr><td>Payment Processing</td><td>Francisco Partners (private equity)</td><td>Consolidating merchant acquiring (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">14</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mclose">)</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mspace nobreak"> </span></span></span></span>2B)</td></tr></tbody></table></div>
+<hr/>
+<h2 id="cross-references">Cross-references<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="companies">Companies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#companies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/companies/hood" class="internal" data-slug="wiki/companies/hood">hood</a> (Gold flywheel), <a href="../../wiki/companies/crcl" class="internal" data-slug="wiki/companies/crcl">crcl</a> (Circle/USDC)</p>
+<h3 id="theses">Theses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>(none active yet)</p>
+<h3 id="concepts">Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../wiki/concepts/stablecoin-infrastructure" class="internal" data-slug="wiki/concepts/stablecoin-infrastructure">stablecoin-infrastructure</a>, <a href="../../wiki/concepts/ai-agent-operating-system" class="internal" data-slug="wiki/concepts/ai-agent-operating-system">ai-agent-operating-system</a></p>
+<h3 id="related-sectors">Related Sectors<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-sectors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>(none yet)</p>
+<h3 id="macro">Macro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#macro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>(none yet)</p>
+<h3 id="key-sources">Key Sources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-sources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="../../2026-03-18--ark-blockchain--big-ideas-2026" class="internal alias" data-slug="2026-03-18--ark-blockchain--big-ideas-2026">2026-03-18—ark-blockchain—big-ideas-2026</a>, <a href="../../2026-03-18--ark-macro--great-acceleration" class="internal alias" data-slug="2026-03-18--ark-macro--great-acceleration">2026-03-18—ark-macro—great-acceleration</a>, <a href="../../2026-04-24--a16z--charts-software-ate-the-world" class="internal alias" data-slug="2026-04-24--a16z--charts-software-ate-the-world">2026-04-24—a16z—charts-software-ate-the-world</a>, <a href="../../2026-04-25--hackett--stablecoins-going-local" class="internal alias" data-slug="2026-04-25--hackett--stablecoins-going-local">2026-04-25—hackett—stablecoins-going-local</a>, <a href="../../2026-04-29--daejun-park--ai-agents-defi-exploits" class="internal alias" data-slug="2026-04-29--daejun-park--ai-agents-defi-exploits">2026-04-29—daejun-park—ai-agents-defi-exploits</a>, <a href="../../2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers" class="internal alias" data-slug="2026-05-02--ark--stock-commentary-absi-xe-sofi-ter-aur-rblx-cers">2026-05-02—ark—stock-commentary-absi-xe-sofi-ter-aur-rblx-cers</a>, <a href="../../2026-05-23--hackett--tokenization-boom-7-charts" class="internal alias" data-slug="2026-05-23--hackett--tokenization-boom-7-charts">2026-05-23—hackett—tokenization-boom-7-charts</a>, <a href="../../sources/2026-06-06--jason-rosenthal--whats-working-crypto" class="internal alias" data-slug="sources/2026-06-06--jason-rosenthal--whats-working-crypto">2026-06-06—jason-rosenthal—whats-working-crypto</a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-183" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#数据来源标记" data-for="数据来源标记">数据来源标记</a></li><li class="depth-0"><a href="#1-核心摘要-curated" data-for="1-核心摘要-curated">1. 核心摘要 [CURATED]</a></li><li class="depth-1"><a href="#一句话总结" data-for="一句话总结">一句话总结</a></li><li class="depth-1"><a href="#核心观点" data-for="核心观点">核心观点</a></li><li class="depth-1"><a href="#投资方向" data-for="投资方向">投资方向</a></li><li class="depth-0"><a href="#key-metrics-to-watch-kb" data-for="key-metrics-to-watch-kb">Key Metrics to Watch [KB]</a></li><li class="depth-0"><a href="#2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新" data-for="2-行业概述与界定-frame--kb--框架层仅行业结构变化时更新">2. 行业概述与界定 [FRAME + KB] ← 框架层，仅行业结构变化时更新</a></li><li class="depth-1"><a href="#行业定义-frame" data-for="行业定义-frame">行业定义 [FRAME]</a></li><li class="depth-1"><a href="#发展历程-kb" data-for="发展历程-kb">发展历程 [KB]</a></li><li class="depth-1"><a href="#分层图谱-frame" data-for="分层图谱-frame">分层图谱 [FRAME]</a></li><li class="depth-0"><a href="#3-驱动力与趋势-kb--每次-ingest-检查" data-for="3-驱动力与趋势-kb--每次-ingest-检查">3. 驱动力与趋势 [KB] ← 每次 ingest 检查</a></li><li class="depth-1"><a href="#31-policy--regulatory" data-for="31-policy--regulatory">3.1 Policy &amp; Regulatory</a></li><li class="depth-1"><a href="#32-economic--market" data-for="32-economic--market">3.2 Economic &amp; Market</a></li><li class="depth-1"><a href="#33-technology--innovation" data-for="33-technology--innovation">3.3 Technology &amp; Innovation</a></li><li class="depth-1"><a href="#34-短期趋势" data-for="34-短期趋势">3.4 短期趋势</a></li><li class="depth-1"><a href="#35-结构性长期问题" data-for="35-结构性长期问题">3.5 结构性长期问题</a></li><li class="depth-0"><a href="#4-竞争格局-kb--inf--玩家动态按需更新" data-for="4-竞争格局-kb--inf--玩家动态按需更新">4. 竞争格局 [KB + INF] ← 玩家动态按需更新</a></li><li class="depth-1"><a href="#核心玩家画像" data-for="核心玩家画像">核心玩家画像</a></li><li class="depth-1"><a href="#市场集中度" data-for="市场集中度">市场集中度</a></li><li class="depth-1"><a href="#进入壁垒-moats" data-for="进入壁垒-moats">进入壁垒 (Moats)</a></li><li class="depth-0"><a href="#5-风险监控-kb--inf--新风险出现时更新" data-for="5-风险监控-kb--inf--新风险出现时更新">5. 风险监控 [KB + INF] ← 新风险出现时更新</a></li><li class="depth-1"><a href="#政策宏观风险" data-for="政策宏观风险">政策/宏观风险</a></li><li class="depth-1"><a href="#技术颠覆风险" data-for="技术颠覆风险">技术颠覆风险</a></li><li class="depth-1"><a href="#竞争价格风险" data-for="竞争价格风险">竞争/价格风险</a></li><li class="depth-1"><a href="#技术采用风险" data-for="技术采用风险">技术/采用风险</a></li><li class="depth-0"><a href="#6-市场规模-kb--财报季更新" data-for="6-市场规模-kb--财报季更新">6. 市场规模 [KB] ← 财报季更新</a></li><li class="depth-1"><a href="#tam--sam--som" data-for="tam--sam--som">TAM / SAM / SOM</a></li><li class="depth-0"><a href="#7-产业链与投资逻辑-frame--inf--框架稳定" data-for="7-产业链与投资逻辑-frame--inf--框架稳定">7. 产业链与投资逻辑 [FRAME + INF] ← 框架稳定</a></li><li class="depth-1"><a href="#71-产业链图谱-frame" data-for="71-产业链图谱-frame">7.1 产业链图谱 [FRAME]</a></li><li class="depth-1"><a href="#72-各环节分析" data-for="72-各环节分析">7.2 各环节分析</a></li><li class="depth-1"><a href="#73-投资框架-frame--inf" data-for="73-投资框架-frame--inf">7.3 投资框架 [FRAME + INF]</a></li><li class="depth-1"><a href="#74-标的-mapping-kb" data-for="74-标的-mapping-kb">7.4 标的 Mapping [KB]</a></li><li class="depth-0"><a href="#cross-references" data-for="cross-references">Cross-references</a></li><li class="depth-1"><a href="#companies" data-for="companies">Companies</a></li><li class="depth-1"><a href="#theses" data-for="theses">Theses</a></li><li class="depth-1"><a href="#concepts" data-for="concepts">Concepts</a></li><li class="depth-1"><a href="#related-sectors" data-for="related-sectors">Related Sectors</a></li><li class="depth-1"><a href="#macro" data-for="macro">Macro</a></li><li class="depth-1"><a href="#key-sources" data-for="key-sources">Key Sources</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../wiki/companies/crcl" class="internal">crcl</a></li><li><a href="../../wiki/concepts/ai-agent-operating-system" class="internal">ai-agent-operating-system</a></li><li><a href="../../wiki/concepts/rwa-tokenization" class="internal">rwa-tokenization</a></li><li><a href="../../wiki/concepts/stablecoin-infrastructure" class="internal">stablecoin-infrastructure</a></li><li><a href="../../wiki/concepts/technological-convergence" class="internal">technological-convergence</a></li><li><a href="../../wiki/daily/2026-05-24" class="internal">2026-05-24</a></li><li><a href="../../wiki/daily/2026-05-28" class="internal">2026-05-28</a></li><li><a href="../../wiki/daily/2026-05-31" class="internal">2026-05-31</a></li><li><a href="../../wiki/daily/2026-06-08" class="internal">2026-06-08</a></li><li><a href="../../wiki/sectors/artificial-intelligence" class="internal">artificial-intelligence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/Layneeeeee/investment-wiki-site">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
